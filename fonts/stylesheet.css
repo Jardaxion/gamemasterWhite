@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Frutiger Neue LT W1G';
+    src: url('FrutigerNeueLTW1G-Regular.eot');
+    src: url('FrutigerNeueLTW1G-Regular.eot?#iefix') format('embedded-opentype'),
+        url('FrutigerNeueLTW1G-Regular.woff2') format('woff2'),
+        url('FrutigerNeueLTW1G-Regular.woff') format('woff'),
+        url('FrutigerNeueLTW1G-Regular.ttf') format('truetype'),
+        url('FrutigerNeueLTW1G-Regular.svg#FrutigerNeueLTW1G-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
