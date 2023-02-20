@@ -247,6 +247,9 @@ table
     --reg-numText: #14171cb5;
     --reg-title: #14171c;
     --input-hrS: #101b41;
+    --input-placeholder-color: #8e8e8e;
+    --input-color-color: black;
+    --profile-changePass: #5e5e5e;
 }
 
 .dark
@@ -280,6 +283,9 @@ table
     --reg-numText: #fffb5;
     --reg-title: white;
     --input-hrS: #5c5c5c;
+    --input-placeholder-color: #484848;
+    --input-color-color: #e2e2e2;
+    --profile-changePass: white;
 }
 
 /* Глобальное */
@@ -509,7 +515,11 @@ h1
     height: 133px;
 
     cursor: pointer;
+    -webkit-transition: .3s ease all;
+         -o-transition: .3s ease all;
+            transition: .3s ease all;
 
+    border: 1px solid transparent;
     border-radius: 8px;
     background: var(--choiceAva);
 
@@ -520,11 +530,36 @@ h1
     -ms-flex-align: center;
     align-items: center;
 }
+.modal__choiceAvatar-item:hover
+{
+    border-color: #ff812f;
+}
 .modal__choiceAvatar-item.active .modal__choiceAvatar-select--wrapper
 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+}
+.modal__choiceAvatar-button
+{
+    font-size: 14px !important;
+    font-weight: 600 !important;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    width: 100%;
+    max-width: 285px;
+    margin: 65px auto 0;
+    padding: 12px 13px;
+
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 .modal__choiceAvatar-avatar
 {
@@ -577,6 +612,11 @@ h1
     background: -webkit-gradient(linear, left top, left bottom, from(#ff9649), to(#ff5c00)), -webkit-gradient(linear, left bottom, left top, from(#fff), to(#fff));
     background: -o-linear-gradient(top, #ff9649 0%, #ff5c00 100%), -o-linear-gradient(bottom, #fff, #fff);
     background:    linear-gradient(180deg, #ff9649 0%, #ff5c00 100%), linear-gradient(0deg, #fff, #fff);
+}
+.button.effect
+{
+    -webkit-box-shadow: 0 0 15px 0 rgba(255, 107, 0, .2901960784);
+            box-shadow: 0 0 15px 0 rgba(255, 107, 0, .2901960784);
 }
 .button:hover
 {
@@ -708,13 +748,8 @@ h1
 .back svg
 {
     position: absolute;
-    top: 0;
-    top: 50%;
+    top: 2.5px;
     left: -11px;
-
-    -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
 }
 .back__text
 {
@@ -849,7 +884,7 @@ h1
 .header__item.selected::after
 {
     position: absolute;
-    bottom: -38.5px;
+    bottom: -39.5px;
     left: 50%;
 
     width: 140%;
@@ -1570,7 +1605,7 @@ h1
 .profile__top-right--link.active::before
 {
     position: absolute;
-    bottom: -37px;
+    bottom: -35.5px;
     left: 0;
     left: 50%;
 
@@ -1618,26 +1653,34 @@ h1
 }
 .profile__changePhoto
 {
-    font-size: 14px;
+    font-size: 14px !important;
+    font-weight: 600;
 
     width: 285px;
     margin-bottom: 12px;
-    padding: 12px 0 13px;
+    padding: 13px 0 10px;
 }
 .profile__changePass
 {
     width: 285px;
-    padding: 12px 0 11px;
+    padding: 13px 0 10px;
 
     border-color: #e1e1e1 !important;
+}
+.profile__changePass p
+{
+    font-size: 14px !important;
+    font-weight: 600;
+
+    color: var(--profile-changePass) !important;
 }
 .profile__changePass:hover
 {
     border-color: #ff812f !important;
 }
-.profile__changePass p
+.profile__changePass:hover p
 {
-    font-size: 14px;
+    color: white !important;
 }
 .profile__right
 {
@@ -1742,7 +1785,7 @@ h1
 
     min-width: 16px;
     min-height: 16px;
-    padding-top: 5px;
+    padding-top: 1px;
 
     letter-spacing: .005em;
 
@@ -1800,6 +1843,10 @@ h1
 .profile__grid-box:hover .profile__grid-icon--background
 {
     background: #ff9b5b;
+}
+.profile__grid-box:hover p
+{
+    color: white;
 }
 .profile__grid-box:hover svg *
 {
@@ -1871,9 +1918,9 @@ h1
 
 .dark .profile__toggleTheme-toggle--circle
 {
-    -webkit-transform: translate(30px, -50%);
-        -ms-transform: translate(30px, -50%);
-            transform: translate(30px, -50%);
+    -webkit-transform: translate(31px, -50%);
+        -ms-transform: translate(31px, -50%);
+            transform: translate(31px, -50%);
 }
 
 /* Регистрация */
@@ -2073,7 +2120,7 @@ h1
     font-weight: 400;
     line-height: 18px;
 
-    color: #424242;
+    color: #7c7c7c;
 }
 .reg__right-desc
 {
@@ -2189,7 +2236,7 @@ h1
     width: 582px;
     padding: 15px 0;
 
-    color: var(--input-color);
+    color: var(--input-color-color);
     border-bottom: 1px solid var(--input-hrS);
 }
 .reg__input::-webkit-input-placeholder
@@ -2199,7 +2246,7 @@ h1
     font-weight: 400;
     line-height: 16px;
 
-    color: var(--input-color);
+    color: var(--input-placeholder-color);
 }
 .reg__input::-moz-placeholder
 {
@@ -2208,7 +2255,7 @@ h1
     font-weight: 400;
     line-height: 16px;
 
-    color: var(--input-color);
+    color: var(--input-placeholder-color);
 }
 .reg__input:-ms-input-placeholder
 {
@@ -2217,7 +2264,7 @@ h1
     font-weight: 400;
     line-height: 16px;
 
-    color: var(--input-color);
+    color: var(--input-placeholder-color);
 }
 .reg__input::-ms-input-placeholder
 {
@@ -2226,7 +2273,7 @@ h1
     font-weight: 400;
     line-height: 16px;
 
-    color: var(--input-color);
+    color: var(--input-placeholder-color);
 }
 .reg__input::placeholder
 {
@@ -2235,7 +2282,7 @@ h1
     font-weight: 400;
     line-height: 16px;
 
-    color: var(--input-color);
+    color: var(--input-placeholder-color);
 }
 .reg__input-wrapper
 {
@@ -2791,7 +2838,7 @@ a.reg__but
     .header__menu
     {
         position: absolute;
-        z-index: 4;
+        z-index: 11;
         top: 82px;
         left: 0;
 
@@ -2818,6 +2865,7 @@ a.reg__but
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
+        overflow: auto;
             flex-direction: column;
 
         height: 100%;
@@ -3019,6 +3067,7 @@ a.reg__but
 
         width: 12px;
         height: 12px;
+        padding-top: 1px;
 
         border-radius: 50%;
     }
@@ -3259,7 +3308,7 @@ a.reg__but
     .reg__left-box:not(:last-of-type)
     {
         margin: 0;
-        margin-right: 13px;
+        margin-right: 18px;
     }
     .reg__left-box--num
     {
@@ -3282,7 +3331,8 @@ a.reg__but
     {
         display: block;
 
-        margin-left: 5px;
+        margin-right: 5px;
+        margin-left: 18px;
     }
     .reg__right-title
     {
@@ -3359,6 +3409,11 @@ a.reg__but
     }
     .footerMobile
     {
+        position: fixed;
+        z-index: 10;
+        bottom: 0;
+
+        width: 100%;
         height: 101px;
 
         background: var(--background-footer);
@@ -3418,7 +3473,7 @@ a.reg__but
     .footerMobile__box-icon svg.stroke *
     {
         fill: var(--footerMobile-icon);
-        stroke: var(--footerMobile-icon);
+        stroke: transparent;
     }
     .footerMobile__box.active
     {
