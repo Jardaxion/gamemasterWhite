@@ -374,7 +374,7 @@ h1
 .modal
 {
     position: fixed;
-    z-index: 3;
+    z-index: 21;
     top: 0;
     left: 0;
 
@@ -442,7 +442,7 @@ h1
 .modal__background
 {
     position: fixed;
-    z-index: 2;
+    z-index: 20;
 
     width: 100%;
     height: 100%;
@@ -3403,9 +3403,23 @@ a.reg__but
 
         text-align: center;
     }
+    .modal__inner
+    {
+        width: 100%;
+        padding: 25px 30px;
+    }
     .modal__choiceAvatar
     {
         grid-template-columns: repeat(2, 1fr);
+    }
+    .modal__choiceAvatar-button
+    {
+        width: 100%;
+        max-width: 100%;
+    }
+    .modal__choiceAvatar-item
+    {
+        width: 100%;
     }
     .footerMobile
     {
