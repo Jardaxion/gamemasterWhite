@@ -253,6 +253,9 @@ table
     --vostPass: #424242;
     --anotherAuth: #f9f9f9;
     --anotherAuth-text: #7c7c7c;
+    --sliderArrow: #d3d3d399;
+    --sliderBackground: #f9f9f9;
+    --sliderCircles: #efefef;
 }
 
 .dark
@@ -292,6 +295,9 @@ table
     --vostPass: #e4e4e4;
     --anotherAuth: #212126;
     --anotherAuth-text: #eaeaea;
+    --sliderArrow: #212126;
+    --sliderBackground: #44444a ;
+    --sliderCircles: #414147;
 }
 
 /* Глобальное */
@@ -1054,13 +1060,15 @@ h1
     font-weight: 600;
     line-height: 17px;
 
+    margin-top: 1px;
+
     text-transform: uppercase;
 
     color: white;
 }
 .header__reg
 {
-    padding: 12px 37px 10px;
+    padding: 14px 37px 12px;
 }
 .header__reg p
 {
@@ -1477,11 +1485,11 @@ h1
 }
 .profile__box-item:hover
 {
-    color: #ff7216;
+    color: #e65300;
 }
 .profile__box-item.active
 {
-    color: #ff812f;
+    color: #ff5c00;
 }
 .profile__hr
 {
@@ -1811,7 +1819,7 @@ h1
     font-weight: 600;
     line-height: 25px;
 
-    color: #ff812f;
+    color: #ff5c00;
 }
 .profile__money-text
 {
@@ -3031,6 +3039,33 @@ a.reg__but
     .profile__right-box
     {
         padding: 37px 21px;
+    }
+}
+@media (max-width: 1181px)
+{
+    .header__logo
+    {
+        font-size: 20px;
+
+        margin-right: 40px;
+    }
+    .header__inner
+    {
+        padding: 36px 14px 23px 14px;
+    }
+    .profile__left,
+    .profile__right
+    {
+        width: 100%;
+        max-width: none;
+    }
+    .profile__grid
+    {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .footer__column-contnent
+    {
+        gap: 30px 3px;
     }
 }
 @media (min-width: 960px)
