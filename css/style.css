@@ -323,6 +323,10 @@ body.noScroll
 {
     overflow: hidden;
 }
+body::-webkit-scrollbar
+{
+    width: 0;
+}
 
 main
 {
