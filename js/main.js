@@ -1,5 +1,6 @@
 let numPage = 1;
 $(document).ready(function() {
+    // Открытие/закрытие менюшки в профиле
     $('.js-openClose-menu').on('click', function(e) {
         e.preventDefault();
 
@@ -7,6 +8,7 @@ $(document).ready(function() {
         $(this).next().slideToggle();
     })
 
+    //Открытие/закрытие меню в хедере
     $('.header__menu-button').on('click', function(e) {
         e.preventDefault();
 
@@ -15,6 +17,8 @@ $(document).ready(function() {
         $('body').toggleClass('noScroll');
     })
 
+
+    //Открытие/закрытие уведомлений
     $('.header__notific').on('click', function(e){
         let target = $(e.target);
         if(!target.is('.header__notific-content') && !target.is('.header__notific-content *')){
@@ -51,6 +55,30 @@ $(document).ready(function() {
         }
     })
 
+    // Слайдеры
+    // Гланый экран
+    let indexSlider = new Swiper('.slider__content-wrapper', {
+        loop: true,
+        navigation: {
+            nextEl: '.slider__nextButton',
+            prevEl: '.slider__prevButton',
+        },
+        pagination: {
+            el: '.slider__pagination',
+            clickable: true,
+        }
+    });
+
+    //Слайдер на главном экране в блоке
+    let blockSlider = new Swiper('.block__buttons-wrapper', {
+        loop: false,
+        spaceBetween: 11,
+        slidesPerView: 'auto',
+        width: null,
+        scrollbar: {
+            el: '.block__buttons-scrollbar',
+        },
+    });
 
     //Модальные окна
     //Открытие
