@@ -55,9 +55,54 @@ $(document).ready(function() {
         }
     })
 
+    // Открытие/Закрытие популярных поисков
+    $('.marketTop__search-input').on('focus', () => {
+        $('.marketTop__search-popularSearch').addClass('show');
+    })
+
+    $('.marketTop__search-input').focusout(() => {
+        $('.marketTop__search-popularSearch').removeClass('show');
+    })
+
+    //Открытие/Закрытие сортировки
+    $('.js-open-sorting').click(function(e) {
+        e.preventDefault();
+
+        $(this).toggleClass('active');
+        $('.marketTop__sorting-choose').toggleClass('show');
+    })
+
+    $('.marketTop__settings').click(function(e){
+        e.preventDefault();
+
+        $('.marketTop__settings-menu').toggleClass('active');
+    })
+
+    //Slider range на фильтре
+    $('.marketBottom__box-sliderRange').slider({
+        range: true,
+        min: Number($('.marketBottom__box-sliderRange').data('min')),
+        max: Number($('.marketBottom__box-sliderRange').data('max')),
+        values: [Number($('.marketBottom__box-sliderRange').data('min')), Number($('.marketBottom__box-sliderRange').data('max'))],
+        slide: function(e, ui) {
+            $('#from').val(ui.values[0]);
+            $('#to').val(ui.values[1]);
+
+            $('.marketBottom__box-range.min').html(ui.values[0]);
+            $('.marketBottom__box-range.max').html(ui.values[1]);
+        }
+    })
+
+    $('#from').val(Number($('.marketBottom__box-sliderRange').data('min')));
+    $('#to').val(Number($('.marketBottom__box-sliderRange').data('max')));
+
+    $('.marketBottom__box-range.min').html(Number($('.marketBottom__box-sliderRange').data('min')));
+    $('.marketBottom__box-range.max').html(Number($('.marketBottom__box-sliderRange').data('max')));
+
     // Слайдеры
     // Гланый экран
     let indexSlider = new Swiper('.slider__content-wrapper', {
+        spaceBetween: 10,
         loop: true,
         navigation: {
             nextEl: '.slider__nextButton',
@@ -72,12 +117,17 @@ $(document).ready(function() {
     //Слайдер на главном экране в блоке
     let blockSlider = new Swiper('.block__buttons-wrapper', {
         loop: false,
-        spaceBetween: 11,
+        spaceBetween: 9,
         slidesPerView: 'auto',
         width: null,
         scrollbar: {
             el: '.block__buttons-scrollbar',
         },
+        breakpoints: {
+            960: {
+                spaceBetween: 11
+            }
+        }
     });
 
     //Модальные окна
