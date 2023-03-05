@@ -3873,6 +3873,9 @@ a.reg__but
 /* Верхяя часть страниц */
 .marketTop
 {
+    position: relative;
+    z-index: 11;
+
     margin-bottom: 22px;
 }
 .marketTop__inner
@@ -3975,6 +3978,7 @@ a.reg__but
 
     width: 100%;
     max-width: 643px;
+    height: 37px;
 }
 .marketTop__search-input
 {
@@ -4344,6 +4348,8 @@ a.reg__but
 }
 .marketBottom__box
 {
+    position: relative;
+
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -4367,6 +4373,21 @@ a.reg__but
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+}
+.marketBottom__box.message::after
+{
+    position: absolute;
+    z-index: 2;
+    right: 33px;
+    bottom: 46px;
+
+    width: 12px;
+    height: 12px;
+
+    content: '';
+
+    border-radius: 50%;
+    background: #ff6b00;
 }
 .marketBottom__box *
 {
@@ -4571,10 +4592,10 @@ a.reg__but
 }
 .marketBottom .ui-slider
 {
-    width: 144px;
+    width: 141px;
     height: 1px;
     margin-top: 34px;
-    margin-left: 3px;
+    margin-left: 10px;
 
     border: none;
 }
@@ -4743,7 +4764,7 @@ a.reg__but
 {
     font-family: 'Montserrat';
     font-size: 10px;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 12px;
 
     margin-bottom: 5px;
@@ -4950,7 +4971,7 @@ a.reg__but
 }
 .marketBottom__tag.blue
 {
-    background: #0054d2;
+    background: #009ad2;
 }
 .marketBottom__tag.green
 {
@@ -4959,6 +4980,10 @@ a.reg__but
 .marketBottom__tag.red
 {
     background: #ff1b7c;
+}
+.marketBottom__tag.darkBlue
+{
+    background: #0054d2;
 }
 
 /* Футер */
@@ -6416,11 +6441,11 @@ a.reg__but
     {
         position: absolute;
         z-index: 10;
-        top: 172px;
+        top: 57px;
         left: 0;
 
         width: 100vw;
-        height: 75%;
+        height: 83vh;
         padding: 10px 15px;
 
         -webkit-transition: .3s ease all;
@@ -6459,9 +6484,10 @@ a.reg__but
     }
     .marketTop .ui-slider
     {
-        width: 100%;
+        width: 97%;
         height: 1px;
-        margin-left: 3px;
+        margin-top: 35px;
+        margin-left: 9px;
 
         border: none;
     }
@@ -6487,6 +6513,14 @@ a.reg__but
     .marketTop .profile__box:not(:last-of-type)
     {
         margin-bottom: 33px;
+    }
+    .marketTop__left-back
+    {
+        margin-right: 31px;
+    }
+    .marketTop__left-back.notSee
+    {
+        display: none;
     }
     .marketBottom
     {
@@ -6526,6 +6560,26 @@ a.reg__but
     .marketBottom__right::-webkit-scrollbar
     {
         width: 0;
+    }
+    .marketBottom__inner
+    {
+            flex-direction: column;
+
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+    }
+    .marketBottom__mobileTitle
+    {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+
+        margin-bottom: 35px;
+
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
     }
     .footerMobile
     {
