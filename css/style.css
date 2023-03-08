@@ -2384,6 +2384,10 @@ h1
 
     margin-top: 35px;
 }
+.profile__box-content.notMt
+{
+    margin-top: 0;
+}
 .profile__box-item
 {
     font-family: 'Inter';
@@ -4689,6 +4693,10 @@ a.reg__but
 .marketBottom .profile__box-content
 {
     margin-top: 17px;
+}
+.marketBottom .profile__box-content.noMt
+{
+    margin-top: 0;
 }
 .marketBottom__innerMarket
 {
@@ -7323,6 +7331,10 @@ a.reg__but
     {
         display: none;
     }
+    .profile__box-content.noMt
+    {
+        margin-top: 0;
+    }
     .marketBottom
     {
         margin-bottom: 25px;
@@ -7456,10 +7468,16 @@ a.reg__but
     }
     .mobileChat__right
     {
+        position: relative;
+
         width: 100%;
     }
     .mobileChat__right-top
     {
+        position: absolute;
+        top: -5px;
+        right: 0;
+
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -7476,6 +7494,7 @@ a.reg__but
         display: -ms-flexbox;
         display: flex;
 
+        margin-top: 13px;
         margin-bottom: 26px;
         margin-left: 19px;
 
@@ -7744,7 +7763,7 @@ a.reg__but
         display: -ms-flexbox;
         display: flex;
 
-        width: 42px;
+        width: 37px;
         height: 32px;
 
         border-radius: 50%;
@@ -7759,6 +7778,10 @@ a.reg__but
     }
     .chatMobile__input-wrapper
     {
+        position: fixed;
+        bottom: 101px;
+        left: 0;
+
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -7938,7 +7961,7 @@ a.reg__but
         overflow: auto;
 
         height: 494px;
-        padding: 18px 0 36px 0;
+        padding: 18px 0 80px 0;
     }
     .chatMobile__chat-message
     {
