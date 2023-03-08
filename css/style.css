@@ -783,6 +783,10 @@ main
 
     background: var(--background-header);
 }
+main.notMt
+{
+    padding-top: 10px;
+}
 
 .container
 {
