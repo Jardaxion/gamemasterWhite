@@ -5309,7 +5309,7 @@ a.reg__but
 }
 .marketBottom__chats-right
 {
-    width: 315px;
+    width: 430px;
     min-height: 707px;
     padding: 31px 25px 28px 23px;
 
@@ -6152,6 +6152,10 @@ a.reg__but
         margin-right: 11px;
         padding-right: 11px;
     }
+    .marketBottom__chats-right--title:not(:last-of-type)
+    {
+        margin-right: 10px;
+    }
     .footer__column:first-of-type,
     .footer__column:nth-of-type(2)
     {
@@ -6199,6 +6203,18 @@ a.reg__but
     .marketBottom__left.bigMR
     {
         margin-right: 21px;
+    }
+    .marketBottom__chats-right
+    {
+        width: auto;
+    }
+    .marketTop__center
+    {
+        padding: 17px 31px 15px 22px;
+    }
+    .marketBottom__chats-right--line
+    {
+        margin: 0 0 28px;
     }
     .slider__button
     {
