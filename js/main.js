@@ -99,6 +99,39 @@ $(document).ready(function() {
     $('.marketBottom__box-range.min').html(Number($('.marketBottom__box-sliderRange').data('min')));
     $('.marketBottom__box-range.max').html(Number($('.marketBottom__box-sliderRange').data('max')));
 
+    // Переключение страниц в чате
+    $('.js-select-chat-page').on('click', function(e) {
+        e.preventDefault();
+
+        $('.js-select-chat-page.select').removeClass('select');
+        $(this).addClass('select');
+
+        $('.marketBottom__chats-page.active').removeClass('active');
+        $('.marketBottom__chats-page[data-page="' + $(this).data('page') + '"]').addClass('active')
+    })
+
+    // Переключение страниц в мобильном чате
+    $('.js-select-chat-page').on('click', function(e) {
+        e.preventDefault();
+
+        $('.js-select-chat-page.select').removeClass('select');
+        $(this).addClass('select');
+
+        $('.mobileChat__page.active').removeClass('active');
+        $('.mobileChat__page[data-page="' + $(this).data('page') + '"]').addClass('active')
+    })
+
+    //Открытие/закрытие выборки файлов
+    $('.js-opne-selectFile').on('click', () => {
+        $('.marketBottom__chat-menu').toggleClass('active');
+    })
+
+    //Открытие/закрытие выборки сделки
+    $('.js-open-mobSelMenu').on('click', function(){
+        $(this).toggleClass('active');
+        $('.chatMobile__select-menu').toggleClass('active');
+    });
+
     // Слайдеры
     // Гланый экран
     let indexSlider = new Swiper('.slider__content-wrapper', {
