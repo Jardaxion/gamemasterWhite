@@ -163,6 +163,12 @@ $(document).ready(function() {
         }
     });
 
+    //Открытие менюшки в каталоге
+    $('.marketBottom__market2-block--more').on('click', function(){
+        $(this).next().toggleClass('active');
+        $(this).toggleClass('active');
+    })
+    
     //Модальные окна
     //Открытие
     $('.js-open-modal').on('click', function(e){
@@ -234,4 +240,11 @@ function closeModal() {
 function reOpenModal(id) {
     $('.modal.active').removeClass('active');
     $('.modal#'+id).addClass('active');
+}
+
+//adap func
+function adap(fClass, sClass){
+    fClass = '.marketBottom__market2-block--' + fClass;
+    sClass = '.marketBottom__market2-titleLine--' + sClass;
+    $(fClass).width($(sClass).width());
 }
