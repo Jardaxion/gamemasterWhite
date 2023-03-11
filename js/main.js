@@ -165,8 +165,16 @@ $(document).ready(function() {
 
     //Открытие менюшки в каталоге
     $('.marketBottom__market2-block--more').on('click', function(){
+        $('.marketBottom__market2-block--more.active').removeClass('active');
+        $('.marketBottom__market2-menu.active').removeClass('active');
+        
         $(this).next().toggleClass('active');
         $(this).toggleClass('active');
+
+        $(this).addClass('second');
+        setTimeout(() => {
+            $(this).removeClass('second');
+        }, 500)
     })
     
     //Модальные окна
@@ -203,6 +211,15 @@ $(document).ready(function() {
         e.preventDefault();
 
         reOpenModal($(this).data('modal'));
+    })
+
+    $(window).on('click', (e) => {
+        if((!$(e.target).is($('.marketBottom__market2-menu')) 
+        || !$(e.target).is($('.marketBottom__market2-menu *'))) 
+        && !$('.marketBottom__market2-block--more').hasClass('second')){
+            $('.marketBottom__market2-menu').removeClass('active');
+            $('.marketBottom__market2-block--more').removeClass('active');
+        }
     })
 
     if (/iPhone/.test(navigator.userAgent) && !window.MSStream)

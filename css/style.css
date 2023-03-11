@@ -6797,6 +6797,26 @@ a.reg__but
     {
         margin-left: -.01vw;
     }
+    .marketBottom__market2-block--numWrapper
+    {
+        max-width: 3.84vw;
+    }
+    .marketBottom__market2-titleLine--price
+    {
+        margin-left: 1.1vw;
+    }
+    .marketBottom__market2-block--hcWrappeer
+    {
+        margin-left: 1.8vw;
+    }
+    .marketBottom__market2-block--shinyWapper
+    {
+        margin-left: 1.3vw;
+    }
+    .marketBottom__market2-block--powerWrapper
+    {
+        margin-left: 0;
+    }
     .slider__button
     {
         padding: 4px 15px;
@@ -9037,6 +9057,17 @@ a.reg__but
         left: -55vw;
 
         width: 95vw;
+    }
+}
+@media (max-width: 380px)
+{
+    .marketBottom__market2Mobile-item--text.number
+    {
+        font-size: 8px;
+    }
+    .marketBottom__market2Mobile-item--text.big
+    {
+        font-size: 10px;
     }
 }
 
