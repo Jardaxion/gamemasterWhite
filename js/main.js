@@ -182,6 +182,16 @@ $(document).ready(function() {
         $(this).next().toggleClass('active');
         $(this).toggleClass('active');
     })
+
+    //Включение выключение настройки
+    $('.marketBottom__setting-select').on('click', function(){
+        $(this).toggleClass('active');
+    })
+
+    $('.marketBottom__notifications-openClose').on('click', function(){
+        $(this).toggleClass('active');
+        $('.marketBottom__notifications-right').slideToggle();
+    })
     
     //Модальные окна
     //Открытие

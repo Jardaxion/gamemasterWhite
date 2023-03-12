@@ -676,6 +676,9 @@ table
     --lots-top-hr: #bebebe;
     --marketMobile-item: #fcfcfc;
     --marketMobile-options: #f2f2f2;
+    --marketMobile-readAll: #404040;
+    --not-hr: #454545;
+    --not-select: #d3d3d3;
 }
 
 .dark
@@ -778,6 +781,9 @@ table
     --lots-top-hr: #44444a;
     --marketMobile-item: #393940;
     --marketMobile-options: #44444d;
+    --marketMobile-readAll: white;
+    --not-hr: #44444a;
+    --not-select: #212126;
 }
 
 /* Глобальное */
@@ -6490,6 +6496,233 @@ a.reg__but
     border-radius: 5px;
     background: var(--market2-menu-select);
 }
+.marketBottom__noticationsAll
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: visible;
+
+    width: 100%;
+    padding-right: 0;
+}
+.marketBottom__notifications
+{
+    overflow: auto;
+
+    width: 100%;
+    max-width: 884px;
+    height: 845px;
+    margin-right: 82px;
+    padding-right: 46px;
+}
+.marketBottom__notifications::-webkit-scrollbar
+{
+    width: 17px;
+}
+.marketBottom__notifications::-webkit-scrollbar-track
+{
+    margin-right: 20px;
+
+    border-radius: 8px;
+    background: var(--scrollbar-color);
+}
+.marketBottom__notifications::-webkit-scrollbar-thumb
+{
+    border-radius: 6.5px;
+    background-color: #ff812f;
+}
+.marketBottom__notifications-right
+{
+    width: 610px;
+    margin-top: 37px;
+}
+.marketBottom__notifications-readAll
+{
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+
+    display: block;
+
+    margin-bottom: 52px;
+
+    text-decoration: underline;
+
+    color: var(--marketMobile-readAll);
+}
+.marketBottom__notifications-settings
+{
+    width: 100%;
+    padding: 32px 90px 70px 53px;
+
+    border-radius: 8px;
+    background: var(--market2-block);
+}
+.marketBottom__notification
+{
+    position: relative;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    width: 100%;
+    min-height: 91px;
+    padding: 28px 81px 28px 39px;
+
+    border: 1px solid var(--market2-itemTop);
+    border-radius: 8px;
+    background: var(--market2-itemTop);
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.marketBottom__notification:not(:last-of-type)
+{
+    margin-bottom: 15px;
+}
+.marketBottom__notification.notReaden
+{
+    border-color: #ff5c00;
+}
+.marketBottom__notification.notReaden::before
+{
+    position: absolute;
+    right: -6px;
+    bottom: -5px;
+
+    width: 22px;
+    height: 22px;
+
+    content: '';
+
+    border-radius: 50%;
+    background: #ff5c00;
+}
+.marketBottom__notification-icon
+{
+    margin-right: 40px;
+}
+.marketBottom__notification-title
+{
+    font-family: 'Montserrat';
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 15px;
+
+    color: var(--footerMobile-icon);
+}
+.marketBottom__notification-go
+{
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+
+    margin-left: auto;
+
+    text-decoration: underline;
+
+    color: var(--footerMobile-icon);
+}
+.marketBottom__settings-title
+{
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25px;
+
+    margin-bottom: 24px;
+
+    color: var(--footerMobile-icon);
+}
+.marketBottom__settings-hr
+{
+    width: 100%;
+    height: .4px;
+    margin-bottom: 48px;
+
+    border: none;
+    background: var(--not-hr);
+}
+.marketBottom__settings-hr.bigMb
+{
+    margin-bottom: 66px;
+}
+.marketBottom__setting-block
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.marketBottom__setting-title
+{
+    font-family: 'GothamPro';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+
+    color: var(--footerMobile-icon);
+}
+.marketBottom__setting-select
+{
+    position: relative;
+
+    width: 67px;
+    height: 36px;
+
+    cursor: pointer;
+    -webkit-transition: .3s ease all;
+         -o-transition: .3s ease all;
+            transition: .3s ease all;
+
+    border-radius: 17px;
+    background: var(--not-select);
+}
+.marketBottom__setting-select::after
+{
+    position: absolute;
+    top: 50%;
+    bottom: 1px;
+    left: 0;
+
+    width: 34px;
+    height: 34px;
+
+    content: '';
+    -webkit-transition: .3s ease all;
+         -o-transition: .3s ease all;
+            transition: .3s ease all;
+    -webkit-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+
+    border-radius: 50%;
+    background: white;
+    -webkit-box-shadow: 0 0 3px 1px rgba(0, 0, 0, .0784313725);
+            box-shadow: 0 0 3px 1px rgba(0, 0, 0, .0784313725);
+}
+.marketBottom__setting-select.active
+{
+    background: #31bc69;
+}
+.marketBottom__setting-select.active::after
+{
+    content: '';
+    -webkit-transform: translate(32px, -50%);
+        -ms-transform: translate(32px, -50%);
+            transform: translate(32px, -50%);
+}
 
 .marketBottom__market2-bigBlock.full .marketBottom__market2-bigBlock--grey
 {
@@ -8989,6 +9222,130 @@ a.reg__but
     .marketBottom__mobileItem-option.hc::before
     {
         content: 'HC';
+    }
+    .marketBottom__noticationsAll
+    {
+            flex-direction: column-reverse;
+
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+    }
+    .marketBottom__notification
+    {
+        padding: 25px 26px 24px 18px;
+    }
+    .marketBottom__notification-icon
+    {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+
+        min-width: 34px;
+
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    .marketBottom__notifications
+    {
+        overflow: visible;
+
+        max-width: none;
+        margin-right: 0;
+        padding-right: 0;
+    }
+    .marketBottom__notifications-right
+    {
+        position: relative;
+
+        display: none;
+
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 60px;
+    }
+    .marketBottom__notifications-right::after
+    {
+        position: absolute;
+        bottom: -36px;
+        left: 0;
+        left: 50%;
+
+        width: 87%;
+        height: .4px;
+        padding: 0 10px;
+
+        content: '';
+        -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+                transform: translateX(-50%);
+
+        background: #bebebe;
+    }
+    .marketBottom__notifications-openClose
+    {
+        position: relative;
+
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+
+        margin-bottom: 39px;
+
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    .marketBottom__notifications-openClose svg
+    {
+        -webkit-transition: .3s ease all;
+             -o-transition: .3s ease all;
+                transition: .3s ease all;
+    }
+    .marketBottom__notifications-openClose.active svg
+    {
+        -webkit-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+                transform: rotate(180deg);
+    }
+    .marketBottom__notifications-openClose::after
+    {
+        position: absolute;
+        bottom: -17px;
+        left: 0;
+
+        width: 100%;
+        height: .4px;
+
+        content: '';
+
+        background: #bebebe;
+    }
+    .marketBottom__notifications-title
+    {
+        font-family: 'GothamPro';
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 14px;
+
+        margin-left: 15px;
+
+        color: var(--footerMobile-icon);
+    }
+    .marketBottom__notifications-settings
+    {
+        padding: 27px 19px 35px 23px;
+    }
+    .marketBottom__setting-title
+    {
+        font-size: 14px;
     }
     .mobileChat
     {
