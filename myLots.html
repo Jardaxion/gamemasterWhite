@@ -1,0 +1,1422 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- шрифты -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap" rel="stylesheet"><!-- css файл -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Game Market</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header__inner">
+      <div class="header__left">
+        <div class="header__menu-button mobile">
+          <div> </div>
+          <div> </div>
+          <div> </div>
+        </div><a class="header__logo noMobile" href="index.html">GAME MARKET</a><img class="header__logo mobile dark" src="img/logo.svg" alt=""><img class="header__logo mobile white" src="img/logoDark.svg" alt="">
+        <ul class="header__list noMobile">
+          <li class="header__item"><a class="header__link" href="news.html">
+               Игры
+              <svg width="10" height="6" viewbox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L5 5L9 1" stroke="#FF8231" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg></a></li>
+          <li class="header__item selected"><a class="header__link" href="news.html">Новости</a></li>
+          <li class="header__item"><a class="header__link" href="info.html">Информация</a></li>
+        </ul>
+      </div>
+      <div class="header__right noMobile"><a class="header__lang" href=""><img class="header__lang-img" src="img/flag.svg" alt="">
+          <p class="header__lang-text">RUS</p></a><a class="header__login button flex" href="login.html"><img class="header__login-img" src="img/profileIcon.svg" alt="">
+          <p class="header__login-text">Войти</p></a><a class="header__reg button outline flex" href="reg.html">
+          <p class="button__text">регистрация</p></a></div>
+      <div class="header__right mobile"><a class="header__notific" href="">
+          <svg width="16" height="19" viewbox="0 0 16 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10.1747 2.18141C10.2767 1.60477 10.068 1.00011 9.55801 0.555614C8.70022 -0.185205 7.30921 -0.185205 6.45605 0.555614C5.94602 0.996101 5.73736 1.60477 5.83937 2.17741C6.51169 1.94915 7.23966 1.82101 8.00471 1.82101C8.76977 1.82101 9.50237 1.94915 10.1747 2.18141Z" fill="#FF7823"></path>
+            <path d="M15.7666 16.5414C13.9676 14.5351 13.0078 12.0804 13.0078 9.53362V6.91072C13.0078 4.52808 10.7543 2.58594 8.00012 2.58594C5.24128 2.58594 2.99248 4.51607 2.99248 6.91072V9.53362C2.99248 12.0644 2.01414 14.5391 0.233643 16.5414H15.7666Z" fill="#FF7823"></path>
+            <path d="M14.7558 6.93867C14.51 6.93867 14.3199 6.77449 14.3199 6.56225C14.3199 5.0686 13.4992 3.66705 12.0526 2.718C11.8625 2.58185 11.8254 2.3576 11.9645 2.1734C12.1221 2.00922 12.4003 1.97718 12.5904 2.09732C14.2504 3.19853 15.2102 4.82433 15.2102 6.54223C15.1916 6.77449 14.9969 6.93867 14.7558 6.93867Z" fill="#FF7823"></path>
+            <path d="M1.24444 6.93867C0.998699 6.93867 0.808594 6.77449 0.808594 6.56226C0.808594 4.82834 1.76839 3.21456 3.42833 2.11734C3.61844 1.98119 3.90128 2.02524 4.05892 2.19343C4.21657 2.36161 4.16557 2.60188 3.97083 2.73803C2.52417 3.68708 1.70348 5.08863 1.70348 6.58228C1.69884 6.77449 1.49019 6.93867 1.24444 6.93867Z" fill="#FF7823"></path>
+            <path d="M5.31079 17.3101C5.67709 18.2911 6.74353 18.9999 8.00008 18.9999C9.25663 18.9999 10.3231 18.2911 10.6894 17.3101H5.31079Z" fill="#FF7823"></path>
+          </svg>
+          <p class="header__notific-num">44</p></a><a class="header__register" href="reg.html">
+          <div class="header__profile"><img class="header__profile-img" src="img/profileIcon.svg" alt=""></div>
+          <p class="header__register-text">Регистрация</p></a></div>
+    </div>
+    <div class="header__hr-wrapper noMobile">
+      <hr class="header__hr">
+    </div>
+    <div class="header__menu">
+      <div class="header__menu-inner">
+        <div class="header__menu-box">
+          <div class="header__menu-line js-openClose-menu"><a class="header__menu-title" href="">Игры</a>
+            <svg width="14" height="8" viewbox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13 7L7 0.999999L1 7" stroke="#FF8231" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </div>
+          <div class="header__menu-content"><a class="header__menu-content--link" href="">Roblox </a><a class="header__menu-content--link" href="">Warcraft </a></div>
+        </div>
+        <div class="header__menu-box"><a class="header__menu-title" href="news.html">Новости</a></div>
+        <div class="header__menu-box"><a class="header__menu-title" href="info.html">Информация</a></div>
+        <div class="header__menu-box"><a class="header__menu-title" href="profile.html">Профиль</a></div>
+        <div class="header__menu-box"><a class="header__menu-title" href="hisory.html">История</a></div>
+        <div class="header__menu-bottom"><a class="header__menu-bottom--button button flex" href="pod.html">Поддержка</a>
+          <p class="header__menu-bottom--text">© 2022, ООО «Market»</p><a class="header__menu-bottom--text link" href="polit.html">Политика конфиденциальности</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="marketTop">
+      <div class="container">
+        <div class="marketTop__inner">
+          <div class="marketTop__left noMobile"><a class="marketTop__left-back" href="market.html">
+              <svg width="8" height="14" viewbox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7 1L1 7L7 13" stroke="#FF5C00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+              <p class="marketTop__left-back--text">Назад</p></a>
+            <p class="marketTop__left-text">Мои лоты</p>
+          </div>
+          <div class="marketTop__center">
+            <div class="marketTop__search">
+              <div class="marketTop__search-inputWrapper">
+                <input class="marketTop__search-input" type="text" placeholder="Введите запрос">
+                <svg class="marketTop__search-icon" width="17" height="21" viewbox="0 0 17 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="7.3773" cy="7.3773" r="6.3773" stroke="white" stroke-width="2"></circle>
+                  <path d="M11.9785 12.2954L16.4983 18.4728C16.7657 18.8381 16.6862 19.351 16.3208 19.6183C15.9555 19.8857 15.4426 19.8062 15.1753 19.4408L10.6554 13.2635L11.9785 12.2954Z" fill="white"></path>
+                </svg>
+              </div>
+              <div class="marketTop__search-popularSearch"><a class="marketTop__search-popularSearch--item" href="">Roblox - Adopt Me </a><a class="marketTop__search-popularSearch--item" href="">Roblox - Adopt Me </a><a class="marketTop__search-popularSearch--item" href="">Roblox - Adopt Me Roblox - Adopt Me</a><a class="marketTop__search-popularSearch--item" href="">Roblox - Adopt Me Adopt Me</a><a class="marketTop__search-popularSearch--item" href="">Roblox - Adopt Me</a></div>
+            </div>
+            <div class="marketTop__settings mobile marketTop__box">
+              <svg width="24" height="19" viewbox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.17941 7H22.8484C23.3921 7 23.8333 6.776 23.8333 6.5C23.8333 6.224 23.3921 6 22.8484 6H1.17941C0.635717 6 0.194458 6.224 0.194458 6.5C0.194458 6.776 0.635717 7 1.17941 7Z" fill="#FF6B00"></path>
+                <path d="M1.17941 2H22.8484C23.3921 2 23.8333 1.776 23.8333 1.5C23.8333 1.224 23.3921 1 22.8484 1H1.17941C0.635717 1 0.194458 1.224 0.194458 1.5C0.194458 1.776 0.635717 2 1.17941 2Z" fill="#FF6B00"></path>
+                <path d="M1.17941 12H22.8484C23.3921 12 23.8333 11.776 23.8333 11.5C23.8333 11.224 23.3921 11 22.8484 11H1.17941C0.635717 11 0.194458 11.224 0.194458 11.5C0.194458 11.776 0.635717 12 1.17941 12Z" fill="#FF6B00"></path>
+                <path d="M1.17941 18H22.8484C23.3921 18 23.8333 17.776 23.8333 17.5C23.8333 17.224 23.3921 17 22.8484 17H1.17941C0.635717 17 0.194458 17.224 0.194458 17.5C0.194458 17.776 0.635717 18 1.17941 18Z" fill="#FF6B00"></path>
+                <rect x="0.194458" width="3.08333" height="3" rx="1" fill="#FF6B00"></rect>
+                <rect x="14.5834" y="5" width="3.08333" height="3" rx="1" fill="#FF6B00"></rect>
+                <rect x="5.33337" y="10" width="3.08333" height="3" rx="1" fill="#FF6B00"></rect>
+                <rect x="20.75" y="16" width="3.08333" height="3" rx="1" fill="#FF6B00"></rect>
+              </svg>
+            </div>
+            <div class="marketTop__settings-menu mobile">
+              <div class="profile__box">
+                <div class="profile__line js-openClose-menu">
+                  <p class="profile__box-item">Фильтры</p>
+                  <div class="profile__line-openClose orange">
+                    <div class="profile__line-line"></div>
+                    <div class="profile__line-line"></div>
+                  </div>
+                </div>
+                <div class="profile__box-content">
+                  <div class="marketBottom__checkbox-wrapper">
+                    <input class="marketBottom__checkbox" id="filter" type="checkbox">
+                    <label class="marketBottom__checkbox-custom" for="filter"></label>
+                    <p class="marketBottom__checkbox-text">Тест 123</p>
+                  </div>
+                </div>
+              </div>
+              <div class="profile__box">
+                <div class="profile__line js-openClose-menu">
+                  <p class="profile__box-item">Цена</p>
+                  <div class="profile__line-openClose orange">
+                    <div class="profile__line-line"></div>
+                    <div class="profile__line-line"></div>
+                  </div>
+                </div>
+                <div class="profile__box-content noMt">
+                  <input id="from" type="hidden" name="from">
+                  <input id="to" type="hidden" name="to">
+                  <div class="marketBottom__box-sliderRange" data-min="3990" data-max="233990"></div>
+                  <div class="marketBottom__box-ranges">
+                    <p class="marketBottom__box-range min"></p>
+                    <p class="marketBottom__box-range max"></p>
+                  </div>
+                </div>
+              </div>
+              <div class="profile__box">
+                <div class="profile__line js-openClose-menu">
+                  <p class="profile__box-item">Выдача</p>
+                  <div class="profile__line-openClose orange">
+                    <div class="profile__line-line"></div>
+                    <div class="profile__line-line"></div>
+                  </div>
+                </div>
+                <div class="profile__box-content">
+                  <div class="marketBottom__checkbox-wrapper">
+                    <label class="marketBottom__checkbox-custom" for="vidachaSrazy"></label>
+                    <input class="marketBottom__checkbox" id="vidachaSrazy" type="checkbox">
+                    <p class="marketBottom__checkbox-text">Выдача сразу </p>
+                  </div>
+                  <div class="marketBottom__checkbox-wrapper">
+                    <input class="marketBottom__checkbox" id="dog" type="checkbox">
+                    <label class="marketBottom__checkbox-custom" for="dog"></label>
+                    <p class="marketBottom__checkbox-text">По договоренности</p>
+                  </div>
+                </div>
+              </div>
+              <div class="profile__box">
+                <div class="profile__line js-openClose-menu">
+                  <p class="profile__box-item">Режим</p>
+                  <div class="profile__line-openClose orange">
+                    <div class="profile__line-line"></div>
+                    <div class="profile__line-line"></div>
+                  </div>
+                </div>
+                <div class="profile__box-content">
+                  <div class="marketBottom__checkbox-wrapper">
+                    <input class="marketBottom__checkbox" id="vidachaSrazy" type="checkbox">
+                    <label class="marketBottom__checkbox-custom" for="vidachaSrazy"></label>
+                    <p class="marketBottom__checkbox-text">Выдача сразу </p>
+                  </div>
+                  <div class="marketBottom__checkbox-wrapper">
+                    <input class="marketBottom__checkbox" id="dog" type="checkbox">
+                    <label class="marketBottom__checkbox-custom" for="dog"></label>
+                    <p class="marketBottom__checkbox-text">По договоренности</p>
+                  </div>
+                </div>
+              </div>
+              <div class="profile__box">
+                <div class="profile__line js-openClose-menu">
+                  <p class="profile__box-item">Сервер</p>
+                  <div class="profile__line-openClose orange">
+                    <div class="profile__line-line"></div>
+                    <div class="profile__line-line"></div>
+                  </div>
+                </div>
+                <div class="profile__box-content">
+                  <div class="marketBottom__checkbox-wrapper">
+                    <input class="marketBottom__checkbox" id="vidachaSrazy" type="checkbox">
+                    <label class="marketBottom__checkbox-custom" for="vidachaSrazy"></label>
+                    <p class="marketBottom__checkbox-text">Выдача сразу </p>
+                  </div>
+                  <div class="marketBottom__checkbox-wrapper">
+                    <input class="marketBottom__checkbox" id="dog" type="checkbox">
+                    <label class="marketBottom__checkbox-custom" for="dog"></label>
+                    <p class="marketBottom__checkbox-text">По договоренности</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="marketTop__mobileSorting mobile marketTop__box js-open-sorting">
+              <svg width="25" height="14" viewbox="0 0 25 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="25" width="2" height="13" rx="1" transform="rotate(90 25 0)" fill="#FF5C00"></rect>
+                <rect x="22" y="6" width="2" height="10" rx="1" transform="rotate(90 22 6)" fill="#FF5C00"></rect>
+                <rect x="18" y="12" width="2" height="6" rx="1" transform="rotate(90 18 12)" fill="#FF5C00"></rect>
+                <path d="M5 14L9.33013 6.5L0.669872 6.5L5 14ZM4.25 -3.27834e-08L4.25 7.25L5.75 7.25L5.75 3.27834e-08L4.25 -3.27834e-08Z" fill="#FF5C00"></path>
+              </svg>
+              <div class="marketTop__sorting-choose"><a class="marketTop__search-popularSearch--item" href="">Дешевле</a><a class="marketTop__search-popularSearch--item" href="">Дороже </a></div>
+            </div>
+            <div class="marketTop__sorting noMobile">
+              <div class="marketTop__sorting-sorting">
+                <p class="marketTop__sorting-lighText">Сортировать:</p>
+                <div class="marketTop__sorting-choosed"><span>Дешевле</span>
+                  <svg width="8" height="13" viewbox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.64645 12.3536C3.84171 12.5488 4.15829 12.5488 4.35355 12.3536L7.53553 9.17157C7.7308 8.97631 7.7308 8.65973 7.53553 8.46447C7.34027 8.2692 7.02369 8.2692 6.82843 8.46447L4 11.2929L1.17157 8.46447C0.976311 8.2692 0.659729 8.2692 0.464466 8.46447C0.269204 8.65973 0.269204 8.97631 0.464466 9.17157L3.64645 12.3536ZM3.5 2.18557e-08L3.5 12L4.5 12L4.5 -2.18557e-08L3.5 2.18557e-08Z" fill="white"></path>
+                  </svg>
+                </div>
+                <svg class="marketTop__sorting-arrow js-open-sorting" width="10" height="6" viewbox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1L5 5L9 1" stroke="#FF8231" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </div>
+              <div class="marketTop__sorting-choose"><a class="marketTop__search-popularSearch--item" href="">Дешевле</a><a class="marketTop__search-popularSearch--item" href="">Дороже </a></div>
+            </div>
+          </div>
+          <div class="marketTop__right noMobile">
+            <div class="marketTop__basket">
+              <svg class="marketTop__basket-basket" width="34" height="34" viewbox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.48903 21.8937C6.56941 22.6854 6.99773 23.3955 7.60724 23.8751C7.26605 24.2766 7.05953 24.7958 7.05953 25.3627V27.4877C7.05953 28.4037 7.58818 29.1927 8.36307 29.5634C8.31916 29.775 8.2959 29.9942 8.2959 30.2187C8.2959 31.9952 9.74121 33.4405 11.5177 33.4405C13.2942 33.4405 14.7395 31.9952 14.7395 30.2187C14.7395 30.0731 14.7289 29.93 14.7101 29.7894H20.0094C19.9906 29.93 19.98 30.0731 19.98 30.2187C19.98 31.9952 21.4253 33.4405 23.2018 33.4405C24.9783 33.4405 26.4236 31.9952 26.4236 30.2187C26.4236 28.4422 24.9783 26.9969 23.2018 26.9969C22.1241 26.9969 21.1691 27.5292 20.5839 28.3443H14.1356C13.5503 27.5292 12.5953 26.9969 11.5176 26.9969C10.4822 26.9969 9.56002 27.4884 8.97018 28.2497C8.69271 28.1081 8.50449 27.8208 8.50449 27.4878V25.3627C8.50449 24.8908 8.8887 24.5068 9.361 24.5068C9.3632 24.5068 9.36533 24.5066 9.36753 24.5065C9.37194 24.5066 9.37634 24.5068 9.38068 24.5068H26.2754C27.6724 24.5068 29.1192 23.4712 29.5696 22.1491L33.8627 9.54355C34.1056 8.83032 34.023 8.11118 33.6359 7.57048C33.2489 7.02978 32.5947 6.71962 31.8413 6.71962H30.3005L25.6572 2.05412C24.9353 1.33237 23.7652 1.3261 23.0349 2.03458L15.1989 4.14233L13.0955 0.370707C12.9011 0.0222145 12.4611 -0.102689 12.1125 0.0915827L7.90529 2.43799C7.73786 2.53131 7.61447 2.68738 7.56217 2.87175C7.5098 3.05611 7.53285 3.25368 7.62624 3.42105L9.46587 6.71955H7.72307C7.25834 6.71955 6.82059 6.83826 6.44099 7.06081L6.09979 3.64959C6.06284 3.28018 5.75199 2.99892 5.38079 2.99892H0.722586C0.323512 2.99892 0 3.32243 0 3.72151C0 4.12058 0.323512 4.44409 0.722586 4.44409H4.72688L6.48903 21.8937ZM23.202 28.442C24.1816 28.442 24.9786 29.239 24.9786 30.2186C24.9786 31.1983 24.1816 31.9953 23.202 31.9953C22.2223 31.9953 21.4253 31.1983 21.4253 30.2186C21.4253 29.239 22.2223 28.442 23.202 28.442ZM11.5177 28.442C12.4974 28.442 13.2944 29.239 13.2944 30.2186C13.2944 31.1983 12.4974 31.9953 11.5177 31.9953C10.5381 31.9953 9.74114 31.1983 9.74114 30.2186C9.74114 29.239 10.5381 28.442 11.5177 28.442ZM24.6345 3.07476L28.2618 6.71955H20.393L24.0364 3.07607C24.2016 2.91084 24.4703 2.91084 24.6345 3.07476ZM20.9866 4.08211L18.3492 6.71955H16.6363L15.9248 5.44374L20.9866 4.08211ZM9.24022 3.34817L12.1853 1.7057L14.9816 6.71955H11.1205L9.24022 3.34817ZM32.4949 9.07752L28.2018 21.6831C27.9516 22.4174 27.0515 23.0615 26.2756 23.0615H9.38088C8.66497 23.0615 7.99902 22.4599 7.92677 21.7478L7.67145 19.2295H23.2069C23.606 19.2295 23.9295 18.906 23.9295 18.5069C23.9295 18.1078 23.606 17.7843 23.2069 17.7843H7.52501L6.66988 9.34921C6.66988 9.349 6.66988 9.34893 6.66988 9.34879L6.66974 9.34721C6.63719 9.0259 6.73023 8.7262 6.93187 8.50309C7.12903 8.28487 7.41001 8.16472 7.72307 8.16472H29.9937C29.9961 8.16479 29.9984 8.16506 30.0008 8.16506C30.0031 8.16506 30.0055 8.16479 30.0078 8.16472H31.8416C32.1271 8.16472 32.3471 8.25239 32.461 8.41157C32.575 8.57067 32.587 8.8072 32.4949 9.07752Z" fill="white"></path>
+              </svg>
+              <p class="marketTop__basket-number">4</p>
+            </div>
+            <div class="marketTop__price">
+              <p class="marketTop__price-price">31.203</p>
+              <p class="marketTop__price-text">Руб.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="marketBottom">
+      <div class="container">
+        <div class="marketBottom__inner">
+          <div class="marketBottom__left bigMr noMobile"><a class="marketBottom__box active" href="market.html">
+              <svg width="33" height="34" viewbox="0 0 33 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M25.9064 8.97504L25.9557 9.26675H26.2515H32.65V30.3667C32.65 31.9884 31.3217 33.3167 29.7 33.3167H3.3C1.6783 33.3167 0.35 31.9884 0.35 30.3667V9.26675H6.74932H7.04522L7.09445 8.97498C7.85534 4.46531 11.779 1.01675 16.5 1.01675C21.221 1.01675 25.1447 4.46531 25.9064 8.97504ZM22.883 9.26675H23.3352L23.2219 8.82902C22.4472 5.83729 19.7326 3.61675 16.5 3.61675C13.2674 3.61675 10.5528 5.83729 9.77815 8.82902L9.66481 9.26675H10.117H22.883ZM6.95 12.2167V11.8667H6.6H3.3H2.95V12.2167V30.3667V30.7167H3.3H29.7H30.05V30.3667V12.2167V11.8667H29.7H26.4H26.05V12.2167V15.1667H23.45V12.2167V11.8667H23.1H9.9H9.55V12.2167V15.1667H6.95V12.2167Z" fill="white" stroke-width="0.7"></path>
+              </svg>
+              <p class="marketBottom__box-text">Маркет</p></a><a class="marketBottom__box" href="history.html">
+              <svg width="32" height="36" viewbox="0 0 32 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.9375 36H30.0625C31.0401 36 31.75 35.2901 31.75 34.3125V2.8125C31.75 1.83487 31.0401 1.125 30.0625 1.125H25.5625C25.252 1.125 25 1.377 25 1.6875C25 1.998 25.252 2.25 25.5625 2.25H30.0625C30.4146 2.25 30.625 2.46037 30.625 2.8125V34.3125C30.625 34.6646 30.4146 34.875 30.0625 34.875H1.9375C1.58537 34.875 1.375 34.6646 1.375 34.3125V2.8125C1.375 2.46037 1.58537 2.25 1.9375 2.25H6.4375C6.748 2.25 7 1.998 7 1.6875C7 1.377 6.748 1.125 6.4375 1.125H1.9375C0.959875 1.125 0.25 1.83487 0.25 2.8125V34.3125C0.25 35.2901 0.959875 36 1.9375 36Z" fill="white"></path>
+                <path d="M6.4375 5.625C6.748 5.625 7 5.373 7 5.0625C7 4.752 6.748 4.5 6.4375 4.5H4.1875C3.877 4.5 3.625 4.752 3.625 5.0625V32.0625C3.625 32.373 3.877 32.625 4.1875 32.625H27.8125C28.123 32.625 28.375 32.373 28.375 32.0625V5.0625C28.375 4.752 28.123 4.5 27.8125 4.5H25.5625C25.252 4.5 25 4.752 25 5.0625C25 5.373 25.252 5.625 25.5625 5.625H27.25V31.5H4.75V5.625H6.4375Z" fill="white"></path>
+                <path d="M10.375 7.875H21.625C22.9919 7.875 23.875 6.99188 23.875 5.625V0.5625C23.875 0.252 23.623 0 23.3125 0H8.6875C8.377 0 8.125 0.252 8.125 0.5625V5.625C8.125 6.99188 9.00812 7.875 10.375 7.875ZM9.25 1.125H22.75V5.625C22.75 6.372 22.3709 6.75 21.625 6.75H10.375C9.62912 6.75 9.25 6.372 9.25 5.625V1.125Z" fill="white"></path>
+                <path d="M9.8125 18H22.1875C22.498 18 22.75 17.748 22.75 17.4375C22.75 17.127 22.498 16.875 22.1875 16.875H9.8125C9.502 16.875 9.25 17.127 9.25 17.4375C9.25 17.748 9.502 18 9.8125 18Z" fill="white"></path>
+                <path d="M9.8125 13.5H22.1875C22.498 13.5 22.75 13.248 22.75 12.9375C22.75 12.627 22.498 12.375 22.1875 12.375H9.8125C9.502 12.375 9.25 12.627 9.25 12.9375C9.25 13.248 9.502 13.5 9.8125 13.5Z" fill="white"></path>
+                <path d="M9.8125 22.5H22.1875C22.498 22.5 22.75 22.248 22.75 21.9375C22.75 21.627 22.498 21.375 22.1875 21.375H9.8125C9.502 21.375 9.25 21.627 9.25 21.9375C9.25 22.248 9.502 22.5 9.8125 22.5Z" fill="white"></path>
+                <path d="M9.8125 27H22.1875C22.498 27 22.75 26.748 22.75 26.4375C22.75 26.127 22.498 25.875 22.1875 25.875H9.8125C9.502 25.875 9.25 26.127 9.25 26.4375C9.25 26.748 9.502 27 9.8125 27Z" fill="white"></path>
+              </svg>
+              <p class="marketBottom__box-text">История</p></a><a class="marketBottom__box" href="lost.html">
+              <svg width="35" height="26" viewbox="0 0 35 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M23.4906 17.8864C20.8312 17.8864 18.6658 15.6941 18.6658 12.9985C18.6658 10.3089 20.8312 8.11513 23.4906 8.11513H32.6655V17.8864H23.4906ZM23.3333 11.8175C22.6909 11.8175 22.1675 12.3477 22.1675 12.9985C22.1675 13.6523 22.6909 14.1795 23.3333 14.1795C23.9758 14.1795 24.4991 13.6523 24.4991 12.9985C24.4991 12.3477 23.9758 11.8175 23.3333 11.8175ZM29.7003 0H5.18502C4.53965 0 4.01924 0.530187 4.01924 1.18101C4.01924 1.83182 4.53965 2.36201 5.18502 2.36201H29.7003C31.3351 2.36201 32.6655 3.70982 32.6655 5.37038V5.75163H23.4906C19.5449 5.75163 16.3327 9.00126 16.3327 12.9985C16.3327 16.9972 19.5449 20.2499 23.4906 20.2499H32.6655V20.6311C32.6655 22.2887 31.3351 23.6365 29.7003 23.6365H5.29822C3.66347 23.6365 2.33304 22.2887 2.33304 20.6311V5.25272C2.33304 4.59892 1.81116 4.07023 1.16725 4.07023C0.521883 4.07023 0 4.59892 0 5.25272V20.6311C0 23.5933 2.37714 26 5.29822 26H29.7003C32.6214 26 35 23.5933 35 20.6311V5.37038C35 2.40669 32.6214 0 29.7003 0Z" fill="white"></path>
+              </svg>
+              <p class="marketBottom__box-text">Мои лоты</p></a><a class="marketBottom__box message" href="chats.html">
+              <svg width="35" height="35" viewbox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M29.8635 5.12791C26.5559 1.8203 22.1679 0 17.4914 0C12.8149 0 8.42691 1.8203 5.1193 5.12791C-1.27393 11.5211 -1.71791 21.7548 4.01676 28.6586C3.4544 29.7907 2.55165 31.1078 1.21232 31.7664C0.568561 32.0846 0.205982 32.7727 0.316976 33.4831C0.427969 34.1934 0.975538 34.7484 1.6859 34.8594C2.01888 34.9112 2.49245 34.963 3.06962 34.963C4.61613 34.963 6.8952 34.6004 9.22607 32.9207C11.8233 34.3192 14.6648 35 17.484 35C22.0125 35 26.4967 33.2463 29.8709 29.8721C33.1785 26.5645 34.9988 22.1765 34.9988 17.5C34.9988 12.8235 33.1711 8.43552 29.8635 5.12791ZM28.4502 28.4588C23.4555 33.4535 15.7229 34.445 9.64044 30.871C9.24087 30.6342 8.74509 30.7082 8.42691 31.0264C8.39731 31.0412 8.36772 31.0634 8.34552 31.0856C6.34023 32.6395 4.37194 32.9651 3.06962 32.9651H3.06222C4.56433 31.87 5.51148 30.2421 6.06645 28.9767C6.15524 28.7622 6.17004 28.5402 6.11824 28.333C6.09605 28.1332 6.01465 27.9334 5.87406 27.7706C0.457568 21.6512 0.738752 12.3277 6.52522 6.54123C12.5707 0.495772 22.4047 0.495772 28.4428 6.54123C34.4956 12.5867 34.4956 22.4133 28.4502 28.4588Z" fill="white"></path>
+                <path d="M17.4912 18.7284C18.1696 18.7284 18.7195 18.1784 18.7195 17.5001C18.7195 16.8217 18.1696 16.2717 17.4912 16.2717C16.8128 16.2717 16.2629 16.8217 16.2629 17.5001C16.2629 18.1784 16.8128 18.7284 17.4912 18.7284Z" fill="white"></path>
+                <path d="M23.8253 18.7284C24.5036 18.7284 25.0536 18.1784 25.0536 17.5001C25.0536 16.8217 24.5036 16.2717 23.8253 16.2717C23.1469 16.2717 22.5969 16.8217 22.5969 17.5001C22.5969 18.1784 23.1469 18.7284 23.8253 18.7284Z" fill="white"></path>
+                <path d="M11.1572 18.7284C11.8356 18.7284 12.3855 18.1784 12.3855 17.5001C12.3855 16.8217 11.8356 16.2717 11.1572 16.2717C10.4788 16.2717 9.92883 16.8217 9.92883 17.5001C9.92883 18.1784 10.4788 18.7284 11.1572 18.7284Z" fill="white"></path>
+              </svg>
+              <p class="marketBottom__box-text">Чаты</p></a><a class="marketBottom__box" href="">
+              <svg width="34" height="32" viewbox="0 0 34 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.375977 10.7434C0.375977 17.8751 6.35255 24.8896 15.7778 30.9164C16.146 31.1341 16.6483 31.3684 16.9999 31.3684C17.3515 31.3684 17.8537 31.1341 18.2053 30.9164C27.6472 24.8896 33.6238 17.8751 33.6238 10.7434C33.6238 4.81712 29.5557 0.631836 24.1315 0.631836C21.0178 0.631836 18.5066 2.10505 16.9999 4.36505C15.4932 2.12176 12.9653 0.631836 9.86819 0.631836C4.44412 0.631836 0.375977 4.81712 0.375977 10.7434ZM3.07133 10.7434C3.07133 6.29034 5.95076 3.32712 9.83469 3.32712C12.982 3.32712 14.7733 5.28584 15.8615 6.95998C16.3135 7.62962 16.5981 7.81377 16.9999 7.81377C17.4017 7.81377 17.6528 7.61284 18.1383 6.95998C19.2767 5.31934 21.0345 3.32712 24.165 3.32712C28.049 3.32712 30.9285 6.29034 30.9285 10.7434C30.9285 16.9711 24.3492 23.6843 17.3347 28.3383C17.1673 28.4555 17.0668 28.5392 16.9999 28.5392C16.9329 28.5392 16.8158 28.4555 16.6483 28.3383C9.65055 23.6843 3.07133 16.9711 3.07133 10.7434Z" fill="white"></path>
+              </svg>
+              <p class="marketBottom__box-text">Избранное</p></a><a class="marketBottom__box" href="">
+              <svg class="stroke" width="28" height="33" viewbox="0 0 28 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.6608 1.34253L11.6608 1.34253L11.6619 1.34165C12.9463 0.220151 15.068 0.218713 16.3622 1.34176C16.9413 1.84958 17.2462 2.48247 17.2931 3.11834C16.2564 2.82275 15.1518 2.66281 14.008 2.66281C12.8635 2.66281 11.7646 2.82293 10.7309 3.11419C10.7778 2.4797 11.0828 1.84452 11.6608 1.34253Z" stroke="white"></path>
+                <path d="M21.8996 16.5582C21.8996 20.6558 23.2639 24.6137 25.825 27.9796H2.16723C4.70972 24.6148 6.10047 20.6332 6.10047 16.5582V12.0027C6.10047 8.35486 9.5447 5.24121 14 5.24121C18.4464 5.24121 21.8996 8.37489 21.8996 12.0027V16.5582Z" stroke="white" stroke-width="1.5"></path>
+                <path d="M25.669 12.0513C25.2446 12.0513 24.9162 11.7661 24.9162 11.3975C24.9162 8.80327 23.4986 6.369 20.9999 4.72065C20.6715 4.48418 20.6074 4.09469 20.8477 3.77476C21.12 3.48961 21.6005 3.43396 21.9289 3.64262C24.7961 5.55526 26.4539 8.37901 26.4539 11.3627C26.4219 11.7661 26.0855 12.0513 25.669 12.0513Z" fill="white"></path>
+                <path d="M2.3312 12.0513C1.90673 12.0513 1.57837 11.7661 1.57837 11.3975C1.57837 8.38595 3.2362 5.58306 6.10337 3.67737C6.43173 3.4409 6.92027 3.51741 7.19257 3.80952C7.46488 4.10163 7.37678 4.51894 7.04041 4.75541C4.54164 6.40376 3.12408 8.83803 3.12408 11.4323C3.11607 11.7661 2.75567 12.0513 2.3312 12.0513Z" fill="white"></path>
+                <path d="M14.0001 32.5C12.3236 32.5 10.9003 31.7008 10.1637 30.5649H17.8365C17.0999 31.7008 15.6766 32.5 14.0001 32.5Z" stroke="white"></path>
+              </svg>
+              <p class="marketBottom__box-text">Уведомления</p></a></div>
+          <div class="marketBottom__right marketBottom__lots noMobile">
+            <div class="marketBottom__lots-top">
+              <div class="marketBottom__lots-top--box">
+                <div class="marketBottom__lots-box--select">
+                  <p class="marketBottom__lots-box--select---title">Игра</p>
+                  <svg width="10" height="6" viewbox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L5 5L9 1" stroke="#FF8231" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </div>
+                <div class="marketBottom__lots-box--menu"><a class="marketBottom__lots-box--menu---item" href="">Roblox </a><a class="marketBottom__lots-box--menu---item" href="">CS:GO </a><a class="marketBottom__lots-box--menu---item" href="">Minecraft </a></div>
+              </div>
+              <div class="marketBottom__lots-top--box">
+                <div class="marketBottom__lots-box--select">
+                  <p class="marketBottom__lots-box--select---title">Категории товара</p>
+                  <svg width="10" height="6" viewbox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L5 5L9 1" stroke="#FF8231" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </div>
+                <div class="marketBottom__lots-box--menu"><a class="marketBottom__lots-box--menu---item" href="">Пример </a><a class="marketBottom__lots-box--menu---item" href="">Пример</a><a class="marketBottom__lots-box--menu---item" href="">Пример пример</a></div>
+              </div>
+            </div>
+            <div class="marketBottom__lots-bottom">
+              <div class="marketBottom__lots-box">
+                <p class="marketBottom__lots-title">Игра - категория</p>
+                <div class="marketBottom__market2-block center">
+                  <svg class="marketBottom__market2-arrow" width="8" height="14" viewbox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 1L1 7L7 13" stroke="#FF5C00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                  <div class="marketBottom__market2-pag"><a class="marketBottom__market2-pag--item active" href=""></a><a class="marketBottom__market2-pag--item" href=""></a><a class="marketBottom__market2-pag--item" href=""></a><a class="marketBottom__market2-pag--item" href=""></a></div>
+                  <svg class="marketBottom__market2-arrow" width="8" height="14" viewbox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.999999 13L7 7L1 1" stroke="#FF5C00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </div>
+                <div class="marketBottom__market2-titleLine full">
+                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--title">
+                    <p class="marketBottom__market2-titleLine--titleBlockText">Наименование</p>
+                  </div>
+                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--icon">
+                    <p class="marketBottom__market2-titleLine--titleBlockText">Иконка</p>
+                  </div>
+                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--rare">
+                    <p class="marketBottom__market2-titleLine--titleBlockText">Редкость</p>
+                    <svg width="8" height="13" viewbox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.64645 12.3536C3.84171 12.5488 4.15829 12.5488 4.35355 12.3536L7.53553 9.17157C7.7308 8.97631 7.7308 8.65973 7.53553 8.46447C7.34027 8.2692 7.02369 8.2692 6.82843 8.46447L4 11.2929L1.17157 8.46447C0.976311 8.2692 0.659729 8.2692 0.464466 8.46447C0.269204 8.65973 0.269204 8.97631 0.464466 9.17157L3.64645 12.3536ZM3.5 2.18557e-08L3.5 12L4.5 12L4.5 -2.18557e-08L3.5 2.18557e-08Z" fill="#FF5C00"></path>
+                    </svg>
+                  </div>
+                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--huge">
+                    <p class="marketBottom__market2-titleLine--titleBlockText">Huge</p>
+                  </div>
+                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--type">
+                    <p class="marketBottom__market2-titleLine--titleBlockText">Тип</p>
+                    <svg width="8" height="13" viewbox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.64645 12.3536C3.84171 12.5488 4.15829 12.5488 4.35355 12.3536L7.53553 9.17157C7.7308 8.97631 7.7308 8.65973 7.53553 8.46447C7.34027 8.2692 7.02369 8.2692 6.82843 8.46447L4 11.2929L1.17157 8.46447C0.976311 8.2692 0.659729 8.2692 0.464466 8.46447C0.269204 8.65973 0.269204 8.97631 0.464466 9.17157L3.64645 12.3536ZM3.5 2.18557e-08L3.5 12L4.5 12L4.5 -2.18557e-08L3.5 2.18557e-08Z" fill="#FF5C00"></path>
+                    </svg>
+                  </div>
+                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--shiny">
+                    <p class="marketBottom__market2-titleLine--titleBlockText">Shiny</p>
+                    <svg width="8" height="13" viewbox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.64645 12.3536C3.84171 12.5488 4.15829 12.5488 4.35355 12.3536L7.53553 9.17157C7.7308 8.97631 7.7308 8.65973 7.53553 8.46447C7.34027 8.2692 7.02369 8.2692 6.82843 8.46447L4 11.2929L1.17157 8.46447C0.976311 8.2692 0.659729 8.2692 0.464466 8.46447C0.269204 8.65973 0.269204 8.97631 0.464466 9.17157L3.64645 12.3536ZM3.5 2.18557e-08L3.5 12L4.5 12L4.5 -2.18557e-08L3.5 2.18557e-08Z" fill="#FF5C00"></path>
+                    </svg>
+                  </div>
+                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--hc">
+                    <p class="marketBottom__market2-titleLine--titleBlockText">HC</p>
+                    <svg width="8" height="13" viewbox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.64645 12.3536C3.84171 12.5488 4.15829 12.5488 4.35355 12.3536L7.53553 9.17157C7.7308 8.97631 7.7308 8.65973 7.53553 8.46447C7.34027 8.2692 7.02369 8.2692 6.82843 8.46447L4 11.2929L1.17157 8.46447C0.976311 8.2692 0.659729 8.2692 0.464466 8.46447C0.269204 8.65973 0.269204 8.97631 0.464466 9.17157L3.64645 12.3536ZM3.5 2.18557e-08L3.5 12L4.5 12L4.5 -2.18557e-08L3.5 2.18557e-08Z" fill="#FF5C00"></path>
+                    </svg>
+                  </div>
+                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--power">
+                    <p class="marketBottom__market2-titleLine--titleBlockText">Сила</p>
+                    <svg width="8" height="13" viewbox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.64645 12.3536C3.84171 12.5488 4.15829 12.5488 4.35355 12.3536L7.53553 9.17157C7.7308 8.97631 7.7308 8.65973 7.53553 8.46447C7.34027 8.2692 7.02369 8.2692 6.82843 8.46447L4 11.2929L1.17157 8.46447C0.976311 8.2692 0.659729 8.2692 0.464466 8.46447C0.269204 8.65973 0.269204 8.97631 0.464466 9.17157L3.64645 12.3536ZM3.5 2.18557e-08L3.5 12L4.5 12L4.5 -2.18557e-08L3.5 2.18557e-08Z" fill="#FF5C00"></path>
+                    </svg>
+                  </div>
+                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--num">
+                    <p class="marketBottom__market2-titleLine--titleBlockText">Кол-во</p>
+                  </div>
+                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--price">
+                    <p class="marketBottom__market2-titleLine--titleBlockText">Цена</p>
+                  </div>
+                </div>
+                <div class="marketBottom__market2-content">
+                  <div class="marketBottom__market2-bigBlock full blue">
+                    <div class="marketBottom__market2-block--titleWrapper">
+                      <p class="marketBottom__market2-block--title">Shetland Pony White</p>
+                    </div>
+                    <hr class="marketBottom__market2-hr"/>
+                    <div class="marketBottom__market2-block--iconWrapper"><img class="marketBottom__merket2-block--icon" src="img/frostDrag.svg" alt=""/></div>
+                    <div class="marketBottom__market2-bigBlock--grey">
+                      <div class="marketBottom__market2-block--rareWrapper">
+                        <p class="marketBottom__market2-block--rare">Mythical</p>
+                      </div>
+                      <hr class="marketBottom__market2-hr"/>
+                      <div class="marketBottom__market2-block--icons">
+                        <p class="marketBottom__tag red">R</p>
+                        <p class="marketBottom__tag blue">F</p>
+                      </div>
+                      <hr class="marketBottom__market2-hr"/>
+                      <div class="marketBottom__market2-block--typeWapper">
+                        <p class="marketBottom__market2-block--type">Dark matter</p>
+                      </div>
+                      <hr class="marketBottom__market2-hr"/>
+                      <div class="marketBottom__market2-block--shinyWapper">
+                        <p class="marketBottom__market2-block--shiny">Да</p>
+                      </div>
+                      <hr class="marketBottom__market2-hr"/>
+                      <div class="marketBottom__market2-block--hcWrappeer">
+                        <p class="marketBottom__market2-block--hc">Да</p>
+                      </div>
+                      <hr class="marketBottom__market2-hr"/>
+                      <div class="marketBottom__market2-block--powerWrapper">
+                        <p class="marketBottom__market2-block--power">317d</p>
+                      </div>
+                    </div>
+                    <div class="marketBottom__market2-block--numWrapper">
+                      <p class="marketBottom__market2-block--num">34</p>
+                    </div>
+                    <hr class="marketBottom__market2-hr"/>
+                    <div class="marketBottom__market2-block--priceWrapper">
+                      <p class="marketBottom__market2-block--price">22.22 Р</p>
+                    </div>
+                    <svg class="marketBottom__market2-block--basket" width="57" height="39" viewbox="0 0 57 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="57" height="39" rx="5" fill="#FF7722"></rect>
+                      <path d="M21.5805 23.0582C21.6373 23.6027 21.9396 24.0911 22.3699 24.421C22.129 24.6971 21.9832 25.0543 21.9832 25.4441V26.9057C21.9832 27.5357 22.3564 28.0784 22.9034 28.3333C22.8724 28.4789 22.856 28.6297 22.856 28.7841C22.856 30.0059 23.8762 31 25.1302 31C26.3842 31 27.4044 30.0059 27.4044 28.7841C27.4044 28.6839 27.397 28.5855 27.3836 28.4888H31.1244C31.1111 28.5855 31.1036 28.6839 31.1036 28.7841C31.1036 30.0059 32.1238 31 33.3779 31C34.6318 31 35.6521 30.0059 35.6521 28.7841C35.6521 27.5622 34.6318 26.5681 33.3779 26.5681C32.6171 26.5681 31.943 26.9343 31.5299 27.4948H26.9781C26.565 26.9343 25.8909 26.5681 25.1301 26.5681C24.3993 26.5681 23.7483 26.9062 23.3319 27.4298C23.1361 27.3324 23.0032 27.1348 23.0032 26.9058V25.4442C23.0032 25.1196 23.2744 24.8555 23.6078 24.8555C23.6094 24.8555 23.6109 24.8553 23.6124 24.8553C23.6155 24.8553 23.6186 24.8555 23.6217 24.8555H35.5475C36.5336 24.8555 37.5549 24.1432 37.8728 23.2339L40.9033 14.5639C41.0747 14.0734 41.0164 13.5788 40.7431 13.2069C40.4699 12.835 40.0082 12.6217 39.4764 12.6217H38.3887L35.1111 9.4128C34.6015 8.91638 33.7756 8.91208 33.2601 9.39936L27.7287 10.849L26.2439 8.25497C26.1067 8.01528 25.7961 7.92937 25.55 8.06299L22.5802 9.67682C22.4621 9.741 22.375 9.84835 22.338 9.97515C22.3011 10.102 22.3173 10.2378 22.3833 10.353L23.6818 12.6216H22.4516C22.1236 12.6216 21.8146 12.7033 21.5466 12.8563L21.3058 10.5101C21.2797 10.2561 21.0603 10.0626 20.7982 10.0626H17.5101C17.2284 10.0626 17 10.2851 17 10.5596C17 10.8341 17.2284 11.0566 17.5101 11.0566H20.3366L21.5805 23.0582ZM33.378 27.562C34.0695 27.562 34.632 28.1102 34.632 28.784C34.632 29.4578 34.0695 30.006 33.378 30.006C32.6865 30.006 32.1238 29.4578 32.1238 28.784C32.1238 28.1102 32.6865 27.562 33.378 27.562ZM25.1302 27.562C25.8217 27.562 26.3844 28.1102 26.3844 28.784C26.3844 29.4578 25.8217 30.006 25.1302 30.006C24.4387 30.006 23.8761 29.4578 23.8761 28.784C23.8761 28.1102 24.4387 27.562 25.1302 27.562ZM34.3892 10.1148L36.9497 12.6216H31.3951L33.967 10.1157C34.0836 10.002 34.2733 10.002 34.3892 10.1148ZM31.8142 10.8076L29.9525 12.6216H28.7434L28.2411 11.7441L31.8142 10.8076ZM23.5226 10.3028L25.6014 9.17316L27.5753 12.6216H24.8498L23.5226 10.3028ZM39.9377 14.2434L36.9073 22.9133C36.7307 23.4184 36.0953 23.8614 35.5476 23.8614H23.6218C23.1165 23.8614 22.6464 23.4476 22.5954 22.9579L22.4152 21.2258H33.3815C33.6632 21.2258 33.8915 21.0033 33.8915 20.7288C33.8915 20.4544 33.6632 20.2318 33.3815 20.2318H22.3118L21.7082 14.4303C21.7082 14.4301 21.7082 14.4301 21.7082 14.43L21.7081 14.4289C21.6851 14.2079 21.7508 14.0018 21.8931 13.8483C22.0323 13.6982 22.2306 13.6156 22.4516 13.6156H38.1722C38.1739 13.6156 38.1755 13.6158 38.1772 13.6158C38.1788 13.6158 38.1805 13.6156 38.1821 13.6156H39.4766C39.6781 13.6156 39.8334 13.6759 39.9138 13.7854C39.9943 13.8948 40.0027 14.0575 39.9377 14.2434Z" fill="white"></path>
+                    </svg>
+                    <svg class="marketBottom__market2-block--delete" width="22" height="22" viewbox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6.0451 15.9547C6.17951 16.0891 6.35516 16.1562 6.53116 16.1562C6.70716 16.1562 6.88282 16.0891 7.01723 15.9547L10.9999 11.972L14.9826 15.9547C15.117 16.0891 15.2927 16.1562 15.4687 16.1562C15.6447 16.1562 15.8203 16.0891 15.9547 15.9547C16.2232 15.6863 16.2232 15.2511 15.9547 14.9826L11.972 10.9999L15.9547 7.01723C16.2232 6.74876 16.2232 6.31357 15.9547 6.0451C15.6863 5.77663 15.2511 5.77663 14.9826 6.0451L10.9999 10.0278L7.01723 6.0451C6.74876 5.77663 6.31357 5.77663 6.0451 6.0451C5.77663 6.31357 5.77663 6.74876 6.0451 7.01723L10.0278 10.9999L6.0451 14.9826C5.77663 15.2511 5.77663 15.6863 6.0451 15.9547Z" fill="white"></path>
+                      <path d="M11 22C13.938 22 16.7004 20.8557 18.7777 18.778C20.8557 16.7004 22 13.938 22 11C22 8.06197 20.8557 5.29959 18.7777 3.22231C16.7004 1.14434 13.938 0 11 0C8.06197 0 5.29959 1.14434 3.22231 3.22197C1.14434 5.29959 0 8.06197 0 11C0 13.938 1.14434 16.7004 3.22231 18.7777C5.29959 20.8557 8.06197 22 11 22ZM4.19444 4.19444C6.01219 2.37634 8.42909 1.375 11 1.375C13.5709 1.375 15.9878 2.37634 17.8056 4.19444C19.6237 6.01219 20.625 8.42909 20.625 11C20.625 13.5709 19.6237 15.9878 17.8056 17.8056C15.9878 19.6237 13.5709 20.625 11 20.625C8.42909 20.625 6.01219 19.6237 4.19444 17.8056C2.37634 15.9878 1.375 13.5709 1.375 11C1.375 8.42909 2.37634 6.01219 4.19444 4.19444Z" fill="white"></path>
+                    </svg>
+                  </div>
+                  <div class="marketBottom__market2-bigBlock full pink">
+                    <div class="marketBottom__market2-block--titleWrapper">
+                      <p class="marketBottom__market2-block--title">Shetland Pony White</p>
+                    </div>
+                    <hr class="marketBottom__market2-hr"/>
+                    <div class="marketBottom__market2-block--iconWrapper"><img class="marketBottom__merket2-block--icon" src="img/frostDrag.svg" alt=""/></div>
+                    <div class="marketBottom__market2-bigBlock--grey">
+                      <div class="marketBottom__market2-block--rareWrapper">
+                        <p class="marketBottom__market2-block--rare">Mythical</p>
+                      </div>
+                      <hr class="marketBottom__market2-hr"/>
+                      <div class="marketBottom__market2-block--icons">
+                        <p class="marketBottom__tag red">R</p>
+                        <p class="marketBottom__tag blue">F</p>
+                      </div>
+                      <hr class="marketBottom__market2-hr"/>
+                      <div class="marketBottom__market2-block--typeWapper">
+                        <p class="marketBottom__market2-block--type">Dark matter</p>
+                      </div>
+                      <hr class="marketBottom__market2-hr"/>
+                      <div class="marketBottom__market2-block--shinyWapper">
+                        <p class="marketBottom__market2-block--shiny">Да</p>
+                      </div>
+                      <hr class="marketBottom__market2-hr"/>
+                      <div class="marketBottom__market2-block--hcWrappeer">
+                        <p class="marketBottom__market2-block--hc">Да</p>
+                      </div>
+                      <hr class="marketBottom__market2-hr"/>
+                      <div class="marketBottom__market2-block--powerWrapper">
+                        <p class="marketBottom__market2-block--power">317d</p>
+                      </div>
+                    </div>
+                    <div class="marketBottom__market2-block--numWrapper">
+                      <p class="marketBottom__market2-block--num">34</p>
+                    </div>
+                    <hr class="marketBottom__market2-hr"/>
+                    <div class="marketBottom__market2-block--priceWrapper">
+                      <p class="marketBottom__market2-block--price">22.22 Р</p>
+                    </div>
+                    <svg class="marketBottom__market2-block--basket" width="57" height="39" viewbox="0 0 57 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="57" height="39" rx="5" fill="#FF7722"></rect>
+                      <path d="M21.5805 23.0582C21.6373 23.6027 21.9396 24.0911 22.3699 24.421C22.129 24.6971 21.9832 25.0543 21.9832 25.4441V26.9057C21.9832 27.5357 22.3564 28.0784 22.9034 28.3333C22.8724 28.4789 22.856 28.6297 22.856 28.7841C22.856 30.0059 23.8762 31 25.1302 31C26.3842 31 27.4044 30.0059 27.4044 28.7841C27.4044 28.6839 27.397 28.5855 27.3836 28.4888H31.1244C31.1111 28.5855 31.1036 28.6839 31.1036 28.7841C31.1036 30.0059 32.1238 31 33.3779 31C34.6318 31 35.6521 30.0059 35.6521 28.7841C35.6521 27.5622 34.6318 26.5681 33.3779 26.5681C32.6171 26.5681 31.943 26.9343 31.5299 27.4948H26.9781C26.565 26.9343 25.8909 26.5681 25.1301 26.5681C24.3993 26.5681 23.7483 26.9062 23.3319 27.4298C23.1361 27.3324 23.0032 27.1348 23.0032 26.9058V25.4442C23.0032 25.1196 23.2744 24.8555 23.6078 24.8555C23.6094 24.8555 23.6109 24.8553 23.6124 24.8553C23.6155 24.8553 23.6186 24.8555 23.6217 24.8555H35.5475C36.5336 24.8555 37.5549 24.1432 37.8728 23.2339L40.9033 14.5639C41.0747 14.0734 41.0164 13.5788 40.7431 13.2069C40.4699 12.835 40.0082 12.6217 39.4764 12.6217H38.3887L35.1111 9.4128C34.6015 8.91638 33.7756 8.91208 33.2601 9.39936L27.7287 10.849L26.2439 8.25497C26.1067 8.01528 25.7961 7.92937 25.55 8.06299L22.5802 9.67682C22.4621 9.741 22.375 9.84835 22.338 9.97515C22.3011 10.102 22.3173 10.2378 22.3833 10.353L23.6818 12.6216H22.4516C22.1236 12.6216 21.8146 12.7033 21.5466 12.8563L21.3058 10.5101C21.2797 10.2561 21.0603 10.0626 20.7982 10.0626H17.5101C17.2284 10.0626 17 10.2851 17 10.5596C17 10.8341 17.2284 11.0566 17.5101 11.0566H20.3366L21.5805 23.0582ZM33.378 27.562C34.0695 27.562 34.632 28.1102 34.632 28.784C34.632 29.4578 34.0695 30.006 33.378 30.006C32.6865 30.006 32.1238 29.4578 32.1238 28.784C32.1238 28.1102 32.6865 27.562 33.378 27.562ZM25.1302 27.562C25.8217 27.562 26.3844 28.1102 26.3844 28.784C26.3844 29.4578 25.8217 30.006 25.1302 30.006C24.4387 30.006 23.8761 29.4578 23.8761 28.784C23.8761 28.1102 24.4387 27.562 25.1302 27.562ZM34.3892 10.1148L36.9497 12.6216H31.3951L33.967 10.1157C34.0836 10.002 34.2733 10.002 34.3892 10.1148ZM31.8142 10.8076L29.9525 12.6216H28.7434L28.2411 11.7441L31.8142 10.8076ZM23.5226 10.3028L25.6014 9.17316L27.5753 12.6216H24.8498L23.5226 10.3028ZM39.9377 14.2434L36.9073 22.9133C36.7307 23.4184 36.0953 23.8614 35.5476 23.8614H23.6218C23.1165 23.8614 22.6464 23.4476 22.5954 22.9579L22.4152 21.2258H33.3815C33.6632 21.2258 33.8915 21.0033 33.8915 20.7288C33.8915 20.4544 33.6632 20.2318 33.3815 20.2318H22.3118L21.7082 14.4303C21.7082 14.4301 21.7082 14.4301 21.7082 14.43L21.7081 14.4289C21.6851 14.2079 21.7508 14.0018 21.8931 13.8483C22.0323 13.6982 22.2306 13.6156 22.4516 13.6156H38.1722C38.1739 13.6156 38.1755 13.6158 38.1772 13.6158C38.1788 13.6158 38.1805 13.6156 38.1821 13.6156H39.4766C39.6781 13.6156 39.8334 13.6759 39.9138 13.7854C39.9943 13.8948 40.0027 14.0575 39.9377 14.2434Z" fill="white"></path>
+                    </svg>
+                    <svg class="marketBottom__market2-block--delete" width="22" height="22" viewbox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6.0451 15.9547C6.17951 16.0891 6.35516 16.1562 6.53116 16.1562C6.70716 16.1562 6.88282 16.0891 7.01723 15.9547L10.9999 11.972L14.9826 15.9547C15.117 16.0891 15.2927 16.1562 15.4687 16.1562C15.6447 16.1562 15.8203 16.0891 15.9547 15.9547C16.2232 15.6863 16.2232 15.2511 15.9547 14.9826L11.972 10.9999L15.9547 7.01723C16.2232 6.74876 16.2232 6.31357 15.9547 6.0451C15.6863 5.77663 15.2511 5.77663 14.9826 6.0451L10.9999 10.0278L7.01723 6.0451C6.74876 5.77663 6.31357 5.77663 6.0451 6.0451C5.77663 6.31357 5.77663 6.74876 6.0451 7.01723L10.0278 10.9999L6.0451 14.9826C5.77663 15.2511 5.77663 15.6863 6.0451 15.9547Z" fill="white"></path>
+                      <path d="M11 22C13.938 22 16.7004 20.8557 18.7777 18.778C20.8557 16.7004 22 13.938 22 11C22 8.06197 20.8557 5.29959 18.7777 3.22231C16.7004 1.14434 13.938 0 11 0C8.06197 0 5.29959 1.14434 3.22231 3.22197C1.14434 5.29959 0 8.06197 0 11C0 13.938 1.14434 16.7004 3.22231 18.7777C5.29959 20.8557 8.06197 22 11 22ZM4.19444 4.19444C6.01219 2.37634 8.42909 1.375 11 1.375C13.5709 1.375 15.9878 2.37634 17.8056 4.19444C19.6237 6.01219 20.625 8.42909 20.625 11C20.625 13.5709 19.6237 15.9878 17.8056 17.8056C15.9878 19.6237 13.5709 20.625 11 20.625C8.42909 20.625 6.01219 19.6237 4.19444 17.8056C2.37634 15.9878 1.375 13.5709 1.375 11C1.375 8.42909 2.37634 6.01219 4.19444 4.19444Z" fill="white"></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="marketBottom__lots-box">
+                <p class="marketBottom__lots-title">Игра - категория</p>
+                <div class="marketBottom__market2-block center">
+                  <svg class="marketBottom__market2-arrow" width="8" height="14" viewbox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 1L1 7L7 13" stroke="#FF5C00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                  <div class="marketBottom__market2-pag"><a class="marketBottom__market2-pag--item active" href=""></a><a class="marketBottom__market2-pag--item" href=""></a><a class="marketBottom__market2-pag--item" href=""></a><a class="marketBottom__market2-pag--item" href=""></a></div>
+                  <svg class="marketBottom__market2-arrow" width="8" height="14" viewbox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.999999 13L7 7L1 1" stroke="#FF5C00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </div>
+                <div class="marketBottom__market2-titleLine full">
+                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--title">
+                    <p class="marketBottom__market2-titleLine--titleBlockText">Наименование</p>
+                  </div>
+                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--icon">
+                    <p class="marketBottom__market2-titleLine--titleBlockText">Иконка</p>
+                  </div>
+                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--rare">
+                    <p class="marketBottom__market2-titleLine--titleBlockText">Редкость</p>
+                    <svg width="8" height="13" viewbox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.64645 12.3536C3.84171 12.5488 4.15829 12.5488 4.35355 12.3536L7.53553 9.17157C7.7308 8.97631 7.7308 8.65973 7.53553 8.46447C7.34027 8.2692 7.02369 8.2692 6.82843 8.46447L4 11.2929L1.17157 8.46447C0.976311 8.2692 0.659729 8.2692 0.464466 8.46447C0.269204 8.65973 0.269204 8.97631 0.464466 9.17157L3.64645 12.3536ZM3.5 2.18557e-08L3.5 12L4.5 12L4.5 -2.18557e-08L3.5 2.18557e-08Z" fill="#FF5C00"></path>
+                    </svg>
+                  </div>
+                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--huge">
+                    <p class="marketBottom__market2-titleLine--titleBlockText">Huge</p>
+                  </div>
+                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--type">
+                    <p class="marketBottom__market2-titleLine--titleBlockText">Тип</p>
+                    <svg width="8" height="13" viewbox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.64645 12.3536C3.84171 12.5488 4.15829 12.5488 4.35355 12.3536L7.53553 9.17157C7.7308 8.97631 7.7308 8.65973 7.53553 8.46447C7.34027 8.2692 7.02369 8.2692 6.82843 8.46447L4 11.2929L1.17157 8.46447C0.976311 8.2692 0.659729 8.2692 0.464466 8.46447C0.269204 8.65973 0.269204 8.97631 0.464466 9.17157L3.64645 12.3536ZM3.5 2.18557e-08L3.5 12L4.5 12L4.5 -2.18557e-08L3.5 2.18557e-08Z" fill="#FF5C00"></path>
+                    </svg>
+                  </div>
+                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--shiny">
+                    <p class="marketBottom__market2-titleLine--titleBlockText">Shiny</p>
+                    <svg width="8" height="13" viewbox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.64645 12.3536C3.84171 12.5488 4.15829 12.5488 4.35355 12.3536L7.53553 9.17157C7.7308 8.97631 7.7308 8.65973 7.53553 8.46447C7.34027 8.2692 7.02369 8.2692 6.82843 8.46447L4 11.2929L1.17157 8.46447C0.976311 8.2692 0.659729 8.2692 0.464466 8.46447C0.269204 8.65973 0.269204 8.97631 0.464466 9.17157L3.64645 12.3536ZM3.5 2.18557e-08L3.5 12L4.5 12L4.5 -2.18557e-08L3.5 2.18557e-08Z" fill="#FF5C00"></path>
+                    </svg>
+                  </div>
+                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--hc">
+                    <p class="marketBottom__market2-titleLine--titleBlockText">HC</p>
+                    <svg width="8" height="13" viewbox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.64645 12.3536C3.84171 12.5488 4.15829 12.5488 4.35355 12.3536L7.53553 9.17157C7.7308 8.97631 7.7308 8.65973 7.53553 8.46447C7.34027 8.2692 7.02369 8.2692 6.82843 8.46447L4 11.2929L1.17157 8.46447C0.976311 8.2692 0.659729 8.2692 0.464466 8.46447C0.269204 8.65973 0.269204 8.97631 0.464466 9.17157L3.64645 12.3536ZM3.5 2.18557e-08L3.5 12L4.5 12L4.5 -2.18557e-08L3.5 2.18557e-08Z" fill="#FF5C00"></path>
+                    </svg>
+                  </div>
+                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--power">
+                    <p class="marketBottom__market2-titleLine--titleBlockText">Сила</p>
+                    <svg width="8" height="13" viewbox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.64645 12.3536C3.84171 12.5488 4.15829 12.5488 4.35355 12.3536L7.53553 9.17157C7.7308 8.97631 7.7308 8.65973 7.53553 8.46447C7.34027 8.2692 7.02369 8.2692 6.82843 8.46447L4 11.2929L1.17157 8.46447C0.976311 8.2692 0.659729 8.2692 0.464466 8.46447C0.269204 8.65973 0.269204 8.97631 0.464466 9.17157L3.64645 12.3536ZM3.5 2.18557e-08L3.5 12L4.5 12L4.5 -2.18557e-08L3.5 2.18557e-08Z" fill="#FF5C00"></path>
+                    </svg>
+                  </div>
+                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--num">
+                    <p class="marketBottom__market2-titleLine--titleBlockText">Кол-во</p>
+                  </div>
+                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--price">
+                    <p class="marketBottom__market2-titleLine--titleBlockText">Цена</p>
+                  </div>
+                </div>
+                <div class="marketBottom__market2-content">
+                  <div class="marketBottom__market2-bigBlock full blue">
+                    <div class="marketBottom__market2-block--titleWrapper">
+                      <p class="marketBottom__market2-block--title">Shetland Pony White</p>
+                    </div>
+                    <hr class="marketBottom__market2-hr"/>
+                    <div class="marketBottom__market2-block--iconWrapper"><img class="marketBottom__merket2-block--icon" src="img/frostDrag.svg" alt=""/></div>
+                    <div class="marketBottom__market2-bigBlock--grey">
+                      <div class="marketBottom__market2-block--rareWrapper">
+                        <p class="marketBottom__market2-block--rare">Mythical</p>
+                      </div>
+                      <hr class="marketBottom__market2-hr"/>
+                      <div class="marketBottom__market2-block--icons">
+                        <p class="marketBottom__tag red">R</p>
+                        <p class="marketBottom__tag blue">F</p>
+                      </div>
+                      <hr class="marketBottom__market2-hr"/>
+                      <div class="marketBottom__market2-block--typeWapper">
+                        <p class="marketBottom__market2-block--type">Dark matter</p>
+                      </div>
+                      <hr class="marketBottom__market2-hr"/>
+                      <div class="marketBottom__market2-block--shinyWapper">
+                        <p class="marketBottom__market2-block--shiny">Да</p>
+                      </div>
+                      <hr class="marketBottom__market2-hr"/>
+                      <div class="marketBottom__market2-block--hcWrappeer">
+                        <p class="marketBottom__market2-block--hc">Да</p>
+                      </div>
+                      <hr class="marketBottom__market2-hr"/>
+                      <div class="marketBottom__market2-block--powerWrapper">
+                        <p class="marketBottom__market2-block--power">317d</p>
+                      </div>
+                    </div>
+                    <div class="marketBottom__market2-block--numWrapper">
+                      <p class="marketBottom__market2-block--num">34</p>
+                    </div>
+                    <hr class="marketBottom__market2-hr"/>
+                    <div class="marketBottom__market2-block--priceWrapper">
+                      <p class="marketBottom__market2-block--price">22.22 Р</p>
+                    </div>
+                    <svg class="marketBottom__market2-block--basket" width="57" height="39" viewbox="0 0 57 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="57" height="39" rx="5" fill="#FF7722"></rect>
+                      <path d="M21.5805 23.0582C21.6373 23.6027 21.9396 24.0911 22.3699 24.421C22.129 24.6971 21.9832 25.0543 21.9832 25.4441V26.9057C21.9832 27.5357 22.3564 28.0784 22.9034 28.3333C22.8724 28.4789 22.856 28.6297 22.856 28.7841C22.856 30.0059 23.8762 31 25.1302 31C26.3842 31 27.4044 30.0059 27.4044 28.7841C27.4044 28.6839 27.397 28.5855 27.3836 28.4888H31.1244C31.1111 28.5855 31.1036 28.6839 31.1036 28.7841C31.1036 30.0059 32.1238 31 33.3779 31C34.6318 31 35.6521 30.0059 35.6521 28.7841C35.6521 27.5622 34.6318 26.5681 33.3779 26.5681C32.6171 26.5681 31.943 26.9343 31.5299 27.4948H26.9781C26.565 26.9343 25.8909 26.5681 25.1301 26.5681C24.3993 26.5681 23.7483 26.9062 23.3319 27.4298C23.1361 27.3324 23.0032 27.1348 23.0032 26.9058V25.4442C23.0032 25.1196 23.2744 24.8555 23.6078 24.8555C23.6094 24.8555 23.6109 24.8553 23.6124 24.8553C23.6155 24.8553 23.6186 24.8555 23.6217 24.8555H35.5475C36.5336 24.8555 37.5549 24.1432 37.8728 23.2339L40.9033 14.5639C41.0747 14.0734 41.0164 13.5788 40.7431 13.2069C40.4699 12.835 40.0082 12.6217 39.4764 12.6217H38.3887L35.1111 9.4128C34.6015 8.91638 33.7756 8.91208 33.2601 9.39936L27.7287 10.849L26.2439 8.25497C26.1067 8.01528 25.7961 7.92937 25.55 8.06299L22.5802 9.67682C22.4621 9.741 22.375 9.84835 22.338 9.97515C22.3011 10.102 22.3173 10.2378 22.3833 10.353L23.6818 12.6216H22.4516C22.1236 12.6216 21.8146 12.7033 21.5466 12.8563L21.3058 10.5101C21.2797 10.2561 21.0603 10.0626 20.7982 10.0626H17.5101C17.2284 10.0626 17 10.2851 17 10.5596C17 10.8341 17.2284 11.0566 17.5101 11.0566H20.3366L21.5805 23.0582ZM33.378 27.562C34.0695 27.562 34.632 28.1102 34.632 28.784C34.632 29.4578 34.0695 30.006 33.378 30.006C32.6865 30.006 32.1238 29.4578 32.1238 28.784C32.1238 28.1102 32.6865 27.562 33.378 27.562ZM25.1302 27.562C25.8217 27.562 26.3844 28.1102 26.3844 28.784C26.3844 29.4578 25.8217 30.006 25.1302 30.006C24.4387 30.006 23.8761 29.4578 23.8761 28.784C23.8761 28.1102 24.4387 27.562 25.1302 27.562ZM34.3892 10.1148L36.9497 12.6216H31.3951L33.967 10.1157C34.0836 10.002 34.2733 10.002 34.3892 10.1148ZM31.8142 10.8076L29.9525 12.6216H28.7434L28.2411 11.7441L31.8142 10.8076ZM23.5226 10.3028L25.6014 9.17316L27.5753 12.6216H24.8498L23.5226 10.3028ZM39.9377 14.2434L36.9073 22.9133C36.7307 23.4184 36.0953 23.8614 35.5476 23.8614H23.6218C23.1165 23.8614 22.6464 23.4476 22.5954 22.9579L22.4152 21.2258H33.3815C33.6632 21.2258 33.8915 21.0033 33.8915 20.7288C33.8915 20.4544 33.6632 20.2318 33.3815 20.2318H22.3118L21.7082 14.4303C21.7082 14.4301 21.7082 14.4301 21.7082 14.43L21.7081 14.4289C21.6851 14.2079 21.7508 14.0018 21.8931 13.8483C22.0323 13.6982 22.2306 13.6156 22.4516 13.6156H38.1722C38.1739 13.6156 38.1755 13.6158 38.1772 13.6158C38.1788 13.6158 38.1805 13.6156 38.1821 13.6156H39.4766C39.6781 13.6156 39.8334 13.6759 39.9138 13.7854C39.9943 13.8948 40.0027 14.0575 39.9377 14.2434Z" fill="white"></path>
+                    </svg>
+                    <svg class="marketBottom__market2-block--delete" width="22" height="22" viewbox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6.0451 15.9547C6.17951 16.0891 6.35516 16.1562 6.53116 16.1562C6.70716 16.1562 6.88282 16.0891 7.01723 15.9547L10.9999 11.972L14.9826 15.9547C15.117 16.0891 15.2927 16.1562 15.4687 16.1562C15.6447 16.1562 15.8203 16.0891 15.9547 15.9547C16.2232 15.6863 16.2232 15.2511 15.9547 14.9826L11.972 10.9999L15.9547 7.01723C16.2232 6.74876 16.2232 6.31357 15.9547 6.0451C15.6863 5.77663 15.2511 5.77663 14.9826 6.0451L10.9999 10.0278L7.01723 6.0451C6.74876 5.77663 6.31357 5.77663 6.0451 6.0451C5.77663 6.31357 5.77663 6.74876 6.0451 7.01723L10.0278 10.9999L6.0451 14.9826C5.77663 15.2511 5.77663 15.6863 6.0451 15.9547Z" fill="white"></path>
+                      <path d="M11 22C13.938 22 16.7004 20.8557 18.7777 18.778C20.8557 16.7004 22 13.938 22 11C22 8.06197 20.8557 5.29959 18.7777 3.22231C16.7004 1.14434 13.938 0 11 0C8.06197 0 5.29959 1.14434 3.22231 3.22197C1.14434 5.29959 0 8.06197 0 11C0 13.938 1.14434 16.7004 3.22231 18.7777C5.29959 20.8557 8.06197 22 11 22ZM4.19444 4.19444C6.01219 2.37634 8.42909 1.375 11 1.375C13.5709 1.375 15.9878 2.37634 17.8056 4.19444C19.6237 6.01219 20.625 8.42909 20.625 11C20.625 13.5709 19.6237 15.9878 17.8056 17.8056C15.9878 19.6237 13.5709 20.625 11 20.625C8.42909 20.625 6.01219 19.6237 4.19444 17.8056C2.37634 15.9878 1.375 13.5709 1.375 11C1.375 8.42909 2.37634 6.01219 4.19444 4.19444Z" fill="white"></path>
+                    </svg>
+                  </div>
+                  <div class="marketBottom__market2-bigBlock full pink">
+                    <div class="marketBottom__market2-block--titleWrapper">
+                      <p class="marketBottom__market2-block--title">Shetland Pony White</p>
+                    </div>
+                    <hr class="marketBottom__market2-hr"/>
+                    <div class="marketBottom__market2-block--iconWrapper"><img class="marketBottom__merket2-block--icon" src="img/frostDrag.svg" alt=""/></div>
+                    <div class="marketBottom__market2-bigBlock--grey">
+                      <div class="marketBottom__market2-block--rareWrapper">
+                        <p class="marketBottom__market2-block--rare">Mythical</p>
+                      </div>
+                      <hr class="marketBottom__market2-hr"/>
+                      <div class="marketBottom__market2-block--icons">
+                        <p class="marketBottom__tag red">R</p>
+                        <p class="marketBottom__tag blue">F</p>
+                      </div>
+                      <hr class="marketBottom__market2-hr"/>
+                      <div class="marketBottom__market2-block--typeWapper">
+                        <p class="marketBottom__market2-block--type">Dark matter</p>
+                      </div>
+                      <hr class="marketBottom__market2-hr"/>
+                      <div class="marketBottom__market2-block--shinyWapper">
+                        <p class="marketBottom__market2-block--shiny">Да</p>
+                      </div>
+                      <hr class="marketBottom__market2-hr"/>
+                      <div class="marketBottom__market2-block--hcWrappeer">
+                        <p class="marketBottom__market2-block--hc">Да</p>
+                      </div>
+                      <hr class="marketBottom__market2-hr"/>
+                      <div class="marketBottom__market2-block--powerWrapper">
+                        <p class="marketBottom__market2-block--power">317d</p>
+                      </div>
+                    </div>
+                    <div class="marketBottom__market2-block--numWrapper">
+                      <p class="marketBottom__market2-block--num">34</p>
+                    </div>
+                    <hr class="marketBottom__market2-hr"/>
+                    <div class="marketBottom__market2-block--priceWrapper">
+                      <p class="marketBottom__market2-block--price">22.22 Р</p>
+                    </div>
+                    <svg class="marketBottom__market2-block--basket" width="57" height="39" viewbox="0 0 57 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="57" height="39" rx="5" fill="#FF7722"></rect>
+                      <path d="M21.5805 23.0582C21.6373 23.6027 21.9396 24.0911 22.3699 24.421C22.129 24.6971 21.9832 25.0543 21.9832 25.4441V26.9057C21.9832 27.5357 22.3564 28.0784 22.9034 28.3333C22.8724 28.4789 22.856 28.6297 22.856 28.7841C22.856 30.0059 23.8762 31 25.1302 31C26.3842 31 27.4044 30.0059 27.4044 28.7841C27.4044 28.6839 27.397 28.5855 27.3836 28.4888H31.1244C31.1111 28.5855 31.1036 28.6839 31.1036 28.7841C31.1036 30.0059 32.1238 31 33.3779 31C34.6318 31 35.6521 30.0059 35.6521 28.7841C35.6521 27.5622 34.6318 26.5681 33.3779 26.5681C32.6171 26.5681 31.943 26.9343 31.5299 27.4948H26.9781C26.565 26.9343 25.8909 26.5681 25.1301 26.5681C24.3993 26.5681 23.7483 26.9062 23.3319 27.4298C23.1361 27.3324 23.0032 27.1348 23.0032 26.9058V25.4442C23.0032 25.1196 23.2744 24.8555 23.6078 24.8555C23.6094 24.8555 23.6109 24.8553 23.6124 24.8553C23.6155 24.8553 23.6186 24.8555 23.6217 24.8555H35.5475C36.5336 24.8555 37.5549 24.1432 37.8728 23.2339L40.9033 14.5639C41.0747 14.0734 41.0164 13.5788 40.7431 13.2069C40.4699 12.835 40.0082 12.6217 39.4764 12.6217H38.3887L35.1111 9.4128C34.6015 8.91638 33.7756 8.91208 33.2601 9.39936L27.7287 10.849L26.2439 8.25497C26.1067 8.01528 25.7961 7.92937 25.55 8.06299L22.5802 9.67682C22.4621 9.741 22.375 9.84835 22.338 9.97515C22.3011 10.102 22.3173 10.2378 22.3833 10.353L23.6818 12.6216H22.4516C22.1236 12.6216 21.8146 12.7033 21.5466 12.8563L21.3058 10.5101C21.2797 10.2561 21.0603 10.0626 20.7982 10.0626H17.5101C17.2284 10.0626 17 10.2851 17 10.5596C17 10.8341 17.2284 11.0566 17.5101 11.0566H20.3366L21.5805 23.0582ZM33.378 27.562C34.0695 27.562 34.632 28.1102 34.632 28.784C34.632 29.4578 34.0695 30.006 33.378 30.006C32.6865 30.006 32.1238 29.4578 32.1238 28.784C32.1238 28.1102 32.6865 27.562 33.378 27.562ZM25.1302 27.562C25.8217 27.562 26.3844 28.1102 26.3844 28.784C26.3844 29.4578 25.8217 30.006 25.1302 30.006C24.4387 30.006 23.8761 29.4578 23.8761 28.784C23.8761 28.1102 24.4387 27.562 25.1302 27.562ZM34.3892 10.1148L36.9497 12.6216H31.3951L33.967 10.1157C34.0836 10.002 34.2733 10.002 34.3892 10.1148ZM31.8142 10.8076L29.9525 12.6216H28.7434L28.2411 11.7441L31.8142 10.8076ZM23.5226 10.3028L25.6014 9.17316L27.5753 12.6216H24.8498L23.5226 10.3028ZM39.9377 14.2434L36.9073 22.9133C36.7307 23.4184 36.0953 23.8614 35.5476 23.8614H23.6218C23.1165 23.8614 22.6464 23.4476 22.5954 22.9579L22.4152 21.2258H33.3815C33.6632 21.2258 33.8915 21.0033 33.8915 20.7288C33.8915 20.4544 33.6632 20.2318 33.3815 20.2318H22.3118L21.7082 14.4303C21.7082 14.4301 21.7082 14.4301 21.7082 14.43L21.7081 14.4289C21.6851 14.2079 21.7508 14.0018 21.8931 13.8483C22.0323 13.6982 22.2306 13.6156 22.4516 13.6156H38.1722C38.1739 13.6156 38.1755 13.6158 38.1772 13.6158C38.1788 13.6158 38.1805 13.6156 38.1821 13.6156H39.4766C39.6781 13.6156 39.8334 13.6759 39.9138 13.7854C39.9943 13.8948 40.0027 14.0575 39.9377 14.2434Z" fill="white"></path>
+                    </svg>
+                    <svg class="marketBottom__market2-block--delete" width="22" height="22" viewbox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6.0451 15.9547C6.17951 16.0891 6.35516 16.1562 6.53116 16.1562C6.70716 16.1562 6.88282 16.0891 7.01723 15.9547L10.9999 11.972L14.9826 15.9547C15.117 16.0891 15.2927 16.1562 15.4687 16.1562C15.6447 16.1562 15.8203 16.0891 15.9547 15.9547C16.2232 15.6863 16.2232 15.2511 15.9547 14.9826L11.972 10.9999L15.9547 7.01723C16.2232 6.74876 16.2232 6.31357 15.9547 6.0451C15.6863 5.77663 15.2511 5.77663 14.9826 6.0451L10.9999 10.0278L7.01723 6.0451C6.74876 5.77663 6.31357 5.77663 6.0451 6.0451C5.77663 6.31357 5.77663 6.74876 6.0451 7.01723L10.0278 10.9999L6.0451 14.9826C5.77663 15.2511 5.77663 15.6863 6.0451 15.9547Z" fill="white"></path>
+                      <path d="M11 22C13.938 22 16.7004 20.8557 18.7777 18.778C20.8557 16.7004 22 13.938 22 11C22 8.06197 20.8557 5.29959 18.7777 3.22231C16.7004 1.14434 13.938 0 11 0C8.06197 0 5.29959 1.14434 3.22231 3.22197C1.14434 5.29959 0 8.06197 0 11C0 13.938 1.14434 16.7004 3.22231 18.7777C5.29959 20.8557 8.06197 22 11 22ZM4.19444 4.19444C6.01219 2.37634 8.42909 1.375 11 1.375C13.5709 1.375 15.9878 2.37634 17.8056 4.19444C19.6237 6.01219 20.625 8.42909 20.625 11C20.625 13.5709 19.6237 15.9878 17.8056 17.8056C15.9878 19.6237 13.5709 20.625 11 20.625C8.42909 20.625 6.01219 19.6237 4.19444 17.8056C2.37634 15.9878 1.375 13.5709 1.375 11C1.375 8.42909 2.37634 6.01219 4.19444 4.19444Z" fill="white"></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="marketBottom__lots-box">
+                <p class="marketBottom__lots-title">Игра - категория</p>
+                <div class="marketBottom__market2-block center">
+                  <svg class="marketBottom__market2-arrow" width="8" height="14" viewbox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 1L1 7L7 13" stroke="#FF5C00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                  <div class="marketBottom__market2-pag"><a class="marketBottom__market2-pag--item active" href=""></a><a class="marketBottom__market2-pag--item" href=""></a><a class="marketBottom__market2-pag--item" href=""></a><a class="marketBottom__market2-pag--item" href=""></a></div>
+                  <svg class="marketBottom__market2-arrow" width="8" height="14" viewbox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.999999 13L7 7L1 1" stroke="#FF5C00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </div>
+                <div class="marketBottom__market2-titleLine full">
+                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--title">
+                    <p class="marketBottom__market2-titleLine--titleBlockText">Наименование</p>
+                  </div>
+                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--icon">
+                    <p class="marketBottom__market2-titleLine--titleBlockText">Иконка</p>
+                  </div>
+                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--rare">
+                    <p class="marketBottom__market2-titleLine--titleBlockText">Редкость</p>
+                    <svg width="8" height="13" viewbox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.64645 12.3536C3.84171 12.5488 4.15829 12.5488 4.35355 12.3536L7.53553 9.17157C7.7308 8.97631 7.7308 8.65973 7.53553 8.46447C7.34027 8.2692 7.02369 8.2692 6.82843 8.46447L4 11.2929L1.17157 8.46447C0.976311 8.2692 0.659729 8.2692 0.464466 8.46447C0.269204 8.65973 0.269204 8.97631 0.464466 9.17157L3.64645 12.3536ZM3.5 2.18557e-08L3.5 12L4.5 12L4.5 -2.18557e-08L3.5 2.18557e-08Z" fill="#FF5C00"></path>
+                    </svg>
+                  </div>
+                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--huge">
+                    <p class="marketBottom__market2-titleLine--titleBlockText">Huge</p>
+                  </div>
+                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--type">
+                    <p class="marketBottom__market2-titleLine--titleBlockText">Тип</p>
+                    <svg width="8" height="13" viewbox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.64645 12.3536C3.84171 12.5488 4.15829 12.5488 4.35355 12.3536L7.53553 9.17157C7.7308 8.97631 7.7308 8.65973 7.53553 8.46447C7.34027 8.2692 7.02369 8.2692 6.82843 8.46447L4 11.2929L1.17157 8.46447C0.976311 8.2692 0.659729 8.2692 0.464466 8.46447C0.269204 8.65973 0.269204 8.97631 0.464466 9.17157L3.64645 12.3536ZM3.5 2.18557e-08L3.5 12L4.5 12L4.5 -2.18557e-08L3.5 2.18557e-08Z" fill="#FF5C00"></path>
+                    </svg>
+                  </div>
+                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--shiny">
+                    <p class="marketBottom__market2-titleLine--titleBlockText">Shiny</p>
+                    <svg width="8" height="13" viewbox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.64645 12.3536C3.84171 12.5488 4.15829 12.5488 4.35355 12.3536L7.53553 9.17157C7.7308 8.97631 7.7308 8.65973 7.53553 8.46447C7.34027 8.2692 7.02369 8.2692 6.82843 8.46447L4 11.2929L1.17157 8.46447C0.976311 8.2692 0.659729 8.2692 0.464466 8.46447C0.269204 8.65973 0.269204 8.97631 0.464466 9.17157L3.64645 12.3536ZM3.5 2.18557e-08L3.5 12L4.5 12L4.5 -2.18557e-08L3.5 2.18557e-08Z" fill="#FF5C00"></path>
+                    </svg>
+                  </div>
+                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--hc">
+                    <p class="marketBottom__market2-titleLine--titleBlockText">HC</p>
+                    <svg width="8" height="13" viewbox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.64645 12.3536C3.84171 12.5488 4.15829 12.5488 4.35355 12.3536L7.53553 9.17157C7.7308 8.97631 7.7308 8.65973 7.53553 8.46447C7.34027 8.2692 7.02369 8.2692 6.82843 8.46447L4 11.2929L1.17157 8.46447C0.976311 8.2692 0.659729 8.2692 0.464466 8.46447C0.269204 8.65973 0.269204 8.97631 0.464466 9.17157L3.64645 12.3536ZM3.5 2.18557e-08L3.5 12L4.5 12L4.5 -2.18557e-08L3.5 2.18557e-08Z" fill="#FF5C00"></path>
+                    </svg>
+                  </div>
+                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--power">
+                    <p class="marketBottom__market2-titleLine--titleBlockText">Сила</p>
+                    <svg width="8" height="13" viewbox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.64645 12.3536C3.84171 12.5488 4.15829 12.5488 4.35355 12.3536L7.53553 9.17157C7.7308 8.97631 7.7308 8.65973 7.53553 8.46447C7.34027 8.2692 7.02369 8.2692 6.82843 8.46447L4 11.2929L1.17157 8.46447C0.976311 8.2692 0.659729 8.2692 0.464466 8.46447C0.269204 8.65973 0.269204 8.97631 0.464466 9.17157L3.64645 12.3536ZM3.5 2.18557e-08L3.5 12L4.5 12L4.5 -2.18557e-08L3.5 2.18557e-08Z" fill="#FF5C00"></path>
+                    </svg>
+                  </div>
+                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--num">
+                    <p class="marketBottom__market2-titleLine--titleBlockText">Кол-во</p>
+                  </div>
+                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--price">
+                    <p class="marketBottom__market2-titleLine--titleBlockText">Цена</p>
+                  </div>
+                </div>
+                <div class="marketBottom__market2-content">
+                  <div class="marketBottom__market2-bigBlock full blue">
+                    <div class="marketBottom__market2-block--titleWrapper">
+                      <p class="marketBottom__market2-block--title">Shetland Pony White</p>
+                    </div>
+                    <hr class="marketBottom__market2-hr"/>
+                    <div class="marketBottom__market2-block--iconWrapper"><img class="marketBottom__merket2-block--icon" src="img/frostDrag.svg" alt=""/></div>
+                    <div class="marketBottom__market2-bigBlock--grey">
+                      <div class="marketBottom__market2-block--rareWrapper">
+                        <p class="marketBottom__market2-block--rare">Mythical</p>
+                      </div>
+                      <hr class="marketBottom__market2-hr"/>
+                      <div class="marketBottom__market2-block--icons">
+                        <p class="marketBottom__tag red">R</p>
+                        <p class="marketBottom__tag blue">F</p>
+                      </div>
+                      <hr class="marketBottom__market2-hr"/>
+                      <div class="marketBottom__market2-block--typeWapper">
+                        <p class="marketBottom__market2-block--type">Dark matter</p>
+                      </div>
+                      <hr class="marketBottom__market2-hr"/>
+                      <div class="marketBottom__market2-block--shinyWapper">
+                        <p class="marketBottom__market2-block--shiny">Да</p>
+                      </div>
+                      <hr class="marketBottom__market2-hr"/>
+                      <div class="marketBottom__market2-block--hcWrappeer">
+                        <p class="marketBottom__market2-block--hc">Да</p>
+                      </div>
+                      <hr class="marketBottom__market2-hr"/>
+                      <div class="marketBottom__market2-block--powerWrapper">
+                        <p class="marketBottom__market2-block--power">317d</p>
+                      </div>
+                    </div>
+                    <div class="marketBottom__market2-block--numWrapper">
+                      <p class="marketBottom__market2-block--num">34</p>
+                    </div>
+                    <hr class="marketBottom__market2-hr"/>
+                    <div class="marketBottom__market2-block--priceWrapper">
+                      <p class="marketBottom__market2-block--price">22.22 Р</p>
+                    </div>
+                    <svg class="marketBottom__market2-block--basket" width="57" height="39" viewbox="0 0 57 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="57" height="39" rx="5" fill="#FF7722"></rect>
+                      <path d="M21.5805 23.0582C21.6373 23.6027 21.9396 24.0911 22.3699 24.421C22.129 24.6971 21.9832 25.0543 21.9832 25.4441V26.9057C21.9832 27.5357 22.3564 28.0784 22.9034 28.3333C22.8724 28.4789 22.856 28.6297 22.856 28.7841C22.856 30.0059 23.8762 31 25.1302 31C26.3842 31 27.4044 30.0059 27.4044 28.7841C27.4044 28.6839 27.397 28.5855 27.3836 28.4888H31.1244C31.1111 28.5855 31.1036 28.6839 31.1036 28.7841C31.1036 30.0059 32.1238 31 33.3779 31C34.6318 31 35.6521 30.0059 35.6521 28.7841C35.6521 27.5622 34.6318 26.5681 33.3779 26.5681C32.6171 26.5681 31.943 26.9343 31.5299 27.4948H26.9781C26.565 26.9343 25.8909 26.5681 25.1301 26.5681C24.3993 26.5681 23.7483 26.9062 23.3319 27.4298C23.1361 27.3324 23.0032 27.1348 23.0032 26.9058V25.4442C23.0032 25.1196 23.2744 24.8555 23.6078 24.8555C23.6094 24.8555 23.6109 24.8553 23.6124 24.8553C23.6155 24.8553 23.6186 24.8555 23.6217 24.8555H35.5475C36.5336 24.8555 37.5549 24.1432 37.8728 23.2339L40.9033 14.5639C41.0747 14.0734 41.0164 13.5788 40.7431 13.2069C40.4699 12.835 40.0082 12.6217 39.4764 12.6217H38.3887L35.1111 9.4128C34.6015 8.91638 33.7756 8.91208 33.2601 9.39936L27.7287 10.849L26.2439 8.25497C26.1067 8.01528 25.7961 7.92937 25.55 8.06299L22.5802 9.67682C22.4621 9.741 22.375 9.84835 22.338 9.97515C22.3011 10.102 22.3173 10.2378 22.3833 10.353L23.6818 12.6216H22.4516C22.1236 12.6216 21.8146 12.7033 21.5466 12.8563L21.3058 10.5101C21.2797 10.2561 21.0603 10.0626 20.7982 10.0626H17.5101C17.2284 10.0626 17 10.2851 17 10.5596C17 10.8341 17.2284 11.0566 17.5101 11.0566H20.3366L21.5805 23.0582ZM33.378 27.562C34.0695 27.562 34.632 28.1102 34.632 28.784C34.632 29.4578 34.0695 30.006 33.378 30.006C32.6865 30.006 32.1238 29.4578 32.1238 28.784C32.1238 28.1102 32.6865 27.562 33.378 27.562ZM25.1302 27.562C25.8217 27.562 26.3844 28.1102 26.3844 28.784C26.3844 29.4578 25.8217 30.006 25.1302 30.006C24.4387 30.006 23.8761 29.4578 23.8761 28.784C23.8761 28.1102 24.4387 27.562 25.1302 27.562ZM34.3892 10.1148L36.9497 12.6216H31.3951L33.967 10.1157C34.0836 10.002 34.2733 10.002 34.3892 10.1148ZM31.8142 10.8076L29.9525 12.6216H28.7434L28.2411 11.7441L31.8142 10.8076ZM23.5226 10.3028L25.6014 9.17316L27.5753 12.6216H24.8498L23.5226 10.3028ZM39.9377 14.2434L36.9073 22.9133C36.7307 23.4184 36.0953 23.8614 35.5476 23.8614H23.6218C23.1165 23.8614 22.6464 23.4476 22.5954 22.9579L22.4152 21.2258H33.3815C33.6632 21.2258 33.8915 21.0033 33.8915 20.7288C33.8915 20.4544 33.6632 20.2318 33.3815 20.2318H22.3118L21.7082 14.4303C21.7082 14.4301 21.7082 14.4301 21.7082 14.43L21.7081 14.4289C21.6851 14.2079 21.7508 14.0018 21.8931 13.8483C22.0323 13.6982 22.2306 13.6156 22.4516 13.6156H38.1722C38.1739 13.6156 38.1755 13.6158 38.1772 13.6158C38.1788 13.6158 38.1805 13.6156 38.1821 13.6156H39.4766C39.6781 13.6156 39.8334 13.6759 39.9138 13.7854C39.9943 13.8948 40.0027 14.0575 39.9377 14.2434Z" fill="white"></path>
+                    </svg>
+                    <svg class="marketBottom__market2-block--delete" width="22" height="22" viewbox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6.0451 15.9547C6.17951 16.0891 6.35516 16.1562 6.53116 16.1562C6.70716 16.1562 6.88282 16.0891 7.01723 15.9547L10.9999 11.972L14.9826 15.9547C15.117 16.0891 15.2927 16.1562 15.4687 16.1562C15.6447 16.1562 15.8203 16.0891 15.9547 15.9547C16.2232 15.6863 16.2232 15.2511 15.9547 14.9826L11.972 10.9999L15.9547 7.01723C16.2232 6.74876 16.2232 6.31357 15.9547 6.0451C15.6863 5.77663 15.2511 5.77663 14.9826 6.0451L10.9999 10.0278L7.01723 6.0451C6.74876 5.77663 6.31357 5.77663 6.0451 6.0451C5.77663 6.31357 5.77663 6.74876 6.0451 7.01723L10.0278 10.9999L6.0451 14.9826C5.77663 15.2511 5.77663 15.6863 6.0451 15.9547Z" fill="white"></path>
+                      <path d="M11 22C13.938 22 16.7004 20.8557 18.7777 18.778C20.8557 16.7004 22 13.938 22 11C22 8.06197 20.8557 5.29959 18.7777 3.22231C16.7004 1.14434 13.938 0 11 0C8.06197 0 5.29959 1.14434 3.22231 3.22197C1.14434 5.29959 0 8.06197 0 11C0 13.938 1.14434 16.7004 3.22231 18.7777C5.29959 20.8557 8.06197 22 11 22ZM4.19444 4.19444C6.01219 2.37634 8.42909 1.375 11 1.375C13.5709 1.375 15.9878 2.37634 17.8056 4.19444C19.6237 6.01219 20.625 8.42909 20.625 11C20.625 13.5709 19.6237 15.9878 17.8056 17.8056C15.9878 19.6237 13.5709 20.625 11 20.625C8.42909 20.625 6.01219 19.6237 4.19444 17.8056C2.37634 15.9878 1.375 13.5709 1.375 11C1.375 8.42909 2.37634 6.01219 4.19444 4.19444Z" fill="white"></path>
+                    </svg>
+                  </div>
+                  <div class="marketBottom__market2-bigBlock full pink">
+                    <div class="marketBottom__market2-block--titleWrapper">
+                      <p class="marketBottom__market2-block--title">Shetland Pony White</p>
+                    </div>
+                    <hr class="marketBottom__market2-hr"/>
+                    <div class="marketBottom__market2-block--iconWrapper"><img class="marketBottom__merket2-block--icon" src="img/frostDrag.svg" alt=""/></div>
+                    <div class="marketBottom__market2-bigBlock--grey">
+                      <div class="marketBottom__market2-block--rareWrapper">
+                        <p class="marketBottom__market2-block--rare">Mythical</p>
+                      </div>
+                      <hr class="marketBottom__market2-hr"/>
+                      <div class="marketBottom__market2-block--icons">
+                        <p class="marketBottom__tag red">R</p>
+                        <p class="marketBottom__tag blue">F</p>
+                      </div>
+                      <hr class="marketBottom__market2-hr"/>
+                      <div class="marketBottom__market2-block--typeWapper">
+                        <p class="marketBottom__market2-block--type">Dark matter</p>
+                      </div>
+                      <hr class="marketBottom__market2-hr"/>
+                      <div class="marketBottom__market2-block--shinyWapper">
+                        <p class="marketBottom__market2-block--shiny">Да</p>
+                      </div>
+                      <hr class="marketBottom__market2-hr"/>
+                      <div class="marketBottom__market2-block--hcWrappeer">
+                        <p class="marketBottom__market2-block--hc">Да</p>
+                      </div>
+                      <hr class="marketBottom__market2-hr"/>
+                      <div class="marketBottom__market2-block--powerWrapper">
+                        <p class="marketBottom__market2-block--power">317d</p>
+                      </div>
+                    </div>
+                    <div class="marketBottom__market2-block--numWrapper">
+                      <p class="marketBottom__market2-block--num">34</p>
+                    </div>
+                    <hr class="marketBottom__market2-hr"/>
+                    <div class="marketBottom__market2-block--priceWrapper">
+                      <p class="marketBottom__market2-block--price">22.22 Р</p>
+                    </div>
+                    <svg class="marketBottom__market2-block--basket" width="57" height="39" viewbox="0 0 57 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="57" height="39" rx="5" fill="#FF7722"></rect>
+                      <path d="M21.5805 23.0582C21.6373 23.6027 21.9396 24.0911 22.3699 24.421C22.129 24.6971 21.9832 25.0543 21.9832 25.4441V26.9057C21.9832 27.5357 22.3564 28.0784 22.9034 28.3333C22.8724 28.4789 22.856 28.6297 22.856 28.7841C22.856 30.0059 23.8762 31 25.1302 31C26.3842 31 27.4044 30.0059 27.4044 28.7841C27.4044 28.6839 27.397 28.5855 27.3836 28.4888H31.1244C31.1111 28.5855 31.1036 28.6839 31.1036 28.7841C31.1036 30.0059 32.1238 31 33.3779 31C34.6318 31 35.6521 30.0059 35.6521 28.7841C35.6521 27.5622 34.6318 26.5681 33.3779 26.5681C32.6171 26.5681 31.943 26.9343 31.5299 27.4948H26.9781C26.565 26.9343 25.8909 26.5681 25.1301 26.5681C24.3993 26.5681 23.7483 26.9062 23.3319 27.4298C23.1361 27.3324 23.0032 27.1348 23.0032 26.9058V25.4442C23.0032 25.1196 23.2744 24.8555 23.6078 24.8555C23.6094 24.8555 23.6109 24.8553 23.6124 24.8553C23.6155 24.8553 23.6186 24.8555 23.6217 24.8555H35.5475C36.5336 24.8555 37.5549 24.1432 37.8728 23.2339L40.9033 14.5639C41.0747 14.0734 41.0164 13.5788 40.7431 13.2069C40.4699 12.835 40.0082 12.6217 39.4764 12.6217H38.3887L35.1111 9.4128C34.6015 8.91638 33.7756 8.91208 33.2601 9.39936L27.7287 10.849L26.2439 8.25497C26.1067 8.01528 25.7961 7.92937 25.55 8.06299L22.5802 9.67682C22.4621 9.741 22.375 9.84835 22.338 9.97515C22.3011 10.102 22.3173 10.2378 22.3833 10.353L23.6818 12.6216H22.4516C22.1236 12.6216 21.8146 12.7033 21.5466 12.8563L21.3058 10.5101C21.2797 10.2561 21.0603 10.0626 20.7982 10.0626H17.5101C17.2284 10.0626 17 10.2851 17 10.5596C17 10.8341 17.2284 11.0566 17.5101 11.0566H20.3366L21.5805 23.0582ZM33.378 27.562C34.0695 27.562 34.632 28.1102 34.632 28.784C34.632 29.4578 34.0695 30.006 33.378 30.006C32.6865 30.006 32.1238 29.4578 32.1238 28.784C32.1238 28.1102 32.6865 27.562 33.378 27.562ZM25.1302 27.562C25.8217 27.562 26.3844 28.1102 26.3844 28.784C26.3844 29.4578 25.8217 30.006 25.1302 30.006C24.4387 30.006 23.8761 29.4578 23.8761 28.784C23.8761 28.1102 24.4387 27.562 25.1302 27.562ZM34.3892 10.1148L36.9497 12.6216H31.3951L33.967 10.1157C34.0836 10.002 34.2733 10.002 34.3892 10.1148ZM31.8142 10.8076L29.9525 12.6216H28.7434L28.2411 11.7441L31.8142 10.8076ZM23.5226 10.3028L25.6014 9.17316L27.5753 12.6216H24.8498L23.5226 10.3028ZM39.9377 14.2434L36.9073 22.9133C36.7307 23.4184 36.0953 23.8614 35.5476 23.8614H23.6218C23.1165 23.8614 22.6464 23.4476 22.5954 22.9579L22.4152 21.2258H33.3815C33.6632 21.2258 33.8915 21.0033 33.8915 20.7288C33.8915 20.4544 33.6632 20.2318 33.3815 20.2318H22.3118L21.7082 14.4303C21.7082 14.4301 21.7082 14.4301 21.7082 14.43L21.7081 14.4289C21.6851 14.2079 21.7508 14.0018 21.8931 13.8483C22.0323 13.6982 22.2306 13.6156 22.4516 13.6156H38.1722C38.1739 13.6156 38.1755 13.6158 38.1772 13.6158C38.1788 13.6158 38.1805 13.6156 38.1821 13.6156H39.4766C39.6781 13.6156 39.8334 13.6759 39.9138 13.7854C39.9943 13.8948 40.0027 14.0575 39.9377 14.2434Z" fill="white"></path>
+                    </svg>
+                    <svg class="marketBottom__market2-block--delete" width="22" height="22" viewbox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6.0451 15.9547C6.17951 16.0891 6.35516 16.1562 6.53116 16.1562C6.70716 16.1562 6.88282 16.0891 7.01723 15.9547L10.9999 11.972L14.9826 15.9547C15.117 16.0891 15.2927 16.1562 15.4687 16.1562C15.6447 16.1562 15.8203 16.0891 15.9547 15.9547C16.2232 15.6863 16.2232 15.2511 15.9547 14.9826L11.972 10.9999L15.9547 7.01723C16.2232 6.74876 16.2232 6.31357 15.9547 6.0451C15.6863 5.77663 15.2511 5.77663 14.9826 6.0451L10.9999 10.0278L7.01723 6.0451C6.74876 5.77663 6.31357 5.77663 6.0451 6.0451C5.77663 6.31357 5.77663 6.74876 6.0451 7.01723L10.0278 10.9999L6.0451 14.9826C5.77663 15.2511 5.77663 15.6863 6.0451 15.9547Z" fill="white"></path>
+                      <path d="M11 22C13.938 22 16.7004 20.8557 18.7777 18.778C20.8557 16.7004 22 13.938 22 11C22 8.06197 20.8557 5.29959 18.7777 3.22231C16.7004 1.14434 13.938 0 11 0C8.06197 0 5.29959 1.14434 3.22231 3.22197C1.14434 5.29959 0 8.06197 0 11C0 13.938 1.14434 16.7004 3.22231 18.7777C5.29959 20.8557 8.06197 22 11 22ZM4.19444 4.19444C6.01219 2.37634 8.42909 1.375 11 1.375C13.5709 1.375 15.9878 2.37634 17.8056 4.19444C19.6237 6.01219 20.625 8.42909 20.625 11C20.625 13.5709 19.6237 15.9878 17.8056 17.8056C15.9878 19.6237 13.5709 20.625 11 20.625C8.42909 20.625 6.01219 19.6237 4.19444 17.8056C2.37634 15.9878 1.375 13.5709 1.375 11C1.375 8.42909 2.37634 6.01219 4.19444 4.19444Z" fill="white"></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="marketBottom__lots-box">
+                <p class="marketBottom__lots-title">Игра - категория</p>
+                <div class="marketBottom__market2-block center">
+                  <svg class="marketBottom__market2-arrow" width="8" height="14" viewbox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 1L1 7L7 13" stroke="#FF5C00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                  <div class="marketBottom__market2-pag"><a class="marketBottom__market2-pag--item active" href=""></a><a class="marketBottom__market2-pag--item" href=""></a><a class="marketBottom__market2-pag--item" href=""></a><a class="marketBottom__market2-pag--item" href=""></a></div>
+                  <svg class="marketBottom__market2-arrow" width="8" height="14" viewbox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.999999 13L7 7L1 1" stroke="#FF5C00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </div>
+                <div class="marketBottom__market2-titleLine full">
+                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--title">
+                    <p class="marketBottom__market2-titleLine--titleBlockText">Наименование</p>
+                  </div>
+                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--icon">
+                    <p class="marketBottom__market2-titleLine--titleBlockText">Иконка</p>
+                  </div>
+                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--rare">
+                    <p class="marketBottom__market2-titleLine--titleBlockText">Редкость</p>
+                    <svg width="8" height="13" viewbox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.64645 12.3536C3.84171 12.5488 4.15829 12.5488 4.35355 12.3536L7.53553 9.17157C7.7308 8.97631 7.7308 8.65973 7.53553 8.46447C7.34027 8.2692 7.02369 8.2692 6.82843 8.46447L4 11.2929L1.17157 8.46447C0.976311 8.2692 0.659729 8.2692 0.464466 8.46447C0.269204 8.65973 0.269204 8.97631 0.464466 9.17157L3.64645 12.3536ZM3.5 2.18557e-08L3.5 12L4.5 12L4.5 -2.18557e-08L3.5 2.18557e-08Z" fill="#FF5C00"></path>
+                    </svg>
+                  </div>
+                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--huge">
+                    <p class="marketBottom__market2-titleLine--titleBlockText">Huge</p>
+                  </div>
+                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--type">
+                    <p class="marketBottom__market2-titleLine--titleBlockText">Тип</p>
+                    <svg width="8" height="13" viewbox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.64645 12.3536C3.84171 12.5488 4.15829 12.5488 4.35355 12.3536L7.53553 9.17157C7.7308 8.97631 7.7308 8.65973 7.53553 8.46447C7.34027 8.2692 7.02369 8.2692 6.82843 8.46447L4 11.2929L1.17157 8.46447C0.976311 8.2692 0.659729 8.2692 0.464466 8.46447C0.269204 8.65973 0.269204 8.97631 0.464466 9.17157L3.64645 12.3536ZM3.5 2.18557e-08L3.5 12L4.5 12L4.5 -2.18557e-08L3.5 2.18557e-08Z" fill="#FF5C00"></path>
+                    </svg>
+                  </div>
+                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--shiny">
+                    <p class="marketBottom__market2-titleLine--titleBlockText">Shiny</p>
+                    <svg width="8" height="13" viewbox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.64645 12.3536C3.84171 12.5488 4.15829 12.5488 4.35355 12.3536L7.53553 9.17157C7.7308 8.97631 7.7308 8.65973 7.53553 8.46447C7.34027 8.2692 7.02369 8.2692 6.82843 8.46447L4 11.2929L1.17157 8.46447C0.976311 8.2692 0.659729 8.2692 0.464466 8.46447C0.269204 8.65973 0.269204 8.97631 0.464466 9.17157L3.64645 12.3536ZM3.5 2.18557e-08L3.5 12L4.5 12L4.5 -2.18557e-08L3.5 2.18557e-08Z" fill="#FF5C00"></path>
+                    </svg>
+                  </div>
+                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--hc">
+                    <p class="marketBottom__market2-titleLine--titleBlockText">HC</p>
+                    <svg width="8" height="13" viewbox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.64645 12.3536C3.84171 12.5488 4.15829 12.5488 4.35355 12.3536L7.53553 9.17157C7.7308 8.97631 7.7308 8.65973 7.53553 8.46447C7.34027 8.2692 7.02369 8.2692 6.82843 8.46447L4 11.2929L1.17157 8.46447C0.976311 8.2692 0.659729 8.2692 0.464466 8.46447C0.269204 8.65973 0.269204 8.97631 0.464466 9.17157L3.64645 12.3536ZM3.5 2.18557e-08L3.5 12L4.5 12L4.5 -2.18557e-08L3.5 2.18557e-08Z" fill="#FF5C00"></path>
+                    </svg>
+                  </div>
+                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--power">
+                    <p class="marketBottom__market2-titleLine--titleBlockText">Сила</p>
+                    <svg width="8" height="13" viewbox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.64645 12.3536C3.84171 12.5488 4.15829 12.5488 4.35355 12.3536L7.53553 9.17157C7.7308 8.97631 7.7308 8.65973 7.53553 8.46447C7.34027 8.2692 7.02369 8.2692 6.82843 8.46447L4 11.2929L1.17157 8.46447C0.976311 8.2692 0.659729 8.2692 0.464466 8.46447C0.269204 8.65973 0.269204 8.97631 0.464466 9.17157L3.64645 12.3536ZM3.5 2.18557e-08L3.5 12L4.5 12L4.5 -2.18557e-08L3.5 2.18557e-08Z" fill="#FF5C00"></path>
+                    </svg>
+                  </div>
+                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--num">
+                    <p class="marketBottom__market2-titleLine--titleBlockText">Кол-во</p>
+                  </div>
+                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--price">
+                    <p class="marketBottom__market2-titleLine--titleBlockText">Цена</p>
+                  </div>
+                </div>
+                <div class="marketBottom__market2-content">
+                  <div class="marketBottom__market2-bigBlock full blue">
+                    <div class="marketBottom__market2-block--titleWrapper">
+                      <p class="marketBottom__market2-block--title">Shetland Pony White</p>
+                    </div>
+                    <hr class="marketBottom__market2-hr"/>
+                    <div class="marketBottom__market2-block--iconWrapper"><img class="marketBottom__merket2-block--icon" src="img/frostDrag.svg" alt=""/></div>
+                    <div class="marketBottom__market2-bigBlock--grey">
+                      <div class="marketBottom__market2-block--rareWrapper">
+                        <p class="marketBottom__market2-block--rare">Mythical</p>
+                      </div>
+                      <hr class="marketBottom__market2-hr"/>
+                      <div class="marketBottom__market2-block--icons">
+                        <p class="marketBottom__tag red">R</p>
+                        <p class="marketBottom__tag blue">F</p>
+                      </div>
+                      <hr class="marketBottom__market2-hr"/>
+                      <div class="marketBottom__market2-block--typeWapper">
+                        <p class="marketBottom__market2-block--type">Dark matter</p>
+                      </div>
+                      <hr class="marketBottom__market2-hr"/>
+                      <div class="marketBottom__market2-block--shinyWapper">
+                        <p class="marketBottom__market2-block--shiny">Да</p>
+                      </div>
+                      <hr class="marketBottom__market2-hr"/>
+                      <div class="marketBottom__market2-block--hcWrappeer">
+                        <p class="marketBottom__market2-block--hc">Да</p>
+                      </div>
+                      <hr class="marketBottom__market2-hr"/>
+                      <div class="marketBottom__market2-block--powerWrapper">
+                        <p class="marketBottom__market2-block--power">317d</p>
+                      </div>
+                    </div>
+                    <div class="marketBottom__market2-block--numWrapper">
+                      <p class="marketBottom__market2-block--num">34</p>
+                    </div>
+                    <hr class="marketBottom__market2-hr"/>
+                    <div class="marketBottom__market2-block--priceWrapper">
+                      <p class="marketBottom__market2-block--price">22.22 Р</p>
+                    </div>
+                    <svg class="marketBottom__market2-block--basket" width="57" height="39" viewbox="0 0 57 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="57" height="39" rx="5" fill="#FF7722"></rect>
+                      <path d="M21.5805 23.0582C21.6373 23.6027 21.9396 24.0911 22.3699 24.421C22.129 24.6971 21.9832 25.0543 21.9832 25.4441V26.9057C21.9832 27.5357 22.3564 28.0784 22.9034 28.3333C22.8724 28.4789 22.856 28.6297 22.856 28.7841C22.856 30.0059 23.8762 31 25.1302 31C26.3842 31 27.4044 30.0059 27.4044 28.7841C27.4044 28.6839 27.397 28.5855 27.3836 28.4888H31.1244C31.1111 28.5855 31.1036 28.6839 31.1036 28.7841C31.1036 30.0059 32.1238 31 33.3779 31C34.6318 31 35.6521 30.0059 35.6521 28.7841C35.6521 27.5622 34.6318 26.5681 33.3779 26.5681C32.6171 26.5681 31.943 26.9343 31.5299 27.4948H26.9781C26.565 26.9343 25.8909 26.5681 25.1301 26.5681C24.3993 26.5681 23.7483 26.9062 23.3319 27.4298C23.1361 27.3324 23.0032 27.1348 23.0032 26.9058V25.4442C23.0032 25.1196 23.2744 24.8555 23.6078 24.8555C23.6094 24.8555 23.6109 24.8553 23.6124 24.8553C23.6155 24.8553 23.6186 24.8555 23.6217 24.8555H35.5475C36.5336 24.8555 37.5549 24.1432 37.8728 23.2339L40.9033 14.5639C41.0747 14.0734 41.0164 13.5788 40.7431 13.2069C40.4699 12.835 40.0082 12.6217 39.4764 12.6217H38.3887L35.1111 9.4128C34.6015 8.91638 33.7756 8.91208 33.2601 9.39936L27.7287 10.849L26.2439 8.25497C26.1067 8.01528 25.7961 7.92937 25.55 8.06299L22.5802 9.67682C22.4621 9.741 22.375 9.84835 22.338 9.97515C22.3011 10.102 22.3173 10.2378 22.3833 10.353L23.6818 12.6216H22.4516C22.1236 12.6216 21.8146 12.7033 21.5466 12.8563L21.3058 10.5101C21.2797 10.2561 21.0603 10.0626 20.7982 10.0626H17.5101C17.2284 10.0626 17 10.2851 17 10.5596C17 10.8341 17.2284 11.0566 17.5101 11.0566H20.3366L21.5805 23.0582ZM33.378 27.562C34.0695 27.562 34.632 28.1102 34.632 28.784C34.632 29.4578 34.0695 30.006 33.378 30.006C32.6865 30.006 32.1238 29.4578 32.1238 28.784C32.1238 28.1102 32.6865 27.562 33.378 27.562ZM25.1302 27.562C25.8217 27.562 26.3844 28.1102 26.3844 28.784C26.3844 29.4578 25.8217 30.006 25.1302 30.006C24.4387 30.006 23.8761 29.4578 23.8761 28.784C23.8761 28.1102 24.4387 27.562 25.1302 27.562ZM34.3892 10.1148L36.9497 12.6216H31.3951L33.967 10.1157C34.0836 10.002 34.2733 10.002 34.3892 10.1148ZM31.8142 10.8076L29.9525 12.6216H28.7434L28.2411 11.7441L31.8142 10.8076ZM23.5226 10.3028L25.6014 9.17316L27.5753 12.6216H24.8498L23.5226 10.3028ZM39.9377 14.2434L36.9073 22.9133C36.7307 23.4184 36.0953 23.8614 35.5476 23.8614H23.6218C23.1165 23.8614 22.6464 23.4476 22.5954 22.9579L22.4152 21.2258H33.3815C33.6632 21.2258 33.8915 21.0033 33.8915 20.7288C33.8915 20.4544 33.6632 20.2318 33.3815 20.2318H22.3118L21.7082 14.4303C21.7082 14.4301 21.7082 14.4301 21.7082 14.43L21.7081 14.4289C21.6851 14.2079 21.7508 14.0018 21.8931 13.8483C22.0323 13.6982 22.2306 13.6156 22.4516 13.6156H38.1722C38.1739 13.6156 38.1755 13.6158 38.1772 13.6158C38.1788 13.6158 38.1805 13.6156 38.1821 13.6156H39.4766C39.6781 13.6156 39.8334 13.6759 39.9138 13.7854C39.9943 13.8948 40.0027 14.0575 39.9377 14.2434Z" fill="white"></path>
+                    </svg>
+                    <svg class="marketBottom__market2-block--delete" width="22" height="22" viewbox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6.0451 15.9547C6.17951 16.0891 6.35516 16.1562 6.53116 16.1562C6.70716 16.1562 6.88282 16.0891 7.01723 15.9547L10.9999 11.972L14.9826 15.9547C15.117 16.0891 15.2927 16.1562 15.4687 16.1562C15.6447 16.1562 15.8203 16.0891 15.9547 15.9547C16.2232 15.6863 16.2232 15.2511 15.9547 14.9826L11.972 10.9999L15.9547 7.01723C16.2232 6.74876 16.2232 6.31357 15.9547 6.0451C15.6863 5.77663 15.2511 5.77663 14.9826 6.0451L10.9999 10.0278L7.01723 6.0451C6.74876 5.77663 6.31357 5.77663 6.0451 6.0451C5.77663 6.31357 5.77663 6.74876 6.0451 7.01723L10.0278 10.9999L6.0451 14.9826C5.77663 15.2511 5.77663 15.6863 6.0451 15.9547Z" fill="white"></path>
+                      <path d="M11 22C13.938 22 16.7004 20.8557 18.7777 18.778C20.8557 16.7004 22 13.938 22 11C22 8.06197 20.8557 5.29959 18.7777 3.22231C16.7004 1.14434 13.938 0 11 0C8.06197 0 5.29959 1.14434 3.22231 3.22197C1.14434 5.29959 0 8.06197 0 11C0 13.938 1.14434 16.7004 3.22231 18.7777C5.29959 20.8557 8.06197 22 11 22ZM4.19444 4.19444C6.01219 2.37634 8.42909 1.375 11 1.375C13.5709 1.375 15.9878 2.37634 17.8056 4.19444C19.6237 6.01219 20.625 8.42909 20.625 11C20.625 13.5709 19.6237 15.9878 17.8056 17.8056C15.9878 19.6237 13.5709 20.625 11 20.625C8.42909 20.625 6.01219 19.6237 4.19444 17.8056C2.37634 15.9878 1.375 13.5709 1.375 11C1.375 8.42909 2.37634 6.01219 4.19444 4.19444Z" fill="white"></path>
+                    </svg>
+                  </div>
+                  <div class="marketBottom__market2-bigBlock full pink">
+                    <div class="marketBottom__market2-block--titleWrapper">
+                      <p class="marketBottom__market2-block--title">Shetland Pony White</p>
+                    </div>
+                    <hr class="marketBottom__market2-hr"/>
+                    <div class="marketBottom__market2-block--iconWrapper"><img class="marketBottom__merket2-block--icon" src="img/frostDrag.svg" alt=""/></div>
+                    <div class="marketBottom__market2-bigBlock--grey">
+                      <div class="marketBottom__market2-block--rareWrapper">
+                        <p class="marketBottom__market2-block--rare">Mythical</p>
+                      </div>
+                      <hr class="marketBottom__market2-hr"/>
+                      <div class="marketBottom__market2-block--icons">
+                        <p class="marketBottom__tag red">R</p>
+                        <p class="marketBottom__tag blue">F</p>
+                      </div>
+                      <hr class="marketBottom__market2-hr"/>
+                      <div class="marketBottom__market2-block--typeWapper">
+                        <p class="marketBottom__market2-block--type">Dark matter</p>
+                      </div>
+                      <hr class="marketBottom__market2-hr"/>
+                      <div class="marketBottom__market2-block--shinyWapper">
+                        <p class="marketBottom__market2-block--shiny">Да</p>
+                      </div>
+                      <hr class="marketBottom__market2-hr"/>
+                      <div class="marketBottom__market2-block--hcWrappeer">
+                        <p class="marketBottom__market2-block--hc">Да</p>
+                      </div>
+                      <hr class="marketBottom__market2-hr"/>
+                      <div class="marketBottom__market2-block--powerWrapper">
+                        <p class="marketBottom__market2-block--power">317d</p>
+                      </div>
+                    </div>
+                    <div class="marketBottom__market2-block--numWrapper">
+                      <p class="marketBottom__market2-block--num">34</p>
+                    </div>
+                    <hr class="marketBottom__market2-hr"/>
+                    <div class="marketBottom__market2-block--priceWrapper">
+                      <p class="marketBottom__market2-block--price">22.22 Р</p>
+                    </div>
+                    <svg class="marketBottom__market2-block--basket" width="57" height="39" viewbox="0 0 57 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="57" height="39" rx="5" fill="#FF7722"></rect>
+                      <path d="M21.5805 23.0582C21.6373 23.6027 21.9396 24.0911 22.3699 24.421C22.129 24.6971 21.9832 25.0543 21.9832 25.4441V26.9057C21.9832 27.5357 22.3564 28.0784 22.9034 28.3333C22.8724 28.4789 22.856 28.6297 22.856 28.7841C22.856 30.0059 23.8762 31 25.1302 31C26.3842 31 27.4044 30.0059 27.4044 28.7841C27.4044 28.6839 27.397 28.5855 27.3836 28.4888H31.1244C31.1111 28.5855 31.1036 28.6839 31.1036 28.7841C31.1036 30.0059 32.1238 31 33.3779 31C34.6318 31 35.6521 30.0059 35.6521 28.7841C35.6521 27.5622 34.6318 26.5681 33.3779 26.5681C32.6171 26.5681 31.943 26.9343 31.5299 27.4948H26.9781C26.565 26.9343 25.8909 26.5681 25.1301 26.5681C24.3993 26.5681 23.7483 26.9062 23.3319 27.4298C23.1361 27.3324 23.0032 27.1348 23.0032 26.9058V25.4442C23.0032 25.1196 23.2744 24.8555 23.6078 24.8555C23.6094 24.8555 23.6109 24.8553 23.6124 24.8553C23.6155 24.8553 23.6186 24.8555 23.6217 24.8555H35.5475C36.5336 24.8555 37.5549 24.1432 37.8728 23.2339L40.9033 14.5639C41.0747 14.0734 41.0164 13.5788 40.7431 13.2069C40.4699 12.835 40.0082 12.6217 39.4764 12.6217H38.3887L35.1111 9.4128C34.6015 8.91638 33.7756 8.91208 33.2601 9.39936L27.7287 10.849L26.2439 8.25497C26.1067 8.01528 25.7961 7.92937 25.55 8.06299L22.5802 9.67682C22.4621 9.741 22.375 9.84835 22.338 9.97515C22.3011 10.102 22.3173 10.2378 22.3833 10.353L23.6818 12.6216H22.4516C22.1236 12.6216 21.8146 12.7033 21.5466 12.8563L21.3058 10.5101C21.2797 10.2561 21.0603 10.0626 20.7982 10.0626H17.5101C17.2284 10.0626 17 10.2851 17 10.5596C17 10.8341 17.2284 11.0566 17.5101 11.0566H20.3366L21.5805 23.0582ZM33.378 27.562C34.0695 27.562 34.632 28.1102 34.632 28.784C34.632 29.4578 34.0695 30.006 33.378 30.006C32.6865 30.006 32.1238 29.4578 32.1238 28.784C32.1238 28.1102 32.6865 27.562 33.378 27.562ZM25.1302 27.562C25.8217 27.562 26.3844 28.1102 26.3844 28.784C26.3844 29.4578 25.8217 30.006 25.1302 30.006C24.4387 30.006 23.8761 29.4578 23.8761 28.784C23.8761 28.1102 24.4387 27.562 25.1302 27.562ZM34.3892 10.1148L36.9497 12.6216H31.3951L33.967 10.1157C34.0836 10.002 34.2733 10.002 34.3892 10.1148ZM31.8142 10.8076L29.9525 12.6216H28.7434L28.2411 11.7441L31.8142 10.8076ZM23.5226 10.3028L25.6014 9.17316L27.5753 12.6216H24.8498L23.5226 10.3028ZM39.9377 14.2434L36.9073 22.9133C36.7307 23.4184 36.0953 23.8614 35.5476 23.8614H23.6218C23.1165 23.8614 22.6464 23.4476 22.5954 22.9579L22.4152 21.2258H33.3815C33.6632 21.2258 33.8915 21.0033 33.8915 20.7288C33.8915 20.4544 33.6632 20.2318 33.3815 20.2318H22.3118L21.7082 14.4303C21.7082 14.4301 21.7082 14.4301 21.7082 14.43L21.7081 14.4289C21.6851 14.2079 21.7508 14.0018 21.8931 13.8483C22.0323 13.6982 22.2306 13.6156 22.4516 13.6156H38.1722C38.1739 13.6156 38.1755 13.6158 38.1772 13.6158C38.1788 13.6158 38.1805 13.6156 38.1821 13.6156H39.4766C39.6781 13.6156 39.8334 13.6759 39.9138 13.7854C39.9943 13.8948 40.0027 14.0575 39.9377 14.2434Z" fill="white"></path>
+                    </svg>
+                    <svg class="marketBottom__market2-block--delete" width="22" height="22" viewbox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6.0451 15.9547C6.17951 16.0891 6.35516 16.1562 6.53116 16.1562C6.70716 16.1562 6.88282 16.0891 7.01723 15.9547L10.9999 11.972L14.9826 15.9547C15.117 16.0891 15.2927 16.1562 15.4687 16.1562C15.6447 16.1562 15.8203 16.0891 15.9547 15.9547C16.2232 15.6863 16.2232 15.2511 15.9547 14.9826L11.972 10.9999L15.9547 7.01723C16.2232 6.74876 16.2232 6.31357 15.9547 6.0451C15.6863 5.77663 15.2511 5.77663 14.9826 6.0451L10.9999 10.0278L7.01723 6.0451C6.74876 5.77663 6.31357 5.77663 6.0451 6.0451C5.77663 6.31357 5.77663 6.74876 6.0451 7.01723L10.0278 10.9999L6.0451 14.9826C5.77663 15.2511 5.77663 15.6863 6.0451 15.9547Z" fill="white"></path>
+                      <path d="M11 22C13.938 22 16.7004 20.8557 18.7777 18.778C20.8557 16.7004 22 13.938 22 11C22 8.06197 20.8557 5.29959 18.7777 3.22231C16.7004 1.14434 13.938 0 11 0C8.06197 0 5.29959 1.14434 3.22231 3.22197C1.14434 5.29959 0 8.06197 0 11C0 13.938 1.14434 16.7004 3.22231 18.7777C5.29959 20.8557 8.06197 22 11 22ZM4.19444 4.19444C6.01219 2.37634 8.42909 1.375 11 1.375C13.5709 1.375 15.9878 2.37634 17.8056 4.19444C19.6237 6.01219 20.625 8.42909 20.625 11C20.625 13.5709 19.6237 15.9878 17.8056 17.8056C15.9878 19.6237 13.5709 20.625 11 20.625C8.42909 20.625 6.01219 19.6237 4.19444 17.8056C2.37634 15.9878 1.375 13.5709 1.375 11C1.375 8.42909 2.37634 6.01219 4.19444 4.19444Z" fill="white"></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="marketBottom__lots-box">
+                <p class="marketBottom__lots-title">Игра - категория</p>
+                <div class="marketBottom__market2-block center">
+                  <svg class="marketBottom__market2-arrow" width="8" height="14" viewbox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 1L1 7L7 13" stroke="#FF5C00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                  <div class="marketBottom__market2-pag"><a class="marketBottom__market2-pag--item active" href=""></a><a class="marketBottom__market2-pag--item" href=""></a><a class="marketBottom__market2-pag--item" href=""></a><a class="marketBottom__market2-pag--item" href=""></a></div>
+                  <svg class="marketBottom__market2-arrow" width="8" height="14" viewbox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.999999 13L7 7L1 1" stroke="#FF5C00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </div>
+                <div class="marketBottom__market2-titleLine full">
+                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--title">
+                    <p class="marketBottom__market2-titleLine--titleBlockText">Наименование</p>
+                  </div>
+                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--icon">
+                    <p class="marketBottom__market2-titleLine--titleBlockText">Иконка</p>
+                  </div>
+                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--rare">
+                    <p class="marketBottom__market2-titleLine--titleBlockText">Редкость</p>
+                    <svg width="8" height="13" viewbox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.64645 12.3536C3.84171 12.5488 4.15829 12.5488 4.35355 12.3536L7.53553 9.17157C7.7308 8.97631 7.7308 8.65973 7.53553 8.46447C7.34027 8.2692 7.02369 8.2692 6.82843 8.46447L4 11.2929L1.17157 8.46447C0.976311 8.2692 0.659729 8.2692 0.464466 8.46447C0.269204 8.65973 0.269204 8.97631 0.464466 9.17157L3.64645 12.3536ZM3.5 2.18557e-08L3.5 12L4.5 12L4.5 -2.18557e-08L3.5 2.18557e-08Z" fill="#FF5C00"></path>
+                    </svg>
+                  </div>
+                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--huge">
+                    <p class="marketBottom__market2-titleLine--titleBlockText">Huge</p>
+                  </div>
+                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--type">
+                    <p class="marketBottom__market2-titleLine--titleBlockText">Тип</p>
+                    <svg width="8" height="13" viewbox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.64645 12.3536C3.84171 12.5488 4.15829 12.5488 4.35355 12.3536L7.53553 9.17157C7.7308 8.97631 7.7308 8.65973 7.53553 8.46447C7.34027 8.2692 7.02369 8.2692 6.82843 8.46447L4 11.2929L1.17157 8.46447C0.976311 8.2692 0.659729 8.2692 0.464466 8.46447C0.269204 8.65973 0.269204 8.97631 0.464466 9.17157L3.64645 12.3536ZM3.5 2.18557e-08L3.5 12L4.5 12L4.5 -2.18557e-08L3.5 2.18557e-08Z" fill="#FF5C00"></path>
+                    </svg>
+                  </div>
+                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--shiny">
+                    <p class="marketBottom__market2-titleLine--titleBlockText">Shiny</p>
+                    <svg width="8" height="13" viewbox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.64645 12.3536C3.84171 12.5488 4.15829 12.5488 4.35355 12.3536L7.53553 9.17157C7.7308 8.97631 7.7308 8.65973 7.53553 8.46447C7.34027 8.2692 7.02369 8.2692 6.82843 8.46447L4 11.2929L1.17157 8.46447C0.976311 8.2692 0.659729 8.2692 0.464466 8.46447C0.269204 8.65973 0.269204 8.97631 0.464466 9.17157L3.64645 12.3536ZM3.5 2.18557e-08L3.5 12L4.5 12L4.5 -2.18557e-08L3.5 2.18557e-08Z" fill="#FF5C00"></path>
+                    </svg>
+                  </div>
+                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--hc">
+                    <p class="marketBottom__market2-titleLine--titleBlockText">HC</p>
+                    <svg width="8" height="13" viewbox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.64645 12.3536C3.84171 12.5488 4.15829 12.5488 4.35355 12.3536L7.53553 9.17157C7.7308 8.97631 7.7308 8.65973 7.53553 8.46447C7.34027 8.2692 7.02369 8.2692 6.82843 8.46447L4 11.2929L1.17157 8.46447C0.976311 8.2692 0.659729 8.2692 0.464466 8.46447C0.269204 8.65973 0.269204 8.97631 0.464466 9.17157L3.64645 12.3536ZM3.5 2.18557e-08L3.5 12L4.5 12L4.5 -2.18557e-08L3.5 2.18557e-08Z" fill="#FF5C00"></path>
+                    </svg>
+                  </div>
+                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--power">
+                    <p class="marketBottom__market2-titleLine--titleBlockText">Сила</p>
+                    <svg width="8" height="13" viewbox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.64645 12.3536C3.84171 12.5488 4.15829 12.5488 4.35355 12.3536L7.53553 9.17157C7.7308 8.97631 7.7308 8.65973 7.53553 8.46447C7.34027 8.2692 7.02369 8.2692 6.82843 8.46447L4 11.2929L1.17157 8.46447C0.976311 8.2692 0.659729 8.2692 0.464466 8.46447C0.269204 8.65973 0.269204 8.97631 0.464466 9.17157L3.64645 12.3536ZM3.5 2.18557e-08L3.5 12L4.5 12L4.5 -2.18557e-08L3.5 2.18557e-08Z" fill="#FF5C00"></path>
+                    </svg>
+                  </div>
+                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--num">
+                    <p class="marketBottom__market2-titleLine--titleBlockText">Кол-во</p>
+                  </div>
+                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--price">
+                    <p class="marketBottom__market2-titleLine--titleBlockText">Цена</p>
+                  </div>
+                </div>
+                <div class="marketBottom__market2-content">
+                  <div class="marketBottom__market2-bigBlock full blue">
+                    <div class="marketBottom__market2-block--titleWrapper">
+                      <p class="marketBottom__market2-block--title">Shetland Pony White</p>
+                    </div>
+                    <hr class="marketBottom__market2-hr"/>
+                    <div class="marketBottom__market2-block--iconWrapper"><img class="marketBottom__merket2-block--icon" src="img/frostDrag.svg" alt=""/></div>
+                    <div class="marketBottom__market2-bigBlock--grey">
+                      <div class="marketBottom__market2-block--rareWrapper">
+                        <p class="marketBottom__market2-block--rare">Mythical</p>
+                      </div>
+                      <hr class="marketBottom__market2-hr"/>
+                      <div class="marketBottom__market2-block--icons">
+                        <p class="marketBottom__tag red">R</p>
+                        <p class="marketBottom__tag blue">F</p>
+                      </div>
+                      <hr class="marketBottom__market2-hr"/>
+                      <div class="marketBottom__market2-block--typeWapper">
+                        <p class="marketBottom__market2-block--type">Dark matter</p>
+                      </div>
+                      <hr class="marketBottom__market2-hr"/>
+                      <div class="marketBottom__market2-block--shinyWapper">
+                        <p class="marketBottom__market2-block--shiny">Да</p>
+                      </div>
+                      <hr class="marketBottom__market2-hr"/>
+                      <div class="marketBottom__market2-block--hcWrappeer">
+                        <p class="marketBottom__market2-block--hc">Да</p>
+                      </div>
+                      <hr class="marketBottom__market2-hr"/>
+                      <div class="marketBottom__market2-block--powerWrapper">
+                        <p class="marketBottom__market2-block--power">317d</p>
+                      </div>
+                    </div>
+                    <div class="marketBottom__market2-block--numWrapper">
+                      <p class="marketBottom__market2-block--num">34</p>
+                    </div>
+                    <hr class="marketBottom__market2-hr"/>
+                    <div class="marketBottom__market2-block--priceWrapper">
+                      <p class="marketBottom__market2-block--price">22.22 Р</p>
+                    </div>
+                    <svg class="marketBottom__market2-block--basket" width="57" height="39" viewbox="0 0 57 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="57" height="39" rx="5" fill="#FF7722"></rect>
+                      <path d="M21.5805 23.0582C21.6373 23.6027 21.9396 24.0911 22.3699 24.421C22.129 24.6971 21.9832 25.0543 21.9832 25.4441V26.9057C21.9832 27.5357 22.3564 28.0784 22.9034 28.3333C22.8724 28.4789 22.856 28.6297 22.856 28.7841C22.856 30.0059 23.8762 31 25.1302 31C26.3842 31 27.4044 30.0059 27.4044 28.7841C27.4044 28.6839 27.397 28.5855 27.3836 28.4888H31.1244C31.1111 28.5855 31.1036 28.6839 31.1036 28.7841C31.1036 30.0059 32.1238 31 33.3779 31C34.6318 31 35.6521 30.0059 35.6521 28.7841C35.6521 27.5622 34.6318 26.5681 33.3779 26.5681C32.6171 26.5681 31.943 26.9343 31.5299 27.4948H26.9781C26.565 26.9343 25.8909 26.5681 25.1301 26.5681C24.3993 26.5681 23.7483 26.9062 23.3319 27.4298C23.1361 27.3324 23.0032 27.1348 23.0032 26.9058V25.4442C23.0032 25.1196 23.2744 24.8555 23.6078 24.8555C23.6094 24.8555 23.6109 24.8553 23.6124 24.8553C23.6155 24.8553 23.6186 24.8555 23.6217 24.8555H35.5475C36.5336 24.8555 37.5549 24.1432 37.8728 23.2339L40.9033 14.5639C41.0747 14.0734 41.0164 13.5788 40.7431 13.2069C40.4699 12.835 40.0082 12.6217 39.4764 12.6217H38.3887L35.1111 9.4128C34.6015 8.91638 33.7756 8.91208 33.2601 9.39936L27.7287 10.849L26.2439 8.25497C26.1067 8.01528 25.7961 7.92937 25.55 8.06299L22.5802 9.67682C22.4621 9.741 22.375 9.84835 22.338 9.97515C22.3011 10.102 22.3173 10.2378 22.3833 10.353L23.6818 12.6216H22.4516C22.1236 12.6216 21.8146 12.7033 21.5466 12.8563L21.3058 10.5101C21.2797 10.2561 21.0603 10.0626 20.7982 10.0626H17.5101C17.2284 10.0626 17 10.2851 17 10.5596C17 10.8341 17.2284 11.0566 17.5101 11.0566H20.3366L21.5805 23.0582ZM33.378 27.562C34.0695 27.562 34.632 28.1102 34.632 28.784C34.632 29.4578 34.0695 30.006 33.378 30.006C32.6865 30.006 32.1238 29.4578 32.1238 28.784C32.1238 28.1102 32.6865 27.562 33.378 27.562ZM25.1302 27.562C25.8217 27.562 26.3844 28.1102 26.3844 28.784C26.3844 29.4578 25.8217 30.006 25.1302 30.006C24.4387 30.006 23.8761 29.4578 23.8761 28.784C23.8761 28.1102 24.4387 27.562 25.1302 27.562ZM34.3892 10.1148L36.9497 12.6216H31.3951L33.967 10.1157C34.0836 10.002 34.2733 10.002 34.3892 10.1148ZM31.8142 10.8076L29.9525 12.6216H28.7434L28.2411 11.7441L31.8142 10.8076ZM23.5226 10.3028L25.6014 9.17316L27.5753 12.6216H24.8498L23.5226 10.3028ZM39.9377 14.2434L36.9073 22.9133C36.7307 23.4184 36.0953 23.8614 35.5476 23.8614H23.6218C23.1165 23.8614 22.6464 23.4476 22.5954 22.9579L22.4152 21.2258H33.3815C33.6632 21.2258 33.8915 21.0033 33.8915 20.7288C33.8915 20.4544 33.6632 20.2318 33.3815 20.2318H22.3118L21.7082 14.4303C21.7082 14.4301 21.7082 14.4301 21.7082 14.43L21.7081 14.4289C21.6851 14.2079 21.7508 14.0018 21.8931 13.8483C22.0323 13.6982 22.2306 13.6156 22.4516 13.6156H38.1722C38.1739 13.6156 38.1755 13.6158 38.1772 13.6158C38.1788 13.6158 38.1805 13.6156 38.1821 13.6156H39.4766C39.6781 13.6156 39.8334 13.6759 39.9138 13.7854C39.9943 13.8948 40.0027 14.0575 39.9377 14.2434Z" fill="white"></path>
+                    </svg>
+                    <svg class="marketBottom__market2-block--delete" width="22" height="22" viewbox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6.0451 15.9547C6.17951 16.0891 6.35516 16.1562 6.53116 16.1562C6.70716 16.1562 6.88282 16.0891 7.01723 15.9547L10.9999 11.972L14.9826 15.9547C15.117 16.0891 15.2927 16.1562 15.4687 16.1562C15.6447 16.1562 15.8203 16.0891 15.9547 15.9547C16.2232 15.6863 16.2232 15.2511 15.9547 14.9826L11.972 10.9999L15.9547 7.01723C16.2232 6.74876 16.2232 6.31357 15.9547 6.0451C15.6863 5.77663 15.2511 5.77663 14.9826 6.0451L10.9999 10.0278L7.01723 6.0451C6.74876 5.77663 6.31357 5.77663 6.0451 6.0451C5.77663 6.31357 5.77663 6.74876 6.0451 7.01723L10.0278 10.9999L6.0451 14.9826C5.77663 15.2511 5.77663 15.6863 6.0451 15.9547Z" fill="white"></path>
+                      <path d="M11 22C13.938 22 16.7004 20.8557 18.7777 18.778C20.8557 16.7004 22 13.938 22 11C22 8.06197 20.8557 5.29959 18.7777 3.22231C16.7004 1.14434 13.938 0 11 0C8.06197 0 5.29959 1.14434 3.22231 3.22197C1.14434 5.29959 0 8.06197 0 11C0 13.938 1.14434 16.7004 3.22231 18.7777C5.29959 20.8557 8.06197 22 11 22ZM4.19444 4.19444C6.01219 2.37634 8.42909 1.375 11 1.375C13.5709 1.375 15.9878 2.37634 17.8056 4.19444C19.6237 6.01219 20.625 8.42909 20.625 11C20.625 13.5709 19.6237 15.9878 17.8056 17.8056C15.9878 19.6237 13.5709 20.625 11 20.625C8.42909 20.625 6.01219 19.6237 4.19444 17.8056C2.37634 15.9878 1.375 13.5709 1.375 11C1.375 8.42909 2.37634 6.01219 4.19444 4.19444Z" fill="white"></path>
+                    </svg>
+                  </div>
+                  <div class="marketBottom__market2-bigBlock full pink">
+                    <div class="marketBottom__market2-block--titleWrapper">
+                      <p class="marketBottom__market2-block--title">Shetland Pony White</p>
+                    </div>
+                    <hr class="marketBottom__market2-hr"/>
+                    <div class="marketBottom__market2-block--iconWrapper"><img class="marketBottom__merket2-block--icon" src="img/frostDrag.svg" alt=""/></div>
+                    <div class="marketBottom__market2-bigBlock--grey">
+                      <div class="marketBottom__market2-block--rareWrapper">
+                        <p class="marketBottom__market2-block--rare">Mythical</p>
+                      </div>
+                      <hr class="marketBottom__market2-hr"/>
+                      <div class="marketBottom__market2-block--icons">
+                        <p class="marketBottom__tag red">R</p>
+                        <p class="marketBottom__tag blue">F</p>
+                      </div>
+                      <hr class="marketBottom__market2-hr"/>
+                      <div class="marketBottom__market2-block--typeWapper">
+                        <p class="marketBottom__market2-block--type">Dark matter</p>
+                      </div>
+                      <hr class="marketBottom__market2-hr"/>
+                      <div class="marketBottom__market2-block--shinyWapper">
+                        <p class="marketBottom__market2-block--shiny">Да</p>
+                      </div>
+                      <hr class="marketBottom__market2-hr"/>
+                      <div class="marketBottom__market2-block--hcWrappeer">
+                        <p class="marketBottom__market2-block--hc">Да</p>
+                      </div>
+                      <hr class="marketBottom__market2-hr"/>
+                      <div class="marketBottom__market2-block--powerWrapper">
+                        <p class="marketBottom__market2-block--power">317d</p>
+                      </div>
+                    </div>
+                    <div class="marketBottom__market2-block--numWrapper">
+                      <p class="marketBottom__market2-block--num">34</p>
+                    </div>
+                    <hr class="marketBottom__market2-hr"/>
+                    <div class="marketBottom__market2-block--priceWrapper">
+                      <p class="marketBottom__market2-block--price">22.22 Р</p>
+                    </div>
+                    <svg class="marketBottom__market2-block--basket" width="57" height="39" viewbox="0 0 57 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="57" height="39" rx="5" fill="#FF7722"></rect>
+                      <path d="M21.5805 23.0582C21.6373 23.6027 21.9396 24.0911 22.3699 24.421C22.129 24.6971 21.9832 25.0543 21.9832 25.4441V26.9057C21.9832 27.5357 22.3564 28.0784 22.9034 28.3333C22.8724 28.4789 22.856 28.6297 22.856 28.7841C22.856 30.0059 23.8762 31 25.1302 31C26.3842 31 27.4044 30.0059 27.4044 28.7841C27.4044 28.6839 27.397 28.5855 27.3836 28.4888H31.1244C31.1111 28.5855 31.1036 28.6839 31.1036 28.7841C31.1036 30.0059 32.1238 31 33.3779 31C34.6318 31 35.6521 30.0059 35.6521 28.7841C35.6521 27.5622 34.6318 26.5681 33.3779 26.5681C32.6171 26.5681 31.943 26.9343 31.5299 27.4948H26.9781C26.565 26.9343 25.8909 26.5681 25.1301 26.5681C24.3993 26.5681 23.7483 26.9062 23.3319 27.4298C23.1361 27.3324 23.0032 27.1348 23.0032 26.9058V25.4442C23.0032 25.1196 23.2744 24.8555 23.6078 24.8555C23.6094 24.8555 23.6109 24.8553 23.6124 24.8553C23.6155 24.8553 23.6186 24.8555 23.6217 24.8555H35.5475C36.5336 24.8555 37.5549 24.1432 37.8728 23.2339L40.9033 14.5639C41.0747 14.0734 41.0164 13.5788 40.7431 13.2069C40.4699 12.835 40.0082 12.6217 39.4764 12.6217H38.3887L35.1111 9.4128C34.6015 8.91638 33.7756 8.91208 33.2601 9.39936L27.7287 10.849L26.2439 8.25497C26.1067 8.01528 25.7961 7.92937 25.55 8.06299L22.5802 9.67682C22.4621 9.741 22.375 9.84835 22.338 9.97515C22.3011 10.102 22.3173 10.2378 22.3833 10.353L23.6818 12.6216H22.4516C22.1236 12.6216 21.8146 12.7033 21.5466 12.8563L21.3058 10.5101C21.2797 10.2561 21.0603 10.0626 20.7982 10.0626H17.5101C17.2284 10.0626 17 10.2851 17 10.5596C17 10.8341 17.2284 11.0566 17.5101 11.0566H20.3366L21.5805 23.0582ZM33.378 27.562C34.0695 27.562 34.632 28.1102 34.632 28.784C34.632 29.4578 34.0695 30.006 33.378 30.006C32.6865 30.006 32.1238 29.4578 32.1238 28.784C32.1238 28.1102 32.6865 27.562 33.378 27.562ZM25.1302 27.562C25.8217 27.562 26.3844 28.1102 26.3844 28.784C26.3844 29.4578 25.8217 30.006 25.1302 30.006C24.4387 30.006 23.8761 29.4578 23.8761 28.784C23.8761 28.1102 24.4387 27.562 25.1302 27.562ZM34.3892 10.1148L36.9497 12.6216H31.3951L33.967 10.1157C34.0836 10.002 34.2733 10.002 34.3892 10.1148ZM31.8142 10.8076L29.9525 12.6216H28.7434L28.2411 11.7441L31.8142 10.8076ZM23.5226 10.3028L25.6014 9.17316L27.5753 12.6216H24.8498L23.5226 10.3028ZM39.9377 14.2434L36.9073 22.9133C36.7307 23.4184 36.0953 23.8614 35.5476 23.8614H23.6218C23.1165 23.8614 22.6464 23.4476 22.5954 22.9579L22.4152 21.2258H33.3815C33.6632 21.2258 33.8915 21.0033 33.8915 20.7288C33.8915 20.4544 33.6632 20.2318 33.3815 20.2318H22.3118L21.7082 14.4303C21.7082 14.4301 21.7082 14.4301 21.7082 14.43L21.7081 14.4289C21.6851 14.2079 21.7508 14.0018 21.8931 13.8483C22.0323 13.6982 22.2306 13.6156 22.4516 13.6156H38.1722C38.1739 13.6156 38.1755 13.6158 38.1772 13.6158C38.1788 13.6158 38.1805 13.6156 38.1821 13.6156H39.4766C39.6781 13.6156 39.8334 13.6759 39.9138 13.7854C39.9943 13.8948 40.0027 14.0575 39.9377 14.2434Z" fill="white"></path>
+                    </svg>
+                    <svg class="marketBottom__market2-block--delete" width="22" height="22" viewbox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6.0451 15.9547C6.17951 16.0891 6.35516 16.1562 6.53116 16.1562C6.70716 16.1562 6.88282 16.0891 7.01723 15.9547L10.9999 11.972L14.9826 15.9547C15.117 16.0891 15.2927 16.1562 15.4687 16.1562C15.6447 16.1562 15.8203 16.0891 15.9547 15.9547C16.2232 15.6863 16.2232 15.2511 15.9547 14.9826L11.972 10.9999L15.9547 7.01723C16.2232 6.74876 16.2232 6.31357 15.9547 6.0451C15.6863 5.77663 15.2511 5.77663 14.9826 6.0451L10.9999 10.0278L7.01723 6.0451C6.74876 5.77663 6.31357 5.77663 6.0451 6.0451C5.77663 6.31357 5.77663 6.74876 6.0451 7.01723L10.0278 10.9999L6.0451 14.9826C5.77663 15.2511 5.77663 15.6863 6.0451 15.9547Z" fill="white"></path>
+                      <path d="M11 22C13.938 22 16.7004 20.8557 18.7777 18.778C20.8557 16.7004 22 13.938 22 11C22 8.06197 20.8557 5.29959 18.7777 3.22231C16.7004 1.14434 13.938 0 11 0C8.06197 0 5.29959 1.14434 3.22231 3.22197C1.14434 5.29959 0 8.06197 0 11C0 13.938 1.14434 16.7004 3.22231 18.7777C5.29959 20.8557 8.06197 22 11 22ZM4.19444 4.19444C6.01219 2.37634 8.42909 1.375 11 1.375C13.5709 1.375 15.9878 2.37634 17.8056 4.19444C19.6237 6.01219 20.625 8.42909 20.625 11C20.625 13.5709 19.6237 15.9878 17.8056 17.8056C15.9878 19.6237 13.5709 20.625 11 20.625C8.42909 20.625 6.01219 19.6237 4.19444 17.8056C2.37634 15.9878 1.375 13.5709 1.375 11C1.375 8.42909 2.37634 6.01219 4.19444 4.19444Z" fill="white"></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="marketBottom__mobileTitle mobile"><a class="marketTop__left-back" href="market.html">
+              <svg width="8" height="14" viewbox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7 1L1 7L7 13" stroke="#FF5C00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+              <p class="marketTop__left-back--text">Назад</p></a>
+            <p class="marketTop__left-text">Мои лоты</p><a class="marketBottom__left-back--right" href="">Очистить все</a>
+          </div>
+          <div class="marketBottom__mobileFiltes mobile">
+            <div class="marketBottom__mobileFilter">
+              <div class="marketBottom__mobileFilter-title">
+                <div class="marketBottom__lots-box--select">
+                  <p class="marketBottom__lots-box--select---title">Игра</p>
+                  <svg width="10" height="6" viewbox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L5 5L9 1" stroke="#FF8231" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </div>
+                <div class="marketBottom__lots-box--menu"><a class="marketBottom__lots-box--menu---item" href="">Roblox </a><a class="marketBottom__lots-box--menu---item" href="">CS:GO </a><a class="marketBottom__lots-box--menu---item" href="">Minecraft </a></div>
+              </div>
+              <div class="marketBottom__mobileFilter-title">
+                <div class="marketBottom__lots-box--select">
+                  <p class="marketBottom__lots-box--select---title">Категория товара</p>
+                  <svg width="10" height="6" viewbox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L5 5L9 1" stroke="#FF8231" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </div>
+                <div class="marketBottom__lots-box--menu"><a class="marketBottom__lots-box--menu---item" href="">Пример </a><a class="marketBottom__lots-box--menu---item" href="">Пример 1</a><a class="marketBottom__lots-box--menu---item" href="">Пример 2 </a></div>
+              </div>
+            </div>
+          </div>
+          <div class="marketBottom__mobileItems mobile">
+            <p class="marketBottom__mobileItems-title">Игра - категория</p>
+            <div class="marketBottom__mobileItems-item green">
+              <svg class="marketBottom__mobileItem-delete" width="22" height="22" viewbox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.0451 15.9548C6.17951 16.0892 6.35516 16.1562 6.53116 16.1562C6.70716 16.1562 6.88282 16.0892 7.01723 15.9548L10.9999 11.9721L14.9826 15.9548C15.117 16.0892 15.2927 16.1562 15.4687 16.1562C15.6447 16.1562 15.8203 16.0892 15.9547 15.9548C16.2232 15.6863 16.2232 15.2512 15.9547 14.9827L11.972 11L15.9547 7.01731C16.2232 6.74884 16.2232 6.31365 15.9547 6.04519C15.6863 5.77672 15.2511 5.77672 14.9826 6.04519L10.9999 10.0279L7.01723 6.04519C6.74876 5.77672 6.31357 5.77672 6.0451 6.04519C5.77663 6.31365 5.77663 6.74884 6.0451 7.01731L10.0278 11L6.0451 14.9827C5.77663 15.2512 5.77663 15.6863 6.0451 15.9548Z" fill="white"></path>
+                <path d="M11 22C13.938 22 16.7004 20.8557 18.7777 18.778C20.8557 16.7004 22 13.938 22 11C22 8.06197 20.8557 5.29959 18.7777 3.22231C16.7004 1.14434 13.938 0 11 0C8.06197 0 5.29959 1.14434 3.22231 3.22197C1.14434 5.29959 0 8.06197 0 11C0 13.938 1.14434 16.7004 3.22231 18.7777C5.29959 20.8557 8.06197 22 11 22ZM4.19444 4.19444C6.01219 2.37634 8.42909 1.375 11 1.375C13.5709 1.375 15.9878 2.37634 17.8056 4.19444C19.6237 6.01219 20.625 8.42909 20.625 11C20.625 13.5709 19.6237 15.9878 17.8056 17.8056C15.9878 19.6237 13.5709 20.625 11 20.625C8.42909 20.625 6.01219 19.6237 4.19444 17.8056C2.37634 15.9878 1.375 13.5709 1.375 11C1.375 8.42909 2.37634 6.01219 4.19444 4.19444Z" fill="white"></path>
+              </svg>
+              <div class="marketBottom__mobileItem-top"><img class="marketBottom__mobileItem-img" src="img/frostDrag.svg" alt="">
+                <div class="marketBottom__mobileItem-right">
+                  <p class="marketBottom__mobileItem-title">Shetland Pony White Pony White</p>
+                  <p class="marketBottom__mobileItem-author">Mrroblox237</p>
+                  <div class="marketBottom__mobileItem-tags">
+                    <p class="marketBottom__tag green">N</p>
+                    <p class="marketBottom__tag blue">F</p>
+                    <p class="marketBottom__tag blue">F</p>
+                  </div>
+                </div>
+              </div>
+              <div class="marketBottom__market2Mobile-item--bottom lot">
+                <hr class="marketBottom__market2Mobile-hr">
+                <p class="marketBottom__market2Mobile-item--text number">34</p>
+                <hr class="marketBottom__market2Mobile-hr">
+                <p class="marketBottom__market2Mobile-item--text big price">28.22 Р</p>
+                <hr class="marketBottom__market2Mobile-hr">
+                <svg width="17" height="18" viewbox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.74984 12.3616L5.47807 15.7044L13.386 6.89112L9.65724 3.54665L1.74984 12.3616ZM8.72291 7.63814L4.28297 12.5877C4.22717 12.6492 4.14973 12.6873 4.06661 12.6919C3.98348 12.697 3.90149 12.6679 3.84 12.6116L3.61965 12.4134C3.49097 12.2979 3.48015 12.0997 3.59574 11.971L8.03568 7.02151C8.09148 6.95945 8.16891 6.92187 8.25204 6.91731C8.33517 6.91276 8.41716 6.9418 8.47865 6.99703L8.69899 7.1946C8.82767 7.31075 8.83792 7.50889 8.72291 7.63814ZM10.0142 5.28493L10.234 5.48193C10.3638 5.59752 10.3741 5.79623 10.2585 5.9249L9.87246 6.35535C9.81553 6.41741 9.73866 6.45442 9.65553 6.45954C9.57241 6.4641 9.49099 6.43563 9.42892 6.37983L9.20858 6.18226C9.14709 6.12646 9.10951 6.04903 9.10382 5.96533C9.09926 5.8822 9.1283 5.80021 9.18467 5.73872L9.5707 5.30828C9.68685 5.1796 9.88556 5.16878 10.0142 5.28493ZM10.9332 2.12493L14.6609 5.46884L13.7453 6.48972L10.0182 3.14581L10.9332 2.12493ZM16.16 2.17333L14.0471 0.27733C13.6013 -0.122936 12.9163 -0.0853581 12.5166 0.360458L11.2708 1.74972L14.9991 5.09306L16.2448 3.70493C16.4362 3.49085 16.5369 3.20901 16.5193 2.92205C16.5033 2.63452 16.3741 2.36521 16.16 2.17333ZM14.9222 3.69981L12.6624 1.67342L13.3149 0.946908L15.5741 2.97272L14.9222 3.69981ZM0.0212364 17.3106C-0.0362699 17.5099 0.025222 17.7245 0.178952 17.8617C0.332681 18.0001 0.552458 18.0382 0.743766 17.9602L5.03055 16.2043L1.30346 12.8604L0.0212364 17.3106ZM3.81039 15.9925L2.12619 16.682L1.14119 15.7983L1.64508 14.0498L3.81039 15.9925Z" fill="#FF5C00"></path>
+                </svg>
+              </div>
+              <div class="marketBottom__mobileItem-options--wrapper"> 
+                <div class="marketBottom__mobileItem-options">
+                  <p class="marketBottom__mobileItem-option rare">Mythical</p>
+                  <hr class="marketBottom__market2Mobile-hr">
+                  <div class="marketBottom__mobileItem-option huge">
+                    <p class="marketBottom__tag red">R</p>
+                    <p class="marketBottom__tag blue">F</p>
+                  </div>
+                  <hr class="marketBottom__market2Mobile-hr">
+                  <p class="marketBottom__mobileItem-option type">Dark matter</p>
+                  <hr class="marketBottom__market2Mobile-hr">
+                  <p class="marketBottom__mobileItem-option hc">Да</p>
+                  <hr class="marketBottom__market2Mobile-hr">
+                  <p class="marketBottom__mobileItem-option shiny">Да</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="marketBottom__mobileItems mobile">
+            <p class="marketBottom__mobileItems-title">Игра - категория</p>
+            <div class="marketBottom__mobileItems-item red">
+              <svg class="marketBottom__mobileItem-delete" width="22" height="22" viewbox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.0451 15.9548C6.17951 16.0892 6.35516 16.1562 6.53116 16.1562C6.70716 16.1562 6.88282 16.0892 7.01723 15.9548L10.9999 11.9721L14.9826 15.9548C15.117 16.0892 15.2927 16.1562 15.4687 16.1562C15.6447 16.1562 15.8203 16.0892 15.9547 15.9548C16.2232 15.6863 16.2232 15.2512 15.9547 14.9827L11.972 11L15.9547 7.01731C16.2232 6.74884 16.2232 6.31365 15.9547 6.04519C15.6863 5.77672 15.2511 5.77672 14.9826 6.04519L10.9999 10.0279L7.01723 6.04519C6.74876 5.77672 6.31357 5.77672 6.0451 6.04519C5.77663 6.31365 5.77663 6.74884 6.0451 7.01731L10.0278 11L6.0451 14.9827C5.77663 15.2512 5.77663 15.6863 6.0451 15.9548Z" fill="white"></path>
+                <path d="M11 22C13.938 22 16.7004 20.8557 18.7777 18.778C20.8557 16.7004 22 13.938 22 11C22 8.06197 20.8557 5.29959 18.7777 3.22231C16.7004 1.14434 13.938 0 11 0C8.06197 0 5.29959 1.14434 3.22231 3.22197C1.14434 5.29959 0 8.06197 0 11C0 13.938 1.14434 16.7004 3.22231 18.7777C5.29959 20.8557 8.06197 22 11 22ZM4.19444 4.19444C6.01219 2.37634 8.42909 1.375 11 1.375C13.5709 1.375 15.9878 2.37634 17.8056 4.19444C19.6237 6.01219 20.625 8.42909 20.625 11C20.625 13.5709 19.6237 15.9878 17.8056 17.8056C15.9878 19.6237 13.5709 20.625 11 20.625C8.42909 20.625 6.01219 19.6237 4.19444 17.8056C2.37634 15.9878 1.375 13.5709 1.375 11C1.375 8.42909 2.37634 6.01219 4.19444 4.19444Z" fill="white"></path>
+              </svg>
+              <div class="marketBottom__mobileItem-top"><img class="marketBottom__mobileItem-img" src="img/frostDrag.svg" alt="">
+                <div class="marketBottom__mobileItem-right">
+                  <p class="marketBottom__mobileItem-title">Shetland Pony White Pony White</p>
+                  <p class="marketBottom__mobileItem-author">Mrroblox237</p>
+                  <div class="marketBottom__mobileItem-tags">
+                    <p class="marketBottom__tag green">N</p>
+                    <p class="marketBottom__tag blue">F</p>
+                    <p class="marketBottom__tag blue">F</p>
+                  </div>
+                </div>
+              </div>
+              <div class="marketBottom__market2Mobile-item--bottom lot">
+                <hr class="marketBottom__market2Mobile-hr">
+                <p class="marketBottom__market2Mobile-item--text number">34</p>
+                <hr class="marketBottom__market2Mobile-hr">
+                <p class="marketBottom__market2Mobile-item--text big price">28.22 Р</p>
+                <hr class="marketBottom__market2Mobile-hr">
+                <svg width="17" height="18" viewbox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.74984 12.3616L5.47807 15.7044L13.386 6.89112L9.65724 3.54665L1.74984 12.3616ZM8.72291 7.63814L4.28297 12.5877C4.22717 12.6492 4.14973 12.6873 4.06661 12.6919C3.98348 12.697 3.90149 12.6679 3.84 12.6116L3.61965 12.4134C3.49097 12.2979 3.48015 12.0997 3.59574 11.971L8.03568 7.02151C8.09148 6.95945 8.16891 6.92187 8.25204 6.91731C8.33517 6.91276 8.41716 6.9418 8.47865 6.99703L8.69899 7.1946C8.82767 7.31075 8.83792 7.50889 8.72291 7.63814ZM10.0142 5.28493L10.234 5.48193C10.3638 5.59752 10.3741 5.79623 10.2585 5.9249L9.87246 6.35535C9.81553 6.41741 9.73866 6.45442 9.65553 6.45954C9.57241 6.4641 9.49099 6.43563 9.42892 6.37983L9.20858 6.18226C9.14709 6.12646 9.10951 6.04903 9.10382 5.96533C9.09926 5.8822 9.1283 5.80021 9.18467 5.73872L9.5707 5.30828C9.68685 5.1796 9.88556 5.16878 10.0142 5.28493ZM10.9332 2.12493L14.6609 5.46884L13.7453 6.48972L10.0182 3.14581L10.9332 2.12493ZM16.16 2.17333L14.0471 0.27733C13.6013 -0.122936 12.9163 -0.0853581 12.5166 0.360458L11.2708 1.74972L14.9991 5.09306L16.2448 3.70493C16.4362 3.49085 16.5369 3.20901 16.5193 2.92205C16.5033 2.63452 16.3741 2.36521 16.16 2.17333ZM14.9222 3.69981L12.6624 1.67342L13.3149 0.946908L15.5741 2.97272L14.9222 3.69981ZM0.0212364 17.3106C-0.0362699 17.5099 0.025222 17.7245 0.178952 17.8617C0.332681 18.0001 0.552458 18.0382 0.743766 17.9602L5.03055 16.2043L1.30346 12.8604L0.0212364 17.3106ZM3.81039 15.9925L2.12619 16.682L1.14119 15.7983L1.64508 14.0498L3.81039 15.9925Z" fill="#FF5C00"></path>
+                </svg>
+              </div>
+              <div class="marketBottom__mobileItem-options--wrapper"> 
+                <div class="marketBottom__mobileItem-options">
+                  <p class="marketBottom__mobileItem-option rare">Mythical</p>
+                  <hr class="marketBottom__market2Mobile-hr">
+                  <div class="marketBottom__mobileItem-option huge">
+                    <p class="marketBottom__tag red">R</p>
+                    <p class="marketBottom__tag blue">F</p>
+                  </div>
+                  <hr class="marketBottom__market2Mobile-hr">
+                  <p class="marketBottom__mobileItem-option type">Dark matter</p>
+                  <hr class="marketBottom__market2Mobile-hr">
+                  <p class="marketBottom__mobileItem-option hc">Да</p>
+                  <hr class="marketBottom__market2Mobile-hr">
+                  <p class="marketBottom__mobileItem-option shiny">Да</p>
+                </div>
+              </div>
+            </div>
+            <div class="marketBottom__mobileItems-item blue">
+              <svg class="marketBottom__mobileItem-delete" width="22" height="22" viewbox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.0451 15.9548C6.17951 16.0892 6.35516 16.1562 6.53116 16.1562C6.70716 16.1562 6.88282 16.0892 7.01723 15.9548L10.9999 11.9721L14.9826 15.9548C15.117 16.0892 15.2927 16.1562 15.4687 16.1562C15.6447 16.1562 15.8203 16.0892 15.9547 15.9548C16.2232 15.6863 16.2232 15.2512 15.9547 14.9827L11.972 11L15.9547 7.01731C16.2232 6.74884 16.2232 6.31365 15.9547 6.04519C15.6863 5.77672 15.2511 5.77672 14.9826 6.04519L10.9999 10.0279L7.01723 6.04519C6.74876 5.77672 6.31357 5.77672 6.0451 6.04519C5.77663 6.31365 5.77663 6.74884 6.0451 7.01731L10.0278 11L6.0451 14.9827C5.77663 15.2512 5.77663 15.6863 6.0451 15.9548Z" fill="white"></path>
+                <path d="M11 22C13.938 22 16.7004 20.8557 18.7777 18.778C20.8557 16.7004 22 13.938 22 11C22 8.06197 20.8557 5.29959 18.7777 3.22231C16.7004 1.14434 13.938 0 11 0C8.06197 0 5.29959 1.14434 3.22231 3.22197C1.14434 5.29959 0 8.06197 0 11C0 13.938 1.14434 16.7004 3.22231 18.7777C5.29959 20.8557 8.06197 22 11 22ZM4.19444 4.19444C6.01219 2.37634 8.42909 1.375 11 1.375C13.5709 1.375 15.9878 2.37634 17.8056 4.19444C19.6237 6.01219 20.625 8.42909 20.625 11C20.625 13.5709 19.6237 15.9878 17.8056 17.8056C15.9878 19.6237 13.5709 20.625 11 20.625C8.42909 20.625 6.01219 19.6237 4.19444 17.8056C2.37634 15.9878 1.375 13.5709 1.375 11C1.375 8.42909 2.37634 6.01219 4.19444 4.19444Z" fill="white"></path>
+              </svg>
+              <div class="marketBottom__mobileItem-top"><img class="marketBottom__mobileItem-img" src="img/frostDrag.svg" alt="">
+                <div class="marketBottom__mobileItem-right">
+                  <p class="marketBottom__mobileItem-title">Shetland Pony White Pony White</p>
+                  <p class="marketBottom__mobileItem-author">Mrroblox237</p>
+                  <div class="marketBottom__mobileItem-tags">
+                    <p class="marketBottom__tag green">N</p>
+                    <p class="marketBottom__tag blue">F</p>
+                    <p class="marketBottom__tag blue">F</p>
+                  </div>
+                </div>
+              </div>
+              <div class="marketBottom__market2Mobile-item--bottom lot">
+                <hr class="marketBottom__market2Mobile-hr">
+                <p class="marketBottom__market2Mobile-item--text number">34</p>
+                <hr class="marketBottom__market2Mobile-hr">
+                <p class="marketBottom__market2Mobile-item--text big price">28.22 Р</p>
+                <hr class="marketBottom__market2Mobile-hr">
+                <svg width="17" height="18" viewbox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.74984 12.3616L5.47807 15.7044L13.386 6.89112L9.65724 3.54665L1.74984 12.3616ZM8.72291 7.63814L4.28297 12.5877C4.22717 12.6492 4.14973 12.6873 4.06661 12.6919C3.98348 12.697 3.90149 12.6679 3.84 12.6116L3.61965 12.4134C3.49097 12.2979 3.48015 12.0997 3.59574 11.971L8.03568 7.02151C8.09148 6.95945 8.16891 6.92187 8.25204 6.91731C8.33517 6.91276 8.41716 6.9418 8.47865 6.99703L8.69899 7.1946C8.82767 7.31075 8.83792 7.50889 8.72291 7.63814ZM10.0142 5.28493L10.234 5.48193C10.3638 5.59752 10.3741 5.79623 10.2585 5.9249L9.87246 6.35535C9.81553 6.41741 9.73866 6.45442 9.65553 6.45954C9.57241 6.4641 9.49099 6.43563 9.42892 6.37983L9.20858 6.18226C9.14709 6.12646 9.10951 6.04903 9.10382 5.96533C9.09926 5.8822 9.1283 5.80021 9.18467 5.73872L9.5707 5.30828C9.68685 5.1796 9.88556 5.16878 10.0142 5.28493ZM10.9332 2.12493L14.6609 5.46884L13.7453 6.48972L10.0182 3.14581L10.9332 2.12493ZM16.16 2.17333L14.0471 0.27733C13.6013 -0.122936 12.9163 -0.0853581 12.5166 0.360458L11.2708 1.74972L14.9991 5.09306L16.2448 3.70493C16.4362 3.49085 16.5369 3.20901 16.5193 2.92205C16.5033 2.63452 16.3741 2.36521 16.16 2.17333ZM14.9222 3.69981L12.6624 1.67342L13.3149 0.946908L15.5741 2.97272L14.9222 3.69981ZM0.0212364 17.3106C-0.0362699 17.5099 0.025222 17.7245 0.178952 17.8617C0.332681 18.0001 0.552458 18.0382 0.743766 17.9602L5.03055 16.2043L1.30346 12.8604L0.0212364 17.3106ZM3.81039 15.9925L2.12619 16.682L1.14119 15.7983L1.64508 14.0498L3.81039 15.9925Z" fill="#FF5C00"></path>
+                </svg>
+              </div>
+              <div class="marketBottom__mobileItem-options--wrapper"> 
+                <div class="marketBottom__mobileItem-options">
+                  <p class="marketBottom__mobileItem-option rare">Mythical</p>
+                  <hr class="marketBottom__market2Mobile-hr">
+                  <div class="marketBottom__mobileItem-option huge">
+                    <p class="marketBottom__tag red">R</p>
+                    <p class="marketBottom__tag blue">F</p>
+                  </div>
+                  <hr class="marketBottom__market2Mobile-hr">
+                  <p class="marketBottom__mobileItem-option type">Dark matter</p>
+                  <hr class="marketBottom__market2Mobile-hr">
+                  <p class="marketBottom__mobileItem-option hc">Да</p>
+                  <hr class="marketBottom__market2Mobile-hr">
+                  <p class="marketBottom__mobileItem-option shiny">Да</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer noMobile"><img class="footer__background" src="img/background.svg" alt=""><img class="footer__background" src="img/backgroundDark.svg" alt="">
+    <div class="footer__inner">
+      <div class="footer__top">
+        <div class="footer__column">
+          <p class="footer__logo">Market</p><a class="footer__profile" href="profile.html">
+            <div class="footer__profile-profile"><img class="footer__profile-img" src="img/profileIcon.svg" alt=""></div>
+            <div class="footer__profile-right">
+              <p class="footer__profile-hello">Здравствуйте, <span class="footer__profile-name">Сергей!</span></p>
+              <p class="footer__profile-cabinet">Мой личный кабинет</p>
+            </div></a><a class="footer__pod button" href="">Поддержка</a>
+        </div>
+        <div class="footer__column"><a class="footer__bigLink" href="catalog.html">Магазин</a><a class="footer__bigLink" href="catalog.html">Онлайн покупка</a><a class="footer__bigLink" href="catalog.html">Игры</a>
+        </div>
+        <div class="footer__column">
+          <p class="footer__title">Популярные <span class="footer__title-orange">игры</span></p>
+          <div class="footer__column-content"><a class="footer__content-item" href="catalog.html">Roblox</a><a class="footer__content-item" href="catalog.html">Наименование  </a><a class="footer__content-item" href="catalog.html">Наименование  </a><a class="footer__content-item" href="catalog.html">Наименование  </a><a class="footer__content-item" href="catalog.html">Наименование  </a><a class="footer__content-item" href="catalog.html">Наименование  </a><a class="footer__content-item" href="catalog.html">Наименование  </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__miniText">© 2023, ООО «Market»</p><a class="footer__miniText link" href="polit.html">Политика конфиденциальности</a>
+      </div>
+    </div>
+  </footer>
+  <footer class="footerMobile mobile">
+    <div class="footerMobile__inner"><a class="footerMobile__box" href="">
+        <div class="footerMobile__box-icon">
+          <svg width="25" height="25" viewbox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20.7661 3.56597C18.466 1.26584 15.4146 0 12.1625 0C8.91041 0 5.85901 1.26584 3.55888 3.56597C-0.887003 8.01185 -1.19574 15.1284 2.79217 19.9293C2.4011 20.7166 1.77332 21.6325 0.841953 22.0905C0.394277 22.3118 0.142137 22.7903 0.219323 23.2843C0.296508 23.7783 0.67729 24.1642 1.17128 24.2414C1.40283 24.2774 1.73216 24.3134 2.13352 24.3134C3.20897 24.3134 4.79385 24.0613 6.41474 22.8932C8.22089 23.8658 10.1968 24.3392 12.1573 24.3392C15.3065 24.3392 18.4248 23.1196 20.7712 20.7732C23.0714 18.4731 24.3372 15.4217 24.3372 12.1696C24.3372 8.9175 23.0662 5.8661 20.7661 3.56597ZM19.7833 19.7904C16.3099 23.2637 10.9327 23.9532 6.7029 21.4679C6.42504 21.3032 6.08027 21.3547 5.85901 21.5759C5.83843 21.5862 5.81784 21.6016 5.80241 21.6171C4.40792 22.6977 3.03917 22.9241 2.13352 22.9241H2.12838C3.17295 22.1625 3.8316 21.0305 4.21753 20.1506C4.27928 20.0013 4.28957 19.847 4.25355 19.7029C4.23811 19.5639 4.18151 19.425 4.08374 19.3118C0.317091 15.0563 0.512628 8.57273 4.53656 4.5488C8.7406 0.344762 15.5792 0.344762 19.7781 4.5488C23.9873 8.75283 23.9873 15.5863 19.7833 19.7904Z" fill="white"></path>
+            <path d="M12.1623 13.0237C12.634 13.0237 13.0165 12.6412 13.0165 12.1695C13.0165 11.6977 12.634 11.3153 12.1623 11.3153C11.6905 11.3153 11.3081 11.6977 11.3081 12.1695C11.3081 12.6412 11.6905 13.0237 12.1623 13.0237Z" fill="white"></path>
+            <path d="M16.5671 13.0237C17.0388 13.0237 17.4213 12.6412 17.4213 12.1695C17.4213 11.6977 17.0388 11.3153 16.5671 11.3153C16.0953 11.3153 15.7129 11.6977 15.7129 12.1695C15.7129 12.6412 16.0953 13.0237 16.5671 13.0237Z" fill="white"></path>
+            <path d="M7.75751 13.0237C8.22926 13.0237 8.61169 12.6412 8.61169 12.1695C8.61169 11.6977 8.22926 11.3153 7.75751 11.3153C7.28575 11.3153 6.90332 11.6977 6.90332 12.1695C6.90332 12.6412 7.28575 13.0237 7.75751 13.0237Z" fill="white"></path>
+          </svg>
+        </div>
+        <p class="footerMobile__box-text">Чаты</p></a><a class="footerMobile__box" href="">
+        <div class="footerMobile__box-icon">
+          <svg class="stroke" width="29" height="26" viewbox="0 0 29 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 8.89541C1 14.4641 5.85347 19.9412 13.5075 24.6471C13.8066 24.817 14.2145 25 14.5 25C14.7855 25 15.1933 24.817 15.4788 24.6471C23.1465 19.9412 28 14.4641 28 8.89541C28 4.26799 24.6963 1 20.2915 1C17.7628 1 15.7236 2.15033 14.5 3.915C13.2764 2.16338 11.2235 1 8.70846 1C4.30367 1 1 4.26799 1 8.89541ZM3.18885 8.89541C3.18885 5.41832 5.52719 3.10456 8.68126 3.10456C11.2372 3.10456 12.6918 4.63398 13.5755 5.9412C13.9426 6.46407 14.1737 6.60786 14.5 6.60786C14.8263 6.60786 15.0302 6.45097 15.4244 5.9412C16.3489 4.66014 17.7764 3.10456 20.3187 3.10456C23.4728 3.10456 25.8111 5.41832 25.8111 8.89541C25.8111 13.7582 20.4682 19 14.7719 22.634C14.6359 22.7255 14.5544 22.7909 14.5 22.7909C14.4456 22.7909 14.3505 22.7255 14.2145 22.634C8.53172 19 3.18885 13.7582 3.18885 8.89541Z" fill="#2D2D2E" stroke="#F8F8F8"></path>
+          </svg>
+        </div>
+        <p class="footerMobile__box-text">Избранное</p></a><a class="footerMobile__box active" href="">
+        <div class="footerMobile__box-icon">
+          <svg width="25" height="25" viewbox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19.5424 6.30829L19.5917 6.6H19.8875H24.65V22.5C24.65 23.6817 23.6817 24.65 22.5 24.65H2.5C1.3183 24.65 0.35 23.6817 0.35 22.5V6.6H5.11312H5.40902L5.45825 6.30823C6.02794 2.93176 8.96577 0.35 12.5 0.35C16.0342 0.35 18.9721 2.93176 19.5424 6.30829ZM17.3356 6.6H17.7878L17.6745 6.16227C17.0782 3.85954 14.9888 2.15 12.5 2.15C10.0112 2.15 7.92179 3.85954 7.32555 6.16227L7.21221 6.6H7.66438H17.3356ZM5.35 8.75V8.4H5H2.5H2.15V8.75V22.5V22.85H2.5H22.5H22.85V22.5V8.75V8.4H22.5H20H19.65V8.75V10.9H17.85V8.75V8.4H17.5H7.5H7.15V8.75V10.9H5.35V8.75Z" fill="white" stroke="#FF5C00" stroke-width="0.7"></path>
+          </svg>
+        </div>
+        <p class="footerMobile__box-text">Маркет</p></a><a class="footerMobile__box" href="">
+        <div class="footerMobile__box-icon">
+          <svg width="25" height="24" viewbox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4.77138 15.7129C4.83048 16.2811 5.14542 16.7908 5.5936 17.135C5.34272 17.4231 5.19086 17.7957 5.19086 18.2026V19.7277C5.19086 20.3851 5.57958 20.9514 6.14936 21.2174C6.11707 21.3693 6.09997 21.5266 6.09997 21.6877C6.09997 22.9627 7.16271 24 8.46894 24C9.77522 24 10.8379 22.9627 10.8379 21.6877C10.8379 21.5832 10.8302 21.4805 10.8163 21.3796H14.7129C14.6991 21.4805 14.6913 21.5832 14.6913 21.6877C14.6913 22.9627 15.754 24 17.0603 24C18.3665 24 19.4292 22.9627 19.4292 21.6877C19.4292 20.4127 18.3665 19.3754 17.0603 19.3754C16.2679 19.3754 15.5656 19.7575 15.1353 20.3424H10.3939C9.96355 19.7575 9.26131 19.3754 8.46888 19.3754C7.70758 19.3754 7.02947 19.7282 6.59577 20.2746C6.39174 20.1729 6.25334 19.9668 6.25334 19.7278V18.2026C6.25334 17.8639 6.53585 17.5884 6.88313 17.5884C6.88475 17.5884 6.88632 17.5882 6.88794 17.5881C6.89118 17.5882 6.89442 17.5884 6.8976 17.5884H19.3203C20.3475 17.5884 21.4114 16.8451 21.7425 15.8962L24.8992 6.84933C25.0778 6.33745 25.0171 5.82133 24.7324 5.43327C24.4479 5.04521 23.9669 4.82261 23.4129 4.82261H22.2799L18.8657 1.47423C18.3349 0.956227 17.4746 0.951733 16.9376 1.4602L11.1758 2.97291L9.62908 0.266053C9.48618 0.0159432 9.16263 -0.0736994 8.90628 0.0657282L5.81276 1.74972C5.68964 1.8167 5.59891 1.92871 5.56046 2.06103C5.52195 2.19334 5.5389 2.33514 5.60757 2.45526L6.96025 4.82256H5.67876C5.33705 4.82256 5.01517 4.90776 4.73606 5.06749L4.48517 2.61928C4.458 2.35416 4.22943 2.1523 3.95649 2.1523H0.531317C0.237878 2.1523 0 2.38448 0 2.67089C0 2.95731 0.237878 3.18949 0.531317 3.18949H3.47567L4.77138 15.7129ZM17.0604 20.4126C17.7807 20.4126 18.3667 20.9846 18.3667 21.6877C18.3667 22.3907 17.7807 22.9628 17.0604 22.9628C16.3401 22.9628 15.754 22.3908 15.754 21.6877C15.754 20.9846 16.3401 20.4126 17.0604 20.4126ZM8.46899 20.4126C9.1893 20.4126 9.77537 20.9846 9.77537 21.6877C9.77537 22.3907 9.1893 22.9628 8.46899 22.9628C7.74867 22.9628 7.16266 22.3908 7.16266 21.6877C7.16266 20.9846 7.74867 20.4126 8.46899 20.4126ZM18.1137 2.20673L20.7809 4.82256H14.9949L17.6739 2.20767C17.7954 2.08908 17.993 2.08908 18.1137 2.20673ZM15.4314 2.9297L13.4922 4.82256H12.2327L11.7095 3.90693L15.4314 2.9297ZM6.79433 2.40295L8.95982 1.22417L11.016 4.82256H8.17691L6.79433 2.40295ZM23.8935 6.51486L20.7367 15.5617C20.5528 16.0888 19.891 16.5511 19.3204 16.5511H6.89776C6.37135 16.5511 5.88168 16.1193 5.82854 15.6082L5.64081 13.8008H17.064C17.3575 13.8008 17.5953 13.5687 17.5953 13.2823C17.5953 12.9958 17.3575 12.7637 17.064 12.7637H5.53313L4.90436 6.70985C4.90436 6.7097 4.90436 6.70965 4.90436 6.70955L4.90426 6.70842C4.88032 6.47782 4.94873 6.26272 5.097 6.1026C5.24197 5.94599 5.44858 5.85975 5.67876 5.85975H22.0543C22.0561 5.8598 22.0578 5.86 22.0596 5.86C22.0613 5.86 22.063 5.8598 22.0647 5.85975H23.4131C23.623 5.85975 23.7848 5.92267 23.8686 6.03691C23.9524 6.1511 23.9612 6.32085 23.8935 6.51486Z" fill="#2D2D2E"></path>
+          </svg>
+        </div>
+        <p class="footerMobile__box-text">КОРЗИНА</p></a><a class="footerMobile__box" href="">
+        <div class="footerMobile__box-icon">
+          <svg class="stroke" width="30" height="22" viewbox="0 0 30 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19.7925 14.7587C17.665 14.7587 15.9326 13.0724 15.9326 10.9989C15.9326 8.92989 17.665 7.24241 19.7925 7.24241H27.1324V14.7587H19.7925ZM19.6667 10.0904C19.1527 10.0904 18.734 10.4982 18.734 10.9989C18.734 11.5018 19.1527 11.9073 19.6667 11.9073C20.1806 11.9073 20.5993 11.5018 20.5993 10.9989C20.5993 10.4982 20.1806 10.0904 19.6667 10.0904ZM24.7602 1H5.14802C4.63172 1 4.21539 1.40784 4.21539 1.90847C4.21539 2.4091 4.63172 2.81693 5.14802 2.81693H24.7602C26.068 2.81693 27.1324 3.85371 27.1324 5.13106V5.42433H19.7925C16.6359 5.42433 14.0662 7.92405 14.0662 10.9989C14.0662 14.0748 16.6359 16.5768 19.7925 16.5768H27.1324V16.8701C27.1324 18.1451 26.068 19.1819 24.7602 19.1819H5.23858C3.93078 19.1819 2.86643 18.1451 2.86643 16.8701V5.04056C2.86643 4.53763 2.44892 4.13094 1.9338 4.13094C1.41751 4.13094 1 4.53763 1 5.04056V16.8701C1 19.1487 2.90171 21 5.23858 21H24.7602C27.0971 21 29 19.1487 29 16.8701V5.13106C29 2.8513 27.0971 1 24.7602 1Z" fill="#2D2D2E" stroke="#F8F8F8"></path>
+          </svg>
+        </div>
+        <p class="footerMobile__box-text">Лоты</p></a></div>
+  </footer>
+  <div class="modal__background"></div>
+  <div class="modal" id="choseAvatar">
+    <div class="modal__inner">
+      <svg class="modal__exit js-close-modal" width="14" height="13" viewbox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <line x1="1.72716" y1="1" x2="12.6665" y2="11.9393" stroke="black" stroke-width="1.5" stroke-linecap="round"></line>
+        <line x1="2" y1="11.9393" x2="12.9393" y2="0.999999" stroke="black" stroke-width="1.5" stroke-linecap="round"></line>
+      </svg>
+      <p class="modal__title">Выберите фото профиля</p>
+      <div class="modal__choiceAvatar">
+        <div class="modal__choiceAvatar-item"><img class="modal__choiceAvatar-avatar" src="img/chest.svg" alt="">
+          <div class="modal__choiceAvatar-select--wrapper">
+            <svg class="modal__choiceAvatar-select" width="21" height="15" viewbox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 6.71429L8.18182 13L19 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="modal__choiceAvatar-item"><img class="modal__choiceAvatar-avatar" src="img/chest.svg" alt="">
+          <div class="modal__choiceAvatar-select--wrapper">
+            <svg class="modal__choiceAvatar-select" width="21" height="15" viewbox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 6.71429L8.18182 13L19 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="modal__choiceAvatar-item"><img class="modal__choiceAvatar-avatar" src="img/chest.svg" alt="">
+          <div class="modal__choiceAvatar-select--wrapper">
+            <svg class="modal__choiceAvatar-select" width="21" height="15" viewbox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 6.71429L8.18182 13L19 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="modal__choiceAvatar-item"><img class="modal__choiceAvatar-avatar" src="img/chest.svg" alt="">
+          <div class="modal__choiceAvatar-select--wrapper">
+            <svg class="modal__choiceAvatar-select" width="21" height="15" viewbox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 6.71429L8.18182 13L19 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="modal__choiceAvatar-item"><img class="modal__choiceAvatar-avatar" src="img/chest.svg" alt="">
+          <div class="modal__choiceAvatar-select--wrapper">
+            <svg class="modal__choiceAvatar-select" width="21" height="15" viewbox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 6.71429L8.18182 13L19 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="modal__choiceAvatar-item active"><img class="modal__choiceAvatar-avatar" src="img/chest.svg" alt="">
+          <div class="modal__choiceAvatar-select--wrapper">
+            <svg class="modal__choiceAvatar-select" width="21" height="15" viewbox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 6.71429L8.18182 13L19 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="modal__choiceAvatar-item"><img class="modal__choiceAvatar-avatar" src="img/chest.svg" alt="">
+          <div class="modal__choiceAvatar-select--wrapper">
+            <svg class="modal__choiceAvatar-select" width="21" height="15" viewbox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 6.71429L8.18182 13L19 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="modal__choiceAvatar-item"><img class="modal__choiceAvatar-avatar" src="img/chest.svg" alt="">
+          <div class="modal__choiceAvatar-select--wrapper">
+            <svg class="modal__choiceAvatar-select" width="21" height="15" viewbox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 6.71429L8.18182 13L19 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="modal__choiceAvatar-item"><img class="modal__choiceAvatar-avatar" src="img/chest.svg" alt="">
+          <div class="modal__choiceAvatar-select--wrapper">
+            <svg class="modal__choiceAvatar-select" width="21" height="15" viewbox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 6.71429L8.18182 13L19 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="modal__choiceAvatar-item"><img class="modal__choiceAvatar-avatar" src="img/chest.svg" alt="">
+          <div class="modal__choiceAvatar-select--wrapper">
+            <svg class="modal__choiceAvatar-select" width="21" height="15" viewbox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 6.71429L8.18182 13L19 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="modal__choiceAvatar-item"><img class="modal__choiceAvatar-avatar" src="img/chest.svg" alt="">
+          <div class="modal__choiceAvatar-select--wrapper">
+            <svg class="modal__choiceAvatar-select" width="21" height="15" viewbox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 6.71429L8.18182 13L19 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="modal__choiceAvatar-item"><img class="modal__choiceAvatar-avatar" src="img/chest.svg" alt="">
+          <div class="modal__choiceAvatar-select--wrapper">
+            <svg class="modal__choiceAvatar-select" width="21" height="15" viewbox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 6.71429L8.18182 13L19 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </div>
+        </div>
+      </div><a class="button modal__button modal__choiceAvatar-button js-close-modal" href="">Подтвердить выбор </a>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"> </script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>

@@ -176,6 +176,12 @@ $(document).ready(function() {
             $(this).removeClass('second');
         }, 500)
     })
+
+    //Открытие фильтра в мои лоты
+    $('.marketBottom__lots-box--select').on('click', function(){
+        $(this).next().toggleClass('active');
+        $(this).toggleClass('active');
+    })
     
     //Модальные окна
     //Открытие
