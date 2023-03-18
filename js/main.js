@@ -192,7 +192,16 @@ $(document).ready(function() {
         $(this).toggleClass('active');
         $('.marketBottom__notifications-right').slideToggle();
     })
+
+    $('.marketBottom__history-select--select').on('click', function(){
+        $(this).toggleClass('active');
+        $(this).next().toggleClass('active');
+    })
     
+    $('.marketBottom__historyMobile-select--top').on('click', function(){
+        $(this).toggleClass('active');
+        $(this).next().slideToggle();
+    })
     //Модальные окна
     //Открытие
     $('.js-open-modal').on('click', function(e){

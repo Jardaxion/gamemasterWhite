@@ -679,6 +679,13 @@ table
     --marketMobile-readAll: #404040;
     --not-hr: #454545;
     --not-select: #d3d3d3;
+    --history-pageSelect: #2d2d2e;
+    --history-rightLine: #9f9f9f;
+    --history-selectText: #5c5c5c;
+    --history-bottomHr: #b8b8b8;
+    --history-histor: #f8f8f8;
+    --historyMob-text: #1c1c1c;
+    --historyMob-title: #575757;
 }
 
 .dark
@@ -784,6 +791,13 @@ table
     --marketMobile-readAll: white;
     --not-hr: #44444a;
     --not-select: #212126;
+    --history-pageSelect: #f4f4f4;
+    --history-rightLine: #44444a;
+    --history-selectText: #f8f8f8;
+    --history-bottomHr: #44444a;
+    --history-histor: #44444a;
+    --historyMob-text: white;
+    --historyMob-title: #bbb;
 }
 
 /* Глобальное */
@@ -1391,6 +1405,32 @@ h1
     {
         -webkit-transform: rotate(0deg);
                 transform: rotate(0deg);
+    }
+}
+@-webkit-keyframes loading
+{
+    from
+    {
+        -webkit-transform: rotate(0);
+                transform: rotate(0);
+    }
+    to
+    {
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+    }
+}
+@keyframes loading
+{
+    from
+    {
+        -webkit-transform: rotate(0);
+                transform: rotate(0);
+    }
+    to
+    {
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
     }
 }
 /* Хедер */
@@ -6722,6 +6762,697 @@ a.reg__but
     -webkit-transform: translate(32px, -50%);
         -ms-transform: translate(32px, -50%);
             transform: translate(32px, -50%);
+}
+.marketBottom__history
+{
+    overflow: visible;
+
+    width: 100%;
+}
+.marketBottom__history-top
+{
+    position: relative;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    margin-top: 15px;
+    margin-bottom: 35px;
+
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.marketBottom__history-top::after
+{
+    position: absolute;
+    bottom: -18px;
+    left: 0;
+
+    width: 100%;
+    height: .4px;
+
+    content: '';
+
+    background: var(--history-bottomHr);
+}
+.marketBottom__history-top--right
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.marketBottom__history-select
+{
+    position: relative;
+}
+.marketBottom__history-select--select
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    cursor: pointer;
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.marketBottom__history-select--select.active .marketBottom__history-select--arrow
+{
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
+}
+.marketBottom__history-select--text
+{
+    font-family: 'GothamPro';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 13px;
+
+    color: var(--footerMobile-icon);
+}
+.marketBottom__history-select--arrow
+{
+    margin-left: 26px;
+
+    -webkit-transition: .3s ease all;
+         -o-transition: .3s ease all;
+            transition: .3s ease all;
+}
+.marketBottom__history-select--arrow2
+{
+    margin-left: 20px;
+}
+.marketBottom__history-select--arrow2 *
+{
+    fill: var(--footerMobile-icon);
+}
+.marketBottom__history-menu
+{
+    position: absolute;
+    z-index: 2;
+    top: 36px;
+    left: 0;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+        flex-direction: column;
+
+    width: 186px;
+
+    -webkit-transition: .3s ease all;
+         -o-transition: .3s ease all;
+            transition: .3s ease all;
+    -webkit-transform: translateX(5px);
+        -ms-transform: translateX(5px);
+            transform: translateX(5px);
+    pointer-events: none;
+
+    opacity: 0;
+    border-radius: 5px;
+    background: var(--market2-menu);
+    -webkit-box-shadow: 0 1px 14px 2px rgba(0, 0, 0, .2509803922);
+            box-shadow: 0 1px 14px 2px rgba(0, 0, 0, .2509803922);
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+}
+.marketBottom__history-menu.active
+{
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
+    pointer-events: all;
+
+    opacity: 1;
+}
+.marketBottom__history-menu--text
+{
+    font-family: 'Montserrat';
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 16px;
+
+    padding: 15px 0;
+
+    -webkit-transition: .3s ease all;
+         -o-transition: .3s ease all;
+            transition: .3s ease all;
+    text-align: center;
+
+    color: var(--market2-menu-text);
+    background: var(--market2-menu);
+}
+.marketBottom__history-menu--text:first-of-type
+{
+    border-radius: 5px 5px 0 0;
+}
+.marketBottom__history-menu--text:last-of-type
+{
+    border-radius: 0 0 5px 5px;
+}
+.marketBottom__history-menu--text:hover
+{
+    border-radius: 5px;
+    background: var(--market2-menu-select);
+}
+.marketBottom__history-pageSelect
+{
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+
+    position: relative;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    min-width: 173px;
+
+    color: var(--history-pageSelect);
+
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.marketBottom__history-pageSelect:not(:last-of-type)
+{
+    margin-right: 66px;
+}
+.marketBottom__history-pageSelect.select::before
+{
+    position: absolute;
+    bottom: -18px;
+    left: 0;
+
+    width: 100%;
+    height: 4px;
+
+    content: '';
+
+    border-radius: 3px 3px 0 0;
+    background: #ff5c00;
+}
+.marketBottom__history-pageSelect.rightLine::after
+{
+    position: absolute;
+    right: 0;
+    bottom: -19px;
+
+    width: .4px;
+    height: 48px;
+
+    content: '';
+
+    background: var(--history-rightLine);
+}
+.marketBottom__history-selectText
+{
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+
+    margin-right: 89px;
+
+    -webkit-transition: .3s ease all;
+         -o-transition: .3s ease all;
+            transition: .3s ease all;
+
+    color: var(--history-selectText);
+}
+.marketBottom__history-selectText:hover
+{
+    color: #ff812f;
+}
+.marketBottom__history-selectText.active
+{
+    color: #ff5c00;
+}
+.marketBottom__history-selectText:last-of-type
+{
+    margin-right: 30px;
+}
+.marketBottom__history-bottom
+{
+    overflow: auto;
+
+    height: 776px;
+    padding-top: 60px;
+    padding-right: 73px;
+}
+.marketBottom__history-bottom::-webkit-scrollbar
+{
+    width: 17px;
+}
+.marketBottom__history-bottom::-webkit-scrollbar-track
+{
+    margin-right: 20px;
+
+    border-radius: 8px;
+    background: var(--scrollbar-color);
+}
+.marketBottom__history-bottom::-webkit-scrollbar-thumb
+{
+    border-radius: 6.5px;
+    background-color: #ff812f;
+}
+.marketBottom__history-histor
+{
+    position: relative;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    height: 91px;
+    padding: 13px 50px;
+
+    border-radius: 8px;
+    background: var(--history-histor);
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.marketBottom__history-histor:first-of-type .number::before
+{
+    content: 'Номер сделки';
+}
+.marketBottom__history-histor:first-of-type .date::before
+{
+    content: 'Дата и время';
+}
+.marketBottom__history-histor:first-of-type .status::before
+{
+    content: 'Статус';
+}
+.marketBottom__history-histor:first-of-type .type::before
+{
+    content: 'Тип сделки';
+}
+.marketBottom__history-histor:first-of-type .buy::before
+{
+    content: 'Стоимость';
+}
+.marketBottom__history-histor:first-of-type .numberFin::before
+{
+    content: 'Номер сделки';
+}
+.marketBottom__history-histor:first-of-type .dateFin::before
+{
+    content: 'Дата и время';
+}
+.marketBottom__history-histor:first-of-type .statusFin::before
+{
+    content: 'Статус';
+}
+.marketBottom__history-histor:first-of-type .typeFin::before
+{
+    content: 'Тип сделки';
+}
+.marketBottom__history-histor:first-of-type .buyFin::before
+{
+    content: 'Стоимость';
+}
+.marketBottom__history-histor:first-of-type .meth::before
+{
+    content: 'Метод';
+}
+.marketBottom__history-histor:first-of-type .numberCard::before
+{
+    content: 'Номер';
+}
+.marketBottom__history-histor .number
+{
+    display: block;
+
+    width: 100%;
+    max-width: 294px;
+}
+.marketBottom__history-histor .date
+{
+    display: block;
+
+    width: 100%;
+    max-width: 218px;
+}
+.marketBottom__history-histor .status
+{
+    display: block;
+
+    width: 100%;
+    max-width: 218px;
+}
+.marketBottom__history-histor .type
+{
+    display: block;
+
+    width: 100%;
+    max-width: 186px;
+}
+.marketBottom__history-histor .buy
+{
+    display: block;
+
+    width: 100%;
+    max-width: 163px;
+}
+.marketBottom__history-histor .numberFin
+{
+    display: block;
+
+    width: 100%;
+    max-width: 163px;
+}
+.marketBottom__history-histor .dateFin
+{
+    display: block;
+
+    width: 100%;
+    max-width: 195px;
+}
+.marketBottom__history-histor .statusFin
+{
+    display: block;
+
+    width: 100%;
+    max-width: 133px;
+}
+.marketBottom__history-histor .typeFin
+{
+    display: block;
+
+    width: 100%;
+    max-width: 158px;
+}
+.marketBottom__history-histor .buyFin
+{
+    display: block;
+
+    width: 100%;
+    max-width: 158px;
+}
+.marketBottom__history-histor .meth
+{
+    display: block;
+
+    width: 100%;
+    max-width: 204px;
+}
+.marketBottom__history-histor .numberCard
+{
+    display: block;
+
+    width: 100%;
+    max-width: 163px;
+}
+.marketBottom__history-histor:not(:last-of-type)
+{
+    margin-bottom: 11px;
+}
+.marketBottom__history-text
+{
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+
+    position: relative;
+
+    text-transform: uppercase;
+
+    color: var(--footerMobile-icon);
+}
+.marketBottom__history-text::before
+{
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+
+    position: absolute;
+    top: -68px;
+    left: 0;
+
+    content: '';
+    text-transform: none;
+
+    color: #bbb;
+}
+.marketBottom__history-text.green
+{
+    color: #30ce5c;
+}
+.marketBottom__history-text.red
+{
+    color: #ff6464;
+}
+.marketBottom__history-text.fullRed
+{
+    color: #cd2727;
+}
+.marketBottom__history-text:not(:first-of-type)
+{
+    margin-left: 41px;
+}
+.marketBottom__history-text:not(:last-of-type)::after
+{
+    position: absolute;
+    top: 0;
+    top: 50%;
+    right: 0;
+
+    width: .4px;
+    height: 46px;
+
+    content: '';
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+
+    background: var(--market2-hr);
+}
+.marketBottom__history-text.loading img
+{
+    width: 20px;
+    height: 20px;
+
+    -webkit-animation: loading linear 1s infinite;
+            animation: loading linear 1s infinite;
+}
+.marketBottom__history-more
+{
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+
+    margin-left: auto;
+
+    color: #ff7823;
+}
+.marketBottom__historyMobile-top
+{
+    margin-bottom: 68px;
+}
+.marketBottom__historyMobile-select:not(:last-of-type)
+{
+    margin-bottom: 39px;
+}
+.marketBottom__historyMobile-select--top
+{
+    position: relative;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.marketBottom__historyMobile-select--top.active svg
+{
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
+}
+.marketBottom__historyMobile-select--top svg
+{
+    -webkit-transition: .3s ease all;
+         -o-transition: .3s ease all;
+            transition: .3s ease all;
+}
+.marketBottom__historyMobile-select--top::after
+{
+    position: absolute;
+    bottom: -17px;
+    left: 0;
+
+    width: 100%;
+    height: .4px;
+
+    content: '';
+
+    background: #bebebe;
+}
+.marketBottom__historyMobile-select--text
+{
+    font-family: 'GothamPro';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14px;
+
+    color: var(--historyMob-text);
+}
+.marketBottom__historyMobile-select--text.title
+{
+    margin-left: 20px;
+}
+.marketBottom__historyMobile-select--text:not(:last-of-type)
+{
+    margin-bottom: 20px;
+}
+.marketBottom__historyMobile-select--menu
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+        flex-direction: column;
+
+    margin-top: 50px;
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.marketBottom__historyMobile-select--menu-wrapper
+{
+    display: none;
+}
+.marketBottom__historyMobile-title
+{
+    font-family: 'GothamPro';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14px;
+
+    margin-bottom: 27px;
+    margin-left: 20px;
+
+    color: var(--historyMob-text);
+}
+.marketBottom__historyMobile-his
+{
+    padding: 23px 13px 23px 17px;
+
+    border-radius: 8px;
+    background: var(--history-histor);
+}
+.marketBottom__historyMobile-his:not(:last-of-type)
+{
+    margin-bottom: 14px;
+}
+.marketBottom__historyMobile-his--title
+{
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+
+    margin-bottom: 33px;
+    margin-left: 10px;
+
+    color: var(--historyMob-text);
+}
+.marketBottom__historyMobile-his--line
+{
+    position: relative;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    margin-bottom: 31px;
+
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.marketBottom__historyMobile-his--line:last-of-type
+{
+    margin-bottom: 14px;
+}
+.marketBottom__historyMobile-his--line::after
+{
+    position: absolute;
+    bottom: -14px;
+    left: 0;
+
+    width: 100%;
+    height: .4px;
+
+    content: '';
+
+    background: #5f5f5f;
+}
+.marketBottom__historyMobile-his--line-title
+{
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 15px;
+
+    margin-left: 10px;
+
+    color: var(--historyMob-title);
+}
+.marketBottom__historyMobile-his--line-desc
+{
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+
+    width: 50%;
+
+    text-align: left;
+    text-transform: uppercase;
+
+    color: var(--historyMob-text);
+}
+.marketBottom__historyMobile-his--line-desc.green
+{
+    color: #30ce5c;
+}
+.marketBottom__historyMobile-his--line-desc.red
+{
+    color: #ff6464;
+}
+.marketBottom__historyMobile-his--line-desc.fullRed
+{
+    color: #cd2727;
 }
 
 .marketBottom__market2-bigBlock.full .marketBottom__market2-bigBlock--grey
