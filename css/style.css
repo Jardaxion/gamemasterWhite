@@ -686,6 +686,7 @@ table
     --history-histor: #f8f8f8;
     --historyMob-text: #1c1c1c;
     --historyMob-title: #575757;
+    --log-text: #272727;
 }
 
 .dark
@@ -798,6 +799,7 @@ table
     --history-histor: #44444a;
     --historyMob-text: white;
     --historyMob-title: #bbb;
+    --log-text: white;
 }
 
 /* Глобальное */
@@ -7454,6 +7456,248 @@ a.reg__but
 {
     color: #cd2727;
 }
+.marketBottom__lot
+{
+    overflow: visible;
+
+    width: 100%;
+    margin-right: 0;
+    padding-right: 0;
+}
+.marketBottom__lot .marketBottom__lots-bottom
+{
+    height: 576px;
+}
+.marketBottom__lot-top
+{
+    display: grid;
+
+    margin-top: 47px;
+
+    grid-template-columns: minmax(auto, 1270px) 316px;
+    gap: 21px 23px;
+}
+.marketBottom__lot-info
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    height: 91px;
+    padding: 13px 22px 13px 43px;
+
+    border-radius: 8px;
+    background: var(--history-histor);
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.marketBottom__lot-text
+{
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+
+    position: relative;
+
+    color: var(--log-text);
+}
+.marketBottom__lot-text::before
+{
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+
+    position: absolute;
+    top: -68px;
+    left: 0;
+
+    content: '';
+
+    color: #bbb;
+}
+.marketBottom__lot-text.date
+{
+    width: 100%;
+    max-width: 218px;
+}
+.marketBottom__lot-text.date::before
+{
+    content: 'Дата и время';
+}
+.marketBottom__lot-text.status
+{
+    width: 100%;
+    max-width: 152px;
+}
+.marketBottom__lot-text.status::before
+{
+    content: 'Статус';
+}
+.marketBottom__lot-text.type
+{
+    width: 100%;
+    max-width: 136px;
+}
+.marketBottom__lot-text.type::before
+{
+    content: 'Тип сделки';
+}
+.marketBottom__lot-text.summ
+{
+    width: 100%;
+    max-width: 146px;
+}
+.marketBottom__lot-text.summ::before
+{
+    content: 'Сумма сделки:';
+}
+.marketBottom__lot-text.kom
+{
+    width: 100%;
+    max-width: 161px;
+}
+.marketBottom__lot-text.kom::before
+{
+    content: 'Комиссия сервиса:';
+}
+.marketBottom__lot-text.komSys
+{
+    width: 100%;
+    max-width: 163px;
+}
+.marketBottom__lot-text.komSys::before
+{
+    content: 'Комиссия системы:';
+}
+.marketBottom__lot-text:not(:first-of-type)
+{
+    margin-left: 44px;
+}
+.marketBottom__lot-text:not(:last-of-type)::after
+{
+    position: absolute;
+    top: 0;
+    top: 50%;
+    right: 0;
+
+    display: block;
+
+    width: .4px;
+    height: 64px;
+
+    content: '';
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+
+    background: #d7d7d7;
+}
+.marketBottom__lot-text.green
+{
+    color: #30ce5c;
+}
+.marketBottom__lot-text.red
+{
+    color: #ff6464;
+}
+.marketBottom__lot-text.fullRed
+{
+    color: #cd2727;
+}
+.marketBottom__lot-text span.green
+{
+    color: #30ce5c;
+}
+.marketBottom__lot-text span.red
+{
+    color: #ff6464;
+}
+.marketBottom__lot-text span.fullRed
+{
+    color: #cd2727;
+}
+.marketBottom__lot-toChat
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    padding: 0 23px 0 43px;
+
+    border-radius: 8px;
+    background: var(--history-histor);
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.marketBottom__lot-toChat svg:first-of-type *
+{
+    fill: var(--log-text);
+}
+.marketBottom__lot-toChat--text
+{
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+
+    color: var(--log-text);
+}
+.marketBottom__lot-allInfo
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    height: 62px;
+    margin-bottom: 47px;
+    padding: 0 44px 0 25px;
+
+    border: 1px solid #f72;
+    border-radius: 8px;
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.marketBottom__lot-allInfo--title
+{
+    font-family: 'GothamPro';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+
+    color: var(--log-text);
+}
+.marketBottom__lot-allInfo--summ
+{
+    font-family: 'Montserrat';
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 15px;
+
+    color: var(--log-text);
+}
+.marketBottom__lot-allInfo--summ span
+{
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25px;
+
+    color: #ff5c00;
+}
 
 .marketBottom__market2-bigBlock.full .marketBottom__market2-bigBlock--grey
 {
@@ -10077,6 +10321,19 @@ a.reg__but
     .marketBottom__setting-title
     {
         font-size: 14px;
+    }
+    .marketBottom__lot-top
+    {
+        display: grid;
+
+        margin-top: 0;
+
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+    .marketBottom__lot-toChat
+    {
+        padding: 28px 33px 28px 43px;
     }
     .mobileChat
     {
