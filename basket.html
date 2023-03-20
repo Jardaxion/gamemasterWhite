@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- шрифты -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap" rel="stylesheet"><!-- css файл -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Game Market</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header__inner">
+      <div class="header__left">
+        <div class="header__menu-button mobile">
+          <div> </div>
+          <div> </div>
+          <div> </div>
+        </div><a class="header__logo noMobile" href="index.html">GAME MARKET</a><img class="header__logo mobile dark" src="img/logo.svg" alt=""><img class="header__logo mobile white" src="img/logoDark.svg" alt="">
+        <ul class="header__list noMobile">
+          <li class="header__item"><a class="header__link" href="news.html">
+               Игры
+              <svg width="10" height="6" viewbox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L5 5L9 1" stroke="#FF8231" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg></a></li>
+          <li class="header__item selected"><a class="header__link" href="news.html">Новости</a></li>
+          <li class="header__item"><a class="header__link" href="info.html">Информация</a></li>
+        </ul>
+      </div>
+      <div class="header__right noMobile"><a class="header__lang" href=""><img class="header__lang-img" src="img/flag.svg" alt="">
+          <p class="header__lang-text">RUS</p></a><a class="header__login button flex" href="login.html"><img class="header__login-img" src="img/profileIcon.svg" alt="">
+          <p class="header__login-text">Войти</p></a><a class="header__reg button outline flex" href="reg.html">
+          <p class="button__text">регистрация</p></a></div>
+      <div class="header__right mobile"><a class="header__notific" href="">
+          <svg width="16" height="19" viewbox="0 0 16 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10.1747 2.18141C10.2767 1.60477 10.068 1.00011 9.55801 0.555614C8.70022 -0.185205 7.30921 -0.185205 6.45605 0.555614C5.94602 0.996101 5.73736 1.60477 5.83937 2.17741C6.51169 1.94915 7.23966 1.82101 8.00471 1.82101C8.76977 1.82101 9.50237 1.94915 10.1747 2.18141Z" fill="#FF7823"></path>
+            <path d="M15.7666 16.5414C13.9676 14.5351 13.0078 12.0804 13.0078 9.53362V6.91072C13.0078 4.52808 10.7543 2.58594 8.00012 2.58594C5.24128 2.58594 2.99248 4.51607 2.99248 6.91072V9.53362C2.99248 12.0644 2.01414 14.5391 0.233643 16.5414H15.7666Z" fill="#FF7823"></path>
+            <path d="M14.7558 6.93867C14.51 6.93867 14.3199 6.77449 14.3199 6.56225C14.3199 5.0686 13.4992 3.66705 12.0526 2.718C11.8625 2.58185 11.8254 2.3576 11.9645 2.1734C12.1221 2.00922 12.4003 1.97718 12.5904 2.09732C14.2504 3.19853 15.2102 4.82433 15.2102 6.54223C15.1916 6.77449 14.9969 6.93867 14.7558 6.93867Z" fill="#FF7823"></path>
+            <path d="M1.24444 6.93867C0.998699 6.93867 0.808594 6.77449 0.808594 6.56226C0.808594 4.82834 1.76839 3.21456 3.42833 2.11734C3.61844 1.98119 3.90128 2.02524 4.05892 2.19343C4.21657 2.36161 4.16557 2.60188 3.97083 2.73803C2.52417 3.68708 1.70348 5.08863 1.70348 6.58228C1.69884 6.77449 1.49019 6.93867 1.24444 6.93867Z" fill="#FF7823"></path>
+            <path d="M5.31079 17.3101C5.67709 18.2911 6.74353 18.9999 8.00008 18.9999C9.25663 18.9999 10.3231 18.2911 10.6894 17.3101H5.31079Z" fill="#FF7823"></path>
+          </svg>
+          <p class="header__notific-num">44</p></a><a class="header__register" href="reg.html">
+          <div class="header__profile"><img class="header__profile-img" src="img/profileIcon.svg" alt=""></div>
+          <p class="header__register-text">Регистрация</p></a></div>
+    </div>
+    <div class="header__hr-wrapper noMobile">
+      <hr class="header__hr">
+    </div>
+    <div class="header__menu">
+      <div class="header__menu-inner">
+        <div class="header__menu-box">
+          <div class="header__menu-line js-openClose-menu"><a class="header__menu-title" href="">Игры</a>
+            <svg width="14" height="8" viewbox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13 7L7 0.999999L1 7" stroke="#FF8231" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </div>
+          <div class="header__menu-content"><a class="header__menu-content--link" href="">Roblox </a><a class="header__menu-content--link" href="">Warcraft </a></div>
+        </div>
+        <div class="header__menu-box"><a class="header__menu-title" href="news.html">Новости</a></div>
+        <div class="header__menu-box"><a class="header__menu-title" href="info.html">Информация</a></div>
+        <div class="header__menu-box"><a class="header__menu-title" href="profile.html">Профиль</a></div>
+        <div class="header__menu-box"><a class="header__menu-title" href="hisory.html">История</a></div>
+        <div class="header__menu-bottom"><a class="header__menu-bottom--button button flex" href="pod.html">Поддержка</a>
+          <p class="header__menu-bottom--text">© 2022, ООО «Market»</p><a class="header__menu-bottom--text link" href="polit.html">Политика конфиденциальности</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="basket">
+      <div class="container">
+        <div class="basket__inner">
+          <div class="basket__left"><a class="basket__next" href="">
+              <svg width="31" height="21" viewbox="0 0 31 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21 20L30 10.5L21 0.999999" stroke="#484850" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M11 20L20 10.5L11 0.999999" stroke="#484850" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M1 20L10 10.5L1 0.999999" stroke="#484850" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg></a>
+            <div class="basket__left-box"><a class="basket__box-item" href="">
+                <svg width="34" height="34" viewbox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M22.1139 21.1173C19.8437 21.1173 17.9951 19.2699 17.9951 16.9984C17.9951 14.7319 19.8437 12.8833 22.1139 12.8833H29.9463V21.1173H22.1139ZM21.9796 16.0032C21.4312 16.0032 20.9844 16.45 20.9844 16.9984C20.9844 17.5494 21.4312 17.9936 21.9796 17.9936C22.5281 17.9936 22.9748 17.5494 22.9748 16.9984C22.9748 16.45 22.5281 16.0032 21.9796 16.0032ZM27.415 6.04492H6.48687C5.93593 6.04492 5.49167 6.4917 5.49167 7.04012C5.49167 7.58855 5.93593 8.03532 6.48687 8.03532H27.415C28.8105 8.03532 29.9463 9.17109 29.9463 10.5704V10.8917H22.1139C18.7455 10.8917 16.0034 13.63 16.0034 16.9984C16.0034 20.368 18.7455 23.1089 22.1139 23.1089H29.9463V23.4302C29.9463 24.827 28.8105 25.9628 27.415 25.9628H6.58351C5.18796 25.9628 4.0522 24.827 4.0522 23.4302V10.4712C4.0522 9.92031 3.60669 9.47479 3.057 9.47479C2.50607 9.47479 2.06055 9.92031 2.06055 10.4712V23.4302C2.06055 25.9264 4.08985 27.9544 6.58351 27.9544H27.415C29.9086 27.9544 31.9392 25.9264 31.9392 23.4302V10.5704C31.9392 8.07297 29.9086 6.04492 27.415 6.04492Z" fill="white"></path>
+                </svg></a>
+              <hr class="basket__box-hr"><a class="basket__box-item notColor" href="">
+                <svg width="19" height="19" viewbox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19 8.91237H10.0876V0H8.91237V8.91237H0V10.0876H8.91237V19H10.0876V10.0876H19V8.91237Z" fill="#F28142"></path>
+                </svg></a>
+            </div>
+          </div>
+          <div class="basket__right">
+            <div class="basket__top">
+              <p class="basket__title">Корзина</p><a class="basket__reset" href="">
+                <svg width="25" height="25" viewbox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.5014 24.5846C5.85559 24.5846 0.418091 19.1471 0.418091 12.5013C0.418091 11.7763 0.901424 11.293 1.62642 11.293C2.35142 11.293 2.83476 11.7763 2.83476 12.5013C2.83476 17.818 7.18476 22.168 12.5014 22.168C17.8181 22.168 22.1681 17.818 22.1681 12.5013C22.1681 7.18463 17.8181 2.83464 12.5014 2.83464C9.23892 2.83464 6.21809 4.40547 4.52642 7.18463C4.04309 7.66797 3.31809 7.7888 2.83476 7.4263C2.23059 7.0638 2.10976 6.3388 2.47226 5.73464C4.64726 2.47214 8.51392 0.417969 12.5014 0.417969C19.1473 0.417969 24.5848 5.85547 24.5848 12.5013C24.5848 19.1471 19.1473 24.5846 12.5014 24.5846Z" fill="white"></path>
+                  <path d="M12.5014 13.7083C11.7764 13.7083 11.2931 13.225 11.2931 12.5V6.45833C11.2931 5.73333 11.7764 5.25 12.5014 5.25C13.2264 5.25 13.7098 5.73333 13.7098 6.45833V12.5C13.7098 13.225 13.2264 13.7083 12.5014 13.7083Z" fill="white"></path>
+                  <path d="M16.1264 17.3346C15.7639 17.3346 15.5223 17.2138 15.2806 16.9721L11.6556 13.3471C11.1723 12.8638 11.1723 12.1388 11.6556 11.6555C12.1389 11.1721 12.8639 11.1721 13.3473 11.6555L16.9723 15.2805C17.4556 15.7638 17.4556 16.4888 16.9723 16.9721C16.7306 17.2138 16.4889 17.3346 16.1264 17.3346Z" fill="white"></path>
+                  <path d="M7.66777 7.66797H2.83443C2.10943 7.66797 1.6261 7.18464 1.6261 6.45964V1.6263C1.6261 0.901302 2.10943 0.417969 2.83443 0.417969C3.55943 0.417969 4.04277 0.901302 4.04277 1.6263V5.2513H7.66777C8.39277 5.2513 8.8761 5.73464 8.8761 6.45964C8.8761 7.18464 8.39277 7.66797 7.66777 7.66797Z" fill="white"></path>
+                </svg></a>
+              <div class="marketBottom__lots-top--box">
+                <div class="marketBottom__lots-box--select">
+                  <p class="marketBottom__lots-box--select---title">Игра</p>
+                  <svg width="10" height="6" viewbox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L5 5L9 1" stroke="#FF8231" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </div>
+                <div class="marketBottom__lots-box--menu"><a class="marketBottom__lots-box--menu---item" href="">Roblox </a><a class="marketBottom__lots-box--menu---item" href="">CS:GO </a><a class="marketBottom__lots-box--menu---item" href="">Minecraft </a></div>
+              </div>
+              <div class="marketBottom__lots-top--box">
+                <div class="marketBottom__lots-box--select">
+                  <p class="marketBottom__lots-box--select---title">Категории товара</p>
+                  <svg width="10" height="6" viewbox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L5 5L9 1" stroke="#FF8231" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </div>
+                <div class="marketBottom__lots-box--menu"><a class="marketBottom__lots-box--menu---item" href="">Пример </a><a class="marketBottom__lots-box--menu---item" href="">Пример</a><a class="marketBottom__lots-box--menu---item" href="">Пример пример</a></div>
+              </div><a class="basket__clear" href="">Очистить</a>
+            </div>
+            <div class="basket__bottom">
+              <div class="basket__line">
+                <p class="basket__line-left">Стандартный срок выдачи товара - до 72 часов. Вы можете найти продавцов онлайн, чтобы получить товар быстрее</p><a class="basket__line-right" href="">Найти продавцов онлайн</a>
+              </div>
+              <div class="marketBottom__lots-box">
+                <p class="marketBottom__lots-title">Игра - категория</p>
+                <div class="marketBottom__market2-block center">
+                  <svg class="marketBottom__market2-arrow" width="8" height="14" viewbox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 1L1 7L7 13" stroke="#FF5C00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                  <div class="marketBottom__market2-pag"><a class="marketBottom__market2-pag--item active" href=""></a><a class="marketBottom__market2-pag--item" href=""></a><a class="marketBottom__market2-pag--item" href=""></a><a class="marketBottom__market2-pag--item" href=""></a></div>
+                  <svg class="marketBottom__market2-arrow" width="8" height="14" viewbox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.999999 13L7 7L1 1" stroke="#FF5C00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </div>
+                <div class="marketBottom__market2-content">
+                  <div class="basket__item blue">
+                    <p class="basket__item-text name">Shetland Pony White Pony White</p>
+                    <p class="basket__item-text icon notHr"><img src="img/frostDrag.svg" alt=""/></p>
+                    <div class="basket__item-grey">
+                      <p class="basket__item-text rare">Mythical</p>
+                      <div class="basket__item-text huge">
+                        <p class="marketBottom__tag red">R</p>
+                        <p class="marketBottom__tag blue">F</p>
+                      </div>
+                      <p class="basket__item-text type">Dark matter</p>
+                      <p class="basket__item-text shiny">Да</p>
+                      <p class="basket__item-text HC">Да</p>
+                      <p class="basket__item-text power notHr">312d</p>
+                    </div>
+                    <p class="basket__item-text number">34</p>
+                    <p class="basket__item-text price">28.22 P</p>
+                    <p class="basket__item-text status notHr">Продавец offline, выдача в срок до 72 часов</p>
+                    <svg width="22" height="22" viewbox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6.04522 15.9547C6.17963 16.0891 6.35529 16.1562 6.53129 16.1562C6.70729 16.1562 6.88294 16.0891 7.01735 15.9547L11 11.972L14.9827 15.9547C15.1171 16.0891 15.2928 16.1562 15.4688 16.1562C15.6448 16.1562 15.8204 16.0891 15.9548 15.9547C16.2233 15.6863 16.2233 15.2511 15.9548 14.9826L11.9722 10.9999L15.9548 7.01723C16.2233 6.74876 16.2233 6.31357 15.9548 6.0451C15.6864 5.77663 15.2512 5.77663 14.9827 6.0451L11 10.0278L7.01735 6.0451C6.74888 5.77663 6.31369 5.77663 6.04522 6.0451C5.77675 6.31357 5.77675 6.74876 6.04522 7.01723L10.0279 10.9999L6.04522 14.9826C5.77675 15.2511 5.77675 15.6863 6.04522 15.9547Z" fill="white"></path>
+                      <path d="M11 22C13.938 22 16.7004 20.8557 18.7777 18.778C20.8557 16.7004 22 13.938 22 11C22 8.06197 20.8557 5.29959 18.7777 3.22231C16.7004 1.14434 13.938 0 11 0C8.06197 0 5.29959 1.14434 3.22231 3.22197C1.14434 5.29959 0 8.06197 0 11C0 13.938 1.14434 16.7004 3.22231 18.7777C5.29959 20.8557 8.06197 22 11 22ZM4.19444 4.19444C6.01219 2.37634 8.42909 1.375 11 1.375C13.5709 1.375 15.9878 2.37634 17.8056 4.19444C19.6237 6.01219 20.625 8.42909 20.625 11C20.625 13.5709 19.6237 15.9878 17.8056 17.8056C15.9878 19.6237 13.5709 20.625 11 20.625C8.42909 20.625 6.01219 19.6237 4.19444 17.8056C2.37634 15.9878 1.375 13.5709 1.375 11C1.375 8.42909 2.37634 6.01219 4.19444 4.19444Z" fill="white"></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="marketBottom__lots-box">
+                <p class="marketBottom__lots-title">Игра - категория</p>
+                <div class="marketBottom__market2-block center">
+                  <svg class="marketBottom__market2-arrow" width="8" height="14" viewbox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 1L1 7L7 13" stroke="#FF5C00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                  <div class="marketBottom__market2-pag"><a class="marketBottom__market2-pag--item active" href=""></a><a class="marketBottom__market2-pag--item" href=""></a><a class="marketBottom__market2-pag--item" href=""></a><a class="marketBottom__market2-pag--item" href=""></a></div>
+                  <svg class="marketBottom__market2-arrow" width="8" height="14" viewbox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.999999 13L7 7L1 1" stroke="#FF5C00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </div>
+                <div class="marketBottom__market2-content">
+                  <div class="basket__item blue">
+                    <p class="basket__item-text name">Shetland Pony White Pony White</p>
+                    <p class="basket__item-text icon notHr"><img src="img/frostDrag.svg" alt=""/></p>
+                    <div class="basket__item-grey">
+                      <p class="basket__item-text rare">Mythical</p>
+                      <div class="basket__item-text huge">
+                        <p class="marketBottom__tag red">R</p>
+                        <p class="marketBottom__tag blue">F</p>
+                      </div>
+                      <p class="basket__item-text type">Dark matter</p>
+                      <p class="basket__item-text shiny">Да</p>
+                      <p class="basket__item-text HC">Да</p>
+                      <p class="basket__item-text power notHr">312d</p>
+                    </div>
+                    <p class="basket__item-text number">34</p>
+                    <p class="basket__item-text price">28.22 P</p>
+                    <p class="basket__item-text status notHr">Продавец offline, выдача в срок до 72 часов</p>
+                    <svg width="22" height="22" viewbox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6.04522 15.9547C6.17963 16.0891 6.35529 16.1562 6.53129 16.1562C6.70729 16.1562 6.88294 16.0891 7.01735 15.9547L11 11.972L14.9827 15.9547C15.1171 16.0891 15.2928 16.1562 15.4688 16.1562C15.6448 16.1562 15.8204 16.0891 15.9548 15.9547C16.2233 15.6863 16.2233 15.2511 15.9548 14.9826L11.9722 10.9999L15.9548 7.01723C16.2233 6.74876 16.2233 6.31357 15.9548 6.0451C15.6864 5.77663 15.2512 5.77663 14.9827 6.0451L11 10.0278L7.01735 6.0451C6.74888 5.77663 6.31369 5.77663 6.04522 6.0451C5.77675 6.31357 5.77675 6.74876 6.04522 7.01723L10.0279 10.9999L6.04522 14.9826C5.77675 15.2511 5.77675 15.6863 6.04522 15.9547Z" fill="white"></path>
+                      <path d="M11 22C13.938 22 16.7004 20.8557 18.7777 18.778C20.8557 16.7004 22 13.938 22 11C22 8.06197 20.8557 5.29959 18.7777 3.22231C16.7004 1.14434 13.938 0 11 0C8.06197 0 5.29959 1.14434 3.22231 3.22197C1.14434 5.29959 0 8.06197 0 11C0 13.938 1.14434 16.7004 3.22231 18.7777C5.29959 20.8557 8.06197 22 11 22ZM4.19444 4.19444C6.01219 2.37634 8.42909 1.375 11 1.375C13.5709 1.375 15.9878 2.37634 17.8056 4.19444C19.6237 6.01219 20.625 8.42909 20.625 11C20.625 13.5709 19.6237 15.9878 17.8056 17.8056C15.9878 19.6237 13.5709 20.625 11 20.625C8.42909 20.625 6.01219 19.6237 4.19444 17.8056C2.37634 15.9878 1.375 13.5709 1.375 11C1.375 8.42909 2.37634 6.01219 4.19444 4.19444Z" fill="white"></path>
+                    </svg>
+                  </div>
+                  <div class="basket__item blue">
+                    <p class="basket__item-text name">Shetland Pony White Pony White</p>
+                    <p class="basket__item-text icon notHr"><img src="img/frostDrag.svg" alt=""/></p>
+                    <div class="basket__item-grey">
+                      <p class="basket__item-text rare">Mythical</p>
+                      <div class="basket__item-text huge">
+                        <p class="marketBottom__tag red">R</p>
+                        <p class="marketBottom__tag blue">F</p>
+                      </div>
+                      <p class="basket__item-text type">Dark matter</p>
+                      <p class="basket__item-text shiny">Да</p>
+                      <p class="basket__item-text HC">Да</p>
+                      <p class="basket__item-text power notHr">312d</p>
+                    </div>
+                    <p class="basket__item-text number">34</p>
+                    <p class="basket__item-text price">28.22 P</p>
+                    <p class="basket__item-text status notHr">Продавец offline, выдача в срок до 72 часов</p>
+                    <svg width="22" height="22" viewbox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6.04522 15.9547C6.17963 16.0891 6.35529 16.1562 6.53129 16.1562C6.70729 16.1562 6.88294 16.0891 7.01735 15.9547L11 11.972L14.9827 15.9547C15.1171 16.0891 15.2928 16.1562 15.4688 16.1562C15.6448 16.1562 15.8204 16.0891 15.9548 15.9547C16.2233 15.6863 16.2233 15.2511 15.9548 14.9826L11.9722 10.9999L15.9548 7.01723C16.2233 6.74876 16.2233 6.31357 15.9548 6.0451C15.6864 5.77663 15.2512 5.77663 14.9827 6.0451L11 10.0278L7.01735 6.0451C6.74888 5.77663 6.31369 5.77663 6.04522 6.0451C5.77675 6.31357 5.77675 6.74876 6.04522 7.01723L10.0279 10.9999L6.04522 14.9826C5.77675 15.2511 5.77675 15.6863 6.04522 15.9547Z" fill="white"></path>
+                      <path d="M11 22C13.938 22 16.7004 20.8557 18.7777 18.778C20.8557 16.7004 22 13.938 22 11C22 8.06197 20.8557 5.29959 18.7777 3.22231C16.7004 1.14434 13.938 0 11 0C8.06197 0 5.29959 1.14434 3.22231 3.22197C1.14434 5.29959 0 8.06197 0 11C0 13.938 1.14434 16.7004 3.22231 18.7777C5.29959 20.8557 8.06197 22 11 22ZM4.19444 4.19444C6.01219 2.37634 8.42909 1.375 11 1.375C13.5709 1.375 15.9878 2.37634 17.8056 4.19444C19.6237 6.01219 20.625 8.42909 20.625 11C20.625 13.5709 19.6237 15.9878 17.8056 17.8056C15.9878 19.6237 13.5709 20.625 11 20.625C8.42909 20.625 6.01219 19.6237 4.19444 17.8056C2.37634 15.9878 1.375 13.5709 1.375 11C1.375 8.42909 2.37634 6.01219 4.19444 4.19444Z" fill="white"></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="marketBottom__lots-box">
+                <div class="basket__market-line">
+                  <p class="basket__market-line--title">Покупка невозможна</p><a class="basket__market-line--reser" href="">Покупка невозможна</a>
+                </div>
+                <div class="marketBottom__market2-content">
+                  <div class="basket__item notAnav notTitle blue">
+                    <p class="basket__item-text name">Shetland Pony White Pony White</p>
+                    <p class="basket__item-text icon notHr"><img src="img/frostDrag.svg" alt=""></p>
+                    <div class="basket__item-grey">
+                      <p class="basket__item-text rare">Mythical</p>
+                      <div class="basket__item-text huge">
+                        <p class="marketBottom__tag red">R</p>
+                        <p class="marketBottom__tag blue">F</p>
+                      </div>
+                      <p class="basket__item-text type">Dark matter</p>
+                      <p class="basket__item-text shiny">Да</p>
+                      <p class="basket__item-text HC">Да</p>
+                      <p class="basket__item-text power notHr">312d</p>
+                    </div>
+                    <p class="basket__item-text number">34</p>
+                    <p class="basket__item-text price">28.22 P</p>
+                    <p class="basket__item-text status notHr">Продавец offline, выдача в срок до 72 часов</p>
+                    <svg width="22" height="22" viewbox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6.04522 15.9547C6.17963 16.0891 6.35529 16.1562 6.53129 16.1562C6.70729 16.1562 6.88294 16.0891 7.01735 15.9547L11 11.972L14.9827 15.9547C15.1171 16.0891 15.2928 16.1562 15.4688 16.1562C15.6448 16.1562 15.8204 16.0891 15.9548 15.9547C16.2233 15.6863 16.2233 15.2511 15.9548 14.9826L11.9722 10.9999L15.9548 7.01723C16.2233 6.74876 16.2233 6.31357 15.9548 6.0451C15.6864 5.77663 15.2512 5.77663 14.9827 6.0451L11 10.0278L7.01735 6.0451C6.74888 5.77663 6.31369 5.77663 6.04522 6.0451C5.77675 6.31357 5.77675 6.74876 6.04522 7.01723L10.0279 10.9999L6.04522 14.9826C5.77675 15.2511 5.77675 15.6863 6.04522 15.9547Z" fill="white"></path>
+                      <path d="M11 22C13.938 22 16.7004 20.8557 18.7777 18.778C20.8557 16.7004 22 13.938 22 11C22 8.06197 20.8557 5.29959 18.7777 3.22231C16.7004 1.14434 13.938 0 11 0C8.06197 0 5.29959 1.14434 3.22231 3.22197C1.14434 5.29959 0 8.06197 0 11C0 13.938 1.14434 16.7004 3.22231 18.7777C5.29959 20.8557 8.06197 22 11 22ZM4.19444 4.19444C6.01219 2.37634 8.42909 1.375 11 1.375C13.5709 1.375 15.9878 2.37634 17.8056 4.19444C19.6237 6.01219 20.625 8.42909 20.625 11C20.625 13.5709 19.6237 15.9878 17.8056 17.8056C15.9878 19.6237 13.5709 20.625 11 20.625C8.42909 20.625 6.01219 19.6237 4.19444 17.8056C2.37634 15.9878 1.375 13.5709 1.375 11C1.375 8.42909 2.37634 6.01219 4.19444 4.19444Z" fill="white"></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer noMobile"><img class="footer__background" src="img/background.svg" alt=""><img class="footer__background" src="img/backgroundDark.svg" alt="">
+    <div class="footer__inner">
+      <div class="footer__top">
+        <div class="footer__column">
+          <p class="footer__logo">Market</p><a class="footer__profile" href="profile.html">
+            <div class="footer__profile-profile"><img class="footer__profile-img" src="img/profileIcon.svg" alt=""></div>
+            <div class="footer__profile-right">
+              <p class="footer__profile-hello">Здравствуйте, <span class="footer__profile-name">Сергей!</span></p>
+              <p class="footer__profile-cabinet">Мой личный кабинет</p>
+            </div></a><a class="footer__pod button" href="">Поддержка</a>
+        </div>
+        <div class="footer__column"><a class="footer__bigLink" href="catalog.html">Магазин</a><a class="footer__bigLink" href="catalog.html">Онлайн покупка</a><a class="footer__bigLink" href="catalog.html">Игры</a>
+        </div>
+        <div class="footer__column">
+          <p class="footer__title">Популярные <span class="footer__title-orange">игры</span></p>
+          <div class="footer__column-content"><a class="footer__content-item" href="catalog.html">Roblox</a><a class="footer__content-item" href="catalog.html">Наименование  </a><a class="footer__content-item" href="catalog.html">Наименование  </a><a class="footer__content-item" href="catalog.html">Наименование  </a><a class="footer__content-item" href="catalog.html">Наименование  </a><a class="footer__content-item" href="catalog.html">Наименование  </a><a class="footer__content-item" href="catalog.html">Наименование  </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__miniText">© 2023, ООО «Market»</p><a class="footer__miniText link" href="polit.html">Политика конфиденциальности</a>
+      </div>
+    </div>
+  </footer>
+  <footer class="footerMobile mobile">
+    <div class="footerMobile__inner"><a class="footerMobile__box" href="">
+        <div class="footerMobile__box-icon">
+          <svg width="25" height="25" viewbox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20.7661 3.56597C18.466 1.26584 15.4146 0 12.1625 0C8.91041 0 5.85901 1.26584 3.55888 3.56597C-0.887003 8.01185 -1.19574 15.1284 2.79217 19.9293C2.4011 20.7166 1.77332 21.6325 0.841953 22.0905C0.394277 22.3118 0.142137 22.7903 0.219323 23.2843C0.296508 23.7783 0.67729 24.1642 1.17128 24.2414C1.40283 24.2774 1.73216 24.3134 2.13352 24.3134C3.20897 24.3134 4.79385 24.0613 6.41474 22.8932C8.22089 23.8658 10.1968 24.3392 12.1573 24.3392C15.3065 24.3392 18.4248 23.1196 20.7712 20.7732C23.0714 18.4731 24.3372 15.4217 24.3372 12.1696C24.3372 8.9175 23.0662 5.8661 20.7661 3.56597ZM19.7833 19.7904C16.3099 23.2637 10.9327 23.9532 6.7029 21.4679C6.42504 21.3032 6.08027 21.3547 5.85901 21.5759C5.83843 21.5862 5.81784 21.6016 5.80241 21.6171C4.40792 22.6977 3.03917 22.9241 2.13352 22.9241H2.12838C3.17295 22.1625 3.8316 21.0305 4.21753 20.1506C4.27928 20.0013 4.28957 19.847 4.25355 19.7029C4.23811 19.5639 4.18151 19.425 4.08374 19.3118C0.317091 15.0563 0.512628 8.57273 4.53656 4.5488C8.7406 0.344762 15.5792 0.344762 19.7781 4.5488C23.9873 8.75283 23.9873 15.5863 19.7833 19.7904Z" fill="white"></path>
+            <path d="M12.1623 13.0237C12.634 13.0237 13.0165 12.6412 13.0165 12.1695C13.0165 11.6977 12.634 11.3153 12.1623 11.3153C11.6905 11.3153 11.3081 11.6977 11.3081 12.1695C11.3081 12.6412 11.6905 13.0237 12.1623 13.0237Z" fill="white"></path>
+            <path d="M16.5671 13.0237C17.0388 13.0237 17.4213 12.6412 17.4213 12.1695C17.4213 11.6977 17.0388 11.3153 16.5671 11.3153C16.0953 11.3153 15.7129 11.6977 15.7129 12.1695C15.7129 12.6412 16.0953 13.0237 16.5671 13.0237Z" fill="white"></path>
+            <path d="M7.75751 13.0237C8.22926 13.0237 8.61169 12.6412 8.61169 12.1695C8.61169 11.6977 8.22926 11.3153 7.75751 11.3153C7.28575 11.3153 6.90332 11.6977 6.90332 12.1695C6.90332 12.6412 7.28575 13.0237 7.75751 13.0237Z" fill="white"></path>
+          </svg>
+        </div>
+        <p class="footerMobile__box-text">Чаты</p></a><a class="footerMobile__box" href="">
+        <div class="footerMobile__box-icon">
+          <svg class="stroke" width="29" height="26" viewbox="0 0 29 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 8.89541C1 14.4641 5.85347 19.9412 13.5075 24.6471C13.8066 24.817 14.2145 25 14.5 25C14.7855 25 15.1933 24.817 15.4788 24.6471C23.1465 19.9412 28 14.4641 28 8.89541C28 4.26799 24.6963 1 20.2915 1C17.7628 1 15.7236 2.15033 14.5 3.915C13.2764 2.16338 11.2235 1 8.70846 1C4.30367 1 1 4.26799 1 8.89541ZM3.18885 8.89541C3.18885 5.41832 5.52719 3.10456 8.68126 3.10456C11.2372 3.10456 12.6918 4.63398 13.5755 5.9412C13.9426 6.46407 14.1737 6.60786 14.5 6.60786C14.8263 6.60786 15.0302 6.45097 15.4244 5.9412C16.3489 4.66014 17.7764 3.10456 20.3187 3.10456C23.4728 3.10456 25.8111 5.41832 25.8111 8.89541C25.8111 13.7582 20.4682 19 14.7719 22.634C14.6359 22.7255 14.5544 22.7909 14.5 22.7909C14.4456 22.7909 14.3505 22.7255 14.2145 22.634C8.53172 19 3.18885 13.7582 3.18885 8.89541Z" fill="#2D2D2E" stroke="#F8F8F8"></path>
+          </svg>
+        </div>
+        <p class="footerMobile__box-text">Избранное</p></a><a class="footerMobile__box active" href="">
+        <div class="footerMobile__box-icon">
+          <svg width="25" height="25" viewbox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19.5424 6.30829L19.5917 6.6H19.8875H24.65V22.5C24.65 23.6817 23.6817 24.65 22.5 24.65H2.5C1.3183 24.65 0.35 23.6817 0.35 22.5V6.6H5.11312H5.40902L5.45825 6.30823C6.02794 2.93176 8.96577 0.35 12.5 0.35C16.0342 0.35 18.9721 2.93176 19.5424 6.30829ZM17.3356 6.6H17.7878L17.6745 6.16227C17.0782 3.85954 14.9888 2.15 12.5 2.15C10.0112 2.15 7.92179 3.85954 7.32555 6.16227L7.21221 6.6H7.66438H17.3356ZM5.35 8.75V8.4H5H2.5H2.15V8.75V22.5V22.85H2.5H22.5H22.85V22.5V8.75V8.4H22.5H20H19.65V8.75V10.9H17.85V8.75V8.4H17.5H7.5H7.15V8.75V10.9H5.35V8.75Z" fill="white" stroke="#FF5C00" stroke-width="0.7"></path>
+          </svg>
+        </div>
+        <p class="footerMobile__box-text">Маркет</p></a><a class="footerMobile__box" href="">
+        <div class="footerMobile__box-icon">
+          <svg width="25" height="24" viewbox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4.77138 15.7129C4.83048 16.2811 5.14542 16.7908 5.5936 17.135C5.34272 17.4231 5.19086 17.7957 5.19086 18.2026V19.7277C5.19086 20.3851 5.57958 20.9514 6.14936 21.2174C6.11707 21.3693 6.09997 21.5266 6.09997 21.6877C6.09997 22.9627 7.16271 24 8.46894 24C9.77522 24 10.8379 22.9627 10.8379 21.6877C10.8379 21.5832 10.8302 21.4805 10.8163 21.3796H14.7129C14.6991 21.4805 14.6913 21.5832 14.6913 21.6877C14.6913 22.9627 15.754 24 17.0603 24C18.3665 24 19.4292 22.9627 19.4292 21.6877C19.4292 20.4127 18.3665 19.3754 17.0603 19.3754C16.2679 19.3754 15.5656 19.7575 15.1353 20.3424H10.3939C9.96355 19.7575 9.26131 19.3754 8.46888 19.3754C7.70758 19.3754 7.02947 19.7282 6.59577 20.2746C6.39174 20.1729 6.25334 19.9668 6.25334 19.7278V18.2026C6.25334 17.8639 6.53585 17.5884 6.88313 17.5884C6.88475 17.5884 6.88632 17.5882 6.88794 17.5881C6.89118 17.5882 6.89442 17.5884 6.8976 17.5884H19.3203C20.3475 17.5884 21.4114 16.8451 21.7425 15.8962L24.8992 6.84933C25.0778 6.33745 25.0171 5.82133 24.7324 5.43327C24.4479 5.04521 23.9669 4.82261 23.4129 4.82261H22.2799L18.8657 1.47423C18.3349 0.956227 17.4746 0.951733 16.9376 1.4602L11.1758 2.97291L9.62908 0.266053C9.48618 0.0159432 9.16263 -0.0736994 8.90628 0.0657282L5.81276 1.74972C5.68964 1.8167 5.59891 1.92871 5.56046 2.06103C5.52195 2.19334 5.5389 2.33514 5.60757 2.45526L6.96025 4.82256H5.67876C5.33705 4.82256 5.01517 4.90776 4.73606 5.06749L4.48517 2.61928C4.458 2.35416 4.22943 2.1523 3.95649 2.1523H0.531317C0.237878 2.1523 0 2.38448 0 2.67089C0 2.95731 0.237878 3.18949 0.531317 3.18949H3.47567L4.77138 15.7129ZM17.0604 20.4126C17.7807 20.4126 18.3667 20.9846 18.3667 21.6877C18.3667 22.3907 17.7807 22.9628 17.0604 22.9628C16.3401 22.9628 15.754 22.3908 15.754 21.6877C15.754 20.9846 16.3401 20.4126 17.0604 20.4126ZM8.46899 20.4126C9.1893 20.4126 9.77537 20.9846 9.77537 21.6877C9.77537 22.3907 9.1893 22.9628 8.46899 22.9628C7.74867 22.9628 7.16266 22.3908 7.16266 21.6877C7.16266 20.9846 7.74867 20.4126 8.46899 20.4126ZM18.1137 2.20673L20.7809 4.82256H14.9949L17.6739 2.20767C17.7954 2.08908 17.993 2.08908 18.1137 2.20673ZM15.4314 2.9297L13.4922 4.82256H12.2327L11.7095 3.90693L15.4314 2.9297ZM6.79433 2.40295L8.95982 1.22417L11.016 4.82256H8.17691L6.79433 2.40295ZM23.8935 6.51486L20.7367 15.5617C20.5528 16.0888 19.891 16.5511 19.3204 16.5511H6.89776C6.37135 16.5511 5.88168 16.1193 5.82854 15.6082L5.64081 13.8008H17.064C17.3575 13.8008 17.5953 13.5687 17.5953 13.2823C17.5953 12.9958 17.3575 12.7637 17.064 12.7637H5.53313L4.90436 6.70985C4.90436 6.7097 4.90436 6.70965 4.90436 6.70955L4.90426 6.70842C4.88032 6.47782 4.94873 6.26272 5.097 6.1026C5.24197 5.94599 5.44858 5.85975 5.67876 5.85975H22.0543C22.0561 5.8598 22.0578 5.86 22.0596 5.86C22.0613 5.86 22.063 5.8598 22.0647 5.85975H23.4131C23.623 5.85975 23.7848 5.92267 23.8686 6.03691C23.9524 6.1511 23.9612 6.32085 23.8935 6.51486Z" fill="#2D2D2E"></path>
+          </svg>
+        </div>
+        <p class="footerMobile__box-text">КОРЗИНА</p></a><a class="footerMobile__box" href="">
+        <div class="footerMobile__box-icon">
+          <svg class="stroke" width="30" height="22" viewbox="0 0 30 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19.7925 14.7587C17.665 14.7587 15.9326 13.0724 15.9326 10.9989C15.9326 8.92989 17.665 7.24241 19.7925 7.24241H27.1324V14.7587H19.7925ZM19.6667 10.0904C19.1527 10.0904 18.734 10.4982 18.734 10.9989C18.734 11.5018 19.1527 11.9073 19.6667 11.9073C20.1806 11.9073 20.5993 11.5018 20.5993 10.9989C20.5993 10.4982 20.1806 10.0904 19.6667 10.0904ZM24.7602 1H5.14802C4.63172 1 4.21539 1.40784 4.21539 1.90847C4.21539 2.4091 4.63172 2.81693 5.14802 2.81693H24.7602C26.068 2.81693 27.1324 3.85371 27.1324 5.13106V5.42433H19.7925C16.6359 5.42433 14.0662 7.92405 14.0662 10.9989C14.0662 14.0748 16.6359 16.5768 19.7925 16.5768H27.1324V16.8701C27.1324 18.1451 26.068 19.1819 24.7602 19.1819H5.23858C3.93078 19.1819 2.86643 18.1451 2.86643 16.8701V5.04056C2.86643 4.53763 2.44892 4.13094 1.9338 4.13094C1.41751 4.13094 1 4.53763 1 5.04056V16.8701C1 19.1487 2.90171 21 5.23858 21H24.7602C27.0971 21 29 19.1487 29 16.8701V5.13106C29 2.8513 27.0971 1 24.7602 1Z" fill="#2D2D2E" stroke="#F8F8F8"></path>
+          </svg>
+        </div>
+        <p class="footerMobile__box-text">Лоты</p></a></div>
+  </footer>
+  <div class="modal__background"></div>
+  <div class="modal" id="choseAvatar">
+    <div class="modal__inner">
+      <svg class="modal__exit js-close-modal" width="14" height="13" viewbox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <line x1="1.72716" y1="1" x2="12.6665" y2="11.9393" stroke="black" stroke-width="1.5" stroke-linecap="round"></line>
+        <line x1="2" y1="11.9393" x2="12.9393" y2="0.999999" stroke="black" stroke-width="1.5" stroke-linecap="round"></line>
+      </svg>
+      <p class="modal__title">Выберите фото профиля</p>
+      <div class="modal__choiceAvatar">
+        <div class="modal__choiceAvatar-item"><img class="modal__choiceAvatar-avatar" src="img/chest.svg" alt="">
+          <div class="modal__choiceAvatar-select--wrapper">
+            <svg class="modal__choiceAvatar-select" width="21" height="15" viewbox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 6.71429L8.18182 13L19 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="modal__choiceAvatar-item"><img class="modal__choiceAvatar-avatar" src="img/chest.svg" alt="">
+          <div class="modal__choiceAvatar-select--wrapper">
+            <svg class="modal__choiceAvatar-select" width="21" height="15" viewbox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 6.71429L8.18182 13L19 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="modal__choiceAvatar-item"><img class="modal__choiceAvatar-avatar" src="img/chest.svg" alt="">
+          <div class="modal__choiceAvatar-select--wrapper">
+            <svg class="modal__choiceAvatar-select" width="21" height="15" viewbox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 6.71429L8.18182 13L19 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="modal__choiceAvatar-item"><img class="modal__choiceAvatar-avatar" src="img/chest.svg" alt="">
+          <div class="modal__choiceAvatar-select--wrapper">
+            <svg class="modal__choiceAvatar-select" width="21" height="15" viewbox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 6.71429L8.18182 13L19 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="modal__choiceAvatar-item"><img class="modal__choiceAvatar-avatar" src="img/chest.svg" alt="">
+          <div class="modal__choiceAvatar-select--wrapper">
+            <svg class="modal__choiceAvatar-select" width="21" height="15" viewbox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 6.71429L8.18182 13L19 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="modal__choiceAvatar-item active"><img class="modal__choiceAvatar-avatar" src="img/chest.svg" alt="">
+          <div class="modal__choiceAvatar-select--wrapper">
+            <svg class="modal__choiceAvatar-select" width="21" height="15" viewbox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 6.71429L8.18182 13L19 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="modal__choiceAvatar-item"><img class="modal__choiceAvatar-avatar" src="img/chest.svg" alt="">
+          <div class="modal__choiceAvatar-select--wrapper">
+            <svg class="modal__choiceAvatar-select" width="21" height="15" viewbox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 6.71429L8.18182 13L19 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="modal__choiceAvatar-item"><img class="modal__choiceAvatar-avatar" src="img/chest.svg" alt="">
+          <div class="modal__choiceAvatar-select--wrapper">
+            <svg class="modal__choiceAvatar-select" width="21" height="15" viewbox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 6.71429L8.18182 13L19 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="modal__choiceAvatar-item"><img class="modal__choiceAvatar-avatar" src="img/chest.svg" alt="">
+          <div class="modal__choiceAvatar-select--wrapper">
+            <svg class="modal__choiceAvatar-select" width="21" height="15" viewbox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 6.71429L8.18182 13L19 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="modal__choiceAvatar-item"><img class="modal__choiceAvatar-avatar" src="img/chest.svg" alt="">
+          <div class="modal__choiceAvatar-select--wrapper">
+            <svg class="modal__choiceAvatar-select" width="21" height="15" viewbox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 6.71429L8.18182 13L19 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="modal__choiceAvatar-item"><img class="modal__choiceAvatar-avatar" src="img/chest.svg" alt="">
+          <div class="modal__choiceAvatar-select--wrapper">
+            <svg class="modal__choiceAvatar-select" width="21" height="15" viewbox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 6.71429L8.18182 13L19 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="modal__choiceAvatar-item"><img class="modal__choiceAvatar-avatar" src="img/chest.svg" alt="">
+          <div class="modal__choiceAvatar-select--wrapper">
+            <svg class="modal__choiceAvatar-select" width="21" height="15" viewbox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 6.71429L8.18182 13L19 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </div>
+        </div>
+      </div><a class="button modal__button modal__choiceAvatar-button js-close-modal" href="">Подтвердить выбор </a>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"> </script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
