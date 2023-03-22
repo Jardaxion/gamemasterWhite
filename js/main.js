@@ -201,6 +201,20 @@ $(document).ready(function() {
     $('.marketBottom__historyMobile-select--top').on('click', function(){
         $(this).toggleClass('active');
         $(this).next().slideToggle();
+
+    })
+
+    $('.basket__buy-line.banks').on('click', function(e){
+        e.preventDefault();
+
+        $(this).toggleClass('active');
+        $('.basket__banksCard').slideToggle();
+    })
+
+    $('.basket__next').on('click', function(e){
+        e.preventDefault();
+
+        $('.basket__left').toggleClass('active');
     })
     //Модальные окна
     //Открытие
@@ -261,6 +275,31 @@ $(document).ready(function() {
             $('head').append('<meta name="viewport" content="width=device-width, initial-scale=1">');
         });
     }
+
+    document.querySelectorAll('.addLot__selectGame-wrapper').forEach(function(el){
+        new Swiper(el, {
+            loop: false,
+            spaceBetween: 15,
+            slidesPerView: el.getAttribute("data-slideperview"),
+            scrollbar: {
+                el: el.children[1],
+                draggable: true,
+            }
+        })
+    })
+
+    $('a.block__block.swiper-slide').on('click', function(e){
+        e.preventDefault();
+        $('a.block__block.swiper-slide.active').removeClass('active');
+
+        $(this).addClass('active');
+    })
+
+    $('.addLot__select-title').on('click', function(e){
+        e.preventDefault();
+        $(this).toggleClass('active');
+        $(this).next().toggleClass('active');
+    })
 })
 
 //Модальные окна

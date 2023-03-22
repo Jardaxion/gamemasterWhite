@@ -73,17 +73,23 @@
     <section class="basket">
       <div class="container">
         <div class="basket__inner">
-          <div class="basket__left"><a class="basket__next" href="">
+          <div class="basket__left noMobile"><a class="basket__next noMobile" href="">
               <svg width="31" height="21" viewbox="0 0 31 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M21 20L30 10.5L21 0.999999" stroke="#484850" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                 <path d="M11 20L20 10.5L11 0.999999" stroke="#484850" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                 <path d="M1 20L10 10.5L1 0.999999" stroke="#484850" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
               </svg></a>
-            <div class="basket__left-box"><a class="basket__box-item" href="">
-                <svg width="34" height="34" viewbox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div class="basket__left-box">
+              <div class="basket__box-item">
+                <svg class="noMobile" width="34" height="34" viewbox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M22.1139 21.1173C19.8437 21.1173 17.9951 19.2699 17.9951 16.9984C17.9951 14.7319 19.8437 12.8833 22.1139 12.8833H29.9463V21.1173H22.1139ZM21.9796 16.0032C21.4312 16.0032 20.9844 16.45 20.9844 16.9984C20.9844 17.5494 21.4312 17.9936 21.9796 17.9936C22.5281 17.9936 22.9748 17.5494 22.9748 16.9984C22.9748 16.45 22.5281 16.0032 21.9796 16.0032ZM27.415 6.04492H6.48687C5.93593 6.04492 5.49167 6.4917 5.49167 7.04012C5.49167 7.58855 5.93593 8.03532 6.48687 8.03532H27.415C28.8105 8.03532 29.9463 9.17109 29.9463 10.5704V10.8917H22.1139C18.7455 10.8917 16.0034 13.63 16.0034 16.9984C16.0034 20.368 18.7455 23.1089 22.1139 23.1089H29.9463V23.4302C29.9463 24.827 28.8105 25.9628 27.415 25.9628H6.58351C5.18796 25.9628 4.0522 24.827 4.0522 23.4302V10.4712C4.0522 9.92031 3.60669 9.47479 3.057 9.47479C2.50607 9.47479 2.06055 9.92031 2.06055 10.4712V23.4302C2.06055 25.9264 4.08985 27.9544 6.58351 27.9544H27.415C29.9086 27.9544 31.9392 25.9264 31.9392 23.4302V10.5704C31.9392 8.07297 29.9086 6.04492 27.415 6.04492Z" fill="white"></path>
-                </svg></a>
+                </svg>
+                <p class="basket__box-text mobile">Баланс</p>
+                <p class="basket__box-text noMobile inVis">Баланс:  <span>31.203</span> Руб.</p>
+                <p class="basket__box-text mobile inVis"><span>31.203</span> Руб.</p>
+              </div>
               <hr class="basket__box-hr"><a class="basket__box-item notColor" href="">
+                <p class="basket__box-secondText inVis">Пополнить баланс</p>
                 <svg width="19" height="19" viewbox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M19 8.91237H10.0876V0H8.91237V8.91237H0V10.0876H8.91237V19H10.0876V10.0876H19V8.91237Z" fill="#F28142"></path>
                 </svg></a>
@@ -91,14 +97,14 @@
           </div>
           <div class="basket__right">
             <div class="basket__top">
-              <p class="basket__title">Корзина</p><a class="basket__reset" href="">
+              <p class="basket__title">Корзина</p><a class="basket__reset noMobile" href="">
                 <svg width="25" height="25" viewbox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M12.5014 24.5846C5.85559 24.5846 0.418091 19.1471 0.418091 12.5013C0.418091 11.7763 0.901424 11.293 1.62642 11.293C2.35142 11.293 2.83476 11.7763 2.83476 12.5013C2.83476 17.818 7.18476 22.168 12.5014 22.168C17.8181 22.168 22.1681 17.818 22.1681 12.5013C22.1681 7.18463 17.8181 2.83464 12.5014 2.83464C9.23892 2.83464 6.21809 4.40547 4.52642 7.18463C4.04309 7.66797 3.31809 7.7888 2.83476 7.4263C2.23059 7.0638 2.10976 6.3388 2.47226 5.73464C4.64726 2.47214 8.51392 0.417969 12.5014 0.417969C19.1473 0.417969 24.5848 5.85547 24.5848 12.5013C24.5848 19.1471 19.1473 24.5846 12.5014 24.5846Z" fill="white"></path>
                   <path d="M12.5014 13.7083C11.7764 13.7083 11.2931 13.225 11.2931 12.5V6.45833C11.2931 5.73333 11.7764 5.25 12.5014 5.25C13.2264 5.25 13.7098 5.73333 13.7098 6.45833V12.5C13.7098 13.225 13.2264 13.7083 12.5014 13.7083Z" fill="white"></path>
                   <path d="M16.1264 17.3346C15.7639 17.3346 15.5223 17.2138 15.2806 16.9721L11.6556 13.3471C11.1723 12.8638 11.1723 12.1388 11.6556 11.6555C12.1389 11.1721 12.8639 11.1721 13.3473 11.6555L16.9723 15.2805C17.4556 15.7638 17.4556 16.4888 16.9723 16.9721C16.7306 17.2138 16.4889 17.3346 16.1264 17.3346Z" fill="white"></path>
                   <path d="M7.66777 7.66797H2.83443C2.10943 7.66797 1.6261 7.18464 1.6261 6.45964V1.6263C1.6261 0.901302 2.10943 0.417969 2.83443 0.417969C3.55943 0.417969 4.04277 0.901302 4.04277 1.6263V5.2513H7.66777C8.39277 5.2513 8.8761 5.73464 8.8761 6.45964C8.8761 7.18464 8.39277 7.66797 7.66777 7.66797Z" fill="white"></path>
                 </svg></a>
-              <div class="marketBottom__lots-top--box">
+              <div class="marketBottom__lots-top--box noMobile">
                 <div class="marketBottom__lots-box--select">
                   <p class="marketBottom__lots-box--select---title">Игра</p>
                   <svg width="10" height="6" viewbox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -107,7 +113,7 @@
                 </div>
                 <div class="marketBottom__lots-box--menu"><a class="marketBottom__lots-box--menu---item" href="">Roblox </a><a class="marketBottom__lots-box--menu---item" href="">CS:GO </a><a class="marketBottom__lots-box--menu---item" href="">Minecraft </a></div>
               </div>
-              <div class="marketBottom__lots-top--box">
+              <div class="marketBottom__lots-top--box noMobile">
                 <div class="marketBottom__lots-box--select">
                   <p class="marketBottom__lots-box--select---title">Категории товара</p>
                   <svg width="10" height="6" viewbox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -117,11 +123,33 @@
                 <div class="marketBottom__lots-box--menu"><a class="marketBottom__lots-box--menu---item" href="">Пример </a><a class="marketBottom__lots-box--menu---item" href="">Пример</a><a class="marketBottom__lots-box--menu---item" href="">Пример пример</a></div>
               </div><a class="basket__clear" href="">Очистить</a>
             </div>
+            <div class="basket__left mobile"><a class="basket__next noMobile" href="">
+                <svg width="31" height="21" viewbox="0 0 31 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M21 20L30 10.5L21 0.999999" stroke="#484850" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  <path d="M11 20L20 10.5L11 0.999999" stroke="#484850" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  <path d="M1 20L10 10.5L1 0.999999" stroke="#484850" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg></a>
+              <div class="basket__left-box">
+                <div class="basket__box-item">
+                  <svg class="noMobile" width="34" height="34" viewbox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22.1139 21.1173C19.8437 21.1173 17.9951 19.2699 17.9951 16.9984C17.9951 14.7319 19.8437 12.8833 22.1139 12.8833H29.9463V21.1173H22.1139ZM21.9796 16.0032C21.4312 16.0032 20.9844 16.45 20.9844 16.9984C20.9844 17.5494 21.4312 17.9936 21.9796 17.9936C22.5281 17.9936 22.9748 17.5494 22.9748 16.9984C22.9748 16.45 22.5281 16.0032 21.9796 16.0032ZM27.415 6.04492H6.48687C5.93593 6.04492 5.49167 6.4917 5.49167 7.04012C5.49167 7.58855 5.93593 8.03532 6.48687 8.03532H27.415C28.8105 8.03532 29.9463 9.17109 29.9463 10.5704V10.8917H22.1139C18.7455 10.8917 16.0034 13.63 16.0034 16.9984C16.0034 20.368 18.7455 23.1089 22.1139 23.1089H29.9463V23.4302C29.9463 24.827 28.8105 25.9628 27.415 25.9628H6.58351C5.18796 25.9628 4.0522 24.827 4.0522 23.4302V10.4712C4.0522 9.92031 3.60669 9.47479 3.057 9.47479C2.50607 9.47479 2.06055 9.92031 2.06055 10.4712V23.4302C2.06055 25.9264 4.08985 27.9544 6.58351 27.9544H27.415C29.9086 27.9544 31.9392 25.9264 31.9392 23.4302V10.5704C31.9392 8.07297 29.9086 6.04492 27.415 6.04492Z" fill="white"></path>
+                  </svg>
+                  <p class="basket__box-text mobile">Баланс</p>
+                  <p class="basket__box-text noMobile inVis">Баланс:  <span>31.203</span> Руб.</p>
+                  <p class="basket__box-text mobile inVis"><span>31.203</span> Руб.</p>
+                </div>
+                <hr class="basket__box-hr"><a class="basket__box-item notColor" href="">
+                  <p class="basket__box-secondText inVis">Пополнить баланс</p>
+                  <svg width="19" height="19" viewbox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 8.91237H10.0876V0H8.91237V8.91237H0V10.0876H8.91237V19H10.0876V10.0876H19V8.91237Z" fill="#F28142"></path>
+                  </svg></a>
+              </div>
+            </div>
             <div class="basket__bottom">
               <div class="basket__line">
                 <p class="basket__line-left">Стандартный срок выдачи товара - до 72 часов. Вы можете найти продавцов онлайн, чтобы получить товар быстрее</p><a class="basket__line-right" href="">Найти продавцов онлайн</a>
               </div>
-              <div class="marketBottom__lots-box">
+              <div class="marketBottom__lots-box noMobile">
                 <p class="marketBottom__lots-title">Игра - категория</p>
                 <div class="marketBottom__market2-block center">
                   <svg class="marketBottom__market2-arrow" width="8" height="14" viewbox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -157,7 +185,7 @@
                   </div>
                 </div>
               </div>
-              <div class="marketBottom__lots-box">
+              <div class="marketBottom__lots-box noMobile">
                 <p class="marketBottom__lots-title">Игра - категория</p>
                 <div class="marketBottom__market2-block center">
                   <svg class="marketBottom__market2-arrow" width="8" height="14" viewbox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -215,7 +243,7 @@
                   </div>
                 </div>
               </div>
-              <div class="marketBottom__lots-box">
+              <div class="marketBottom__lots-box noMobile">
                 <div class="basket__market-line">
                   <p class="basket__market-line--title">Покупка невозможна</p><a class="basket__market-line--reser" href="">Покупка невозможна</a>
                 </div>
@@ -243,6 +271,132 @@
                     </svg>
                   </div>
                 </div>
+              </div>
+              <div class="marketBottom__mobileItems mobile">
+                <p class="marketBottom__mobileItems-title">Игра - категория</p>
+                <div class="marketBottom__mobileItems-item green">
+                  <svg class="marketBottom__mobileItem-delete" width="22" height="22" viewbox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.0451 15.9548C6.17951 16.0892 6.35516 16.1562 6.53116 16.1562C6.70716 16.1562 6.88282 16.0892 7.01723 15.9548L10.9999 11.9721L14.9826 15.9548C15.117 16.0892 15.2927 16.1562 15.4687 16.1562C15.6447 16.1562 15.8203 16.0892 15.9547 15.9548C16.2232 15.6863 16.2232 15.2512 15.9547 14.9827L11.972 11L15.9547 7.01731C16.2232 6.74884 16.2232 6.31365 15.9547 6.04519C15.6863 5.77672 15.2511 5.77672 14.9826 6.04519L10.9999 10.0279L7.01723 6.04519C6.74876 5.77672 6.31357 5.77672 6.0451 6.04519C5.77663 6.31365 5.77663 6.74884 6.0451 7.01731L10.0278 11L6.0451 14.9827C5.77663 15.2512 5.77663 15.6863 6.0451 15.9548Z" fill="white"></path>
+                    <path d="M11 22C13.938 22 16.7004 20.8557 18.7777 18.778C20.8557 16.7004 22 13.938 22 11C22 8.06197 20.8557 5.29959 18.7777 3.22231C16.7004 1.14434 13.938 0 11 0C8.06197 0 5.29959 1.14434 3.22231 3.22197C1.14434 5.29959 0 8.06197 0 11C0 13.938 1.14434 16.7004 3.22231 18.7777C5.29959 20.8557 8.06197 22 11 22ZM4.19444 4.19444C6.01219 2.37634 8.42909 1.375 11 1.375C13.5709 1.375 15.9878 2.37634 17.8056 4.19444C19.6237 6.01219 20.625 8.42909 20.625 11C20.625 13.5709 19.6237 15.9878 17.8056 17.8056C15.9878 19.6237 13.5709 20.625 11 20.625C8.42909 20.625 6.01219 19.6237 4.19444 17.8056C2.37634 15.9878 1.375 13.5709 1.375 11C1.375 8.42909 2.37634 6.01219 4.19444 4.19444Z" fill="white"></path>
+                  </svg>
+                  <div class="marketBottom__mobileItem-top"><img class="marketBottom__mobileItem-img" src="img/frostDrag.svg" alt="">
+                    <div class="marketBottom__mobileItem-right">
+                      <p class="marketBottom__mobileItem-title">Shetland Pony White Pony White</p>
+                      <p class="marketBottom__mobileItem-author">Mrroblox237</p>
+                      <div class="marketBottom__mobileItem-tags">
+                        <p class="marketBottom__tag green">N</p>
+                        <p class="marketBottom__tag blue">F</p>
+                        <p class="marketBottom__tag blue">F</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="marketBottom__market2Mobile-item--bottom lot">
+                    <hr class="marketBottom__market2Mobile-hr">
+                    <p class="marketBottom__market2Mobile-item--text number">34</p>
+                    <hr class="marketBottom__market2Mobile-hr">
+                    <p class="marketBottom__market2Mobile-item--text big price">28.22 Р</p>
+                    <hr class="marketBottom__market2Mobile-hr">
+                    <svg width="17" height="18" viewbox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1.74984 12.3616L5.47807 15.7044L13.386 6.89112L9.65724 3.54665L1.74984 12.3616ZM8.72291 7.63814L4.28297 12.5877C4.22717 12.6492 4.14973 12.6873 4.06661 12.6919C3.98348 12.697 3.90149 12.6679 3.84 12.6116L3.61965 12.4134C3.49097 12.2979 3.48015 12.0997 3.59574 11.971L8.03568 7.02151C8.09148 6.95945 8.16891 6.92187 8.25204 6.91731C8.33517 6.91276 8.41716 6.9418 8.47865 6.99703L8.69899 7.1946C8.82767 7.31075 8.83792 7.50889 8.72291 7.63814ZM10.0142 5.28493L10.234 5.48193C10.3638 5.59752 10.3741 5.79623 10.2585 5.9249L9.87246 6.35535C9.81553 6.41741 9.73866 6.45442 9.65553 6.45954C9.57241 6.4641 9.49099 6.43563 9.42892 6.37983L9.20858 6.18226C9.14709 6.12646 9.10951 6.04903 9.10382 5.96533C9.09926 5.8822 9.1283 5.80021 9.18467 5.73872L9.5707 5.30828C9.68685 5.1796 9.88556 5.16878 10.0142 5.28493ZM10.9332 2.12493L14.6609 5.46884L13.7453 6.48972L10.0182 3.14581L10.9332 2.12493ZM16.16 2.17333L14.0471 0.27733C13.6013 -0.122936 12.9163 -0.0853581 12.5166 0.360458L11.2708 1.74972L14.9991 5.09306L16.2448 3.70493C16.4362 3.49085 16.5369 3.20901 16.5193 2.92205C16.5033 2.63452 16.3741 2.36521 16.16 2.17333ZM14.9222 3.69981L12.6624 1.67342L13.3149 0.946908L15.5741 2.97272L14.9222 3.69981ZM0.0212364 17.3106C-0.0362699 17.5099 0.025222 17.7245 0.178952 17.8617C0.332681 18.0001 0.552458 18.0382 0.743766 17.9602L5.03055 16.2043L1.30346 12.8604L0.0212364 17.3106ZM3.81039 15.9925L2.12619 16.682L1.14119 15.7983L1.64508 14.0498L3.81039 15.9925Z" fill="#FF5C00"></path>
+                    </svg>
+                  </div>
+                  <p class="basket__status orange">Продавец offline, выдача в срок до 72 часов</p>
+                  <div class="marketBottom__mobileItem-options--wrapper"> 
+                    <div class="marketBottom__mobileItem-options">
+                      <p class="marketBottom__mobileItem-option rare">Mythical</p>
+                      <hr class="marketBottom__market2Mobile-hr">
+                      <div class="marketBottom__mobileItem-option huge">
+                        <p class="marketBottom__tag red">R</p>
+                        <p class="marketBottom__tag blue">F</p>
+                      </div>
+                      <hr class="marketBottom__market2Mobile-hr">
+                      <p class="marketBottom__mobileItem-option type">Dark matter</p>
+                      <hr class="marketBottom__market2Mobile-hr">
+                      <p class="marketBottom__mobileItem-option hc">Да</p>
+                      <hr class="marketBottom__market2Mobile-hr">
+                      <p class="marketBottom__mobileItem-option shiny">Да</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="marketBottom__mobileItems mobile">
+                <div class="basket__market-line">
+                  <p class="basket__market-line--title">Покупка невозможна</p><a class="basket__market-line--reser" href="">Покупка невозможна</a>
+                </div>
+                <div class="marketBottom__mobileItems-item notAnav red">
+                  <svg class="marketBottom__mobileItem-delete" width="22" height="22" viewbox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.0451 15.9548C6.17951 16.0892 6.35516 16.1562 6.53116 16.1562C6.70716 16.1562 6.88282 16.0892 7.01723 15.9548L10.9999 11.9721L14.9826 15.9548C15.117 16.0892 15.2927 16.1562 15.4687 16.1562C15.6447 16.1562 15.8203 16.0892 15.9547 15.9548C16.2232 15.6863 16.2232 15.2512 15.9547 14.9827L11.972 11L15.9547 7.01731C16.2232 6.74884 16.2232 6.31365 15.9547 6.04519C15.6863 5.77672 15.2511 5.77672 14.9826 6.04519L10.9999 10.0279L7.01723 6.04519C6.74876 5.77672 6.31357 5.77672 6.0451 6.04519C5.77663 6.31365 5.77663 6.74884 6.0451 7.01731L10.0278 11L6.0451 14.9827C5.77663 15.2512 5.77663 15.6863 6.0451 15.9548Z" fill="white"></path>
+                    <path d="M11 22C13.938 22 16.7004 20.8557 18.7777 18.778C20.8557 16.7004 22 13.938 22 11C22 8.06197 20.8557 5.29959 18.7777 3.22231C16.7004 1.14434 13.938 0 11 0C8.06197 0 5.29959 1.14434 3.22231 3.22197C1.14434 5.29959 0 8.06197 0 11C0 13.938 1.14434 16.7004 3.22231 18.7777C5.29959 20.8557 8.06197 22 11 22ZM4.19444 4.19444C6.01219 2.37634 8.42909 1.375 11 1.375C13.5709 1.375 15.9878 2.37634 17.8056 4.19444C19.6237 6.01219 20.625 8.42909 20.625 11C20.625 13.5709 19.6237 15.9878 17.8056 17.8056C15.9878 19.6237 13.5709 20.625 11 20.625C8.42909 20.625 6.01219 19.6237 4.19444 17.8056C2.37634 15.9878 1.375 13.5709 1.375 11C1.375 8.42909 2.37634 6.01219 4.19444 4.19444Z" fill="white"></path>
+                  </svg>
+                  <div class="marketBottom__mobileItem-top"><img class="marketBottom__mobileItem-img" src="img/frostDrag.svg" alt="">
+                    <div class="marketBottom__mobileItem-right">
+                      <p class="marketBottom__mobileItem-title">Shetland Pony White Pony White</p>
+                      <p class="marketBottom__mobileItem-author">Mrroblox237</p>
+                      <div class="marketBottom__mobileItem-tags">
+                        <p class="marketBottom__tag green">N</p>
+                        <p class="marketBottom__tag blue">F</p>
+                        <p class="marketBottom__tag blue">F</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="marketBottom__market2Mobile-item--bottom lot">
+                    <hr class="marketBottom__market2Mobile-hr">
+                    <p class="marketBottom__market2Mobile-item--text number">34</p>
+                    <hr class="marketBottom__market2Mobile-hr">
+                    <p class="marketBottom__market2Mobile-item--text big price">28.22 Р</p>
+                    <hr class="marketBottom__market2Mobile-hr">
+                    <svg width="17" height="18" viewbox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1.74984 12.3616L5.47807 15.7044L13.386 6.89112L9.65724 3.54665L1.74984 12.3616ZM8.72291 7.63814L4.28297 12.5877C4.22717 12.6492 4.14973 12.6873 4.06661 12.6919C3.98348 12.697 3.90149 12.6679 3.84 12.6116L3.61965 12.4134C3.49097 12.2979 3.48015 12.0997 3.59574 11.971L8.03568 7.02151C8.09148 6.95945 8.16891 6.92187 8.25204 6.91731C8.33517 6.91276 8.41716 6.9418 8.47865 6.99703L8.69899 7.1946C8.82767 7.31075 8.83792 7.50889 8.72291 7.63814ZM10.0142 5.28493L10.234 5.48193C10.3638 5.59752 10.3741 5.79623 10.2585 5.9249L9.87246 6.35535C9.81553 6.41741 9.73866 6.45442 9.65553 6.45954C9.57241 6.4641 9.49099 6.43563 9.42892 6.37983L9.20858 6.18226C9.14709 6.12646 9.10951 6.04903 9.10382 5.96533C9.09926 5.8822 9.1283 5.80021 9.18467 5.73872L9.5707 5.30828C9.68685 5.1796 9.88556 5.16878 10.0142 5.28493ZM10.9332 2.12493L14.6609 5.46884L13.7453 6.48972L10.0182 3.14581L10.9332 2.12493ZM16.16 2.17333L14.0471 0.27733C13.6013 -0.122936 12.9163 -0.0853581 12.5166 0.360458L11.2708 1.74972L14.9991 5.09306L16.2448 3.70493C16.4362 3.49085 16.5369 3.20901 16.5193 2.92205C16.5033 2.63452 16.3741 2.36521 16.16 2.17333ZM14.9222 3.69981L12.6624 1.67342L13.3149 0.946908L15.5741 2.97272L14.9222 3.69981ZM0.0212364 17.3106C-0.0362699 17.5099 0.025222 17.7245 0.178952 17.8617C0.332681 18.0001 0.552458 18.0382 0.743766 17.9602L5.03055 16.2043L1.30346 12.8604L0.0212364 17.3106ZM3.81039 15.9925L2.12619 16.682L1.14119 15.7983L1.64508 14.0498L3.81039 15.9925Z" fill="#FF5C00"></path>
+                    </svg>
+                  </div>
+                  <p class="basket__status orange">Продавец offline, выдача в срок до 72 часов</p>
+                  <div class="marketBottom__mobileItem-options--wrapper"> 
+                    <div class="marketBottom__mobileItem-options">
+                      <p class="marketBottom__mobileItem-option rare">Mythical</p>
+                      <hr class="marketBottom__market2Mobile-hr">
+                      <div class="marketBottom__mobileItem-option huge">
+                        <p class="marketBottom__tag red">R</p>
+                        <p class="marketBottom__tag blue">F</p>
+                      </div>
+                      <hr class="marketBottom__market2Mobile-hr">
+                      <p class="marketBottom__mobileItem-option type">Dark matter</p>
+                      <hr class="marketBottom__market2Mobile-hr">
+                      <p class="marketBottom__mobileItem-option hc">Да</p>
+                      <hr class="marketBottom__market2Mobile-hr">
+                      <p class="marketBottom__mobileItem-option shiny">Да</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="basket__buy-wrapper">
+              <div class="basket__buy">
+                <div class="basket__buy-line title">
+                  <p class="basket__buy-total">Итого:</p>
+                  <p class="basket__buy-price"><span>13940</span> Руб.</p>
+                </div>
+                <div class="basket__buy-line pred">
+                  <p class="basket__buy-text">Предметов</p>
+                  <p class="basket__buy-text">12</p>
+                </div>
+                <hr class="basket__hr smallMr"><a class="basket__buy-line banks" href="">
+                  <p class="basket__bank-title">Банковская карта</p>
+                  <svg width="16" height="9" viewbox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L8 8L15 1" stroke="#FF8231" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg></a>
+                <div class="basket__banksCard">
+                  <div class="marketBottom__checkbox-wrapper">
+                    <input class="marketBottom__checkbox" id="first" type="checkbox">
+                    <label class="marketBottom__checkbox-custom" for="first"></label>
+                    <p class="marketBottom__checkbox-text">8235 **** **** 8219</p>
+                  </div>
+                  <div class="marketBottom__checkbox-wrapper">
+                    <input class="marketBottom__checkbox" id="second" type="checkbox">
+                    <label class="marketBottom__checkbox-custom" for="second"></label>
+                    <p class="marketBottom__checkbox-text">7766 **** **** 0214</p>
+                  </div>
+                </div>
+                <hr class="basket__hr"><a class="button basket__button flex" href="">Перейти к покупке </a>
               </div>
             </div>
           </div>
