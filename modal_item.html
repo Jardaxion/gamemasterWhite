@@ -70,28 +70,49 @@
     </div>
   </header>
   <main class="main">
-    <section class="back mobile">
-      <div class="container"><a class="back__inner" href="index.html">
-          <svg width="5" height="9" viewbox="0 0 5 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0.646447 4.14645C0.451184 4.34171 0.451185 4.65829 0.646447 4.85355L3.82843 8.03553C4.02369 8.2308 4.34027 8.2308 4.53553 8.03553C4.7308 7.84027 4.7308 7.52369 4.53553 7.32843L1.70711 4.5L4.53553 1.67157C4.7308 1.47631 4.7308 1.15973 4.53553 0.964466C4.34027 0.769204 4.02369 0.769204 3.82843 0.964466L0.646447 4.14645ZM2 4L1 4L1 5L2 5L2 4Z" fill="#FF5C00"></path>
-          </svg>
-          <p class="back__text">Главная</p>
-          <p class="back__text">/</p>
-          <p class="back__text orange">Вход</p></a></div>
-    </section>
-    <section class="auth"><img class="reg__background" src="img/authBackDark.svg" alt=""><img class="reg__background dark" src="img/authBack.svg" alt="">
-      <div class="container">
-        <div class="auth__inner">
-          <p class="auth__title">Восстановление пароля</p>
-          <p class="auth__subtitle">Пожалуйста введите email</p>
-          <form class="auth__form" action="">
-            <input class="auth__input" type="text" placeholder="E-mail">
-            <p class="auth__error">Данного email не существует</p>
-            <button class="auth__button button effect bigMt" type="submit">Отправить ссылку</button>
-          </form>
+    <div class="modal__background active"></div>
+    <div class="modal active" id="item">
+      <div class="modal__inner smallRight"> 
+        <svg class="modal__exit js-close-modal" width="14" height="13" viewbox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line x1="1.72716" y1="1" x2="12.6665" y2="11.9393" stroke="black" stroke-width="1.5" stroke-linecap="round"></line>
+          <line x1="2" y1="11.9393" x2="12.9393" y2="0.999999" stroke="black" stroke-width="1.5" stroke-linecap="round"></line>
+        </svg>
+        <div class="modal__item">
+          <div class="modal__item-left">
+            <div class="modal__item-logo--wrapper"><img class="modal__item-logo" src="img/chest.svg" alt=""></div>
+          </div>
+          <div class="modal__item-right">
+            <div class="modal__item-top">
+              <div class="modal__item-rare" style="background: #E443D4;"></div>
+              <p class="modal__item-rare--text">Мифический</p>
+            </div>
+            <p class="modal__item-title">Shetland Pony White</p>
+            <p class="modal__item-game">Roblox</p>
+            <p class="modal__item-description">Описание quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet, nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, nisi ut aliquid ex ea commodi consequatur Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet, nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, nisi ut aliquid ex ea commodi consequatur Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet, nam libero tempore, cum soluta nobis est eligendi optio, Описание quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet, nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, nisi ut aliquid ex ea commodi consequatur Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet, nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, nisi ut aliquid ex ea commodi consequatur Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet, nam libero tempore, cum soluta nobis est eligendi optio</p>
+            <div class="modal__item-line">
+              <div class="modal__item-price">
+                <p class="modal__item-price--title">Лучшая цена</p>
+                <p class="modal__item-price--price">28.22 Р</p>
+              </div>
+              <div class="modal__item-selNum">
+                <div class="modal__item-selNum--left modal__item-sel">
+                  <svg width="11" height="21" viewbox="0 0 11 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 1L1 10.5L10 20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </div>
+                <p class="modal__item-selNum--num">3</p>
+                <div class="modal__item-selNum--right modal__item-sel">
+                  <svg width="11" height="21" viewbox="0 0 11 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 20L10 10.5L1 0.999999" stroke="#BEBEBE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="modal__item-buttons"><a class="button effect modal__item-button--add" href="">Добавить в корзину</a><a class="modal__item-button--sell button" href="">Продать товар</a></div>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
   </main>
   <footer class="footer noMobile"><img class="footer__background" src="img/background.svg" alt=""><img class="footer__background" src="img/backgroundDark.svg" alt="">
     <div class="footer__inner">

@@ -1,5 +1,37 @@
 let numPage = 1;
+let isDis = true;
 $(document).ready(function() {
+    if($(window).width() <= 960){
+        $('.profile__center-input').prop('disabled', isDis);
+    }
+    $('.profile__top-right--link.edit').on('click', function(e){
+        e.preventDefault();
+        let text = "";
+        isDis = !isDis;
+
+        console.log(isDis);
+
+        if(!isDis){
+            text = 'Сохранить';
+        } else{
+            text = 'Редактировать'
+        }
+
+        $(this).children('span').html(text);
+        $('.profile__center-input').prop('disabled', isDis);
+    })
+
+    $('.marketBottom__market2Mobile-filters--filter').on('click', function(e){
+        $(this).toggleClass('active');
+    })
+
+    $('.marketBottom__market2-titleLine--titleBlock').on('click', function(e){
+        $(this).toggleClass('active');
+    })
+
+    $('.marketBottom__like').on('click', function(e){
+        $(this).parent('.marketBottom__card').toggleClass('liked');
+    })
     // Открытие/закрытие менюшки в профиле
     $('.js-openClose-menu').on('click', function(e) {
         e.preventDefault();
@@ -15,6 +47,14 @@ $(document).ready(function() {
         $(this).toggleClass('active');
         $('.header__menu').toggleClass('active');
         $('body').toggleClass('noScroll');
+    })
+
+    $('.modal__item-selNum--left').on('click', function(){
+        $(this).next().html($(this).next().html() - 1);
+    })
+
+    $('.modal__item-selNum--right').on('click', function(){
+        $(this).prev().html(Number($(this).prev().html()) + 1);
     })
 
 
@@ -238,7 +278,6 @@ $(document).ready(function() {
         closeModal();
     })
     $('.modal').on('click', function(e){
-        e.preventDefault();
 
         if(e.target === document.querySelector('.modal')){
             closeModal();

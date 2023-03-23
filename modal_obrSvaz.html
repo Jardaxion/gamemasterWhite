@@ -70,28 +70,34 @@
     </div>
   </header>
   <main class="main">
-    <section class="back mobile">
-      <div class="container"><a class="back__inner" href="index.html">
-          <svg width="5" height="9" viewbox="0 0 5 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0.646447 4.14645C0.451184 4.34171 0.451185 4.65829 0.646447 4.85355L3.82843 8.03553C4.02369 8.2308 4.34027 8.2308 4.53553 8.03553C4.7308 7.84027 4.7308 7.52369 4.53553 7.32843L1.70711 4.5L4.53553 1.67157C4.7308 1.47631 4.7308 1.15973 4.53553 0.964466C4.34027 0.769204 4.02369 0.769204 3.82843 0.964466L0.646447 4.14645ZM2 4L1 4L1 5L2 5L2 4Z" fill="#FF5C00"></path>
-          </svg>
-          <p class="back__text">Главная</p>
-          <p class="back__text">/</p>
-          <p class="back__text orange">Вход</p></a></div>
-    </section>
-    <section class="auth"><img class="reg__background" src="img/authBackDark.svg" alt=""><img class="reg__background dark" src="img/authBack.svg" alt="">
-      <div class="container">
-        <div class="auth__inner">
-          <p class="auth__title">Восстановление пароля</p>
-          <p class="auth__subtitle">Пожалуйста введите email</p>
-          <form class="auth__form" action="">
-            <input class="auth__input" type="text" placeholder="E-mail">
-            <p class="auth__error">Данного email не существует</p>
-            <button class="auth__button button effect bigMt" type="submit">Отправить ссылку</button>
-          </form>
-        </div>
+    <div class="modal__background active"></div>
+    <div class="modal active" id="obrSvaz">
+      <div class="modal__inner">
+        <svg class="modal__exit js-close-modal" width="14" height="13" viewbox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line x1="1.72716" y1="1" x2="12.6665" y2="11.9393" stroke="black" stroke-width="1.5" stroke-linecap="round"></line>
+          <line x1="2" y1="11.9393" x2="12.9393" y2="0.999999" stroke="black" stroke-width="1.5" stroke-linecap="round"></line>
+        </svg>
+        <p class="modal__obrSvaz-title">Обратная связь</p>
+        <p class="modal__obrSvaz-subtitle">Пожалуйста заполните все поля</p>
+        <form class="modal__obrSvaz-form" action="">
+          <input class="modal__obrSvaz-input" type="text" placeholder="Ваше Имя">
+          <input class="modal__obrSvaz-input" type="text" placeholder="Ваше e-mail">
+          <input class="modal__obrSvaz-input" type="text" placeholder="Комментарий">
+          <button class="button modal__obrSvaz-button js-reOpen-modal" data-modal="thanks">Отправить</button>
+        </form>
       </div>
-    </section>
+    </div>
+    <div class="modal" id="thanks">
+      <div class="modal__inner">
+        <svg class="modal__exit js-close-modal" width="14" height="13" viewbox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line x1="1.72716" y1="1" x2="12.6665" y2="11.9393" stroke="black" stroke-width="1.5" stroke-linecap="round"></line>
+          <line x1="2" y1="11.9393" x2="12.9393" y2="0.999999" stroke="black" stroke-width="1.5" stroke-linecap="round"></line>
+        </svg>
+        <p class="modal__thanks-title">Спасибо</p>
+        <p class="modal__thanks-subtitle">Ваша заявка отправлена, спасибо за обратную связь</p>
+        <div class="modal__thanks-button--wrapper"><a class="button modal__thanks-button js-close-modal" href="">Вернуться</a></div>
+      </div>
+    </div>
   </main>
   <footer class="footer noMobile"><img class="footer__background" src="img/background.svg" alt=""><img class="footer__background" src="img/backgroundDark.svg" alt="">
     <div class="footer__inner">
