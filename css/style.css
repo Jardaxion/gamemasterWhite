@@ -1109,6 +1109,10 @@ h1
 
     cursor: pointer;
 }
+.modal__exit *
+{
+    stroke: var(--main);
+}
 .modal__title
 {
     font-family: 'Montserrat';
