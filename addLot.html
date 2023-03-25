@@ -86,17 +86,29 @@
         <div class="addLot__inner">
           <p class="addLot__title">Добавить лот</p>
           <p class="addLot__subtitle">Пожалуйста заполните все поля</p>
-          <div class="addLot__box">
+          <form class="addLot__box">
             <div class="addLot__miniTitle-wrapper">
               <p class="addLot__miniTitle big">Выберите игру</p>
             </div>
             <div class="addLot__selectGame-wrapper lineSlider swiper" data-slideperview="auto">
-              <div class="addLot__selectGame swiper-wrapper"><a class="block__block swiper-slide" href=""><img class="block__block-img" src="img/catalogIndex/rl.png" alt="">
-                  <p class="block__block-title">Roblox</p></a><a class="block__block swiper-slide" href=""><img class="block__block-img" src="img/catalogIndex/rob1.png" alt="">
-                  <p class="block__block-title">Roblox</p></a><a class="block__block swiper-slide" href=""><img class="block__block-img" src="img/catalogIndex/cs.png" alt="">
-                  <p class="block__block-title">CS:GO</p></a><a class="block__block swiper-slide" href=""><img class="block__block-img" src="img/catalogIndex/rob2.png" alt="">
-                  <p class="block__block-title">Roblox</p></a></div>
+              <div class="addLot__selectGame swiper-wrapper">
+                <div class="addLot__selectGame-block swiper-slide"><a class="block__block" href=""><img class="block__block-img" src="img/catalogIndex/rl.png" alt="">
+                    <p class="block__block-title">Rocket league</p></a><a class="block__block" href=""><img class="block__block-img" src="img/catalogIndex/rob1.png" alt="">
+                    <p class="block__block-title">Roblox</p></a></div>
+                <div class="addLot__selectGame-block swiper-slide"><a class="block__block" href=""><img class="block__block-img" src="img/catalogIndex/cs.png" alt="">
+                    <p class="block__block-title">CS:GO</p></a><a class="block__block" href=""><img class="block__block-img" src="img/catalogIndex/rob2.png" alt="">
+                    <p class="block__block-title">Roblox</p></a></div>
+              </div>
               <div class="addLot__scrollbar swiper-scrollbar"></div>
+              <div class="addLot__slider-line mobile">
+                <svg class="addLot__prevButton addLot__slider-button swiper-button-prev" width="14" height="16" viewbox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.292893 7.29289C-0.0976315 7.68342 -0.0976315 8.31658 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292893 7.29289ZM14 7L1 7V9L14 9V7Z" fill="#414141"></path>
+                </svg>
+                <div class="addLot__pagination swiper-pagination"></div>
+                <svg class="addLot__nextButton addLot__slider-button swiper-button-next" width="14" height="16" viewbox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13.7071 8.70711C14.0976 8.31658 14.0976 7.68342 13.7071 7.29289L7.34315 0.928933C6.95262 0.538408 6.31946 0.538408 5.92893 0.928933C5.53841 1.31946 5.53841 1.95262 5.92893 2.34315L11.5858 8L5.92893 13.6569C5.53841 14.0474 5.53841 14.6805 5.92893 15.0711C6.31946 15.4616 6.95262 15.4616 7.34315 15.0711L13.7071 8.70711ZM-8.74228e-08 9L13 9L13 7L8.74228e-08 7L-8.74228e-08 9Z" fill="#414141"></path>
+                </svg>
+              </div>
             </div>
             <div class="addLot__selects">
               <div class="addLot__select"><a class="addLot__select-title" href="">
@@ -119,8 +131,380 @@
             <div class="addLot__miniTitle-wrapper">
               <p class="addLot__miniTitle">Особенность предмета      </p><a class="addLot__myItemNotInList" href="">Особенности нет в списке</a>
             </div>
-            <div class="addLot__"></div>
-          </div>
+            <div class="addLot__sixLine-wrapper swiper lineSlider" data-slideperview="1">
+              <div class="addLot__sixLine swiper-wrapper">
+                <div class="addLot__sixLine-block swiper-slide">
+                  <div class="addLot__sixLine-item">
+                    <div class="addLot__sixLine-top"><img class="addLot__sixLine-img" src="img/items/gold.svg" alt=""></div>
+                    <p class="addLot__sixLine-bottom">Лучшее</p>
+                  </div>
+                  <div class="addLot__sixLine-item">
+                    <div class="addLot__sixLine-top"><img class="addLot__sixLine-img" src="img/items/emblem.svg" alt=""></div>
+                    <p class="addLot__sixLine-bottom">Очень волшебный предмет</p>
+                  </div>
+                  <div class="addLot__sixLine-item">
+                    <div class="addLot__sixLine-top"><img class="addLot__sixLine-img" src="img/items/gold.svg" alt=""></div>
+                    <p class="addLot__sixLine-bottom">Лучшее</p>
+                  </div>
+                  <div class="addLot__sixLine-item">
+                    <div class="addLot__sixLine-top"><img class="addLot__sixLine-img" src="img/items/emblem.svg" alt=""></div>
+                    <p class="addLot__sixLine-bottom">Очень волшебный предмет</p>
+                  </div>
+                  <div class="addLot__sixLine-item">
+                    <div class="addLot__sixLine-top"><img class="addLot__sixLine-img" src="img/items/gold.svg" alt=""></div>
+                    <p class="addLot__sixLine-bottom">Лучшее</p>
+                  </div>
+                  <div class="addLot__sixLine-item">
+                    <div class="addLot__sixLine-top"><img class="addLot__sixLine-img" src="img/items/emblem.svg" alt=""></div>
+                    <p class="addLot__sixLine-bottom">Очень волшебный предмет</p>
+                  </div>
+                </div>
+                <div class="addLot__sixLine-block swiper-slide">
+                  <div class="addLot__sixLine-item">
+                    <div class="addLot__sixLine-top"><img class="addLot__sixLine-img" src="img/items/gold.svg" alt=""></div>
+                    <p class="addLot__sixLine-bottom">Лучшее</p>
+                  </div>
+                  <div class="addLot__sixLine-item">
+                    <div class="addLot__sixLine-top"><img class="addLot__sixLine-img" src="img/items/emblem.svg" alt=""></div>
+                    <p class="addLot__sixLine-bottom">Очень волшебный предмет</p>
+                  </div>
+                  <div class="addLot__sixLine-item">
+                    <div class="addLot__sixLine-top"><img class="addLot__sixLine-img" src="img/items/gold.svg" alt=""></div>
+                    <p class="addLot__sixLine-bottom">Лучшее</p>
+                  </div>
+                  <div class="addLot__sixLine-item">
+                    <div class="addLot__sixLine-top"><img class="addLot__sixLine-img" src="img/items/emblem.svg" alt=""></div>
+                    <p class="addLot__sixLine-bottom">Очень волшебный предмет</p>
+                  </div>
+                  <div class="addLot__sixLine-item">
+                    <div class="addLot__sixLine-top"><img class="addLot__sixLine-img" src="img/items/gold.svg" alt=""></div>
+                    <p class="addLot__sixLine-bottom">Лучшее</p>
+                  </div>
+                  <div class="addLot__sixLine-item">
+                    <div class="addLot__sixLine-top"><img class="addLot__sixLine-img" src="img/items/emblem.svg" alt=""></div>
+                    <p class="addLot__sixLine-bottom">Очень волшебный предмет</p>
+                  </div>
+                </div>
+              </div>
+              <div class="addLot__scrollbar swiper-scrollbar"></div>
+              <div class="addLot__slider-line mobile">
+                <svg class="addLot__prevButton addLot__slider-button swiper-button-prev" width="14" height="16" viewbox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.292893 7.29289C-0.0976315 7.68342 -0.0976315 8.31658 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292893 7.29289ZM14 7L1 7V9L14 9V7Z" fill="#414141"></path>
+                </svg>
+                <div class="addLot__pagination swiper-pagination"></div>
+                <svg class="addLot__nextButton addLot__slider-button swiper-button-next" width="14" height="16" viewbox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13.7071 8.70711C14.0976 8.31658 14.0976 7.68342 13.7071 7.29289L7.34315 0.928933C6.95262 0.538408 6.31946 0.538408 5.92893 0.928933C5.53841 1.31946 5.53841 1.95262 5.92893 2.34315L11.5858 8L5.92893 13.6569C5.53841 14.0474 5.53841 14.6805 5.92893 15.0711C6.31946 15.4616 6.95262 15.4616 7.34315 15.0711L13.7071 8.70711ZM-8.74228e-08 9L13 9L13 7L8.74228e-08 7L-8.74228e-08 9Z" fill="#414141"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="addLot__miniTitle-wrapper">
+              <p class="addLot__miniTitle">Особенность предмета (текстовые)</p>
+            </div>
+            <div class="addLot__selectTwoColumn-wrapper swiper lineSlider scrollOnMob" data-slideperview="auto">
+              <div class="addLot__selectTwoColumn swiper-wrapper">
+                <div class="addLot__selectTwoColumn-item swiper-slide">
+                  <p class="addLot__selectTwoColumn-item--item">Лучшее</p>
+                  <p class="addLot__selectTwoColumn-item--item">Очень волшебный предмет</p>
+                </div>
+                <div class="addLot__selectTwoColumn-item swiper-slide">
+                  <p class="addLot__selectTwoColumn-item--item">Лучшее</p>
+                  <p class="addLot__selectTwoColumn-item--item">Очень волшебный предмет</p>
+                </div>
+                <div class="addLot__selectTwoColumn-item swiper-slide">
+                  <p class="addLot__selectTwoColumn-item--item">Лучшее</p>
+                  <p class="addLot__selectTwoColumn-item--item">Очень волшебный предмет</p>
+                </div>
+                <div class="addLot__selectTwoColumn-item swiper-slide">
+                  <p class="addLot__selectTwoColumn-item--item">Лучшее</p>
+                  <p class="addLot__selectTwoColumn-item--item">Очень волшебный предмет</p>
+                </div>
+                <div class="addLot__selectTwoColumn-item swiper-slide">
+                  <p class="addLot__selectTwoColumn-item--item">Лучшее</p>
+                  <p class="addLot__selectTwoColumn-item--item">Очень волшебный предмет</p>
+                </div>
+                <div class="addLot__selectTwoColumn-item swiper-slide">
+                  <p class="addLot__selectTwoColumn-item--item">Лучшее</p>
+                  <p class="addLot__selectTwoColumn-item--item">Очень волшебный предмет</p>
+                </div>
+                <div class="addLot__selectTwoColumn-item swiper-slide">
+                  <p class="addLot__selectTwoColumn-item--item">Лучшее</p>
+                  <p class="addLot__selectTwoColumn-item--item">Очень волшебный предмет</p>
+                </div>
+                <div class="addLot__selectTwoColumn-item swiper-slide">
+                  <p class="addLot__selectTwoColumn-item--item">Лучшее</p>
+                  <p class="addLot__selectTwoColumn-item--item">Очень волшебный предмет</p>
+                </div>
+                <div class="addLot__selectTwoColumn-item swiper-slide">
+                  <p class="addLot__selectTwoColumn-item--item">Лучшее</p>
+                  <p class="addLot__selectTwoColumn-item--item">Очень волшебный предмет</p>
+                </div>
+                <div class="addLot__selectTwoColumn-item swiper-slide">
+                  <p class="addLot__selectTwoColumn-item--item">Лучшее</p>
+                  <p class="addLot__selectTwoColumn-item--item">Очень волшебный предмет</p>
+                </div>
+                <div class="addLot__selectTwoColumn-item swiper-slide">
+                  <p class="addLot__selectTwoColumn-item--item">Лучшее</p>
+                  <p class="addLot__selectTwoColumn-item--item">Очень волшебный предмет</p>
+                </div>
+                <div class="addLot__selectTwoColumn-item swiper-slide">
+                  <p class="addLot__selectTwoColumn-item--item">Лучшее</p>
+                  <p class="addLot__selectTwoColumn-item--item">Очень волшебный предмет</p>
+                </div>
+              </div>
+              <div class="addLot__scrollbar swiper-scrollbar"></div>
+              <div class="addLot__slider-line mobile">
+                <svg class="addLot__prevButton addLot__slider-button swiper-button-prev" width="14" height="16" viewbox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.292893 7.29289C-0.0976315 7.68342 -0.0976315 8.31658 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292893 7.29289ZM14 7L1 7V9L14 9V7Z" fill="#414141"></path>
+                </svg>
+                <div class="addLot__pagination swiper-pagination"></div>
+                <svg class="addLot__nextButton addLot__slider-button swiper-button-next" width="14" height="16" viewbox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13.7071 8.70711C14.0976 8.31658 14.0976 7.68342 13.7071 7.29289L7.34315 0.928933C6.95262 0.538408 6.31946 0.538408 5.92893 0.928933C5.53841 1.31946 5.53841 1.95262 5.92893 2.34315L11.5858 8L5.92893 13.6569C5.53841 14.0474 5.53841 14.6805 5.92893 15.0711C6.31946 15.4616 6.95262 15.4616 7.34315 15.0711L13.7071 8.70711ZM-8.74228e-08 9L13 9L13 7L8.74228e-08 7L-8.74228e-08 9Z" fill="#414141"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="addLot__miniTitle-wrapper">
+              <p class="addLot__miniTitle">Особенность предмета (числительные)</p>
+            </div>
+            <div class="addLot__selectFourColumn-wrapper swiper lineSlider" data-slideperview="1">
+              <div class="addLot__selectFourColumn swiper-wrapper">
+                <div class="addLot__selectFourColumn-item swiper-slide">
+                  <div class="addLot__selectFourColumn-item--item">
+                    <div class="addLot__selectFourColumn-item--left">
+                      <input class="addLot__selectFourColumn-item--checkbox" type="checkbox" id="1"/>
+                      <label class="addLot__selectFourColumn-item--checkboxShow" for="1">
+                        <svg width="21" height="15" viewbox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M2 6.71429L8.18182 13L19 2" stroke="#FF5C00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                      </label>
+                      <p class="addLot__selectFourColumn-item--title">Сила:</p>
+                    </div>
+                    <p class="addLot__selectFourColumn-item--number">85035</p>
+                  </div>
+                  <div class="addLot__selectFourColumn-item--item">
+                    <div class="addLot__selectFourColumn-item--left">
+                      <input class="addLot__selectFourColumn-item--checkbox" type="checkbox" id="2"/>
+                      <label class="addLot__selectFourColumn-item--checkboxShow" for="2">
+                        <svg width="21" height="15" viewbox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M2 6.71429L8.18182 13L19 2" stroke="#FF5C00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                      </label>
+                      <p class="addLot__selectFourColumn-item--title">Ловкость:</p>
+                    </div>
+                    <p class="addLot__selectFourColumn-item--number">85035</p>
+                  </div>
+                  <div class="addLot__selectFourColumn-item--item">
+                    <div class="addLot__selectFourColumn-item--left">
+                      <input class="addLot__selectFourColumn-item--checkbox" type="checkbox" id="3"/>
+                      <label class="addLot__selectFourColumn-item--checkboxShow" for="3">
+                        <svg width="21" height="15" viewbox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M2 6.71429L8.18182 13L19 2" stroke="#FF5C00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                      </label>
+                      <p class="addLot__selectFourColumn-item--title">Сила:</p>
+                    </div>
+                    <p class="addLot__selectFourColumn-item--number">85035</p>
+                  </div>
+                  <div class="addLot__selectFourColumn-item--item">
+                    <div class="addLot__selectFourColumn-item--left">
+                      <input class="addLot__selectFourColumn-item--checkbox" type="checkbox" id="4"/>
+                      <label class="addLot__selectFourColumn-item--checkboxShow" for="4">
+                        <svg width="21" height="15" viewbox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M2 6.71429L8.18182 13L19 2" stroke="#FF5C00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                      </label>
+                      <p class="addLot__selectFourColumn-item--title">Ловкость:</p>
+                    </div>
+                    <p class="addLot__selectFourColumn-item--number">85035</p>
+                  </div>
+                </div>
+                <div class="addLot__selectFourColumn-item swiper-slide">
+                  <div class="addLot__selectFourColumn-item--item">
+                    <div class="addLot__selectFourColumn-item--left">
+                      <input class="addLot__selectFourColumn-item--checkbox" type="checkbox" id="5"/>
+                      <label class="addLot__selectFourColumn-item--checkboxShow" for="5">
+                        <svg width="21" height="15" viewbox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M2 6.71429L8.18182 13L19 2" stroke="#FF5C00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                      </label>
+                      <p class="addLot__selectFourColumn-item--title">Сила:</p>
+                    </div>
+                    <p class="addLot__selectFourColumn-item--number">85035</p>
+                  </div>
+                  <div class="addLot__selectFourColumn-item--item">
+                    <div class="addLot__selectFourColumn-item--left">
+                      <input class="addLot__selectFourColumn-item--checkbox" type="checkbox" id="6"/>
+                      <label class="addLot__selectFourColumn-item--checkboxShow" for="6">
+                        <svg width="21" height="15" viewbox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M2 6.71429L8.18182 13L19 2" stroke="#FF5C00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                      </label>
+                      <p class="addLot__selectFourColumn-item--title">Ловкость:</p>
+                    </div>
+                    <p class="addLot__selectFourColumn-item--number">85035</p>
+                  </div>
+                  <div class="addLot__selectFourColumn-item--item">
+                    <div class="addLot__selectFourColumn-item--left">
+                      <input class="addLot__selectFourColumn-item--checkbox" type="checkbox" id="7"/>
+                      <label class="addLot__selectFourColumn-item--checkboxShow" for="7">
+                        <svg width="21" height="15" viewbox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M2 6.71429L8.18182 13L19 2" stroke="#FF5C00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                      </label>
+                      <p class="addLot__selectFourColumn-item--title">Сила:</p>
+                    </div>
+                    <p class="addLot__selectFourColumn-item--number">85035</p>
+                  </div>
+                  <div class="addLot__selectFourColumn-item--item">
+                    <div class="addLot__selectFourColumn-item--left">
+                      <input class="addLot__selectFourColumn-item--checkbox" type="checkbox" id="8"/>
+                      <label class="addLot__selectFourColumn-item--checkboxShow" for="8">
+                        <svg width="21" height="15" viewbox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M2 6.71429L8.18182 13L19 2" stroke="#FF5C00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                      </label>
+                      <p class="addLot__selectFourColumn-item--title">Ловкость:</p>
+                    </div>
+                    <p class="addLot__selectFourColumn-item--number">85035</p>
+                  </div>
+                </div>
+                <div class="addLot__selectFourColumn-item swiper-slide">
+                  <div class="addLot__selectFourColumn-item--item">
+                    <div class="addLot__selectFourColumn-item--left">
+                      <input class="addLot__selectFourColumn-item--checkbox" type="checkbox" id="9"/>
+                      <label class="addLot__selectFourColumn-item--checkboxShow" for="9">
+                        <svg width="21" height="15" viewbox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M2 6.71429L8.18182 13L19 2" stroke="#FF5C00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                      </label>
+                      <p class="addLot__selectFourColumn-item--title">Сила:</p>
+                    </div>
+                    <p class="addLot__selectFourColumn-item--number">85035</p>
+                  </div>
+                  <div class="addLot__selectFourColumn-item--item">
+                    <div class="addLot__selectFourColumn-item--left">
+                      <input class="addLot__selectFourColumn-item--checkbox" type="checkbox" id="10"/>
+                      <label class="addLot__selectFourColumn-item--checkboxShow" for="10">
+                        <svg width="21" height="15" viewbox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M2 6.71429L8.18182 13L19 2" stroke="#FF5C00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                      </label>
+                      <p class="addLot__selectFourColumn-item--title">Ловкость:</p>
+                    </div>
+                    <p class="addLot__selectFourColumn-item--number">85035</p>
+                  </div>
+                  <div class="addLot__selectFourColumn-item--item">
+                    <div class="addLot__selectFourColumn-item--left">
+                      <input class="addLot__selectFourColumn-item--checkbox" type="checkbox" id="11"/>
+                      <label class="addLot__selectFourColumn-item--checkboxShow" for="11">
+                        <svg width="21" height="15" viewbox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M2 6.71429L8.18182 13L19 2" stroke="#FF5C00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                      </label>
+                      <p class="addLot__selectFourColumn-item--title">Сила:</p>
+                    </div>
+                    <p class="addLot__selectFourColumn-item--number">85035</p>
+                  </div>
+                  <div class="addLot__selectFourColumn-item--item">
+                    <div class="addLot__selectFourColumn-item--left">
+                      <input class="addLot__selectFourColumn-item--checkbox" type="checkbox" id="12"/>
+                      <label class="addLot__selectFourColumn-item--checkboxShow" for="12">
+                        <svg width="21" height="15" viewbox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M2 6.71429L8.18182 13L19 2" stroke="#FF5C00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                      </label>
+                      <p class="addLot__selectFourColumn-item--title">Ловкость:</p>
+                    </div>
+                    <p class="addLot__selectFourColumn-item--number">85035</p>
+                  </div>
+                </div>
+              </div>
+              <div class="addLot__scrollbar swiper-scrollbar"></div>
+              <div class="addLot__slider-line mobile">
+                <svg class="addLot__prevButton addLot__slider-button swiper-button-prev" width="14" height="16" viewbox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.292893 7.29289C-0.0976315 7.68342 -0.0976315 8.31658 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292893 7.29289ZM14 7L1 7V9L14 9V7Z" fill="#414141"></path>
+                </svg>
+                <div class="addLot__pagination swiper-pagination"></div>
+                <svg class="addLot__nextButton addLot__slider-button swiper-button-next" width="14" height="16" viewbox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13.7071 8.70711C14.0976 8.31658 14.0976 7.68342 13.7071 7.29289L7.34315 0.928933C6.95262 0.538408 6.31946 0.538408 5.92893 0.928933C5.53841 1.31946 5.53841 1.95262 5.92893 2.34315L11.5858 8L5.92893 13.6569C5.53841 14.0474 5.53841 14.6805 5.92893 15.0711C6.31946 15.4616 6.95262 15.4616 7.34315 15.0711L13.7071 8.70711ZM-8.74228e-08 9L13 9L13 7L8.74228e-08 7L-8.74228e-08 9Z" fill="#414141"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="addLot__miniTitle-wrapper">
+              <p class="addLot__miniTitle">Редкость предмета</p>
+            </div>
+            <div class="addLot__selectTwoColumn-wrapper swiper lineSlider" data-slideperview="1">
+              <div class="addLot__selectTwoColumn swiper-wrapper">
+                <div class="addLot__selectTwoColumn-item long swiper-slide">
+                  <div class="addLot__selectTwoColumn-item--double">
+                    <div class="addLot__color green"></div>
+                    <p class="addLot__color-text">Обычный</p>
+                  </div>
+                  <div class="addLot__selectTwoColumn-item--double">
+                    <div class="addLot__color purple"></div>
+                    <p class="addLot__color-text">Мифический</p>
+                  </div>
+                </div>
+                <div class="addLot__selectTwoColumn-item long swiper-slide">
+                  <div class="addLot__selectTwoColumn-item--double">
+                    <div class="addLot__color blue"></div>
+                    <p class="addLot__color-text">Редкий</p>
+                  </div>
+                  <div class="addLot__selectTwoColumn-item--double">
+                    <div class="addLot__color red"></div>
+                    <p class="addLot__color-text">Не реальный</p>
+                  </div>
+                </div>
+                <div class="addLot__selectTwoColumn-item long swiper-slide">
+                  <div class="addLot__selectTwoColumn-item--double">
+                    <div class="addLot__color blueDark"></div>
+                    <p class="addLot__color-text">Очень редкий</p>
+                  </div>
+                  <div class="addLot__selectTwoColumn-item--double">
+                    <div class="addLot__color yellow"></div>
+                    <p class="addLot__color-text">Редчайший</p>
+                  </div>
+                </div>
+                <div class="addLot__selectTwoColumn-item long swiper-slide">
+                  <div class="addLot__selectTwoColumn-item--double">
+                    <div class="addLot__color green"></div>
+                    <p class="addLot__color-text">Обычный</p>
+                  </div>
+                  <div class="addLot__selectTwoColumn-item--double">
+                    <div class="addLot__color purple"></div>
+                    <p class="addLot__color-text">Мифический</p>
+                  </div>
+                </div>
+              </div>
+              <div class="addLot__scrollbar swiper-scrollbar"></div>
+              <div class="addLot__slider-line mobile">
+                <svg class="addLot__prevButton addLot__slider-button swiper-button-prev" width="14" height="16" viewbox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.292893 7.29289C-0.0976315 7.68342 -0.0976315 8.31658 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292893 7.29289ZM14 7L1 7V9L14 9V7Z" fill="#414141"></path>
+                </svg>
+                <div class="addLot__pagination swiper-pagination"></div>
+                <svg class="addLot__nextButton addLot__slider-button swiper-button-next" width="14" height="16" viewbox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13.7071 8.70711C14.0976 8.31658 14.0976 7.68342 13.7071 7.29289L7.34315 0.928933C6.95262 0.538408 6.31946 0.538408 5.92893 0.928933C5.53841 1.31946 5.53841 1.95262 5.92893 2.34315L11.5858 8L5.92893 13.6569C5.53841 14.0474 5.53841 14.6805 5.92893 15.0711C6.31946 15.4616 6.95262 15.4616 7.34315 15.0711L13.7071 8.70711ZM-8.74228e-08 9L13 9L13 7L8.74228e-08 7L-8.74228e-08 9Z" fill="#414141"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="addLot__inputsLine">
+              <input class="addLot__input" type="text" placeholder="Количество">
+              <input class="addLot__input" type="text" placeholder="Цена">
+              <div class="addLot__inputsLine-line">   
+                <input class="addLot__input" type="text" placeholder="Минимальная цена">
+                <div class="question"><span class="question__title">?</span>
+                  <div class="question__question">
+                    <svg class="question__question-arrow" width="43" height="46" viewbox="0 0 43 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M21.5 0L42.7176 45.75H0.282377L21.5 0Z" fill="#D9D9D9"></path>
+                    </svg>
+                    <p class="question__question-text">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet, nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod m</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="addLot__button-wrapper">
+              <button class="addLot__button button effect">Опубликовать</button>
+            </div>
+          </form>
         </div>
       </div>
     </section>

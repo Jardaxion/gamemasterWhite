@@ -1,9 +1,7 @@
 let numPage = 1;
 let isDis = true;
 $(document).ready(function() {
-    if($(window).width() <= 960){
-        $('.profile__center-input').prop('disabled', isDis);
-    }
+    $('.profile__center-input').prop('disabled', isDis);
     $('.profile__top-right--link.edit').on('click', function(e){
         e.preventDefault();
         let text = "";
@@ -315,7 +313,7 @@ $(document).ready(function() {
         });
     }
 
-    document.querySelectorAll('.addLot__selectGame-wrapper').forEach(function(el){
+    document.querySelectorAll('.lineSlider').forEach(function(el){
         new Swiper(el, {
             loop: false,
             spaceBetween: 15,
@@ -323,13 +321,52 @@ $(document).ready(function() {
             scrollbar: {
                 el: el.children[1],
                 draggable: true,
+            },
+            navigation: {
+                nextEl: el.children[2].children[2],
+                prevEl: el.children[2].children[0]
+            },
+            pagination: {
+                el: el.children[2].children[1],
+                clickable: true,
+            },
+            breakpoints: {
+                960: {
+                    slidesPerView: 'auto',
+                }
             }
         })
+    })
+
+    $('.addLot__sixLine-item').on('click', function(){
+        $('.addLot__sixLine-item.active').removeClass('active');
+
+        $(this).addClass('active');
+    })
+
+    $('.addLot__selectTwoColumn-item--item').on('click', function(){
+        $('.addLot__selectTwoColumn-item--item.active').removeClass('active');
+
+        $(this).addClass('active');
+    })
+
+    $('.addLot__selectTwoColumn-item--double').on('click', function(){
+        $('.addLot__selectTwoColumn-item--double.active').removeClass('active');
+
+        $(this).addClass('active');
     })
 
     $('a.block__block.swiper-slide').on('click', function(e){
         e.preventDefault();
         $('a.block__block.swiper-slide.active').removeClass('active');
+
+        $(this).addClass('active');
+    })
+
+    $('.addLot__box .block__block').on('click', function(e){
+        e.preventDefault();
+
+        $('.addLot__box .block__block.active').removeClass('active');
 
         $(this).addClass('active');
     })
