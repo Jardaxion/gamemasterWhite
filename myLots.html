@@ -73,17 +73,17 @@
     <section class="marketTop">
       <div class="container">
         <div class="marketTop__inner">
-          <div class="marketTop__left noMobile"><a class="marketTop__left-back" href="market.html">
+          <div class="marketTop__left noMobile"><a class="marketTop__left-back notSee" href="market.html">
               <svg width="8" height="14" viewbox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M7 1L1 7L7 13" stroke="#FF5C00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
               </svg>
               <p class="marketTop__left-back--text">Назад</p></a>
-            <p class="marketTop__left-text">Мои лоты</p>
+            <p class="marketTop__left-text">Маркет</p>
           </div>
           <div class="marketTop__center">
             <div class="marketTop__search">
               <div class="marketTop__search-inputWrapper">
-                <input class="marketTop__search-input" type="text" placeholder="Введите запрос">
+                <input class="marketTop__search-input" type="text" placeholder="Введите запрос"/>
                 <svg class="marketTop__search-icon" width="17" height="21" viewbox="0 0 17 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="7.3773" cy="7.3773" r="6.3773" stroke="white" stroke-width="2"></circle>
                   <path d="M11.9785 12.2954L16.4983 18.4728C16.7657 18.8381 16.6862 19.351 16.3208 19.6183C15.9555 19.8857 15.4426 19.8062 15.1753 19.4408L10.6554 13.2635L11.9785 12.2954Z" fill="white"></path>
@@ -102,105 +102,6 @@
                 <rect x="5.33337" y="10" width="3.08333" height="3" rx="1" fill="#FF6B00"></rect>
                 <rect x="20.75" y="16" width="3.08333" height="3" rx="1" fill="#FF6B00"></rect>
               </svg>
-            </div>
-            <div class="marketTop__settings-menu mobile">
-              <div class="profile__box">
-                <div class="profile__line js-openClose-menu">
-                  <p class="profile__box-item">Фильтры</p>
-                  <div class="profile__line-openClose orange">
-                    <div class="profile__line-line"></div>
-                    <div class="profile__line-line"></div>
-                  </div>
-                </div>
-                <div class="profile__box-content">
-                  <div class="marketBottom__checkbox-wrapper">
-                    <input class="marketBottom__checkbox" id="filter" type="checkbox">
-                    <label class="marketBottom__checkbox-custom" for="filter"></label>
-                    <p class="marketBottom__checkbox-text">Тест 123</p>
-                  </div>
-                </div>
-              </div>
-              <div class="profile__box">
-                <div class="profile__line js-openClose-menu">
-                  <p class="profile__box-item">Цена</p>
-                  <div class="profile__line-openClose orange">
-                    <div class="profile__line-line"></div>
-                    <div class="profile__line-line"></div>
-                  </div>
-                </div>
-                <div class="profile__box-content noMt">
-                  <input id="from" type="hidden" name="from">
-                  <input id="to" type="hidden" name="to">
-                  <div class="marketBottom__box-sliderRange" data-min="3990" data-max="233990"></div>
-                  <div class="marketBottom__box-ranges">
-                    <p class="marketBottom__box-range min"></p>
-                    <p class="marketBottom__box-range max"></p>
-                  </div>
-                </div>
-              </div>
-              <div class="profile__box">
-                <div class="profile__line js-openClose-menu">
-                  <p class="profile__box-item">Выдача</p>
-                  <div class="profile__line-openClose orange">
-                    <div class="profile__line-line"></div>
-                    <div class="profile__line-line"></div>
-                  </div>
-                </div>
-                <div class="profile__box-content">
-                  <div class="marketBottom__checkbox-wrapper">
-                    <label class="marketBottom__checkbox-custom" for="vidachaSrazy"></label>
-                    <input class="marketBottom__checkbox" id="vidachaSrazy" type="checkbox">
-                    <p class="marketBottom__checkbox-text">Выдача сразу </p>
-                  </div>
-                  <div class="marketBottom__checkbox-wrapper">
-                    <input class="marketBottom__checkbox" id="dog" type="checkbox">
-                    <label class="marketBottom__checkbox-custom" for="dog"></label>
-                    <p class="marketBottom__checkbox-text">По договоренности</p>
-                  </div>
-                </div>
-              </div>
-              <div class="profile__box">
-                <div class="profile__line js-openClose-menu">
-                  <p class="profile__box-item">Режим</p>
-                  <div class="profile__line-openClose orange">
-                    <div class="profile__line-line"></div>
-                    <div class="profile__line-line"></div>
-                  </div>
-                </div>
-                <div class="profile__box-content">
-                  <div class="marketBottom__checkbox-wrapper">
-                    <input class="marketBottom__checkbox" id="vidachaSrazy" type="checkbox">
-                    <label class="marketBottom__checkbox-custom" for="vidachaSrazy"></label>
-                    <p class="marketBottom__checkbox-text">Выдача сразу </p>
-                  </div>
-                  <div class="marketBottom__checkbox-wrapper">
-                    <input class="marketBottom__checkbox" id="dog" type="checkbox">
-                    <label class="marketBottom__checkbox-custom" for="dog"></label>
-                    <p class="marketBottom__checkbox-text">По договоренности</p>
-                  </div>
-                </div>
-              </div>
-              <div class="profile__box">
-                <div class="profile__line js-openClose-menu">
-                  <p class="profile__box-item">Сервер</p>
-                  <div class="profile__line-openClose orange">
-                    <div class="profile__line-line"></div>
-                    <div class="profile__line-line"></div>
-                  </div>
-                </div>
-                <div class="profile__box-content">
-                  <div class="marketBottom__checkbox-wrapper">
-                    <input class="marketBottom__checkbox" id="vidachaSrazy" type="checkbox">
-                    <label class="marketBottom__checkbox-custom" for="vidachaSrazy"></label>
-                    <p class="marketBottom__checkbox-text">Выдача сразу </p>
-                  </div>
-                  <div class="marketBottom__checkbox-wrapper">
-                    <input class="marketBottom__checkbox" id="dog" type="checkbox">
-                    <label class="marketBottom__checkbox-custom" for="dog"></label>
-                    <p class="marketBottom__checkbox-text">По договоренности</p>
-                  </div>
-                </div>
-              </div>
             </div>
             <div class="marketTop__mobileSorting mobile marketTop__box js-open-sorting">
               <svg width="25" height="14" viewbox="0 0 25 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -226,12 +127,64 @@
               <div class="marketTop__sorting-choose"><a class="marketTop__search-popularSearch--item" href="">Дешевле</a><a class="marketTop__search-popularSearch--item" href="">Дороже </a></div>
             </div>
           </div>
+          <div class="marketTop__settings-menu mobile">
+            <div class="marketTop__settings-menu--left"><a class="marketTop__settings-menu--selectPage" href="" data-page="price">Цена</a><a class="marketTop__settings-menu--selectPage" href="" data-page="rare">Редкость</a><a class="marketTop__settings-menu--selectPage" href="" data-page="price">Выдача</a><a class="marketTop__settings-menu--selectPage" href="" data-page="price">Очень длинное название фильтра</a><a class="marketTop__settings-menu--selectPage" href="" data-page="price">Сила</a></div>
+            <div class="marketTop__settings-menu--right">
+              <div class="marketTop__settings-menu--right-page" data-page="price">
+                <p class="marketTop__settings-menu--title">Цена</p>
+                <hr class="marketTop__settings-menu--hr"/>
+                <label class="marketTop__settings-search" for="">
+                  <input class="marketTop__settings-search-input" type="text" placeholder="Поиск"/>
+                  <svg width="17" height="20" viewbox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="7.3773" cy="7.3773" r="6.8773" stroke="#C0C0C0"></circle>
+                    <path d="M11.9314 12L16.5945 18.3732C16.7827 18.6304 16.7267 18.9915 16.4695 19.1797C16.2123 19.3679 15.8512 19.3119 15.663 19.0547L10.9999 12.6815L11.9314 12Z" fill="#C0C0C0"></path>
+                  </svg>
+                </label>
+                <hr class="marketTop__settings-menu--hr notMt"/>
+                <div class="profile__box-content bigMt">
+                  <input id="from" type="hidden" name="from"/>
+                  <input id="to" type="hidden" name="to"/>
+                  <div class="marketBottom__box-sliderRange" data-min="3990" data-max="233990"></div>
+                  <div class="marketBottom__box-ranges">
+                    <p class="marketBottom__box-range min"></p>
+                    <p class="marketBottom__box-range max"></p>
+                  </div>
+                </div>
+              </div>
+              <div class="marketTop__settings-menu--right-page" data-page="rare">
+                <p class="marketTop__settings-menu--title">Редкость</p>
+                <hr class="marketTop__settings-menu--hr"/>
+                <div class="marketBottom__checkbox-wrapper">
+                  <input class="marketBottom__checkbox" id="oneSausend" type="checkbox"/>
+                  <label class="marketBottom__checkbox-custom" for="oneSausend"></label>
+                  <p class="marketBottom__checkbox-text">1 - 100</p>
+                </div>
+                <div class="marketBottom__checkbox-wrapper">
+                  <input class="marketBottom__checkbox" id="rare" type="checkbox"/>
+                  <label class="marketBottom__checkbox-custom" for="rare"></label>
+                  <p class="marketBottom__checkbox-text">Редкий</p>
+                </div>
+                <div class="marketBottom__checkbox-wrapper">
+                  <input class="marketBottom__checkbox" id="epic" type="checkbox"/>
+                  <label class="marketBottom__checkbox-custom" for="epic"></label>
+                  <p class="marketBottom__checkbox-text">Эпический</p>
+                </div>
+                <div class="marketBottom__checkbox-wrapper">
+                  <input class="marketBottom__checkbox" id="stand" type="checkbox"/>
+                  <label class="marketBottom__checkbox-custom" for="stand"></label>
+                  <p class="marketBottom__checkbox-text">Обычный</p>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="marketTop__right noMobile">
             <div class="marketTop__basket">
               <svg class="marketTop__basket-basket" width="34" height="34" viewbox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M6.48903 21.8937C6.56941 22.6854 6.99773 23.3955 7.60724 23.8751C7.26605 24.2766 7.05953 24.7958 7.05953 25.3627V27.4877C7.05953 28.4037 7.58818 29.1927 8.36307 29.5634C8.31916 29.775 8.2959 29.9942 8.2959 30.2187C8.2959 31.9952 9.74121 33.4405 11.5177 33.4405C13.2942 33.4405 14.7395 31.9952 14.7395 30.2187C14.7395 30.0731 14.7289 29.93 14.7101 29.7894H20.0094C19.9906 29.93 19.98 30.0731 19.98 30.2187C19.98 31.9952 21.4253 33.4405 23.2018 33.4405C24.9783 33.4405 26.4236 31.9952 26.4236 30.2187C26.4236 28.4422 24.9783 26.9969 23.2018 26.9969C22.1241 26.9969 21.1691 27.5292 20.5839 28.3443H14.1356C13.5503 27.5292 12.5953 26.9969 11.5176 26.9969C10.4822 26.9969 9.56002 27.4884 8.97018 28.2497C8.69271 28.1081 8.50449 27.8208 8.50449 27.4878V25.3627C8.50449 24.8908 8.8887 24.5068 9.361 24.5068C9.3632 24.5068 9.36533 24.5066 9.36753 24.5065C9.37194 24.5066 9.37634 24.5068 9.38068 24.5068H26.2754C27.6724 24.5068 29.1192 23.4712 29.5696 22.1491L33.8627 9.54355C34.1056 8.83032 34.023 8.11118 33.6359 7.57048C33.2489 7.02978 32.5947 6.71962 31.8413 6.71962H30.3005L25.6572 2.05412C24.9353 1.33237 23.7652 1.3261 23.0349 2.03458L15.1989 4.14233L13.0955 0.370707C12.9011 0.0222145 12.4611 -0.102689 12.1125 0.0915827L7.90529 2.43799C7.73786 2.53131 7.61447 2.68738 7.56217 2.87175C7.5098 3.05611 7.53285 3.25368 7.62624 3.42105L9.46587 6.71955H7.72307C7.25834 6.71955 6.82059 6.83826 6.44099 7.06081L6.09979 3.64959C6.06284 3.28018 5.75199 2.99892 5.38079 2.99892H0.722586C0.323512 2.99892 0 3.32243 0 3.72151C0 4.12058 0.323512 4.44409 0.722586 4.44409H4.72688L6.48903 21.8937ZM23.202 28.442C24.1816 28.442 24.9786 29.239 24.9786 30.2186C24.9786 31.1983 24.1816 31.9953 23.202 31.9953C22.2223 31.9953 21.4253 31.1983 21.4253 30.2186C21.4253 29.239 22.2223 28.442 23.202 28.442ZM11.5177 28.442C12.4974 28.442 13.2944 29.239 13.2944 30.2186C13.2944 31.1983 12.4974 31.9953 11.5177 31.9953C10.5381 31.9953 9.74114 31.1983 9.74114 30.2186C9.74114 29.239 10.5381 28.442 11.5177 28.442ZM24.6345 3.07476L28.2618 6.71955H20.393L24.0364 3.07607C24.2016 2.91084 24.4703 2.91084 24.6345 3.07476ZM20.9866 4.08211L18.3492 6.71955H16.6363L15.9248 5.44374L20.9866 4.08211ZM9.24022 3.34817L12.1853 1.7057L14.9816 6.71955H11.1205L9.24022 3.34817ZM32.4949 9.07752L28.2018 21.6831C27.9516 22.4174 27.0515 23.0615 26.2756 23.0615H9.38088C8.66497 23.0615 7.99902 22.4599 7.92677 21.7478L7.67145 19.2295H23.2069C23.606 19.2295 23.9295 18.906 23.9295 18.5069C23.9295 18.1078 23.606 17.7843 23.2069 17.7843H7.52501L6.66988 9.34921C6.66988 9.349 6.66988 9.34893 6.66988 9.34879L6.66974 9.34721C6.63719 9.0259 6.73023 8.7262 6.93187 8.50309C7.12903 8.28487 7.41001 8.16472 7.72307 8.16472H29.9937C29.9961 8.16479 29.9984 8.16506 30.0008 8.16506C30.0031 8.16506 30.0055 8.16479 30.0078 8.16472H31.8416C32.1271 8.16472 32.3471 8.25239 32.461 8.41157C32.575 8.57067 32.587 8.8072 32.4949 9.07752Z" fill="white"></path>
               </svg>
-              <p class="marketTop__basket-number">4</p>
+              <div class="marketTop__basket-number--warraper">
+                <p class="marketTop__basket-number">4</p>
+              </div>
             </div>
             <div class="marketTop__price">
               <p class="marketTop__price-price">31.203</p>
@@ -315,91 +268,54 @@
                     <path d="M0.999999 13L7 7L1 1" stroke="#FF5C00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                   </svg>
                 </div>
-                <div class="marketBottom__market2-titleLine full">
-                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--title">
-                    <p class="marketBottom__market2-titleLine--titleBlockText">Наименование</p>
-                  </div>
-                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--icon">
-                    <p class="marketBottom__market2-titleLine--titleBlockText">Иконка</p>
-                  </div>
-                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--rare">
-                    <p class="marketBottom__market2-titleLine--titleBlockText">Редкость</p>
-                    <svg width="8" height="13" viewbox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M3.64645 12.3536C3.84171 12.5488 4.15829 12.5488 4.35355 12.3536L7.53553 9.17157C7.7308 8.97631 7.7308 8.65973 7.53553 8.46447C7.34027 8.2692 7.02369 8.2692 6.82843 8.46447L4 11.2929L1.17157 8.46447C0.976311 8.2692 0.659729 8.2692 0.464466 8.46447C0.269204 8.65973 0.269204 8.97631 0.464466 9.17157L3.64645 12.3536ZM3.5 2.18557e-08L3.5 12L4.5 12L4.5 -2.18557e-08L3.5 2.18557e-08Z" fill="#FF5C00"></path>
-                    </svg>
-                  </div>
-                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--huge">
-                    <p class="marketBottom__market2-titleLine--titleBlockText">Huge</p>
-                  </div>
-                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--type">
-                    <p class="marketBottom__market2-titleLine--titleBlockText">Тип</p>
-                    <svg width="8" height="13" viewbox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M3.64645 12.3536C3.84171 12.5488 4.15829 12.5488 4.35355 12.3536L7.53553 9.17157C7.7308 8.97631 7.7308 8.65973 7.53553 8.46447C7.34027 8.2692 7.02369 8.2692 6.82843 8.46447L4 11.2929L1.17157 8.46447C0.976311 8.2692 0.659729 8.2692 0.464466 8.46447C0.269204 8.65973 0.269204 8.97631 0.464466 9.17157L3.64645 12.3536ZM3.5 2.18557e-08L3.5 12L4.5 12L4.5 -2.18557e-08L3.5 2.18557e-08Z" fill="#FF5C00"></path>
-                    </svg>
-                  </div>
-                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--shiny">
-                    <p class="marketBottom__market2-titleLine--titleBlockText">Shiny</p>
-                    <svg width="8" height="13" viewbox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M3.64645 12.3536C3.84171 12.5488 4.15829 12.5488 4.35355 12.3536L7.53553 9.17157C7.7308 8.97631 7.7308 8.65973 7.53553 8.46447C7.34027 8.2692 7.02369 8.2692 6.82843 8.46447L4 11.2929L1.17157 8.46447C0.976311 8.2692 0.659729 8.2692 0.464466 8.46447C0.269204 8.65973 0.269204 8.97631 0.464466 9.17157L3.64645 12.3536ZM3.5 2.18557e-08L3.5 12L4.5 12L4.5 -2.18557e-08L3.5 2.18557e-08Z" fill="#FF5C00"></path>
-                    </svg>
-                  </div>
-                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--hc">
-                    <p class="marketBottom__market2-titleLine--titleBlockText">HC</p>
-                    <svg width="8" height="13" viewbox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M3.64645 12.3536C3.84171 12.5488 4.15829 12.5488 4.35355 12.3536L7.53553 9.17157C7.7308 8.97631 7.7308 8.65973 7.53553 8.46447C7.34027 8.2692 7.02369 8.2692 6.82843 8.46447L4 11.2929L1.17157 8.46447C0.976311 8.2692 0.659729 8.2692 0.464466 8.46447C0.269204 8.65973 0.269204 8.97631 0.464466 9.17157L3.64645 12.3536ZM3.5 2.18557e-08L3.5 12L4.5 12L4.5 -2.18557e-08L3.5 2.18557e-08Z" fill="#FF5C00"></path>
-                    </svg>
-                  </div>
-                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--power">
-                    <p class="marketBottom__market2-titleLine--titleBlockText">Сила</p>
-                    <svg width="8" height="13" viewbox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M3.64645 12.3536C3.84171 12.5488 4.15829 12.5488 4.35355 12.3536L7.53553 9.17157C7.7308 8.97631 7.7308 8.65973 7.53553 8.46447C7.34027 8.2692 7.02369 8.2692 6.82843 8.46447L4 11.2929L1.17157 8.46447C0.976311 8.2692 0.659729 8.2692 0.464466 8.46447C0.269204 8.65973 0.269204 8.97631 0.464466 9.17157L3.64645 12.3536ZM3.5 2.18557e-08L3.5 12L4.5 12L4.5 -2.18557e-08L3.5 2.18557e-08Z" fill="#FF5C00"></path>
-                    </svg>
-                  </div>
-                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--num">
-                    <p class="marketBottom__market2-titleLine--titleBlockText">Кол-во</p>
-                  </div>
-                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--price">
-                    <p class="marketBottom__market2-titleLine--titleBlockText">Цена</p>
-                  </div>
-                </div>
                 <div class="marketBottom__market2-content">
-                  <div class="marketBottom__market2-bigBlock full blue">
-                    <div class="marketBottom__market2-block--titleWrapper">
+                  <div class="marketBottom__market2-bigBlock blue">
+                    <div class="marketBottom__market2-block--titleWrapper marketBottom__market2-block--wrapper" data-titleLine-text="Наименование" data-titleLine-isSelected="false">
                       <p class="marketBottom__market2-block--title">Shetland Pony White</p>
                     </div>
                     <hr class="marketBottom__market2-hr"/>
-                    <div class="marketBottom__market2-block--iconWrapper"><img class="marketBottom__merket2-block--icon" src="img/frostDrag.svg" alt=""/></div>
-                    <div class="marketBottom__market2-bigBlock--grey">
-                      <div class="marketBottom__market2-block--rareWrapper">
-                        <p class="marketBottom__market2-block--rare">Mythical</p>
-                      </div>
-                      <hr class="marketBottom__market2-hr"/>
-                      <div class="marketBottom__market2-block--icons">
-                        <p class="marketBottom__tag red">R</p>
-                        <p class="marketBottom__tag blue">F</p>
-                      </div>
-                      <hr class="marketBottom__market2-hr"/>
-                      <div class="marketBottom__market2-block--typeWapper">
-                        <p class="marketBottom__market2-block--type">Dark matter</p>
-                      </div>
-                      <hr class="marketBottom__market2-hr"/>
-                      <div class="marketBottom__market2-block--shinyWapper">
-                        <p class="marketBottom__market2-block--shiny">Да</p>
-                      </div>
-                      <hr class="marketBottom__market2-hr"/>
-                      <div class="marketBottom__market2-block--hcWrappeer">
-                        <p class="marketBottom__market2-block--hc">Да</p>
-                      </div>
-                      <hr class="marketBottom__market2-hr"/>
-                      <div class="marketBottom__market2-block--powerWrapper">
-                        <p class="marketBottom__market2-block--power">317d</p>
+                    <div class="marketBottom__market2-block--iconWrapper marketBottom__market2-block--wrapper" data-titleLine-text="Иконка" data-titleLine-isSelected="false"><img class="marketBottom__merket2-block--icon" src="img/frostDrag.svg" alt=""/></div>
+                    <div class="marketBottom__market2-bigBlock--grey-wrapper swiper">
+                      <div class="marketBottom__market2-bigBlock--grey swiper-wrapper">
+                        <div class="marketBottom__market2-block--rareWrapper swiper-slide marketBottom__market2-block--wrapper" data-titleLine-text="Иконка" data-titleLine-isSelected="true">
+                          <p class="marketBottom__market2-block--rare">Mythical</p>
+                        </div>
+                        <div class="marketBottom__market2-block--icons swiper-slide marketBottom__market2-block--wrapper" data-titleLine-text="Huge" data-titleLine-isSelected="false">
+                          <hr class="marketBottom__market2-hr"/>
+                          <p class="marketBottom__tag red">R</p>
+                          <p class="marketBottom__tag blue">F</p>
+                        </div>
+                        <div class="marketBottom__market2-block--typeWapper swiper-slide marketBottom__market2-block--wrapper" data-titleLine-text="Тип" data-titleLine-isSelected="true">
+                          <hr class="marketBottom__market2-hr"/>
+                          <p class="marketBottom__market2-block--type">Dark matter</p>
+                        </div>
+                        <div class="marketBottom__market2-block--shinyWapper swiper-slide marketBottom__market2-block--wrapper" data-titleLine-text="Shiny" data-titleLine-isSelected="true">
+                          <hr class="marketBottom__market2-hr"/>
+                          <p class="marketBottom__market2-block--shiny">Да</p>
+                        </div>
+                        <div class="marketBottom__market2-block--hcWrappeer swiper-slide marketBottom__market2-block--wrapper" data-titleLine-text="HC" data-titleLine-isSelected="true">
+                          <hr class="marketBottom__market2-hr"/>
+                          <p class="marketBottom__market2-block--hc">Да</p>
+                        </div>
+                        <div class="marketBottom__market2-block--powerWrapper swiper-slide marketBottom__market2-block--wrapper" data-titleLine-text="Сила" data-titleLine-isSelected="true">
+                          <hr class="marketBottom__market2-hr"/>
+                          <p class="marketBottom__market2-block--power">317d</p>
+                        </div>
+                        <div class="marketBottom__market2-block--powerWrapper swiper-slide marketBottom__market2-block--wrapper" data-titleLine-text="Сила" data-titleLine-isSelected="true">
+                          <hr class="marketBottom__market2-hr"/>
+                          <p class="marketBottom__market2-block--power">317d</p>
+                        </div>
+                        <div class="marketBottom__market2-block--powerWrapper swiper-slide marketBottom__market2-block--wrapper" data-titleLine-text="Сила" data-titleLine-isSelected="true">
+                          <hr class="marketBottom__market2-hr"/>
+                          <p class="marketBottom__market2-block--power">317d</p>
+                        </div>
                       </div>
                     </div>
-                    <div class="marketBottom__market2-block--numWrapper">
+                    <div class="marketBottom__market2-block--numWrapper marketBottom__market2-block--wrapper" data-titleLine-text="Кол-во" data-titleLine-isSelected="false">
                       <p class="marketBottom__market2-block--num">34</p>
                     </div>
                     <hr class="marketBottom__market2-hr"/>
-                    <div class="marketBottom__market2-block--priceWrapper">
+                    <div class="marketBottom__market2-block--priceWrapper marketBottom__market2-block--wrapper" data-titleLine-text="Цена" data-titleLine-isSelected="false">
                       <p class="marketBottom__market2-block--price">22.22 Р</p>
                     </div>
                     <svg class="marketBottom__market2-block--basket" width="57" height="39" viewbox="0 0 57 39" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -411,43 +327,53 @@
                       <path d="M11 22C13.938 22 16.7004 20.8557 18.7777 18.778C20.8557 16.7004 22 13.938 22 11C22 8.06197 20.8557 5.29959 18.7777 3.22231C16.7004 1.14434 13.938 0 11 0C8.06197 0 5.29959 1.14434 3.22231 3.22197C1.14434 5.29959 0 8.06197 0 11C0 13.938 1.14434 16.7004 3.22231 18.7777C5.29959 20.8557 8.06197 22 11 22ZM4.19444 4.19444C6.01219 2.37634 8.42909 1.375 11 1.375C13.5709 1.375 15.9878 2.37634 17.8056 4.19444C19.6237 6.01219 20.625 8.42909 20.625 11C20.625 13.5709 19.6237 15.9878 17.8056 17.8056C15.9878 19.6237 13.5709 20.625 11 20.625C8.42909 20.625 6.01219 19.6237 4.19444 17.8056C2.37634 15.9878 1.375 13.5709 1.375 11C1.375 8.42909 2.37634 6.01219 4.19444 4.19444Z" fill="white"></path>
                     </svg>
                   </div>
-                  <div class="marketBottom__market2-bigBlock full pink">
-                    <div class="marketBottom__market2-block--titleWrapper">
+                  <div class="marketBottom__market2-bigBlock pink">
+                    <div class="marketBottom__market2-block--titleWrapper marketBottom__market2-block--wrapper" data-titleLine-text="Наименование" data-titleLine-isSelected="false">
                       <p class="marketBottom__market2-block--title">Shetland Pony White</p>
                     </div>
                     <hr class="marketBottom__market2-hr"/>
-                    <div class="marketBottom__market2-block--iconWrapper"><img class="marketBottom__merket2-block--icon" src="img/frostDrag.svg" alt=""/></div>
-                    <div class="marketBottom__market2-bigBlock--grey">
-                      <div class="marketBottom__market2-block--rareWrapper">
-                        <p class="marketBottom__market2-block--rare">Mythical</p>
-                      </div>
-                      <hr class="marketBottom__market2-hr"/>
-                      <div class="marketBottom__market2-block--icons">
-                        <p class="marketBottom__tag red">R</p>
-                        <p class="marketBottom__tag blue">F</p>
-                      </div>
-                      <hr class="marketBottom__market2-hr"/>
-                      <div class="marketBottom__market2-block--typeWapper">
-                        <p class="marketBottom__market2-block--type">Dark matter</p>
-                      </div>
-                      <hr class="marketBottom__market2-hr"/>
-                      <div class="marketBottom__market2-block--shinyWapper">
-                        <p class="marketBottom__market2-block--shiny">Да</p>
-                      </div>
-                      <hr class="marketBottom__market2-hr"/>
-                      <div class="marketBottom__market2-block--hcWrappeer">
-                        <p class="marketBottom__market2-block--hc">Да</p>
-                      </div>
-                      <hr class="marketBottom__market2-hr"/>
-                      <div class="marketBottom__market2-block--powerWrapper">
-                        <p class="marketBottom__market2-block--power">317d</p>
+                    <div class="marketBottom__market2-block--iconWrapper marketBottom__market2-block--wrapper" data-titleLine-text="Иконка" data-titleLine-isSelected="false"><img class="marketBottom__merket2-block--icon" src="img/frostDrag.svg" alt=""/></div>
+                    <div class="marketBottom__market2-bigBlock--grey-wrapper swiper">
+                      <div class="marketBottom__market2-bigBlock--grey swiper-wrapper">
+                        <div class="marketBottom__market2-block--rareWrapper swiper-slide marketBottom__market2-block--wrapper" data-titleLine-text="Иконка" data-titleLine-isSelected="true">
+                          <p class="marketBottom__market2-block--rare">Mythical</p>
+                        </div>
+                        <div class="marketBottom__market2-block--icons swiper-slide marketBottom__market2-block--wrapper" data-titleLine-text="Huge" data-titleLine-isSelected="false">
+                          <hr class="marketBottom__market2-hr"/>
+                          <p class="marketBottom__tag red">R</p>
+                          <p class="marketBottom__tag blue">F</p>
+                        </div>
+                        <div class="marketBottom__market2-block--typeWapper swiper-slide marketBottom__market2-block--wrapper" data-titleLine-text="Тип" data-titleLine-isSelected="true">
+                          <hr class="marketBottom__market2-hr"/>
+                          <p class="marketBottom__market2-block--type">Dark matter</p>
+                        </div>
+                        <div class="marketBottom__market2-block--shinyWapper swiper-slide marketBottom__market2-block--wrapper" data-titleLine-text="Shiny" data-titleLine-isSelected="true">
+                          <hr class="marketBottom__market2-hr"/>
+                          <p class="marketBottom__market2-block--shiny">Да</p>
+                        </div>
+                        <div class="marketBottom__market2-block--hcWrappeer swiper-slide marketBottom__market2-block--wrapper" data-titleLine-text="HC" data-titleLine-isSelected="true">
+                          <hr class="marketBottom__market2-hr"/>
+                          <p class="marketBottom__market2-block--hc">Да</p>
+                        </div>
+                        <div class="marketBottom__market2-block--powerWrapper swiper-slide marketBottom__market2-block--wrapper" data-titleLine-text="Сила" data-titleLine-isSelected="true">
+                          <hr class="marketBottom__market2-hr"/>
+                          <p class="marketBottom__market2-block--power">317d</p>
+                        </div>
+                        <div class="marketBottom__market2-block--powerWrapper swiper-slide marketBottom__market2-block--wrapper" data-titleLine-text="Сила" data-titleLine-isSelected="true">
+                          <hr class="marketBottom__market2-hr"/>
+                          <p class="marketBottom__market2-block--power">317d</p>
+                        </div>
+                        <div class="marketBottom__market2-block--powerWrapper swiper-slide marketBottom__market2-block--wrapper" data-titleLine-text="Сила" data-titleLine-isSelected="true">
+                          <hr class="marketBottom__market2-hr"/>
+                          <p class="marketBottom__market2-block--power">317d</p>
+                        </div>
                       </div>
                     </div>
-                    <div class="marketBottom__market2-block--numWrapper">
+                    <div class="marketBottom__market2-block--numWrapper marketBottom__market2-block--wrapper" data-titleLine-text="Кол-во" data-titleLine-isSelected="false">
                       <p class="marketBottom__market2-block--num">34</p>
                     </div>
                     <hr class="marketBottom__market2-hr"/>
-                    <div class="marketBottom__market2-block--priceWrapper">
+                    <div class="marketBottom__market2-block--priceWrapper marketBottom__market2-block--wrapper" data-titleLine-text="Цена" data-titleLine-isSelected="false">
                       <p class="marketBottom__market2-block--price">22.22 Р</p>
                     </div>
                     <svg class="marketBottom__market2-block--basket" width="57" height="39" viewbox="0 0 57 39" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -472,91 +398,54 @@
                     <path d="M0.999999 13L7 7L1 1" stroke="#FF5C00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                   </svg>
                 </div>
-                <div class="marketBottom__market2-titleLine full">
-                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--title">
-                    <p class="marketBottom__market2-titleLine--titleBlockText">Наименование</p>
-                  </div>
-                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--icon">
-                    <p class="marketBottom__market2-titleLine--titleBlockText">Иконка</p>
-                  </div>
-                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--rare">
-                    <p class="marketBottom__market2-titleLine--titleBlockText">Редкость</p>
-                    <svg width="8" height="13" viewbox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M3.64645 12.3536C3.84171 12.5488 4.15829 12.5488 4.35355 12.3536L7.53553 9.17157C7.7308 8.97631 7.7308 8.65973 7.53553 8.46447C7.34027 8.2692 7.02369 8.2692 6.82843 8.46447L4 11.2929L1.17157 8.46447C0.976311 8.2692 0.659729 8.2692 0.464466 8.46447C0.269204 8.65973 0.269204 8.97631 0.464466 9.17157L3.64645 12.3536ZM3.5 2.18557e-08L3.5 12L4.5 12L4.5 -2.18557e-08L3.5 2.18557e-08Z" fill="#FF5C00"></path>
-                    </svg>
-                  </div>
-                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--huge">
-                    <p class="marketBottom__market2-titleLine--titleBlockText">Huge</p>
-                  </div>
-                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--type">
-                    <p class="marketBottom__market2-titleLine--titleBlockText">Тип</p>
-                    <svg width="8" height="13" viewbox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M3.64645 12.3536C3.84171 12.5488 4.15829 12.5488 4.35355 12.3536L7.53553 9.17157C7.7308 8.97631 7.7308 8.65973 7.53553 8.46447C7.34027 8.2692 7.02369 8.2692 6.82843 8.46447L4 11.2929L1.17157 8.46447C0.976311 8.2692 0.659729 8.2692 0.464466 8.46447C0.269204 8.65973 0.269204 8.97631 0.464466 9.17157L3.64645 12.3536ZM3.5 2.18557e-08L3.5 12L4.5 12L4.5 -2.18557e-08L3.5 2.18557e-08Z" fill="#FF5C00"></path>
-                    </svg>
-                  </div>
-                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--shiny">
-                    <p class="marketBottom__market2-titleLine--titleBlockText">Shiny</p>
-                    <svg width="8" height="13" viewbox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M3.64645 12.3536C3.84171 12.5488 4.15829 12.5488 4.35355 12.3536L7.53553 9.17157C7.7308 8.97631 7.7308 8.65973 7.53553 8.46447C7.34027 8.2692 7.02369 8.2692 6.82843 8.46447L4 11.2929L1.17157 8.46447C0.976311 8.2692 0.659729 8.2692 0.464466 8.46447C0.269204 8.65973 0.269204 8.97631 0.464466 9.17157L3.64645 12.3536ZM3.5 2.18557e-08L3.5 12L4.5 12L4.5 -2.18557e-08L3.5 2.18557e-08Z" fill="#FF5C00"></path>
-                    </svg>
-                  </div>
-                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--hc">
-                    <p class="marketBottom__market2-titleLine--titleBlockText">HC</p>
-                    <svg width="8" height="13" viewbox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M3.64645 12.3536C3.84171 12.5488 4.15829 12.5488 4.35355 12.3536L7.53553 9.17157C7.7308 8.97631 7.7308 8.65973 7.53553 8.46447C7.34027 8.2692 7.02369 8.2692 6.82843 8.46447L4 11.2929L1.17157 8.46447C0.976311 8.2692 0.659729 8.2692 0.464466 8.46447C0.269204 8.65973 0.269204 8.97631 0.464466 9.17157L3.64645 12.3536ZM3.5 2.18557e-08L3.5 12L4.5 12L4.5 -2.18557e-08L3.5 2.18557e-08Z" fill="#FF5C00"></path>
-                    </svg>
-                  </div>
-                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--power">
-                    <p class="marketBottom__market2-titleLine--titleBlockText">Сила</p>
-                    <svg width="8" height="13" viewbox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M3.64645 12.3536C3.84171 12.5488 4.15829 12.5488 4.35355 12.3536L7.53553 9.17157C7.7308 8.97631 7.7308 8.65973 7.53553 8.46447C7.34027 8.2692 7.02369 8.2692 6.82843 8.46447L4 11.2929L1.17157 8.46447C0.976311 8.2692 0.659729 8.2692 0.464466 8.46447C0.269204 8.65973 0.269204 8.97631 0.464466 9.17157L3.64645 12.3536ZM3.5 2.18557e-08L3.5 12L4.5 12L4.5 -2.18557e-08L3.5 2.18557e-08Z" fill="#FF5C00"></path>
-                    </svg>
-                  </div>
-                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--num">
-                    <p class="marketBottom__market2-titleLine--titleBlockText">Кол-во</p>
-                  </div>
-                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--price">
-                    <p class="marketBottom__market2-titleLine--titleBlockText">Цена</p>
-                  </div>
-                </div>
                 <div class="marketBottom__market2-content">
-                  <div class="marketBottom__market2-bigBlock full blue">
-                    <div class="marketBottom__market2-block--titleWrapper">
+                  <div class="marketBottom__market2-bigBlock blue">
+                    <div class="marketBottom__market2-block--titleWrapper marketBottom__market2-block--wrapper" data-titleLine-text="Наименование" data-titleLine-isSelected="false">
                       <p class="marketBottom__market2-block--title">Shetland Pony White</p>
                     </div>
                     <hr class="marketBottom__market2-hr"/>
-                    <div class="marketBottom__market2-block--iconWrapper"><img class="marketBottom__merket2-block--icon" src="img/frostDrag.svg" alt=""/></div>
-                    <div class="marketBottom__market2-bigBlock--grey">
-                      <div class="marketBottom__market2-block--rareWrapper">
-                        <p class="marketBottom__market2-block--rare">Mythical</p>
-                      </div>
-                      <hr class="marketBottom__market2-hr"/>
-                      <div class="marketBottom__market2-block--icons">
-                        <p class="marketBottom__tag red">R</p>
-                        <p class="marketBottom__tag blue">F</p>
-                      </div>
-                      <hr class="marketBottom__market2-hr"/>
-                      <div class="marketBottom__market2-block--typeWapper">
-                        <p class="marketBottom__market2-block--type">Dark matter</p>
-                      </div>
-                      <hr class="marketBottom__market2-hr"/>
-                      <div class="marketBottom__market2-block--shinyWapper">
-                        <p class="marketBottom__market2-block--shiny">Да</p>
-                      </div>
-                      <hr class="marketBottom__market2-hr"/>
-                      <div class="marketBottom__market2-block--hcWrappeer">
-                        <p class="marketBottom__market2-block--hc">Да</p>
-                      </div>
-                      <hr class="marketBottom__market2-hr"/>
-                      <div class="marketBottom__market2-block--powerWrapper">
-                        <p class="marketBottom__market2-block--power">317d</p>
+                    <div class="marketBottom__market2-block--iconWrapper marketBottom__market2-block--wrapper" data-titleLine-text="Иконка" data-titleLine-isSelected="false"><img class="marketBottom__merket2-block--icon" src="img/frostDrag.svg" alt=""/></div>
+                    <div class="marketBottom__market2-bigBlock--grey-wrapper swiper">
+                      <div class="marketBottom__market2-bigBlock--grey swiper-wrapper">
+                        <div class="marketBottom__market2-block--rareWrapper swiper-slide marketBottom__market2-block--wrapper" data-titleLine-text="Иконка" data-titleLine-isSelected="true">
+                          <p class="marketBottom__market2-block--rare">Mythical</p>
+                        </div>
+                        <div class="marketBottom__market2-block--icons swiper-slide marketBottom__market2-block--wrapper" data-titleLine-text="Huge" data-titleLine-isSelected="false">
+                          <hr class="marketBottom__market2-hr"/>
+                          <p class="marketBottom__tag red">R</p>
+                          <p class="marketBottom__tag blue">F</p>
+                        </div>
+                        <div class="marketBottom__market2-block--typeWapper swiper-slide marketBottom__market2-block--wrapper" data-titleLine-text="Тип" data-titleLine-isSelected="true">
+                          <hr class="marketBottom__market2-hr"/>
+                          <p class="marketBottom__market2-block--type">Dark matter</p>
+                        </div>
+                        <div class="marketBottom__market2-block--shinyWapper swiper-slide marketBottom__market2-block--wrapper" data-titleLine-text="Shiny" data-titleLine-isSelected="true">
+                          <hr class="marketBottom__market2-hr"/>
+                          <p class="marketBottom__market2-block--shiny">Да</p>
+                        </div>
+                        <div class="marketBottom__market2-block--hcWrappeer swiper-slide marketBottom__market2-block--wrapper" data-titleLine-text="HC" data-titleLine-isSelected="true">
+                          <hr class="marketBottom__market2-hr"/>
+                          <p class="marketBottom__market2-block--hc">Да</p>
+                        </div>
+                        <div class="marketBottom__market2-block--powerWrapper swiper-slide marketBottom__market2-block--wrapper" data-titleLine-text="Сила" data-titleLine-isSelected="true">
+                          <hr class="marketBottom__market2-hr"/>
+                          <p class="marketBottom__market2-block--power">317d</p>
+                        </div>
+                        <div class="marketBottom__market2-block--powerWrapper swiper-slide marketBottom__market2-block--wrapper" data-titleLine-text="Сила" data-titleLine-isSelected="true">
+                          <hr class="marketBottom__market2-hr"/>
+                          <p class="marketBottom__market2-block--power">317d</p>
+                        </div>
+                        <div class="marketBottom__market2-block--powerWrapper swiper-slide marketBottom__market2-block--wrapper" data-titleLine-text="Сила" data-titleLine-isSelected="true">
+                          <hr class="marketBottom__market2-hr"/>
+                          <p class="marketBottom__market2-block--power">317d</p>
+                        </div>
                       </div>
                     </div>
-                    <div class="marketBottom__market2-block--numWrapper">
+                    <div class="marketBottom__market2-block--numWrapper marketBottom__market2-block--wrapper" data-titleLine-text="Кол-во" data-titleLine-isSelected="false">
                       <p class="marketBottom__market2-block--num">34</p>
                     </div>
                     <hr class="marketBottom__market2-hr"/>
-                    <div class="marketBottom__market2-block--priceWrapper">
+                    <div class="marketBottom__market2-block--priceWrapper marketBottom__market2-block--wrapper" data-titleLine-text="Цена" data-titleLine-isSelected="false">
                       <p class="marketBottom__market2-block--price">22.22 Р</p>
                     </div>
                     <svg class="marketBottom__market2-block--basket" width="57" height="39" viewbox="0 0 57 39" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -568,43 +457,53 @@
                       <path d="M11 22C13.938 22 16.7004 20.8557 18.7777 18.778C20.8557 16.7004 22 13.938 22 11C22 8.06197 20.8557 5.29959 18.7777 3.22231C16.7004 1.14434 13.938 0 11 0C8.06197 0 5.29959 1.14434 3.22231 3.22197C1.14434 5.29959 0 8.06197 0 11C0 13.938 1.14434 16.7004 3.22231 18.7777C5.29959 20.8557 8.06197 22 11 22ZM4.19444 4.19444C6.01219 2.37634 8.42909 1.375 11 1.375C13.5709 1.375 15.9878 2.37634 17.8056 4.19444C19.6237 6.01219 20.625 8.42909 20.625 11C20.625 13.5709 19.6237 15.9878 17.8056 17.8056C15.9878 19.6237 13.5709 20.625 11 20.625C8.42909 20.625 6.01219 19.6237 4.19444 17.8056C2.37634 15.9878 1.375 13.5709 1.375 11C1.375 8.42909 2.37634 6.01219 4.19444 4.19444Z" fill="white"></path>
                     </svg>
                   </div>
-                  <div class="marketBottom__market2-bigBlock full pink">
-                    <div class="marketBottom__market2-block--titleWrapper">
+                  <div class="marketBottom__market2-bigBlock pink">
+                    <div class="marketBottom__market2-block--titleWrapper marketBottom__market2-block--wrapper" data-titleLine-text="Наименование" data-titleLine-isSelected="false">
                       <p class="marketBottom__market2-block--title">Shetland Pony White</p>
                     </div>
                     <hr class="marketBottom__market2-hr"/>
-                    <div class="marketBottom__market2-block--iconWrapper"><img class="marketBottom__merket2-block--icon" src="img/frostDrag.svg" alt=""/></div>
-                    <div class="marketBottom__market2-bigBlock--grey">
-                      <div class="marketBottom__market2-block--rareWrapper">
-                        <p class="marketBottom__market2-block--rare">Mythical</p>
-                      </div>
-                      <hr class="marketBottom__market2-hr"/>
-                      <div class="marketBottom__market2-block--icons">
-                        <p class="marketBottom__tag red">R</p>
-                        <p class="marketBottom__tag blue">F</p>
-                      </div>
-                      <hr class="marketBottom__market2-hr"/>
-                      <div class="marketBottom__market2-block--typeWapper">
-                        <p class="marketBottom__market2-block--type">Dark matter</p>
-                      </div>
-                      <hr class="marketBottom__market2-hr"/>
-                      <div class="marketBottom__market2-block--shinyWapper">
-                        <p class="marketBottom__market2-block--shiny">Да</p>
-                      </div>
-                      <hr class="marketBottom__market2-hr"/>
-                      <div class="marketBottom__market2-block--hcWrappeer">
-                        <p class="marketBottom__market2-block--hc">Да</p>
-                      </div>
-                      <hr class="marketBottom__market2-hr"/>
-                      <div class="marketBottom__market2-block--powerWrapper">
-                        <p class="marketBottom__market2-block--power">317d</p>
+                    <div class="marketBottom__market2-block--iconWrapper marketBottom__market2-block--wrapper" data-titleLine-text="Иконка" data-titleLine-isSelected="false"><img class="marketBottom__merket2-block--icon" src="img/frostDrag.svg" alt=""/></div>
+                    <div class="marketBottom__market2-bigBlock--grey-wrapper swiper">
+                      <div class="marketBottom__market2-bigBlock--grey swiper-wrapper">
+                        <div class="marketBottom__market2-block--rareWrapper swiper-slide marketBottom__market2-block--wrapper" data-titleLine-text="Иконка" data-titleLine-isSelected="true">
+                          <p class="marketBottom__market2-block--rare">Mythical</p>
+                        </div>
+                        <div class="marketBottom__market2-block--icons swiper-slide marketBottom__market2-block--wrapper" data-titleLine-text="Huge" data-titleLine-isSelected="false">
+                          <hr class="marketBottom__market2-hr"/>
+                          <p class="marketBottom__tag red">R</p>
+                          <p class="marketBottom__tag blue">F</p>
+                        </div>
+                        <div class="marketBottom__market2-block--typeWapper swiper-slide marketBottom__market2-block--wrapper" data-titleLine-text="Тип" data-titleLine-isSelected="true">
+                          <hr class="marketBottom__market2-hr"/>
+                          <p class="marketBottom__market2-block--type">Dark matter</p>
+                        </div>
+                        <div class="marketBottom__market2-block--shinyWapper swiper-slide marketBottom__market2-block--wrapper" data-titleLine-text="Shiny" data-titleLine-isSelected="true">
+                          <hr class="marketBottom__market2-hr"/>
+                          <p class="marketBottom__market2-block--shiny">Да</p>
+                        </div>
+                        <div class="marketBottom__market2-block--hcWrappeer swiper-slide marketBottom__market2-block--wrapper" data-titleLine-text="HC" data-titleLine-isSelected="true">
+                          <hr class="marketBottom__market2-hr"/>
+                          <p class="marketBottom__market2-block--hc">Да</p>
+                        </div>
+                        <div class="marketBottom__market2-block--powerWrapper swiper-slide marketBottom__market2-block--wrapper" data-titleLine-text="Сила" data-titleLine-isSelected="true">
+                          <hr class="marketBottom__market2-hr"/>
+                          <p class="marketBottom__market2-block--power">317d</p>
+                        </div>
+                        <div class="marketBottom__market2-block--powerWrapper swiper-slide marketBottom__market2-block--wrapper" data-titleLine-text="Сила" data-titleLine-isSelected="true">
+                          <hr class="marketBottom__market2-hr"/>
+                          <p class="marketBottom__market2-block--power">317d</p>
+                        </div>
+                        <div class="marketBottom__market2-block--powerWrapper swiper-slide marketBottom__market2-block--wrapper" data-titleLine-text="Сила" data-titleLine-isSelected="true">
+                          <hr class="marketBottom__market2-hr"/>
+                          <p class="marketBottom__market2-block--power">317d</p>
+                        </div>
                       </div>
                     </div>
-                    <div class="marketBottom__market2-block--numWrapper">
+                    <div class="marketBottom__market2-block--numWrapper marketBottom__market2-block--wrapper" data-titleLine-text="Кол-во" data-titleLine-isSelected="false">
                       <p class="marketBottom__market2-block--num">34</p>
                     </div>
                     <hr class="marketBottom__market2-hr"/>
-                    <div class="marketBottom__market2-block--priceWrapper">
+                    <div class="marketBottom__market2-block--priceWrapper marketBottom__market2-block--wrapper" data-titleLine-text="Цена" data-titleLine-isSelected="false">
                       <p class="marketBottom__market2-block--price">22.22 Р</p>
                     </div>
                     <svg class="marketBottom__market2-block--basket" width="57" height="39" viewbox="0 0 57 39" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -629,91 +528,54 @@
                     <path d="M0.999999 13L7 7L1 1" stroke="#FF5C00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                   </svg>
                 </div>
-                <div class="marketBottom__market2-titleLine full">
-                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--title">
-                    <p class="marketBottom__market2-titleLine--titleBlockText">Наименование</p>
-                  </div>
-                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--icon">
-                    <p class="marketBottom__market2-titleLine--titleBlockText">Иконка</p>
-                  </div>
-                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--rare">
-                    <p class="marketBottom__market2-titleLine--titleBlockText">Редкость</p>
-                    <svg width="8" height="13" viewbox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M3.64645 12.3536C3.84171 12.5488 4.15829 12.5488 4.35355 12.3536L7.53553 9.17157C7.7308 8.97631 7.7308 8.65973 7.53553 8.46447C7.34027 8.2692 7.02369 8.2692 6.82843 8.46447L4 11.2929L1.17157 8.46447C0.976311 8.2692 0.659729 8.2692 0.464466 8.46447C0.269204 8.65973 0.269204 8.97631 0.464466 9.17157L3.64645 12.3536ZM3.5 2.18557e-08L3.5 12L4.5 12L4.5 -2.18557e-08L3.5 2.18557e-08Z" fill="#FF5C00"></path>
-                    </svg>
-                  </div>
-                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--huge">
-                    <p class="marketBottom__market2-titleLine--titleBlockText">Huge</p>
-                  </div>
-                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--type">
-                    <p class="marketBottom__market2-titleLine--titleBlockText">Тип</p>
-                    <svg width="8" height="13" viewbox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M3.64645 12.3536C3.84171 12.5488 4.15829 12.5488 4.35355 12.3536L7.53553 9.17157C7.7308 8.97631 7.7308 8.65973 7.53553 8.46447C7.34027 8.2692 7.02369 8.2692 6.82843 8.46447L4 11.2929L1.17157 8.46447C0.976311 8.2692 0.659729 8.2692 0.464466 8.46447C0.269204 8.65973 0.269204 8.97631 0.464466 9.17157L3.64645 12.3536ZM3.5 2.18557e-08L3.5 12L4.5 12L4.5 -2.18557e-08L3.5 2.18557e-08Z" fill="#FF5C00"></path>
-                    </svg>
-                  </div>
-                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--shiny">
-                    <p class="marketBottom__market2-titleLine--titleBlockText">Shiny</p>
-                    <svg width="8" height="13" viewbox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M3.64645 12.3536C3.84171 12.5488 4.15829 12.5488 4.35355 12.3536L7.53553 9.17157C7.7308 8.97631 7.7308 8.65973 7.53553 8.46447C7.34027 8.2692 7.02369 8.2692 6.82843 8.46447L4 11.2929L1.17157 8.46447C0.976311 8.2692 0.659729 8.2692 0.464466 8.46447C0.269204 8.65973 0.269204 8.97631 0.464466 9.17157L3.64645 12.3536ZM3.5 2.18557e-08L3.5 12L4.5 12L4.5 -2.18557e-08L3.5 2.18557e-08Z" fill="#FF5C00"></path>
-                    </svg>
-                  </div>
-                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--hc">
-                    <p class="marketBottom__market2-titleLine--titleBlockText">HC</p>
-                    <svg width="8" height="13" viewbox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M3.64645 12.3536C3.84171 12.5488 4.15829 12.5488 4.35355 12.3536L7.53553 9.17157C7.7308 8.97631 7.7308 8.65973 7.53553 8.46447C7.34027 8.2692 7.02369 8.2692 6.82843 8.46447L4 11.2929L1.17157 8.46447C0.976311 8.2692 0.659729 8.2692 0.464466 8.46447C0.269204 8.65973 0.269204 8.97631 0.464466 9.17157L3.64645 12.3536ZM3.5 2.18557e-08L3.5 12L4.5 12L4.5 -2.18557e-08L3.5 2.18557e-08Z" fill="#FF5C00"></path>
-                    </svg>
-                  </div>
-                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--power">
-                    <p class="marketBottom__market2-titleLine--titleBlockText">Сила</p>
-                    <svg width="8" height="13" viewbox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M3.64645 12.3536C3.84171 12.5488 4.15829 12.5488 4.35355 12.3536L7.53553 9.17157C7.7308 8.97631 7.7308 8.65973 7.53553 8.46447C7.34027 8.2692 7.02369 8.2692 6.82843 8.46447L4 11.2929L1.17157 8.46447C0.976311 8.2692 0.659729 8.2692 0.464466 8.46447C0.269204 8.65973 0.269204 8.97631 0.464466 9.17157L3.64645 12.3536ZM3.5 2.18557e-08L3.5 12L4.5 12L4.5 -2.18557e-08L3.5 2.18557e-08Z" fill="#FF5C00"></path>
-                    </svg>
-                  </div>
-                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--num">
-                    <p class="marketBottom__market2-titleLine--titleBlockText">Кол-во</p>
-                  </div>
-                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--price">
-                    <p class="marketBottom__market2-titleLine--titleBlockText">Цена</p>
-                  </div>
-                </div>
                 <div class="marketBottom__market2-content">
-                  <div class="marketBottom__market2-bigBlock full blue">
-                    <div class="marketBottom__market2-block--titleWrapper">
+                  <div class="marketBottom__market2-bigBlock blue">
+                    <div class="marketBottom__market2-block--titleWrapper marketBottom__market2-block--wrapper" data-titleLine-text="Наименование" data-titleLine-isSelected="false">
                       <p class="marketBottom__market2-block--title">Shetland Pony White</p>
                     </div>
                     <hr class="marketBottom__market2-hr"/>
-                    <div class="marketBottom__market2-block--iconWrapper"><img class="marketBottom__merket2-block--icon" src="img/frostDrag.svg" alt=""/></div>
-                    <div class="marketBottom__market2-bigBlock--grey">
-                      <div class="marketBottom__market2-block--rareWrapper">
-                        <p class="marketBottom__market2-block--rare">Mythical</p>
-                      </div>
-                      <hr class="marketBottom__market2-hr"/>
-                      <div class="marketBottom__market2-block--icons">
-                        <p class="marketBottom__tag red">R</p>
-                        <p class="marketBottom__tag blue">F</p>
-                      </div>
-                      <hr class="marketBottom__market2-hr"/>
-                      <div class="marketBottom__market2-block--typeWapper">
-                        <p class="marketBottom__market2-block--type">Dark matter</p>
-                      </div>
-                      <hr class="marketBottom__market2-hr"/>
-                      <div class="marketBottom__market2-block--shinyWapper">
-                        <p class="marketBottom__market2-block--shiny">Да</p>
-                      </div>
-                      <hr class="marketBottom__market2-hr"/>
-                      <div class="marketBottom__market2-block--hcWrappeer">
-                        <p class="marketBottom__market2-block--hc">Да</p>
-                      </div>
-                      <hr class="marketBottom__market2-hr"/>
-                      <div class="marketBottom__market2-block--powerWrapper">
-                        <p class="marketBottom__market2-block--power">317d</p>
+                    <div class="marketBottom__market2-block--iconWrapper marketBottom__market2-block--wrapper" data-titleLine-text="Иконка" data-titleLine-isSelected="false"><img class="marketBottom__merket2-block--icon" src="img/frostDrag.svg" alt=""/></div>
+                    <div class="marketBottom__market2-bigBlock--grey-wrapper swiper">
+                      <div class="marketBottom__market2-bigBlock--grey swiper-wrapper">
+                        <div class="marketBottom__market2-block--rareWrapper swiper-slide marketBottom__market2-block--wrapper" data-titleLine-text="Иконка" data-titleLine-isSelected="true">
+                          <p class="marketBottom__market2-block--rare">Mythical</p>
+                        </div>
+                        <div class="marketBottom__market2-block--icons swiper-slide marketBottom__market2-block--wrapper" data-titleLine-text="Huge" data-titleLine-isSelected="false">
+                          <hr class="marketBottom__market2-hr"/>
+                          <p class="marketBottom__tag red">R</p>
+                          <p class="marketBottom__tag blue">F</p>
+                        </div>
+                        <div class="marketBottom__market2-block--typeWapper swiper-slide marketBottom__market2-block--wrapper" data-titleLine-text="Тип" data-titleLine-isSelected="true">
+                          <hr class="marketBottom__market2-hr"/>
+                          <p class="marketBottom__market2-block--type">Dark matter</p>
+                        </div>
+                        <div class="marketBottom__market2-block--shinyWapper swiper-slide marketBottom__market2-block--wrapper" data-titleLine-text="Shiny" data-titleLine-isSelected="true">
+                          <hr class="marketBottom__market2-hr"/>
+                          <p class="marketBottom__market2-block--shiny">Да</p>
+                        </div>
+                        <div class="marketBottom__market2-block--hcWrappeer swiper-slide marketBottom__market2-block--wrapper" data-titleLine-text="HC" data-titleLine-isSelected="true">
+                          <hr class="marketBottom__market2-hr"/>
+                          <p class="marketBottom__market2-block--hc">Да</p>
+                        </div>
+                        <div class="marketBottom__market2-block--powerWrapper swiper-slide marketBottom__market2-block--wrapper" data-titleLine-text="Сила" data-titleLine-isSelected="true">
+                          <hr class="marketBottom__market2-hr"/>
+                          <p class="marketBottom__market2-block--power">317d</p>
+                        </div>
+                        <div class="marketBottom__market2-block--powerWrapper swiper-slide marketBottom__market2-block--wrapper" data-titleLine-text="Сила" data-titleLine-isSelected="true">
+                          <hr class="marketBottom__market2-hr"/>
+                          <p class="marketBottom__market2-block--power">317d</p>
+                        </div>
+                        <div class="marketBottom__market2-block--powerWrapper swiper-slide marketBottom__market2-block--wrapper" data-titleLine-text="Сила" data-titleLine-isSelected="true">
+                          <hr class="marketBottom__market2-hr"/>
+                          <p class="marketBottom__market2-block--power">317d</p>
+                        </div>
                       </div>
                     </div>
-                    <div class="marketBottom__market2-block--numWrapper">
+                    <div class="marketBottom__market2-block--numWrapper marketBottom__market2-block--wrapper" data-titleLine-text="Кол-во" data-titleLine-isSelected="false">
                       <p class="marketBottom__market2-block--num">34</p>
                     </div>
                     <hr class="marketBottom__market2-hr"/>
-                    <div class="marketBottom__market2-block--priceWrapper">
+                    <div class="marketBottom__market2-block--priceWrapper marketBottom__market2-block--wrapper" data-titleLine-text="Цена" data-titleLine-isSelected="false">
                       <p class="marketBottom__market2-block--price">22.22 Р</p>
                     </div>
                     <svg class="marketBottom__market2-block--basket" width="57" height="39" viewbox="0 0 57 39" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -725,43 +587,53 @@
                       <path d="M11 22C13.938 22 16.7004 20.8557 18.7777 18.778C20.8557 16.7004 22 13.938 22 11C22 8.06197 20.8557 5.29959 18.7777 3.22231C16.7004 1.14434 13.938 0 11 0C8.06197 0 5.29959 1.14434 3.22231 3.22197C1.14434 5.29959 0 8.06197 0 11C0 13.938 1.14434 16.7004 3.22231 18.7777C5.29959 20.8557 8.06197 22 11 22ZM4.19444 4.19444C6.01219 2.37634 8.42909 1.375 11 1.375C13.5709 1.375 15.9878 2.37634 17.8056 4.19444C19.6237 6.01219 20.625 8.42909 20.625 11C20.625 13.5709 19.6237 15.9878 17.8056 17.8056C15.9878 19.6237 13.5709 20.625 11 20.625C8.42909 20.625 6.01219 19.6237 4.19444 17.8056C2.37634 15.9878 1.375 13.5709 1.375 11C1.375 8.42909 2.37634 6.01219 4.19444 4.19444Z" fill="white"></path>
                     </svg>
                   </div>
-                  <div class="marketBottom__market2-bigBlock full pink">
-                    <div class="marketBottom__market2-block--titleWrapper">
+                  <div class="marketBottom__market2-bigBlock pink">
+                    <div class="marketBottom__market2-block--titleWrapper marketBottom__market2-block--wrapper" data-titleLine-text="Наименование" data-titleLine-isSelected="false">
                       <p class="marketBottom__market2-block--title">Shetland Pony White</p>
                     </div>
                     <hr class="marketBottom__market2-hr"/>
-                    <div class="marketBottom__market2-block--iconWrapper"><img class="marketBottom__merket2-block--icon" src="img/frostDrag.svg" alt=""/></div>
-                    <div class="marketBottom__market2-bigBlock--grey">
-                      <div class="marketBottom__market2-block--rareWrapper">
-                        <p class="marketBottom__market2-block--rare">Mythical</p>
-                      </div>
-                      <hr class="marketBottom__market2-hr"/>
-                      <div class="marketBottom__market2-block--icons">
-                        <p class="marketBottom__tag red">R</p>
-                        <p class="marketBottom__tag blue">F</p>
-                      </div>
-                      <hr class="marketBottom__market2-hr"/>
-                      <div class="marketBottom__market2-block--typeWapper">
-                        <p class="marketBottom__market2-block--type">Dark matter</p>
-                      </div>
-                      <hr class="marketBottom__market2-hr"/>
-                      <div class="marketBottom__market2-block--shinyWapper">
-                        <p class="marketBottom__market2-block--shiny">Да</p>
-                      </div>
-                      <hr class="marketBottom__market2-hr"/>
-                      <div class="marketBottom__market2-block--hcWrappeer">
-                        <p class="marketBottom__market2-block--hc">Да</p>
-                      </div>
-                      <hr class="marketBottom__market2-hr"/>
-                      <div class="marketBottom__market2-block--powerWrapper">
-                        <p class="marketBottom__market2-block--power">317d</p>
+                    <div class="marketBottom__market2-block--iconWrapper marketBottom__market2-block--wrapper" data-titleLine-text="Иконка" data-titleLine-isSelected="false"><img class="marketBottom__merket2-block--icon" src="img/frostDrag.svg" alt=""/></div>
+                    <div class="marketBottom__market2-bigBlock--grey-wrapper swiper">
+                      <div class="marketBottom__market2-bigBlock--grey swiper-wrapper">
+                        <div class="marketBottom__market2-block--rareWrapper swiper-slide marketBottom__market2-block--wrapper" data-titleLine-text="Иконка" data-titleLine-isSelected="true">
+                          <p class="marketBottom__market2-block--rare">Mythical</p>
+                        </div>
+                        <div class="marketBottom__market2-block--icons swiper-slide marketBottom__market2-block--wrapper" data-titleLine-text="Huge" data-titleLine-isSelected="false">
+                          <hr class="marketBottom__market2-hr"/>
+                          <p class="marketBottom__tag red">R</p>
+                          <p class="marketBottom__tag blue">F</p>
+                        </div>
+                        <div class="marketBottom__market2-block--typeWapper swiper-slide marketBottom__market2-block--wrapper" data-titleLine-text="Тип" data-titleLine-isSelected="true">
+                          <hr class="marketBottom__market2-hr"/>
+                          <p class="marketBottom__market2-block--type">Dark matter</p>
+                        </div>
+                        <div class="marketBottom__market2-block--shinyWapper swiper-slide marketBottom__market2-block--wrapper" data-titleLine-text="Shiny" data-titleLine-isSelected="true">
+                          <hr class="marketBottom__market2-hr"/>
+                          <p class="marketBottom__market2-block--shiny">Да</p>
+                        </div>
+                        <div class="marketBottom__market2-block--hcWrappeer swiper-slide marketBottom__market2-block--wrapper" data-titleLine-text="HC" data-titleLine-isSelected="true">
+                          <hr class="marketBottom__market2-hr"/>
+                          <p class="marketBottom__market2-block--hc">Да</p>
+                        </div>
+                        <div class="marketBottom__market2-block--powerWrapper swiper-slide marketBottom__market2-block--wrapper" data-titleLine-text="Сила" data-titleLine-isSelected="true">
+                          <hr class="marketBottom__market2-hr"/>
+                          <p class="marketBottom__market2-block--power">317d</p>
+                        </div>
+                        <div class="marketBottom__market2-block--powerWrapper swiper-slide marketBottom__market2-block--wrapper" data-titleLine-text="Сила" data-titleLine-isSelected="true">
+                          <hr class="marketBottom__market2-hr"/>
+                          <p class="marketBottom__market2-block--power">317d</p>
+                        </div>
+                        <div class="marketBottom__market2-block--powerWrapper swiper-slide marketBottom__market2-block--wrapper" data-titleLine-text="Сила" data-titleLine-isSelected="true">
+                          <hr class="marketBottom__market2-hr"/>
+                          <p class="marketBottom__market2-block--power">317d</p>
+                        </div>
                       </div>
                     </div>
-                    <div class="marketBottom__market2-block--numWrapper">
+                    <div class="marketBottom__market2-block--numWrapper marketBottom__market2-block--wrapper" data-titleLine-text="Кол-во" data-titleLine-isSelected="false">
                       <p class="marketBottom__market2-block--num">34</p>
                     </div>
                     <hr class="marketBottom__market2-hr"/>
-                    <div class="marketBottom__market2-block--priceWrapper">
+                    <div class="marketBottom__market2-block--priceWrapper marketBottom__market2-block--wrapper" data-titleLine-text="Цена" data-titleLine-isSelected="false">
                       <p class="marketBottom__market2-block--price">22.22 Р</p>
                     </div>
                     <svg class="marketBottom__market2-block--basket" width="57" height="39" viewbox="0 0 57 39" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -786,91 +658,54 @@
                     <path d="M0.999999 13L7 7L1 1" stroke="#FF5C00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                   </svg>
                 </div>
-                <div class="marketBottom__market2-titleLine full">
-                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--title">
-                    <p class="marketBottom__market2-titleLine--titleBlockText">Наименование</p>
-                  </div>
-                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--icon">
-                    <p class="marketBottom__market2-titleLine--titleBlockText">Иконка</p>
-                  </div>
-                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--rare">
-                    <p class="marketBottom__market2-titleLine--titleBlockText">Редкость</p>
-                    <svg width="8" height="13" viewbox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M3.64645 12.3536C3.84171 12.5488 4.15829 12.5488 4.35355 12.3536L7.53553 9.17157C7.7308 8.97631 7.7308 8.65973 7.53553 8.46447C7.34027 8.2692 7.02369 8.2692 6.82843 8.46447L4 11.2929L1.17157 8.46447C0.976311 8.2692 0.659729 8.2692 0.464466 8.46447C0.269204 8.65973 0.269204 8.97631 0.464466 9.17157L3.64645 12.3536ZM3.5 2.18557e-08L3.5 12L4.5 12L4.5 -2.18557e-08L3.5 2.18557e-08Z" fill="#FF5C00"></path>
-                    </svg>
-                  </div>
-                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--huge">
-                    <p class="marketBottom__market2-titleLine--titleBlockText">Huge</p>
-                  </div>
-                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--type">
-                    <p class="marketBottom__market2-titleLine--titleBlockText">Тип</p>
-                    <svg width="8" height="13" viewbox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M3.64645 12.3536C3.84171 12.5488 4.15829 12.5488 4.35355 12.3536L7.53553 9.17157C7.7308 8.97631 7.7308 8.65973 7.53553 8.46447C7.34027 8.2692 7.02369 8.2692 6.82843 8.46447L4 11.2929L1.17157 8.46447C0.976311 8.2692 0.659729 8.2692 0.464466 8.46447C0.269204 8.65973 0.269204 8.97631 0.464466 9.17157L3.64645 12.3536ZM3.5 2.18557e-08L3.5 12L4.5 12L4.5 -2.18557e-08L3.5 2.18557e-08Z" fill="#FF5C00"></path>
-                    </svg>
-                  </div>
-                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--shiny">
-                    <p class="marketBottom__market2-titleLine--titleBlockText">Shiny</p>
-                    <svg width="8" height="13" viewbox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M3.64645 12.3536C3.84171 12.5488 4.15829 12.5488 4.35355 12.3536L7.53553 9.17157C7.7308 8.97631 7.7308 8.65973 7.53553 8.46447C7.34027 8.2692 7.02369 8.2692 6.82843 8.46447L4 11.2929L1.17157 8.46447C0.976311 8.2692 0.659729 8.2692 0.464466 8.46447C0.269204 8.65973 0.269204 8.97631 0.464466 9.17157L3.64645 12.3536ZM3.5 2.18557e-08L3.5 12L4.5 12L4.5 -2.18557e-08L3.5 2.18557e-08Z" fill="#FF5C00"></path>
-                    </svg>
-                  </div>
-                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--hc">
-                    <p class="marketBottom__market2-titleLine--titleBlockText">HC</p>
-                    <svg width="8" height="13" viewbox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M3.64645 12.3536C3.84171 12.5488 4.15829 12.5488 4.35355 12.3536L7.53553 9.17157C7.7308 8.97631 7.7308 8.65973 7.53553 8.46447C7.34027 8.2692 7.02369 8.2692 6.82843 8.46447L4 11.2929L1.17157 8.46447C0.976311 8.2692 0.659729 8.2692 0.464466 8.46447C0.269204 8.65973 0.269204 8.97631 0.464466 9.17157L3.64645 12.3536ZM3.5 2.18557e-08L3.5 12L4.5 12L4.5 -2.18557e-08L3.5 2.18557e-08Z" fill="#FF5C00"></path>
-                    </svg>
-                  </div>
-                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--power">
-                    <p class="marketBottom__market2-titleLine--titleBlockText">Сила</p>
-                    <svg width="8" height="13" viewbox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M3.64645 12.3536C3.84171 12.5488 4.15829 12.5488 4.35355 12.3536L7.53553 9.17157C7.7308 8.97631 7.7308 8.65973 7.53553 8.46447C7.34027 8.2692 7.02369 8.2692 6.82843 8.46447L4 11.2929L1.17157 8.46447C0.976311 8.2692 0.659729 8.2692 0.464466 8.46447C0.269204 8.65973 0.269204 8.97631 0.464466 9.17157L3.64645 12.3536ZM3.5 2.18557e-08L3.5 12L4.5 12L4.5 -2.18557e-08L3.5 2.18557e-08Z" fill="#FF5C00"></path>
-                    </svg>
-                  </div>
-                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--num">
-                    <p class="marketBottom__market2-titleLine--titleBlockText">Кол-во</p>
-                  </div>
-                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--price">
-                    <p class="marketBottom__market2-titleLine--titleBlockText">Цена</p>
-                  </div>
-                </div>
                 <div class="marketBottom__market2-content">
-                  <div class="marketBottom__market2-bigBlock full blue">
-                    <div class="marketBottom__market2-block--titleWrapper">
+                  <div class="marketBottom__market2-bigBlock blue">
+                    <div class="marketBottom__market2-block--titleWrapper marketBottom__market2-block--wrapper" data-titleLine-text="Наименование" data-titleLine-isSelected="false">
                       <p class="marketBottom__market2-block--title">Shetland Pony White</p>
                     </div>
                     <hr class="marketBottom__market2-hr"/>
-                    <div class="marketBottom__market2-block--iconWrapper"><img class="marketBottom__merket2-block--icon" src="img/frostDrag.svg" alt=""/></div>
-                    <div class="marketBottom__market2-bigBlock--grey">
-                      <div class="marketBottom__market2-block--rareWrapper">
-                        <p class="marketBottom__market2-block--rare">Mythical</p>
-                      </div>
-                      <hr class="marketBottom__market2-hr"/>
-                      <div class="marketBottom__market2-block--icons">
-                        <p class="marketBottom__tag red">R</p>
-                        <p class="marketBottom__tag blue">F</p>
-                      </div>
-                      <hr class="marketBottom__market2-hr"/>
-                      <div class="marketBottom__market2-block--typeWapper">
-                        <p class="marketBottom__market2-block--type">Dark matter</p>
-                      </div>
-                      <hr class="marketBottom__market2-hr"/>
-                      <div class="marketBottom__market2-block--shinyWapper">
-                        <p class="marketBottom__market2-block--shiny">Да</p>
-                      </div>
-                      <hr class="marketBottom__market2-hr"/>
-                      <div class="marketBottom__market2-block--hcWrappeer">
-                        <p class="marketBottom__market2-block--hc">Да</p>
-                      </div>
-                      <hr class="marketBottom__market2-hr"/>
-                      <div class="marketBottom__market2-block--powerWrapper">
-                        <p class="marketBottom__market2-block--power">317d</p>
+                    <div class="marketBottom__market2-block--iconWrapper marketBottom__market2-block--wrapper" data-titleLine-text="Иконка" data-titleLine-isSelected="false"><img class="marketBottom__merket2-block--icon" src="img/frostDrag.svg" alt=""/></div>
+                    <div class="marketBottom__market2-bigBlock--grey-wrapper swiper">
+                      <div class="marketBottom__market2-bigBlock--grey swiper-wrapper">
+                        <div class="marketBottom__market2-block--rareWrapper swiper-slide marketBottom__market2-block--wrapper" data-titleLine-text="Иконка" data-titleLine-isSelected="true">
+                          <p class="marketBottom__market2-block--rare">Mythical</p>
+                        </div>
+                        <div class="marketBottom__market2-block--icons swiper-slide marketBottom__market2-block--wrapper" data-titleLine-text="Huge" data-titleLine-isSelected="false">
+                          <hr class="marketBottom__market2-hr"/>
+                          <p class="marketBottom__tag red">R</p>
+                          <p class="marketBottom__tag blue">F</p>
+                        </div>
+                        <div class="marketBottom__market2-block--typeWapper swiper-slide marketBottom__market2-block--wrapper" data-titleLine-text="Тип" data-titleLine-isSelected="true">
+                          <hr class="marketBottom__market2-hr"/>
+                          <p class="marketBottom__market2-block--type">Dark matter</p>
+                        </div>
+                        <div class="marketBottom__market2-block--shinyWapper swiper-slide marketBottom__market2-block--wrapper" data-titleLine-text="Shiny" data-titleLine-isSelected="true">
+                          <hr class="marketBottom__market2-hr"/>
+                          <p class="marketBottom__market2-block--shiny">Да</p>
+                        </div>
+                        <div class="marketBottom__market2-block--hcWrappeer swiper-slide marketBottom__market2-block--wrapper" data-titleLine-text="HC" data-titleLine-isSelected="true">
+                          <hr class="marketBottom__market2-hr"/>
+                          <p class="marketBottom__market2-block--hc">Да</p>
+                        </div>
+                        <div class="marketBottom__market2-block--powerWrapper swiper-slide marketBottom__market2-block--wrapper" data-titleLine-text="Сила" data-titleLine-isSelected="true">
+                          <hr class="marketBottom__market2-hr"/>
+                          <p class="marketBottom__market2-block--power">317d</p>
+                        </div>
+                        <div class="marketBottom__market2-block--powerWrapper swiper-slide marketBottom__market2-block--wrapper" data-titleLine-text="Сила" data-titleLine-isSelected="true">
+                          <hr class="marketBottom__market2-hr"/>
+                          <p class="marketBottom__market2-block--power">317d</p>
+                        </div>
+                        <div class="marketBottom__market2-block--powerWrapper swiper-slide marketBottom__market2-block--wrapper" data-titleLine-text="Сила" data-titleLine-isSelected="true">
+                          <hr class="marketBottom__market2-hr"/>
+                          <p class="marketBottom__market2-block--power">317d</p>
+                        </div>
                       </div>
                     </div>
-                    <div class="marketBottom__market2-block--numWrapper">
+                    <div class="marketBottom__market2-block--numWrapper marketBottom__market2-block--wrapper" data-titleLine-text="Кол-во" data-titleLine-isSelected="false">
                       <p class="marketBottom__market2-block--num">34</p>
                     </div>
                     <hr class="marketBottom__market2-hr"/>
-                    <div class="marketBottom__market2-block--priceWrapper">
+                    <div class="marketBottom__market2-block--priceWrapper marketBottom__market2-block--wrapper" data-titleLine-text="Цена" data-titleLine-isSelected="false">
                       <p class="marketBottom__market2-block--price">22.22 Р</p>
                     </div>
                     <svg class="marketBottom__market2-block--basket" width="57" height="39" viewbox="0 0 57 39" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -882,43 +717,53 @@
                       <path d="M11 22C13.938 22 16.7004 20.8557 18.7777 18.778C20.8557 16.7004 22 13.938 22 11C22 8.06197 20.8557 5.29959 18.7777 3.22231C16.7004 1.14434 13.938 0 11 0C8.06197 0 5.29959 1.14434 3.22231 3.22197C1.14434 5.29959 0 8.06197 0 11C0 13.938 1.14434 16.7004 3.22231 18.7777C5.29959 20.8557 8.06197 22 11 22ZM4.19444 4.19444C6.01219 2.37634 8.42909 1.375 11 1.375C13.5709 1.375 15.9878 2.37634 17.8056 4.19444C19.6237 6.01219 20.625 8.42909 20.625 11C20.625 13.5709 19.6237 15.9878 17.8056 17.8056C15.9878 19.6237 13.5709 20.625 11 20.625C8.42909 20.625 6.01219 19.6237 4.19444 17.8056C2.37634 15.9878 1.375 13.5709 1.375 11C1.375 8.42909 2.37634 6.01219 4.19444 4.19444Z" fill="white"></path>
                     </svg>
                   </div>
-                  <div class="marketBottom__market2-bigBlock full pink">
-                    <div class="marketBottom__market2-block--titleWrapper">
+                  <div class="marketBottom__market2-bigBlock pink">
+                    <div class="marketBottom__market2-block--titleWrapper marketBottom__market2-block--wrapper" data-titleLine-text="Наименование" data-titleLine-isSelected="false">
                       <p class="marketBottom__market2-block--title">Shetland Pony White</p>
                     </div>
                     <hr class="marketBottom__market2-hr"/>
-                    <div class="marketBottom__market2-block--iconWrapper"><img class="marketBottom__merket2-block--icon" src="img/frostDrag.svg" alt=""/></div>
-                    <div class="marketBottom__market2-bigBlock--grey">
-                      <div class="marketBottom__market2-block--rareWrapper">
-                        <p class="marketBottom__market2-block--rare">Mythical</p>
-                      </div>
-                      <hr class="marketBottom__market2-hr"/>
-                      <div class="marketBottom__market2-block--icons">
-                        <p class="marketBottom__tag red">R</p>
-                        <p class="marketBottom__tag blue">F</p>
-                      </div>
-                      <hr class="marketBottom__market2-hr"/>
-                      <div class="marketBottom__market2-block--typeWapper">
-                        <p class="marketBottom__market2-block--type">Dark matter</p>
-                      </div>
-                      <hr class="marketBottom__market2-hr"/>
-                      <div class="marketBottom__market2-block--shinyWapper">
-                        <p class="marketBottom__market2-block--shiny">Да</p>
-                      </div>
-                      <hr class="marketBottom__market2-hr"/>
-                      <div class="marketBottom__market2-block--hcWrappeer">
-                        <p class="marketBottom__market2-block--hc">Да</p>
-                      </div>
-                      <hr class="marketBottom__market2-hr"/>
-                      <div class="marketBottom__market2-block--powerWrapper">
-                        <p class="marketBottom__market2-block--power">317d</p>
+                    <div class="marketBottom__market2-block--iconWrapper marketBottom__market2-block--wrapper" data-titleLine-text="Иконка" data-titleLine-isSelected="false"><img class="marketBottom__merket2-block--icon" src="img/frostDrag.svg" alt=""/></div>
+                    <div class="marketBottom__market2-bigBlock--grey-wrapper swiper">
+                      <div class="marketBottom__market2-bigBlock--grey swiper-wrapper">
+                        <div class="marketBottom__market2-block--rareWrapper swiper-slide marketBottom__market2-block--wrapper" data-titleLine-text="Иконка" data-titleLine-isSelected="true">
+                          <p class="marketBottom__market2-block--rare">Mythical</p>
+                        </div>
+                        <div class="marketBottom__market2-block--icons swiper-slide marketBottom__market2-block--wrapper" data-titleLine-text="Huge" data-titleLine-isSelected="false">
+                          <hr class="marketBottom__market2-hr"/>
+                          <p class="marketBottom__tag red">R</p>
+                          <p class="marketBottom__tag blue">F</p>
+                        </div>
+                        <div class="marketBottom__market2-block--typeWapper swiper-slide marketBottom__market2-block--wrapper" data-titleLine-text="Тип" data-titleLine-isSelected="true">
+                          <hr class="marketBottom__market2-hr"/>
+                          <p class="marketBottom__market2-block--type">Dark matter</p>
+                        </div>
+                        <div class="marketBottom__market2-block--shinyWapper swiper-slide marketBottom__market2-block--wrapper" data-titleLine-text="Shiny" data-titleLine-isSelected="true">
+                          <hr class="marketBottom__market2-hr"/>
+                          <p class="marketBottom__market2-block--shiny">Да</p>
+                        </div>
+                        <div class="marketBottom__market2-block--hcWrappeer swiper-slide marketBottom__market2-block--wrapper" data-titleLine-text="HC" data-titleLine-isSelected="true">
+                          <hr class="marketBottom__market2-hr"/>
+                          <p class="marketBottom__market2-block--hc">Да</p>
+                        </div>
+                        <div class="marketBottom__market2-block--powerWrapper swiper-slide marketBottom__market2-block--wrapper" data-titleLine-text="Сила" data-titleLine-isSelected="true">
+                          <hr class="marketBottom__market2-hr"/>
+                          <p class="marketBottom__market2-block--power">317d</p>
+                        </div>
+                        <div class="marketBottom__market2-block--powerWrapper swiper-slide marketBottom__market2-block--wrapper" data-titleLine-text="Сила" data-titleLine-isSelected="true">
+                          <hr class="marketBottom__market2-hr"/>
+                          <p class="marketBottom__market2-block--power">317d</p>
+                        </div>
+                        <div class="marketBottom__market2-block--powerWrapper swiper-slide marketBottom__market2-block--wrapper" data-titleLine-text="Сила" data-titleLine-isSelected="true">
+                          <hr class="marketBottom__market2-hr"/>
+                          <p class="marketBottom__market2-block--power">317d</p>
+                        </div>
                       </div>
                     </div>
-                    <div class="marketBottom__market2-block--numWrapper">
+                    <div class="marketBottom__market2-block--numWrapper marketBottom__market2-block--wrapper" data-titleLine-text="Кол-во" data-titleLine-isSelected="false">
                       <p class="marketBottom__market2-block--num">34</p>
                     </div>
                     <hr class="marketBottom__market2-hr"/>
-                    <div class="marketBottom__market2-block--priceWrapper">
+                    <div class="marketBottom__market2-block--priceWrapper marketBottom__market2-block--wrapper" data-titleLine-text="Цена" data-titleLine-isSelected="false">
                       <p class="marketBottom__market2-block--price">22.22 Р</p>
                     </div>
                     <svg class="marketBottom__market2-block--basket" width="57" height="39" viewbox="0 0 57 39" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -943,91 +788,54 @@
                     <path d="M0.999999 13L7 7L1 1" stroke="#FF5C00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                   </svg>
                 </div>
-                <div class="marketBottom__market2-titleLine full">
-                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--title">
-                    <p class="marketBottom__market2-titleLine--titleBlockText">Наименование</p>
-                  </div>
-                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--icon">
-                    <p class="marketBottom__market2-titleLine--titleBlockText">Иконка</p>
-                  </div>
-                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--rare">
-                    <p class="marketBottom__market2-titleLine--titleBlockText">Редкость</p>
-                    <svg width="8" height="13" viewbox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M3.64645 12.3536C3.84171 12.5488 4.15829 12.5488 4.35355 12.3536L7.53553 9.17157C7.7308 8.97631 7.7308 8.65973 7.53553 8.46447C7.34027 8.2692 7.02369 8.2692 6.82843 8.46447L4 11.2929L1.17157 8.46447C0.976311 8.2692 0.659729 8.2692 0.464466 8.46447C0.269204 8.65973 0.269204 8.97631 0.464466 9.17157L3.64645 12.3536ZM3.5 2.18557e-08L3.5 12L4.5 12L4.5 -2.18557e-08L3.5 2.18557e-08Z" fill="#FF5C00"></path>
-                    </svg>
-                  </div>
-                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--huge">
-                    <p class="marketBottom__market2-titleLine--titleBlockText">Huge</p>
-                  </div>
-                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--type">
-                    <p class="marketBottom__market2-titleLine--titleBlockText">Тип</p>
-                    <svg width="8" height="13" viewbox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M3.64645 12.3536C3.84171 12.5488 4.15829 12.5488 4.35355 12.3536L7.53553 9.17157C7.7308 8.97631 7.7308 8.65973 7.53553 8.46447C7.34027 8.2692 7.02369 8.2692 6.82843 8.46447L4 11.2929L1.17157 8.46447C0.976311 8.2692 0.659729 8.2692 0.464466 8.46447C0.269204 8.65973 0.269204 8.97631 0.464466 9.17157L3.64645 12.3536ZM3.5 2.18557e-08L3.5 12L4.5 12L4.5 -2.18557e-08L3.5 2.18557e-08Z" fill="#FF5C00"></path>
-                    </svg>
-                  </div>
-                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--shiny">
-                    <p class="marketBottom__market2-titleLine--titleBlockText">Shiny</p>
-                    <svg width="8" height="13" viewbox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M3.64645 12.3536C3.84171 12.5488 4.15829 12.5488 4.35355 12.3536L7.53553 9.17157C7.7308 8.97631 7.7308 8.65973 7.53553 8.46447C7.34027 8.2692 7.02369 8.2692 6.82843 8.46447L4 11.2929L1.17157 8.46447C0.976311 8.2692 0.659729 8.2692 0.464466 8.46447C0.269204 8.65973 0.269204 8.97631 0.464466 9.17157L3.64645 12.3536ZM3.5 2.18557e-08L3.5 12L4.5 12L4.5 -2.18557e-08L3.5 2.18557e-08Z" fill="#FF5C00"></path>
-                    </svg>
-                  </div>
-                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--hc">
-                    <p class="marketBottom__market2-titleLine--titleBlockText">HC</p>
-                    <svg width="8" height="13" viewbox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M3.64645 12.3536C3.84171 12.5488 4.15829 12.5488 4.35355 12.3536L7.53553 9.17157C7.7308 8.97631 7.7308 8.65973 7.53553 8.46447C7.34027 8.2692 7.02369 8.2692 6.82843 8.46447L4 11.2929L1.17157 8.46447C0.976311 8.2692 0.659729 8.2692 0.464466 8.46447C0.269204 8.65973 0.269204 8.97631 0.464466 9.17157L3.64645 12.3536ZM3.5 2.18557e-08L3.5 12L4.5 12L4.5 -2.18557e-08L3.5 2.18557e-08Z" fill="#FF5C00"></path>
-                    </svg>
-                  </div>
-                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--power">
-                    <p class="marketBottom__market2-titleLine--titleBlockText">Сила</p>
-                    <svg width="8" height="13" viewbox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M3.64645 12.3536C3.84171 12.5488 4.15829 12.5488 4.35355 12.3536L7.53553 9.17157C7.7308 8.97631 7.7308 8.65973 7.53553 8.46447C7.34027 8.2692 7.02369 8.2692 6.82843 8.46447L4 11.2929L1.17157 8.46447C0.976311 8.2692 0.659729 8.2692 0.464466 8.46447C0.269204 8.65973 0.269204 8.97631 0.464466 9.17157L3.64645 12.3536ZM3.5 2.18557e-08L3.5 12L4.5 12L4.5 -2.18557e-08L3.5 2.18557e-08Z" fill="#FF5C00"></path>
-                    </svg>
-                  </div>
-                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--num">
-                    <p class="marketBottom__market2-titleLine--titleBlockText">Кол-во</p>
-                  </div>
-                  <div class="marketBottom__market2-titleLine--titleBlock marketBottom__market2-titleLine--price">
-                    <p class="marketBottom__market2-titleLine--titleBlockText">Цена</p>
-                  </div>
-                </div>
                 <div class="marketBottom__market2-content">
-                  <div class="marketBottom__market2-bigBlock full blue">
-                    <div class="marketBottom__market2-block--titleWrapper">
+                  <div class="marketBottom__market2-bigBlock blue">
+                    <div class="marketBottom__market2-block--titleWrapper marketBottom__market2-block--wrapper" data-titleLine-text="Наименование" data-titleLine-isSelected="false">
                       <p class="marketBottom__market2-block--title">Shetland Pony White</p>
                     </div>
                     <hr class="marketBottom__market2-hr"/>
-                    <div class="marketBottom__market2-block--iconWrapper"><img class="marketBottom__merket2-block--icon" src="img/frostDrag.svg" alt=""/></div>
-                    <div class="marketBottom__market2-bigBlock--grey">
-                      <div class="marketBottom__market2-block--rareWrapper">
-                        <p class="marketBottom__market2-block--rare">Mythical</p>
-                      </div>
-                      <hr class="marketBottom__market2-hr"/>
-                      <div class="marketBottom__market2-block--icons">
-                        <p class="marketBottom__tag red">R</p>
-                        <p class="marketBottom__tag blue">F</p>
-                      </div>
-                      <hr class="marketBottom__market2-hr"/>
-                      <div class="marketBottom__market2-block--typeWapper">
-                        <p class="marketBottom__market2-block--type">Dark matter</p>
-                      </div>
-                      <hr class="marketBottom__market2-hr"/>
-                      <div class="marketBottom__market2-block--shinyWapper">
-                        <p class="marketBottom__market2-block--shiny">Да</p>
-                      </div>
-                      <hr class="marketBottom__market2-hr"/>
-                      <div class="marketBottom__market2-block--hcWrappeer">
-                        <p class="marketBottom__market2-block--hc">Да</p>
-                      </div>
-                      <hr class="marketBottom__market2-hr"/>
-                      <div class="marketBottom__market2-block--powerWrapper">
-                        <p class="marketBottom__market2-block--power">317d</p>
+                    <div class="marketBottom__market2-block--iconWrapper marketBottom__market2-block--wrapper" data-titleLine-text="Иконка" data-titleLine-isSelected="false"><img class="marketBottom__merket2-block--icon" src="img/frostDrag.svg" alt=""/></div>
+                    <div class="marketBottom__market2-bigBlock--grey-wrapper swiper">
+                      <div class="marketBottom__market2-bigBlock--grey swiper-wrapper">
+                        <div class="marketBottom__market2-block--rareWrapper swiper-slide marketBottom__market2-block--wrapper" data-titleLine-text="Иконка" data-titleLine-isSelected="true">
+                          <p class="marketBottom__market2-block--rare">Mythical</p>
+                        </div>
+                        <div class="marketBottom__market2-block--icons swiper-slide marketBottom__market2-block--wrapper" data-titleLine-text="Huge" data-titleLine-isSelected="false">
+                          <hr class="marketBottom__market2-hr"/>
+                          <p class="marketBottom__tag red">R</p>
+                          <p class="marketBottom__tag blue">F</p>
+                        </div>
+                        <div class="marketBottom__market2-block--typeWapper swiper-slide marketBottom__market2-block--wrapper" data-titleLine-text="Тип" data-titleLine-isSelected="true">
+                          <hr class="marketBottom__market2-hr"/>
+                          <p class="marketBottom__market2-block--type">Dark matter</p>
+                        </div>
+                        <div class="marketBottom__market2-block--shinyWapper swiper-slide marketBottom__market2-block--wrapper" data-titleLine-text="Shiny" data-titleLine-isSelected="true">
+                          <hr class="marketBottom__market2-hr"/>
+                          <p class="marketBottom__market2-block--shiny">Да</p>
+                        </div>
+                        <div class="marketBottom__market2-block--hcWrappeer swiper-slide marketBottom__market2-block--wrapper" data-titleLine-text="HC" data-titleLine-isSelected="true">
+                          <hr class="marketBottom__market2-hr"/>
+                          <p class="marketBottom__market2-block--hc">Да</p>
+                        </div>
+                        <div class="marketBottom__market2-block--powerWrapper swiper-slide marketBottom__market2-block--wrapper" data-titleLine-text="Сила" data-titleLine-isSelected="true">
+                          <hr class="marketBottom__market2-hr"/>
+                          <p class="marketBottom__market2-block--power">317d</p>
+                        </div>
+                        <div class="marketBottom__market2-block--powerWrapper swiper-slide marketBottom__market2-block--wrapper" data-titleLine-text="Сила" data-titleLine-isSelected="true">
+                          <hr class="marketBottom__market2-hr"/>
+                          <p class="marketBottom__market2-block--power">317d</p>
+                        </div>
+                        <div class="marketBottom__market2-block--powerWrapper swiper-slide marketBottom__market2-block--wrapper" data-titleLine-text="Сила" data-titleLine-isSelected="true">
+                          <hr class="marketBottom__market2-hr"/>
+                          <p class="marketBottom__market2-block--power">317d</p>
+                        </div>
                       </div>
                     </div>
-                    <div class="marketBottom__market2-block--numWrapper">
+                    <div class="marketBottom__market2-block--numWrapper marketBottom__market2-block--wrapper" data-titleLine-text="Кол-во" data-titleLine-isSelected="false">
                       <p class="marketBottom__market2-block--num">34</p>
                     </div>
                     <hr class="marketBottom__market2-hr"/>
-                    <div class="marketBottom__market2-block--priceWrapper">
+                    <div class="marketBottom__market2-block--priceWrapper marketBottom__market2-block--wrapper" data-titleLine-text="Цена" data-titleLine-isSelected="false">
                       <p class="marketBottom__market2-block--price">22.22 Р</p>
                     </div>
                     <svg class="marketBottom__market2-block--basket" width="57" height="39" viewbox="0 0 57 39" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1039,43 +847,53 @@
                       <path d="M11 22C13.938 22 16.7004 20.8557 18.7777 18.778C20.8557 16.7004 22 13.938 22 11C22 8.06197 20.8557 5.29959 18.7777 3.22231C16.7004 1.14434 13.938 0 11 0C8.06197 0 5.29959 1.14434 3.22231 3.22197C1.14434 5.29959 0 8.06197 0 11C0 13.938 1.14434 16.7004 3.22231 18.7777C5.29959 20.8557 8.06197 22 11 22ZM4.19444 4.19444C6.01219 2.37634 8.42909 1.375 11 1.375C13.5709 1.375 15.9878 2.37634 17.8056 4.19444C19.6237 6.01219 20.625 8.42909 20.625 11C20.625 13.5709 19.6237 15.9878 17.8056 17.8056C15.9878 19.6237 13.5709 20.625 11 20.625C8.42909 20.625 6.01219 19.6237 4.19444 17.8056C2.37634 15.9878 1.375 13.5709 1.375 11C1.375 8.42909 2.37634 6.01219 4.19444 4.19444Z" fill="white"></path>
                     </svg>
                   </div>
-                  <div class="marketBottom__market2-bigBlock full pink">
-                    <div class="marketBottom__market2-block--titleWrapper">
+                  <div class="marketBottom__market2-bigBlock pink">
+                    <div class="marketBottom__market2-block--titleWrapper marketBottom__market2-block--wrapper" data-titleLine-text="Наименование" data-titleLine-isSelected="false">
                       <p class="marketBottom__market2-block--title">Shetland Pony White</p>
                     </div>
                     <hr class="marketBottom__market2-hr"/>
-                    <div class="marketBottom__market2-block--iconWrapper"><img class="marketBottom__merket2-block--icon" src="img/frostDrag.svg" alt=""/></div>
-                    <div class="marketBottom__market2-bigBlock--grey">
-                      <div class="marketBottom__market2-block--rareWrapper">
-                        <p class="marketBottom__market2-block--rare">Mythical</p>
-                      </div>
-                      <hr class="marketBottom__market2-hr"/>
-                      <div class="marketBottom__market2-block--icons">
-                        <p class="marketBottom__tag red">R</p>
-                        <p class="marketBottom__tag blue">F</p>
-                      </div>
-                      <hr class="marketBottom__market2-hr"/>
-                      <div class="marketBottom__market2-block--typeWapper">
-                        <p class="marketBottom__market2-block--type">Dark matter</p>
-                      </div>
-                      <hr class="marketBottom__market2-hr"/>
-                      <div class="marketBottom__market2-block--shinyWapper">
-                        <p class="marketBottom__market2-block--shiny">Да</p>
-                      </div>
-                      <hr class="marketBottom__market2-hr"/>
-                      <div class="marketBottom__market2-block--hcWrappeer">
-                        <p class="marketBottom__market2-block--hc">Да</p>
-                      </div>
-                      <hr class="marketBottom__market2-hr"/>
-                      <div class="marketBottom__market2-block--powerWrapper">
-                        <p class="marketBottom__market2-block--power">317d</p>
+                    <div class="marketBottom__market2-block--iconWrapper marketBottom__market2-block--wrapper" data-titleLine-text="Иконка" data-titleLine-isSelected="false"><img class="marketBottom__merket2-block--icon" src="img/frostDrag.svg" alt=""/></div>
+                    <div class="marketBottom__market2-bigBlock--grey-wrapper swiper">
+                      <div class="marketBottom__market2-bigBlock--grey swiper-wrapper">
+                        <div class="marketBottom__market2-block--rareWrapper swiper-slide marketBottom__market2-block--wrapper" data-titleLine-text="Иконка" data-titleLine-isSelected="true">
+                          <p class="marketBottom__market2-block--rare">Mythical</p>
+                        </div>
+                        <div class="marketBottom__market2-block--icons swiper-slide marketBottom__market2-block--wrapper" data-titleLine-text="Huge" data-titleLine-isSelected="false">
+                          <hr class="marketBottom__market2-hr"/>
+                          <p class="marketBottom__tag red">R</p>
+                          <p class="marketBottom__tag blue">F</p>
+                        </div>
+                        <div class="marketBottom__market2-block--typeWapper swiper-slide marketBottom__market2-block--wrapper" data-titleLine-text="Тип" data-titleLine-isSelected="true">
+                          <hr class="marketBottom__market2-hr"/>
+                          <p class="marketBottom__market2-block--type">Dark matter</p>
+                        </div>
+                        <div class="marketBottom__market2-block--shinyWapper swiper-slide marketBottom__market2-block--wrapper" data-titleLine-text="Shiny" data-titleLine-isSelected="true">
+                          <hr class="marketBottom__market2-hr"/>
+                          <p class="marketBottom__market2-block--shiny">Да</p>
+                        </div>
+                        <div class="marketBottom__market2-block--hcWrappeer swiper-slide marketBottom__market2-block--wrapper" data-titleLine-text="HC" data-titleLine-isSelected="true">
+                          <hr class="marketBottom__market2-hr"/>
+                          <p class="marketBottom__market2-block--hc">Да</p>
+                        </div>
+                        <div class="marketBottom__market2-block--powerWrapper swiper-slide marketBottom__market2-block--wrapper" data-titleLine-text="Сила" data-titleLine-isSelected="true">
+                          <hr class="marketBottom__market2-hr"/>
+                          <p class="marketBottom__market2-block--power">317d</p>
+                        </div>
+                        <div class="marketBottom__market2-block--powerWrapper swiper-slide marketBottom__market2-block--wrapper" data-titleLine-text="Сила" data-titleLine-isSelected="true">
+                          <hr class="marketBottom__market2-hr"/>
+                          <p class="marketBottom__market2-block--power">317d</p>
+                        </div>
+                        <div class="marketBottom__market2-block--powerWrapper swiper-slide marketBottom__market2-block--wrapper" data-titleLine-text="Сила" data-titleLine-isSelected="true">
+                          <hr class="marketBottom__market2-hr"/>
+                          <p class="marketBottom__market2-block--power">317d</p>
+                        </div>
                       </div>
                     </div>
-                    <div class="marketBottom__market2-block--numWrapper">
+                    <div class="marketBottom__market2-block--numWrapper marketBottom__market2-block--wrapper" data-titleLine-text="Кол-во" data-titleLine-isSelected="false">
                       <p class="marketBottom__market2-block--num">34</p>
                     </div>
                     <hr class="marketBottom__market2-hr"/>
-                    <div class="marketBottom__market2-block--priceWrapper">
+                    <div class="marketBottom__market2-block--priceWrapper marketBottom__market2-block--wrapper" data-titleLine-text="Цена" data-titleLine-isSelected="false">
                       <p class="marketBottom__market2-block--price">22.22 Р</p>
                     </div>
                     <svg class="marketBottom__market2-block--basket" width="57" height="39" viewbox="0 0 57 39" fill="none" xmlns="http://www.w3.org/2000/svg">
