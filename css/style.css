@@ -3421,6 +3421,10 @@ h1
     -ms-flex-align: center;
     align-items: center;
 }
+.profile__top-right--link svg:first-of-type
+{
+    display: none;
+}
 .profile__top-right--link.active::before
 {
     position: absolute;
@@ -4903,6 +4907,7 @@ a.reg__but
     line-height: 15px;
 
     width: 100%;
+    height: 37px;
     padding: 11px 20px;
 
     color: #939393;
@@ -6318,6 +6323,7 @@ a.reg__but
 .marketBottom__chat-menu
 {
     position: absolute;
+    z-index: 10;
     bottom: 53px;
     left: 0;
     left: 50%;
@@ -9345,13 +9351,13 @@ a.reg__but
 }
 .basket__buy-line.banks
 {
-    margin-bottom: 15px;
+    padding-bottom: 15px;
 }
 .basket__buy-line.banks svg
 {
-    -webkit-transition: .3s ease all;
-         -o-transition: .3s ease all;
-            transition: .3s ease all;
+    -webkit-transition: .5s ease all;
+         -o-transition: .5s ease all;
+            transition: .5s ease all;
 }
 .basket__buy-line.banks.active svg
 {
@@ -11116,6 +11122,51 @@ a.reg__but
         gap: 30px 3px;
     }
 }
+@media (max-width: 1167px)
+{
+    .marketBottom__chats-right--title
+    {
+        font-size: 8px;
+    }
+    .marketBottom__chats-button,
+    .marketBottom__chats-select
+    {
+        font-size: 12px;
+    }
+}
+@media (max-width: 1075px)
+{
+    .marketBottom__chatSelect-avatar
+    {
+        width: 30px;
+        height: 30px;
+
+        border-radius: 50%;
+    }
+    .marketBottom__chats-chatSelect.online .marketBottom__chatSelect-avatar--wapper::after
+    {
+        width: 10px;
+        height: 10px;
+
+        border-radius: 50%;
+    }
+    .marketBottom__chatSelect-name,
+    .marketBottom__chats-right--title
+    {
+        font-size: 8px;
+        line-height: 10px;
+    }
+    .marketBottom__chats-button
+    {
+        font-size: 8px;
+
+        padding: 8px 0 10px;
+    }
+    .marketBottom__chats-chat
+    {
+        margin-right: 12px;
+    }
+}
 @media (max-width: 1000px)
 {
     .marketBottom__history-selectText
@@ -11125,6 +11176,10 @@ a.reg__but
     .marketBottom__history-text::before
     {
         font-size: 10px;
+    }
+    .marketBottom__chats-right--title
+    {
+        font-size: 6px;
     }
 }
 @media (min-width: 960px)
@@ -12272,7 +12327,7 @@ a.reg__but
     {
         position: absolute;
         z-index: 10;
-        top: 57px;
+        top: 62px;
         left: 0;
 
         display: -webkit-box;
@@ -12410,7 +12465,7 @@ a.reg__but
         margin: 7px 0;
         padding: 13px 15px;
 
-        color: #939393;
+        color: white;
         border-radius: 5px;
         background: var(--marketTop-filter-search-background);
     }
@@ -12578,6 +12633,10 @@ a.reg__but
 
         -webkit-backdrop-filter: blur(6px);
                 backdrop-filter: blur(6px);
+    }
+    .marketBottom__out-button
+    {
+        font-size: 10px;
     }
     .marketBottom__innerMarket
     {
@@ -13735,7 +13794,7 @@ a.reg__but
         margin-bottom: 9px;
 
         border: none;
-        background: #ededed;
+        background: var(--mobileChat-hr);
     }
     .chatMobile__input
     {
@@ -14043,8 +14102,9 @@ a.reg__but
     }
     .chatMobile__chat-message--wrapper.right .chatMobile__chat-message
     {
-        margin-right: 9.75px;
+        margin-right: 9px;
         margin-left: 0;
+        padding-left: 20px;
 
         background: var(--mbolieChat-meesagee-background-right);
     }
@@ -14164,6 +14224,10 @@ a.reg__but
     .basket__buy
     {
         width: 100%;
+    }
+    .basket__buy svg
+    {
+        margin-bottom: 4px;
     }
     .basket__status
     {
@@ -14400,7 +14464,7 @@ a.reg__but
         bottom: 0;
 
         width: 100%;
-        height: 101px;
+        height: 86px;
 
         background: var(--background-footer);
     }

@@ -6,8 +6,8 @@ $(document).ready(function() {
         e.preventDefault();
         let text = "";
         isDis = !isDis;
-
-        console.log(isDis);
+        let child = 'first-of-type';
+        let child2 = 'last-of-type';
 
         if(!isDis){
             text = 'Сохранить';
@@ -15,7 +15,15 @@ $(document).ready(function() {
             text = 'Редактировать'
         }
 
+        if(!isDis){
+            child = 'last-of-type';
+            child2 = 'first-of-type';
+        }
+
         $(this).children('span').html(text);
+        $(this).children('svg:' + child).hide();
+        $(this).children('svg:' + child2).show();
+
         $('.profile__center-input').prop('disabled', isDis);
     })
 
