@@ -107,6 +107,7 @@ $(document).ready(function() {
     })
 
     $('.marketBottom__like').on('click', function(e){
+        e.preventDefault();
         $(this).parent('.marketBottom__card').toggleClass('liked');
     })
     // Открытие/закрытие менюшки в профиле
