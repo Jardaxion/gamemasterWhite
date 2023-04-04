@@ -861,7 +861,7 @@ table
 }
 @media (prefers-color-scheme: dark)
 {
-    body
+    body.dark
     {
         --main-first: #f8f8f8;
         --main-second: #fcfcfc;
