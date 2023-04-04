@@ -856,6 +856,290 @@ table
     --marketTop-filter-search-background: #575757;
 }
 
+@media (prefers-color-scheme: dark)
+{
+    body
+    {
+        --main-first: #212126;
+        --main-second: #44444a;
+        --main-second-reverse: #fcfcfc;
+        --main-third: #2d2d32;
+        --background-header: white;
+        --background-footer: #fcfcfc;
+        --lang-color: #3f3f3f;
+        --button-color: #232323;
+        --notification-color: #ff7823;
+        --notifiaction-background: white;
+        --footerBottom-color: #424242;
+        --profileSideBar-color: #fcfcfc;
+        --main: black;
+        --main-reverse: white;
+        --toggleTheme-circle: white;
+        --toggleTheme-place: #eee;
+        --profile-hr: #7e7e7e;
+        --input-color: #5b5b5b;
+        --input-hr: #d2d2d2;
+        --gridBox-back: #fcfcfc;
+        --gridBox-circle: #f6f6f6;
+        --modal-background: white;
+        --choiceAva: #f1f1f1;
+        --header-menu-background: #fafafa;
+        --footerMobile-icon: #2d2d2e;
+        --notific-background: #f6f6f6;
+        --footerMob-icon-reverse: white;
+        --reg-numText: #14171cb5;
+        --reg-title: #14171c;
+        --input-hrS: #101b41;
+        --input-placeholder-color: #8e8e8e;
+        --input-color-color: black;
+        --profile-changePass: #5e5e5e;
+        --vostPass: #424242;
+        --anotherAuth: #f9f9f9;
+        --anotherAuth-text: #7c7c7c;
+        --sliderArrow: #d3d3d399;
+        --sliderBackground: #f9f9f9;
+        --sliderCircles: #efefef;
+        --sliderArrow-fill: #414141;
+        --slider-pag: #00059;
+        --slider-pag-select-next: #000b2;
+        --new-title: #3d3d3d;
+        --new-desc: #575757;
+        --tag-color: #2d2d2d;
+        --textPage-color: #575757;
+        --market-boxColor: #f8f8f8;
+        --marketTop-search: white;
+        --sorting-chosed: #2d2d2e;
+        --marketBack-mobile: #f8f8f8;
+        --marketBox: white;
+        --slider-dot: #ff5c00;
+        --ranges: white;
+        --scrollbar-color: #fcfcfc;
+        --card-item: #f8f8f8;
+        --likeColor: #ff8473;
+        --heartColor: #686868;
+        --activeGreenButton: white;
+        --oneChatBackground: #f8f8f8;
+        --dialog-background: white;
+        --chat-hr: #c9c9c9;
+        --chat-date: #fcfcfc;
+        --chat-input: #323232;
+        --chat-menu: white;
+        --chat-select: #f8f8f8;
+        --mobileChat-hr: #ededed;
+        --mobileChat-name: #2e2e2e;
+        --mobileChat-date: #909090;
+        --mobileChat-hr2: #d6d6d6;
+        --mobileChat-select-background: #f8f8f8;
+        --mobileChat-background: #f8f8f8;
+        --mobileChat-message: #393939;
+        --mbolieChat-meessage-background: #eee;
+        --mbolieChat-meesagee-background-right: #ffe9db;
+        --mobileChat-message-date: #525252;
+        --mobileChat-date-messages: #3a3a3a;
+        --mobileChat-hr3: #d6d6d6;
+        --mobileChat-input-wrapper: #fcfcfc;
+        --mobileChat-input: white;
+        --mobileChat-input-border: #e9e9e9;
+        --mobileChat-input-text: #575757;
+        --mobileChat-input-background: #fff;
+        --market-sell: #373737;
+        --market-grey: #ececec;
+        --market2-hr: #9f9f9f;
+        --market2-block: #f8f8f8;
+        --market2-menu: #fcfcfc;
+        --market2-menu-select: #f2f2f2;
+        --market2-menu-text: #585858;
+        --market2-top: #fcfcfc;
+        --market2-mobFil: #848484;
+        --market2-mobBack: transperent;
+        --market2-mobBor: #d3d3d3;
+        --market2-itemTop: #f8f8f8;
+        --lots-box-title: #323232;
+        --lots-top-hr: #bebebe;
+        --marketMobile-item: #fcfcfc;
+        --marketMobile-options: #f2f2f2;
+        --marketMobile-readAll: #404040;
+        --not-hr: #454545;
+        --not-select: #d3d3d3;
+        --history-pageSelect: #2d2d2e;
+        --history-rightLine: #9f9f9f;
+        --history-selectText: #5c5c5c;
+        --history-bottomHr: #b8b8b8;
+        --history-histor: #f8f8f8;
+        --historyMob-text: #1c1c1c;
+        --historyMob-title: #575757;
+        --log-text: #272727;
+        --basket-left-background: #f8f8f8;
+        --basket-next: #d9d9d9;
+        --bakset-notAnav: #fff99;
+        --addLot-back: #fbfbfb;
+        --addLot-miniTitle: #8e8e8e;
+        --slider-slide: #f3f3f3;
+        --modal-item-logo: #dbdbdb;
+        --modal-rare: #585858;
+        --modal-game: #6b6b6b;
+        --modal-desc-scroll: #f5f5f5;
+        --modal-price-title: #7d7d7d;
+        --modal-price: #404040;
+        --modal-sel-num: #f5f5f5;
+        --modal-num: #575757;
+        --modal-arrow: #bebebe;
+        --modal-button: #dbdbdb;
+        --modal-spor: #f5f5f5;
+        --modal-spor-text: #7c7c7c;
+        --addLot-sixLines: #f1f1f1;
+        --addLot-sixLines-text: #8e8e8e;
+        --question-background: #656565;
+        --question-text: #e3e3e3;
+        --marketTop-filters-background: #f8f8f8;
+        --marketTop-filters-background-select: white;
+        --marketTop-filters-text: #2d2d2e;
+        --marketTop-filter-hr: #d9d9d9;
+        --marketTop-filter-search-background: #f8f8f8;
+    }
+}
+@media (prefers-color-scheme: dark)
+{
+    body
+    {
+        --main-first: #f8f8f8;
+        --main-second: #fcfcfc;
+        --main-second-reverse: #44444a;
+        --main-third: white;
+        --background-header: #303035;
+        --background-footer: #212126;
+        --lang-color: white;
+        --button-color: white;
+        --notification-color: white;
+        --notifiaction-background: #393940;
+        --footerBottom-color: #cacaca;
+        --profileSideBar-color: #44444a;
+        --main: white;
+        --main-reverse: black;
+        --toggleTheme-circle: #39393f;
+        --toggleTheme-place: #212126;
+        --profile-hr: #1b1d22;
+        --input-color: white;
+        --input-hr: #1c1a1a;
+        --gridBox-back: #44444a;
+        --gridBox-circle: #494950;
+        --modal-background: #303035;
+        --choiceAva: #393940;
+        --header-menu-background: #303035;
+        --footerMobile-icon: white;
+        --notific-background: #212126;
+        --footerMob-icon-reverse: #2d2d2e;
+        --reg-numText: #fffb5;
+        --reg-title: white;
+        --input-hrS: #5c5c5c;
+        --input-placeholder-color: #484848;
+        --input-color-color: #e2e2e2;
+        --profile-changePass: white;
+        --vostPass: #e4e4e4;
+        --anotherAuth: #212126;
+        --anotherAuth-text: #eaeaea;
+        --sliderArrow: #212126;
+        --sliderBackground: #44444a ;
+        --sliderCircles: #414147;
+        --sliderArrow-fill: #fff;
+        --slider-pag: #fff59;
+        --slider-pag-select-next: #fffb2;
+        --new-title: white;
+        --new-desc: #c8c8c8;
+        --tag-color: #212126;
+        --textPage-color: #d9d9d9;
+        --market-boxColor: #393940;
+        --marketTop-search: #404048;
+        --sorting-chosed: white;
+        --marketBack-mobile: #28282d;
+        --marketBox: #404048;
+        --slider-dot: #6b6b75;
+        --ranges: #4f4f56;
+        --scrollbar-color: #44444a;
+        --card-item: linear-gradient(180deg, #393940 0%, #4d4d54 100%);
+        --likeColor: #ff6854;
+        --heartColor: #fff;
+        --activeGreenButton: #404040;
+        --oneChatBackground: #393940;
+        --dialog-background: #404048;
+        --chat-hr: #2b2b31;
+        --chat-date: #212126;
+        --chat-input: #fbfbfb;
+        --chat-menu: #343439;
+        --chat-select: #212126;
+        --mobileChat-hr: #484848;
+        --mobileChat-name: white;
+        --mobileChat-date: #f6f6f6;
+        --mobileChat-hr2: #4e4e4e;
+        --mobileChat-select-background: #3b3a41;
+        --mobileChat-background: #323237;
+        --mobileChat-message: white;
+        --mbolieChat-meessage-background: #414147;
+        --mbolieChat-meesagee-background-right: #2b8e53;
+        --mobileChat-message-date: white;
+        --mobileChat-date-messages: #f3f3f3;
+        --mobileChat-hr3: #717171;
+        --mobileChat-input-wrapper: #3b3a41;
+        --mobileChat-input: #4d4c55;
+        --mobileChat-input-border: #77767b;
+        --mobileChat-input-text: white;
+        --mobileChat-input-background: #4d4c55;
+        --market-sell: white;
+        --market-grey: #44444d;
+        --market2-hr: #d7d7d7;
+        --market2-block: #393940;
+        --market2-menu: #212126;
+        --market2-menu-select: #29292e;
+        --market2-menu-text: white;
+        --market2-top: #44444d;
+        --market2-mobFil: #c1c1c1;
+        --market2-mobBack: #393940;
+        --market2-mobBor: #393940;
+        --market2-itemTop: #44444d;
+        --lots-box-title: white;
+        --lots-top-hr: #44444a;
+        --marketMobile-item: #393940;
+        --marketMobile-options: #44444d;
+        --marketMobile-readAll: white;
+        --not-hr: #44444a;
+        --not-select: #212126;
+        --history-pageSelect: #f4f4f4;
+        --history-rightLine: #44444a;
+        --history-selectText: #f8f8f8;
+        --history-bottomHr: #44444a;
+        --history-histor: #44444a;
+        --historyMob-text: white;
+        --historyMob-title: #bbb;
+        --log-text: white;
+        --basket-left-background: #393940;
+        --basket-next: #484850;
+        --bakset-notAnav: #30303599;
+        --addLot-back: #2c2c31;
+        --addLot-miniTitle: #fcfcfc;
+        --slider-slide: #44444d;
+        --modal-item-logo: #393940;
+        --modal-rare: #dbdbdb;
+        --modal-game: #dbdbdb;
+        --modal-desc-scroll: #44444a;
+        --modal-price-title: #989898;
+        --modal-price: white;
+        --modal-sel-num: #3d3d43;
+        --modal-num: #f9f9f9;
+        --modal-arrow: #898989;
+        --modal-button: #212126;
+        --modal-spor: #3b3b42;
+        --modal-spor-text: #c8c8c8;
+        --addLot-sixLines: #303035;
+        --addLot-sixLines-text: white;
+        --question-background: #393940;
+        --question-text: #656565;
+        --marketTop-filters-background: #303030;
+        --marketTop-filters-background-select: #3f3f3f;
+        --marketTop-filters-text: #e4e4e4;
+        --marketTop-filter-hr: #404040;
+        --marketTop-filter-search-background: #575757;
+    }
+}
 /* Глобальное */
 body
 {
@@ -887,7 +1171,7 @@ body::-webkit-scrollbar
 main
 {
     min-height: 46.4vh;
-    padding-top: 35px;
+    padding-top: 141px;
 
     background: var(--background-header);
 }
@@ -1828,6 +2112,17 @@ h1
     background: -o-linear-gradient(top, #ff9649 0%, #ff5c00 100%), -o-linear-gradient(bottom, #fff, #fff);
     background:    linear-gradient(180deg, #ff9649 0%, #ff5c00 100%), linear-gradient(0deg, #fff, #fff);
 }
+.button *
+{
+    font-family: 'GothamPro';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+
+    letter-spacing: .005em;
+
+    color: white;
+}
 .button.effect
 {
     -webkit-box-shadow: 0 0 15px 0 rgba(255, 107, 0, .2901960784);
@@ -2185,7 +2480,24 @@ h1
 /* Хедер */
 .header
 {
+    position: fixed;
+    z-index: 11;
+
+    width: 100%;
+
+    -webkit-transition: .5s ease all;
+         -o-transition: .5s ease all;
+            transition: .5s ease all;
+
     background: var(--background-header);
+}
+.header.dontShow
+{
+    -webkit-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+            transform: translateY(-100%);
+
+    opacity: 0;
 }
 .header__inner
 {
@@ -2193,7 +2505,7 @@ h1
     display: -ms-flexbox;
     display: flex;
 
-    padding: 36px 107px 23px 86px;
+    padding: 21px 107px 22px 86px;
 
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -2342,8 +2654,9 @@ h1
 }
 .header__login
 {
+    height: 100%;
     margin-right: 10px;
-    padding: 12px 35px 13px;
+    padding: 11px 35px 13px;
 }
 .header__login-img
 {
@@ -2364,7 +2677,8 @@ h1
 }
 .header__reg
 {
-    padding: 14px 37px 12px;
+    height: 100%;
+    padding: 11px 35px 13px;
 }
 .header__reg p
 {
@@ -2646,7 +2960,7 @@ h1
 .slider
 {
     margin-top: 13px;
-    margin-bottom: 138px;
+    margin-bottom: 103px;
 }
 .slider__inner
 {
@@ -2808,7 +3122,7 @@ h1
     position: relative;
     z-index: 2;
 
-    padding: 13px 64px 14px;
+    padding: 13px 64px 13px;
 
     -webkit-transition: .3s ease all;
          -o-transition: .3s ease all;
@@ -4793,7 +5107,7 @@ a.reg__but
 .marketTop
 {
     position: relative;
-    z-index: 11;
+    z-index: 10;
 
     margin-bottom: 22px;
 }
@@ -5182,10 +5496,6 @@ a.reg__but
     -ms-flex-align: center;
     align-items: center;
 }
-.marketTop__basket-basket
-{
-    margin-right: 10px;
-}
 .marketTop__basket-basket *
 {
     fill: var(--footerMobile-icon);
@@ -5196,8 +5506,6 @@ a.reg__but
     font-size: 12px;
     font-weight: 300;
     line-height: 14px;
-
-    margin-top: 3px;
 
     letter-spacing: .005em;
 
@@ -5477,13 +5785,9 @@ a.reg__but
 {
     overflow: auto;
 
-    height: 100%;
+    height: 64vh;
     max-height: 849px;
     padding-right: 47px;
-}
-.marketBottom__right.fav
-{
-    margin-left: 32px;
 }
 .marketBottom__right::-webkit-scrollbar
 {
@@ -5561,17 +5865,12 @@ a.reg__but
 }
 .marketBottom__innerMarket
 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: grid;
 
     width: 100%;
+    padding-right: 5px;
 
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: start;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    grid-template-columns: repeat(6, 1fr);
     gap: 19px 14px;
 }
 .marketBottom__card
@@ -5584,7 +5883,7 @@ a.reg__but
     display: flex;
         flex-direction: column;
 
-    width: 203px;
+    width: 100%;
     min-height: 200px;
     padding: 24px 15px 6px 16px;
 
@@ -6904,6 +7203,8 @@ a.reg__but
 }
 .marketBottom__market2-arrow
 {
+    display: none;
+
     cursor: pointer;
 }
 .marketBottom__market2-arrow:first-of-type
@@ -6916,7 +7217,7 @@ a.reg__but
 }
 .marketBottom__market2-pag
 {
-    position: relative;
+    position: relative !important;
     bottom: auto !important;
     left: auto !important;
 
@@ -6925,6 +7226,9 @@ a.reg__but
     display: flex;
 
     width: 388px !important;
+    height: 17px !important;
+
+    background: #44444a;
 
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -6953,6 +7257,10 @@ a.reg__but
 {
     cursor: default;
 
+    background: #f72;
+}
+.marketBottom__market2-pag .swiper-scrollbar-drag
+{
     background: #f72;
 }
 .marketBottom__market2-sell--text
@@ -10627,6 +10935,10 @@ a.reg__but
         width: 30px;
         height: auto;
     }
+    .marketBottom__innerMarket
+    {
+        grid-template-columns: repeat(5, 1fr);
+    }
     .marketBottom__box.message::after
     {
         bottom: 37px;
@@ -10727,6 +11039,10 @@ a.reg__but
     .marketBottom__box-text
     {
         margin-top: 6px;
+    }
+    .marketBottom__innerMarket
+    {
+        grid-template-columns: repeat(4, 1fr);
     }
     .marketBottom__chatSelect-name
     {
@@ -11100,6 +11416,10 @@ a.reg__but
         width: 138px;
         padding: 21px 18px 39px 16px;
     }
+    .marketBottom__innerMarket
+    {
+        grid-template-columns: repeat(3, 1fr);
+    }
     .marketBottom__lot-text::before
     {
         font-size: 8px;
@@ -11223,6 +11543,7 @@ a.reg__but
     }
     main
     {
+        padding-top: 77px;
         padding-bottom: 101px;
     }
     .header__inner
@@ -11246,7 +11567,7 @@ a.reg__but
     {
         position: absolute;
         z-index: 20;
-        top: 82px;
+        top: 75px;
         left: 0;
 
         width: 100%;
@@ -11380,7 +11701,7 @@ a.reg__but
              -o-transition: .3s ease all;
                 transition: .3s ease all;
 
-        background: var(--main);
+        background: var(--main) !important;
     }
     .header__menu-button div:nth-of-type(2)
     {
@@ -13888,7 +14209,7 @@ a.reg__but
     .chatMobile__input-wrapper
     {
         position: fixed;
-        bottom: 101px;
+        bottom: 83px;
         left: 0;
 
         display: -webkit-box;

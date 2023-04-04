@@ -1,5 +1,6 @@
 let numPage = 1;
 let isDis = true;
+let lastScrollTop = 0;
 $(document).ready(function() {
     $('.profile__center-input').prop('disabled', isDis);
     $('.profile__top-right--link.edit').on('click', function(e){
@@ -25,6 +26,17 @@ $(document).ready(function() {
         $(this).children('svg:' + child2).show();
 
         $('.profile__center-input').prop('disabled', isDis);
+    })
+
+    $(window).scroll(() => {
+        let st = $(window).scrollTop();
+        
+        if (st > lastScrollTop){
+            $('header').addClass('dontShow');
+        } else {
+           $('header').removeClass('dontShow');
+        }
+        lastScrollTop = st;
     })
 
     $('.marketBottom__market2-bigBlock:first-of-type .marketBottom__market2-block--wrapper').each(function(){
@@ -61,9 +73,9 @@ $(document).ready(function() {
 
     document.querySelectorAll('.marketBottom__market2 .marketBottom__market2-bigBlock--grey-wrapper').forEach(function(el){
         new Swiper(el ,{
-            pagination: {
+            scrollbar: {
                 el: document.querySelector('.marketBottom__market2 .marketBottom__market2-pag'),
-                clickable: true,
+                draggable: true,
             },
             slidesPerView: 'auto',
             navigation: {
@@ -86,9 +98,9 @@ $(document).ready(function() {
         }
         
         new Swiper(el, {
-            pagination: {
+            scrollbar: {
                 el: blockWithNav.children[1],
-                clickable: true,
+                draggable: true,
             },
             slidesPerView: 'auto',
             navigation: {
@@ -115,7 +127,7 @@ $(document).ready(function() {
         e.preventDefault();
 
         $(this).toggleClass('active');
-        $(this).next().slideToggle();
+        $(this).next().slideToggle('100');
     })
 
     //Открытие/закрытие меню в хедере
