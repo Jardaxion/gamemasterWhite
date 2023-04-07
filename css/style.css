@@ -2483,7 +2483,7 @@ h1
 .header
 {
     position: fixed;
-    z-index: 11;
+    z-index: 12;
 
     width: 100%;
 
@@ -3205,7 +3205,9 @@ h1
     font-weight: 600;
     line-height: 30px;
 
-    margin-bottom: 41px;
+    width: 372px;
+    margin-top: 15px;
+    margin-right: 20px;
 
     text-transform: uppercase;
 
@@ -3215,7 +3217,6 @@ h1
 {
     width: 100%;
     max-width: 100%;
-    margin-bottom: 32px;
 }
 .block__buttons-button
 {
@@ -3262,6 +3263,18 @@ h1
 {
     border-radius: 8px;
     background: #ff812f;
+}
+.block__line
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    margin-bottom: 41px;
+
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: start;
 }
 .block__content
 {
@@ -5573,11 +5586,16 @@ a.reg__but
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+
+    height: 743px;
+}
+.marketBottom__inner > *
+{
+    min-height: 100%;
 }
 .marketBottom__left
 {
     width: 104px;
-    min-height: 849px;
     margin-right: 25px;
 
     border-radius: 8px;
@@ -5712,7 +5730,6 @@ a.reg__but
 .marketBottom__center
 {
     min-width: 213px;
-    min-height: 849px;
     margin-right: 30px;
     padding: 39px 29px 39px 25px;
 
@@ -5785,8 +5802,6 @@ a.reg__but
 {
     overflow: auto;
 
-    height: 64vh;
-    max-height: 849px;
     padding-right: 47px;
 }
 .marketBottom__right::-webkit-scrollbar
@@ -6312,8 +6327,7 @@ a.reg__but
 {
     width: 100%;
     max-width: 874px;
-    height: 100%;
-    max-height: 74.778vh;
+    height: 711px;
     margin-right: 23px;
     padding: 13px 32px 23px 24px;
 
@@ -6328,7 +6342,7 @@ a.reg__but
     overflow: auto;
         flex-direction: column;
 
-    height: 59.778vh;
+    height: 628px;
 
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -6459,7 +6473,7 @@ a.reg__but
     overflow: auto;
 
     width: 477px;
-    height: 849px;
+    height: 707px;
     margin-right: 23px;
     padding-right: 20px;
 }
@@ -6496,7 +6510,6 @@ a.reg__but
 .marketBottom__chats-right
 {
     width: 430px;
-    min-height: 707px;
     padding: 31px 25px 28px 23px;
 
     border-radius: 8px;
@@ -6551,7 +6564,7 @@ a.reg__but
 {
     overflow: auto;
 
-    height: 452px;
+    height: 446px;
     margin-bottom: 16px;
 }
 .marketBottom__chats-right--content::-webkit-scrollbar
@@ -6911,8 +6924,97 @@ a.reg__but
 }
 .marketBottom__market2
 {
+    position: relative;
+
     width: 100%;
     padding-right: 0;
+}
+.marketBottom__market2 .marketBottom__market2-top
+{
+    position: absolute;
+
+        flex-direction: column;
+
+    height: 100%;
+
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: start;
+}
+.marketBottom__market2 .marketBottom__market2-titleLine
+{
+    position: -webkit-sticky;
+    position:         sticky;
+    z-index: 2;
+    top: 37px;
+
+    margin-top: 20px;
+}
+.marketBottom__market2 .marketBottom__market2-titleLine--titleBlock
+{
+    position: static;
+}
+.marketBottom__market2 .swiper-slide
+{
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+}
+.marketBottom__market2 .marketBottom__market2-blocks
+{
+    position: -webkit-sticky !important;
+    position:         sticky !important;
+    z-index: 2 !important;
+    top: 0;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    width: 100%;
+
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: start;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.marketBottom__market2 .marketBottom__market2-blocks::before
+{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+
+    width: 100%;
+    height: 66px;
+
+    content: '';
+
+    background: var(--background-header);
+}
+.marketBottom__market2 .marketBottom__market2-titleLine--char
+{
+    width: 100%;
+    max-width: 800px;
+}
+.marketBottom__market2 .marketBottom__market2-titleLine--char .marketBottom__market2-titleLine--titleBlock:not(:first-of-type :nt)
+{
+    padding-left: 10px;
+}
+.marketBottom__market2 .marketBottom__market2-block
+{
+    height: 100%;
+
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: start;
 }
 .marketBottom__market2-top
 {
@@ -6934,7 +7036,7 @@ a.reg__but
 .marketBottom__market2-content
 {
     height: 760px;
-    margin-top: 53px;
+    margin-top: 76px;
     padding-right: 11px;
 }
 .marketBottom__market2-block
@@ -7218,6 +7320,7 @@ a.reg__but
 .marketBottom__market2-pag
 {
     position: relative !important;
+    z-index: 5;
     bottom: auto !important;
     left: auto !important;
 
@@ -7225,10 +7328,10 @@ a.reg__but
     display: -ms-flexbox;
     display: flex;
 
-    width: 388px !important;
     height: 17px !important;
+    margin-left: 176px;
 
-    background: #44444a;
+    background: var(--scrollbar-color);
 
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -7308,6 +7411,16 @@ a.reg__but
     -ms-flex-align: center;
     align-items: center;
 }
+.marketBottom__market2-titleLine--titleBlock-wrapper
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: start;
+}
 .marketBottom__market2-titleLine--titleBlock.active svg
 {
     -webkit-transform: rotate(180deg);
@@ -7328,7 +7441,6 @@ a.reg__but
 .marketBottom__market2-titleLine svg
 {
     margin-top: 2px;
-    margin-left: 10px;
 }
 .marketBottom__market2-titleLine--title
 {
@@ -7458,6 +7570,10 @@ a.reg__but
 {
     margin-left: 18px;
 }
+.marketBottom__market2-bigBlock--grey .marketBottom__market2-titleLine--titleBlock-wrapper
+{
+    top: 12px !important;
+}
 .marketBottom__market2-bigBlock--grey .swiper-slide
 {
     display: -webkit-box;
@@ -7477,7 +7593,7 @@ a.reg__but
     display: flex;
 
     width: 100%;
-    max-width: 619px;
+    max-width: 800px;
     height: 138px;
 
     -webkit-box-align: center;
@@ -7554,6 +7670,10 @@ a.reg__but
     border: none;
     background: var(--market2-hr);
 }
+.marketBottom__myLots .marketBottom__lots-bottom
+{
+    height: 90%;
+}
 .marketBottom__lots
 {
     overflow: visible;
@@ -7612,7 +7732,7 @@ a.reg__but
 {
     overflow: auto;
 
-    height: 769px;
+    height: 474px;
     padding-right: 34px;
 }
 .marketBottom__lots-bottom::-webkit-scrollbar
@@ -7761,7 +7881,6 @@ a.reg__but
 
     width: 100%;
     max-width: 884px;
-    height: 845px;
     margin-right: 82px;
     padding-right: 46px;
 }
@@ -8218,7 +8337,7 @@ a.reg__but
 {
     overflow: auto;
 
-    height: 776px;
+    height: 669px;
     padding-top: 60px;
     padding-right: 73px;
 }
@@ -8657,10 +8776,6 @@ a.reg__but
     width: 100%;
     margin-right: 0;
     padding-right: 0;
-}
-.marketBottom__lot .marketBottom__lots-bottom
-{
-    height: 576px;
 }
 .marketBottom__lot-top
 {
@@ -9615,6 +9730,12 @@ a.reg__but
 {
     margin-bottom: 66px;
 }
+.basket .marketBottom__left
+{
+    position: -webkit-sticky;
+    position:         sticky;
+    top: 107px;
+}
 .basket__buy
 {
     width: 263px;
@@ -10350,12 +10471,14 @@ a.reg__but
     font-weight: 500;
     line-height: 16px;
 
+    width: 100%;
     padding: 15px 0;
+    padding-left: 20px;
 
     -webkit-transition: .3s ease all;
          -o-transition: .3s ease all;
             transition: .3s ease all;
-    text-align: center;
+    text-align: left;
 
     color: var(--market2-menu-text);
     background: var(--market2-menu);
@@ -10833,6 +10956,13 @@ a.reg__but
         align-items: center;
     }
 }
+@media (max-width: 1700px)
+{
+    .marketBottom__chats-right--title
+    {
+        font-size: 12px;
+    }
+}
 @media (max-width: 1600px)
 {
     .footer__inner
@@ -10997,6 +11127,18 @@ a.reg__but
     {
         padding: 36px 38px 23px 36px;
     }
+    .marketBottom__inner
+    {
+        height: 520px;
+    }
+    .marketBottom__myLots .marketBottom__lots-bottom
+    {
+        height: 85%;
+    }
+    .marketBottom__lots-bottom
+    {
+        height: 250px;
+    }
     .marketBottom__box.message::after
     {
         right: 37px;
@@ -11028,6 +11170,32 @@ a.reg__but
     {
         font-size: 12px;
     }
+    .marketBottom__history-bottom
+    {
+        height: 446px;
+    }
+    .marketBottom__notifications-settings
+    {
+        overflow: auto;
+
+        max-height: 85%;
+    }
+    .marketBottom__notifications-settings::-webkit-scrollbar
+    {
+        width: 5px;
+    }
+    .marketBottom__notifications-settings::-webkit-scrollbar-track
+    {
+        margin-right: 20px;
+
+        border-radius: 8px;
+        background: var(--scrollbar-color);
+    }
+    .marketBottom__notifications-settings::-webkit-scrollbar-thumb
+    {
+        border-radius: 6.5px;
+        background-color: #ff812f;
+    }
     .marketBottom__box
     {
         height: 70px;
@@ -11058,6 +11226,7 @@ a.reg__but
     .marketBottom__chats-left
     {
         width: 254px;
+        height: 484px;
     }
     .marketBottom__chats-right
     {
@@ -11065,7 +11234,7 @@ a.reg__but
     }
     .marketBottom__chats-right--content
     {
-        height: 235px;
+        height: 218px;
         padding-right: 5px;
     }
     .marketBottom__chats-right--title
@@ -11154,6 +11323,14 @@ a.reg__but
     .slider__slide-chest
     {
         left: -101px;
+    }
+    .marketBottom__chats-chat
+    {
+        height: 485px;
+    }
+    .marketBottom__chats-chat--wrapper
+    {
+        height: 403px;
     }
     .marketBottom__left.bigMR
     {
@@ -12936,6 +13113,10 @@ a.reg__but
     .marketBottom
     {
         margin-bottom: 25px;
+    }
+    .marketBottom__inner
+    {
+        height: auto;
     }
     .marketBottom__bigMarket
     {

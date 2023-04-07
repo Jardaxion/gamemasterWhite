@@ -39,27 +39,65 @@ $(document).ready(function() {
         lastScrollTop = st;
     })
 
-    $('.marketBottom__market2-bigBlock:first-of-type .marketBottom__market2-block--wrapper').each(function(){
-        let arrow = '';
+    //Вычисление и постановака тайтолов на market2.html(очень важно!!! я писал это 4 часа и думал еще часа 3)
+    if($('.marketBottom__right').hasClass('marketBottom__market2')){
+        let i = 0;
+        let j = 0;
+        let k = 0;
+        $('.marketBottom__market2-bigBlock:first-of-type .marketBottom__market2-block--wrapper').each(function(){
+            let item = $($('.marketBottom__market2-titleLine').children()[i]);
 
-        if($(this).data('titleline-isselected')){
-            arrow = `
-                <svg width="8" height="13" viewbox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3.64645 12.3536C3.84171 12.5488 4.15829 12.5488 4.35355 12.3536L7.53553 9.17157C7.7308 8.97631 7.7308 8.65973 7.53553 8.46447C7.34027 8.2692 7.02369 8.2692 6.82843 8.46447L4 11.2929L1.17157 8.46447C0.976311 8.2692 0.659729 8.2692 0.464466 8.46447C0.269204 8.65973 0.269204 8.97631 0.464466 9.17157L3.64645 12.3536ZM3.5 2.18557e-08L3.5 12L4.5 12L4.5 -2.18557e-08L3.5 2.18557e-08Z" fill="#FF5C00"></path>
-                </svg>
-            `;
-        }
+            if(item.hasClass('marketBottom__market2-titleLine--charWrapper')){
 
-        let text = `
-            <div class="marketBottom__market2-titleLine--titleBlock">
-                <p class="marketBottom__market2-titleLine--titleBlockText">`+$(this).data('titleline-text')+`</p>
-                `+ arrow +`
-            </div>`;
-        
-        $(this).children('div:first-of-type').before(text)
-        $(this).children('img:first-of-type').before(text)
-        $(this).children('p:first-of-type').before(text)
-    })
+                let newItem = $($(item.children()[0]).children()[j]);
+                char = $(this); 
+                
+                newItem.width(char.width());
+                newItem.css({'marginLeft': char.css('margin-left')});
+                newItem.css({'paddingLeft': char.children('hr').css('margin-right')});
+                newItem.css({'marginRight': char.css('padding-right')});
+
+                if($($(item.children()[0]).children()[j+1]).length === 0){
+                    i++;
+                }
+
+                console.log(char);
+                console.log(char.width());
+
+                j++;
+                
+            } else {
+                item.width($(this).width());
+                item.css({'marginLeft': $(this).css('margin-left')});
+                item.css({'marginRight': $(this).css('padding-right')});
+                i++;
+            }
+        })
+    } else { //Создание тайтлов на остальных страницах
+        $('.marketBottom__market2-bigBlock:first-of-type .marketBottom__market2-block--wrapper').each(function(){
+            let arrow = '';
+    
+            if($(this).data('titleline-isselected')){
+                arrow = `
+                    <svg width="8" height="13" viewbox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.64645 12.3536C3.84171 12.5488 4.15829 12.5488 4.35355 12.3536L7.53553 9.17157C7.7308 8.97631 7.7308 8.65973 7.53553 8.46447C7.34027 8.2692 7.02369 8.2692 6.82843 8.46447L4 11.2929L1.17157 8.46447C0.976311 8.2692 0.659729 8.2692 0.464466 8.46447C0.269204 8.65973 0.269204 8.97631 0.464466 9.17157L3.64645 12.3536ZM3.5 2.18557e-08L3.5 12L4.5 12L4.5 -2.18557e-08L3.5 2.18557e-08Z" fill="#FF5C00"></path>
+                    </svg>
+                `;
+            }
+    
+            let text = `
+                <div class="marketBottom__market2-titleLine--titleBlock">
+                    <div class="marketBottom__market2-titleLine--titleBlock-wrapper"> 
+                        <p class="marketBottom__market2-titleLine--titleBlockText">`+$(this).data('titleline-text')+`</p>
+                        `+ arrow +`
+                    </div>
+                </div>`;
+            
+            $(this).children('div:first-of-type').before(text)
+            $(this).children('img:first-of-type').before(text)
+            $(this).children('p:first-of-type').before(text)
+        })
+    }
 
     $('.marketTop__settings-menu--selectPage').on('click', function(e){
         e.preventDefault();
@@ -81,11 +119,10 @@ $(document).ready(function() {
             navigation: {
                 nextEl: document.querySelector('.marketBottom__market2 .marketBottom__market2-nextArrow'),
                 prevEl: document.querySelector('.marketBottom__market2 .marketBottom__market2-prevArrow'),
-            }
+            },
         })
     })
 
-    let blockWithNavEl= document.querySelectorAll('.marketBottom__market2-block')
     document.querySelectorAll('.marketBottom__lots-box .marketBottom__market2-bigBlock:not(.notAnav) .marketBottom__market2-bigBlock--grey-wrapper').forEach(function(el){
         let blockWithNavChilder = el.parentNode.parentNode.parentNode.children;
         let blockWithNav;
@@ -110,6 +147,22 @@ $(document).ready(function() {
         })
     })
 
+    
+    new Swiper(document.querySelector('.marketBottom__market2-titleLine--charWrapper'), {
+        scrollbar: {
+            el: document.querySelector('.marketBottom__market2 .marketBottom__market2-pag'),
+            draggable: true,
+        },
+        slidesPerView: 'auto',
+        navigation: {
+            nextEl: document.querySelector('.marketBottom__market2 .marketBottom__market2-nextArrow'),
+            prevEl: document.querySelector('.marketBottom__market2 .marketBottom__market2-prevArrow'),
+        },
+    })
+    
+    $('.marketBottom__market2-titleLine--char').width($('.marketBottom__market2-bigBlock--grey-wrapper').width());
+    $('.marketBottom__market2-titleLine--char').width($('.marketBottom__market2-bigBlock--grey').width());
+
     $('.marketBottom__market2Mobile-filters--filter').on('click', function(e){
         $(this).toggleClass('active');
     })
@@ -127,7 +180,7 @@ $(document).ready(function() {
         e.preventDefault();
 
         $(this).toggleClass('active');
-        $(this).next().slideToggle('100');
+        $(this).next().slideToggle(200);
     })
 
     //Открытие/закрытие меню в хедере
@@ -277,6 +330,15 @@ $(document).ready(function() {
         }
     });
 
+    $('.marketBottom__market2-pag').width($('.marketBottom__market2-bigBlock--grey-wrapper').width());
+
+
+    let heightOfAll = 200;
+    $('.marketBottom__market2-content .marketBottom__market2-bigBlock').each(function(){
+        heightOfAll += $(this).height();
+    })
+    $('.marketBottom__market2-top').height(heightOfAll);
+
     //Слайдер на главном экране в блоке
     let blockSlider = new Swiper('.block__buttons-wrapper', {
         loop: false,
@@ -285,6 +347,7 @@ $(document).ready(function() {
         width: null,
         scrollbar: {
             el: '.block__buttons-scrollbar',
+            draggable: true,
         },
         breakpoints: {
             960: {
@@ -465,6 +528,11 @@ $(document).ready(function() {
 
     $('.addLot__select-title').on('click', function(e){
         e.preventDefault();
+        if(!$('.addLot__select-title.active').is($(this))){
+            $('.addLot__select-title.active').removeClass('active');
+            $('.addLot__select-select.active').removeClass('active');
+        }
+
         $(this).toggleClass('active');
         $(this).next().toggleClass('active');
     })
