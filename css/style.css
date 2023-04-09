@@ -1173,7 +1173,7 @@ body::-webkit-scrollbar
 main
 {
     min-height: 46.4vh;
-    padding-top: 141px;
+    padding-top: 116px;
 
     background: var(--background-header);
 }
@@ -5587,7 +5587,7 @@ a.reg__but
     display: -ms-flexbox;
     display: flex;
 
-    height: 743px;
+    height: 693px;
 }
 .marketBottom__inner > *
 {
@@ -5806,7 +5806,7 @@ a.reg__but
 }
 .marketBottom__right::-webkit-scrollbar
 {
-    width: 17px;
+    width: 9px;
 }
 .marketBottom__right::-webkit-scrollbar-track
 {
@@ -6325,11 +6325,13 @@ a.reg__but
 }
 .marketBottom__chats-chat
 {
+    position: relative;
+
     width: 100%;
     max-width: 874px;
-    height: 711px;
+    height: 658px;
     margin-right: 23px;
-    padding: 13px 32px 23px 24px;
+    padding: 13px 10px 23px 24px;
 
     border-radius: 8px;
     background: var(--oneChatBackground);
@@ -6339,10 +6341,11 @@ a.reg__but
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    overflow: auto;
+    overflow-y: auto;
         flex-direction: column;
 
-    height: 628px;
+    height: 571px;
+    padding-right: 23px;
 
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -6353,7 +6356,22 @@ a.reg__but
 }
 .marketBottom__chats-chat--wrapper::-webkit-scrollbar
 {
-    width: 0;
+    position: absolute;
+    right: 0;
+
+    width: 9px;
+}
+.marketBottom__chats-chat--wrapper::-webkit-scrollbar-track
+{
+    margin-right: 20px;
+
+    border-radius: 8px;
+    background: var(--scrollbar-color);
+}
+.marketBottom__chats-chat--wrapper::-webkit-scrollbar-thumb
+{
+    border-radius: 6.5px;
+    background-color: #ff812f;
 }
 .marketBottom__chats-chat--hr
 {
@@ -6473,7 +6491,7 @@ a.reg__but
     overflow: auto;
 
     width: 477px;
-    height: 707px;
+    height: 658px;
     margin-right: 23px;
     padding-right: 20px;
 }
@@ -6564,7 +6582,7 @@ a.reg__but
 {
     overflow: auto;
 
-    height: 446px;
+    height: 391px;
     margin-bottom: 16px;
 }
 .marketBottom__chats-right--content::-webkit-scrollbar
@@ -6603,6 +6621,7 @@ a.reg__but
 
     width: 100%;
     margin-top: 10px;
+    padding-right: 32px;
     padding-left: 64px;
 }
 .marketBottom__chat-files
@@ -7328,8 +7347,8 @@ a.reg__but
     display: -ms-flexbox;
     display: flex;
 
-    height: 17px !important;
-    margin-left: 176px;
+    height: 9px !important;
+    margin-left: 11vw;
 
     background: var(--scrollbar-color);
 
@@ -7339,6 +7358,10 @@ a.reg__but
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+}
+.marketBottom__market2-pag.smallMl
+{
+    margin-left: 3vw;
 }
 .marketBottom__market2-pag .swiper-pagination-bullet
 {
@@ -7732,12 +7755,12 @@ a.reg__but
 {
     overflow: auto;
 
-    height: 474px;
+    height: 421px;
     padding-right: 34px;
 }
 .marketBottom__lots-bottom::-webkit-scrollbar
 {
-    width: 17px;
+    width: 9px;
 }
 .marketBottom__lots-bottom::-webkit-scrollbar-track
 {
@@ -7886,7 +7909,7 @@ a.reg__but
 }
 .marketBottom__notifications::-webkit-scrollbar
 {
-    width: 17px;
+    width: 9px;
 }
 .marketBottom__notifications::-webkit-scrollbar-track
 {
@@ -8337,13 +8360,13 @@ a.reg__but
 {
     overflow: auto;
 
-    height: 669px;
+    height: 621px;
     padding-top: 60px;
     padding-right: 73px;
 }
 .marketBottom__history-bottom::-webkit-scrollbar
 {
-    width: 17px;
+    width: 9px;
 }
 .marketBottom__history-bottom::-webkit-scrollbar-track
 {
@@ -9110,7 +9133,7 @@ a.reg__but
 }
 .basket .marketBottom__market2-pag
 {
-    margin-left: -61px;
+    margin-left: -1vw;
 }
 .basket__left
 {
@@ -9739,6 +9762,8 @@ a.reg__but
     position: -webkit-sticky;
     position:         sticky;
     top: 107px;
+
+    margin-top: 76px;
 }
 .basket__buy
 {

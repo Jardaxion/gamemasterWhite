@@ -372,6 +372,11 @@ $(document).ready(function() {
 
     //Открытие фильтра в мои лоты
     $('.marketBottom__lots-box--select').on('click', function(){
+        if(!$(this).hasClass('active')){
+            $('.marketBottom__lots-box--select.active').removeClass('active');
+            $('.marketBottom__lots-box--menu.active').removeClass('active');
+        }
+
         $(this).next().toggleClass('active');
         $(this).toggleClass('active');
     })
