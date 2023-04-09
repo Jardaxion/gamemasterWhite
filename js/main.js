@@ -331,7 +331,9 @@ $(document).ready(function() {
     });
 
     $('.marketBottom__market2-pag').width($('.marketBottom__market2-bigBlock--grey-wrapper').width());
-
+    $(window).on('resize', () => {
+        $('.marketBottom__market2-pag').width($('.marketBottom__market2-bigBlock--grey-wrapper').width());
+    })
 
     let heightOfAll = 200;
     $('.marketBottom__market2-content .marketBottom__market2-bigBlock').each(function(){
