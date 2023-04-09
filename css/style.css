@@ -7100,7 +7100,7 @@ a.reg__but
 .marketBottom__market2-block--numWrapper
 {
     width: 100%;
-    max-width: 4.84vw;
+    max-width: 3.8vw;
     margin-left: 1.09vw;
 }
 .marketBottom__market2-block--priceWrapper
@@ -7166,9 +7166,9 @@ a.reg__but
 
     padding-right: 10px;
 
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: start;
 }
 .marketBottom__market2-block--iconWrapper img
 {
@@ -9108,6 +9108,10 @@ a.reg__but
     -ms-flex-pack: start;
     justify-content: start;
 }
+.basket .marketBottom__market2-pag
+{
+    margin-left: -61px;
+}
 .basket__left
 {
     width: 102px;
@@ -10962,6 +10966,10 @@ a.reg__but
     {
         font-size: 12px;
     }
+    .block__title
+    {
+        font-size: 20px;
+    }
 }
 @media (max-width: 1600px)
 {
@@ -11126,6 +11134,10 @@ a.reg__but
     .header__inner
     {
         padding: 36px 38px 23px 36px;
+    }
+    .basket .marketBottom__market2-pag
+    {
+        margin-left: -108px;
     }
     .marketBottom__inner
     {
