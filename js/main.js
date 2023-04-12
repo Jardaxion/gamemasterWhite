@@ -36,11 +36,16 @@ $(document).ready(function() {
         } else {
            $('header').removeClass('dontShow');
         }
+
+        if(st == 0){
+            $('header').removeClass('dontShow');
+        }
+
         lastScrollTop = st;
     })
 
     //Вычисление и постановака тайтолов на market2.html(очень важно!!! я писал это 4 часа и думал еще часа 3)
-    if($('.marketBottom__right').hasClass('marketBottom__market2')){
+    if($('.marketBottom__right').hasClass('marketBottom__market2') && $(window).width() > 960){
         let i = 0;
         let j = 0;
         let k = 0;
@@ -60,9 +65,6 @@ $(document).ready(function() {
                 if($($(item.children()[0]).children()[j+1]).length === 0){
                     i++;
                 }
-
-                console.log(char);
-                console.log(char.width());
 
                 j++;
                 
@@ -99,6 +101,28 @@ $(document).ready(function() {
         })
     }
 
+    new Swiper('.marketBottom__market2Mobile-filters--wrapper', {
+        slidesPerView: 'auto',
+        scrollbar: {
+            el: '.marketBottom__scrollbar',
+            draggable: true
+        }
+    })
+
+    if($(window).width() < 960){
+        $('.marketBottom__market2Mobile-filters--wrapper').width($('.marketBottom__market2Mobile-item--top').width());
+        $('.marketBottom__market2Mobile-filters').width($('.marketBottom__market2Mobile-item--top').width());
+        let i = 0;
+        $('.marketBottom__market2Mobile-filters--filter').each(function(){
+            let allChar = $('.marketBottom__market2Mobile-item--wrapper');
+            let char = $(allChar[i]);
+
+            $(this).width(char.width());
+
+            i++;
+        })
+    }
+
     $('.marketTop__settings-menu--selectPage').on('click', function(e){
         e.preventDefault();
 
@@ -123,6 +147,7 @@ $(document).ready(function() {
         })
     })
 
+    let marketSliders = [];
     document.querySelectorAll('.marketBottom__lots-box .marketBottom__market2-bigBlock:not(.notAnav) .marketBottom__market2-bigBlock--grey-wrapper').forEach(function(el){
         let blockWithNavChilder = el.parentNode.parentNode.parentNode.children;
         let blockWithNav;
@@ -134,7 +159,7 @@ $(document).ready(function() {
             }
         }
         
-        new Swiper(el, {
+        marketSliders.push(new Swiper(el, {
             scrollbar: {
                 el: blockWithNav.children[1],
                 draggable: true,
@@ -144,7 +169,7 @@ $(document).ready(function() {
                 nextEl: blockWithNav.children[2],
                 prevEl: blockWithNav.children[0],
             }
-        })
+        }))
     })
 
     
@@ -330,11 +355,6 @@ $(document).ready(function() {
         }
     });
 
-    $('.marketBottom__market2-pag').width($('.marketBottom__market2-bigBlock--grey-wrapper').width());
-    $(window).on('resize', () => {
-        $('.marketBottom__market2-pag').width($('.marketBottom__market2-bigBlock--grey-wrapper').width());
-    })
-
     let heightOfAll = 200;
     $('.marketBottom__market2-content .marketBottom__market2-bigBlock').each(function(){
         heightOfAll += $(this).height();
@@ -458,6 +478,12 @@ $(document).ready(function() {
             $('.marketBottom__market2-menu').removeClass('active');
             $('.marketBottom__market2-block--more').removeClass('active');
         }
+
+        if(!$(e.target).is($('.marketTop__mobileSorting *'))){
+            $('.marketTop__sorting-choose').removeClass('show');
+        }
+
+        console.log(e.target);
     })
 
     if (/iPhone/.test(navigator.userAgent) && !window.MSStream)
@@ -542,6 +568,25 @@ $(document).ready(function() {
 
         $(this).toggleClass('active');
         $(this).next().toggleClass('active');
+    })
+    $('.marketBottom__market2-pag').width($('.marketBottom__market2-bigBlock--grey-wrapper').width());
+    $(window).on('resize', () => {
+        $('.marketBottom__market2-pag').width($('.marketBottom__market2-bigBlock--grey-wrapper').width());
+        marketSliders.forEach(function(el){
+            el.update();
+        })
+    })
+    marketSliders.forEach(function(el){
+        el.update();
+    })
+
+    new Swiper('.marketBottom__market2Mobile-item--top-wrapper', {
+        loop: false,
+        slidesPerView: 'auto',
+        scrollbar: {
+            el: '.marketBottom__scrollbar',
+            draggable: true
+        }
     })
 })
 

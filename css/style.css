@@ -5333,7 +5333,7 @@ a.reg__but
 
     opacity: 0;
     border-radius: 5px;
-    background: white;
+    background: var(--market2-menu);
     -webkit-box-shadow: 0 1px 12px rgba(0, 0, 0, .12);
             box-shadow: 0 1px 12px rgba(0, 0, 0, .12);
 
@@ -5363,12 +5363,12 @@ a.reg__but
          -o-transition: .3s ease all;
             transition: .3s ease all;
 
-    color: #585858;
+    color: var(--market2-menu-text);
 }
 .marketTop__search-popularSearch--item:hover
 {
     border-radius: 5px;
-    background: #f2f2f2;
+    background: var(--market2-menu-select);
 }
 .marketTop__sorting
 {
@@ -5459,7 +5459,7 @@ a.reg__but
 
     opacity: 0;
     border-radius: 5px;
-    background: white;
+    background: var(--market2-menu);
     -webkit-box-shadow: 0 1px 12px rgba(0, 0, 0, .12);
             box-shadow: 0 1px 12px rgba(0, 0, 0, .12);
 
@@ -5729,12 +5729,27 @@ a.reg__but
 }
 .marketBottom__center
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+        flex-direction: column;
+
     min-width: 213px;
     margin-right: 30px;
     padding: 39px 29px 39px 25px;
 
     border-radius: 8px;
     background: var(--market-boxColor);
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+}
+.marketBottom__center-reset
+{
+    width: 100%;
+    margin-top: auto;
+    padding: 10px 0;
 }
 .marketBottom__center > div:not(:last-of-type)
 {
@@ -7339,7 +7354,7 @@ a.reg__but
 .marketBottom__market2-pag
 {
     position: relative !important;
-    z-index: 5;
+    z-index: 5 !important;
     bottom: auto !important;
     left: auto !important;
 
@@ -7348,7 +7363,7 @@ a.reg__but
     display: flex;
 
     height: 9px !important;
-    margin-left: 11vw;
+    margin-left: 10.5vw;
 
     background: var(--scrollbar-color);
 
@@ -9040,6 +9055,31 @@ a.reg__but
 
     color: #ff5c00;
 }
+.marketBottom__scrollbar
+{
+    position: relative !important;
+    bottom: auto !important;
+    left: auto !important;
+
+    height: 17px !important;
+
+    background: var(--scrollbar-color);
+}
+.marketBottom__scrollbar .swiper-scrollbar-drag
+{
+    background: #ff812f !important;
+}
+.marketBottom__scrollbar-wrapper
+{
+    position: fixed;
+    z-index: 2;
+    bottom: 84px;
+
+    width: 100%;
+    padding: 13px 48px 19px;
+
+    background: var(--background-footer);
+}
 
 .marketBottom__market2-bigBlock.full .marketBottom__market2-bigBlock--grey
 {
@@ -9943,6 +9983,7 @@ a.reg__but
 .addLot__slider-button
 {
     position: relative;
+    z-index: 5;
 
     -webkit-box-sizing: content-box;
             box-sizing: content-box;
@@ -9970,6 +10011,7 @@ a.reg__but
 }
 .addLot__pagination
 {
+    z-index: 4;
     top: 56px;
 }
 .addLot__pagination .swiper-pagination-bullet
@@ -12512,9 +12554,18 @@ a.reg__but
     }
     .block__title
     {
+        width: 100%;
         margin-bottom: 37px;
 
         text-align: center;
+    }
+    .block__line
+    {
+            flex-direction: column;
+
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
     }
     .block__buttons-button
     {
@@ -12864,6 +12915,15 @@ a.reg__but
 
         width: 200px;
     }
+    .marketTop__settings-reset
+    {
+        font-size: 12px;
+
+        margin: 0 16px;
+        margin-top: auto;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
     .marketTop__settings-menu
     {
         position: absolute;
@@ -13006,7 +13066,7 @@ a.reg__but
         margin: 7px 0;
         padding: 13px 15px;
 
-        color: white;
+        color: var(--input-color-color);
         border-radius: 5px;
         background: var(--marketTop-filter-search-background);
     }
@@ -13271,6 +13331,37 @@ a.reg__but
     {
         margin-left: auto;
     }
+    .marketBottom__market2Mobile-changeNum
+    {
+        font-family: 'Montserrat';
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 13px;
+
+        -webkit-transition: .3s ease all;
+             -o-transition: .3s ease all;
+                transition: .3s ease all;
+
+        color: var(--footerMobile-icon);
+    }
+    .marketBottom__market2Mobile-changeNum.plus
+    {
+        margin-right: 20px;
+    }
+    .marketBottom__market2Mobile-changeNum:hover
+    {
+        color: #ff812f;
+    }
+    .marketBottom__market2Mobile-changeNum--wrapper
+    {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
     .marketBottom__market2Mobile-top
     {
         position: relative;
@@ -13400,6 +13491,12 @@ a.reg__but
         display: flex;
 
         margin-bottom: 21px;
+        margin-left: 21px;
+    }
+    .marketBottom__market2Mobile-filters--wrapper
+    {
+        margin-right: 0;
+        margin-left: 0;
     }
     .marketBottom__market2Mobile-filters--title
     {
@@ -13411,6 +13508,14 @@ a.reg__but
         margin-right: 14px;
 
         color: var(--market2-mobFil);
+    }
+    .marketBottom__market2Mobile-filters--filter:not(:last-of-type)
+    {
+        margin-right: 15px;
+    }
+    .marketBottom__market2Mobile-filters--filter:first-of-type
+    {
+        margin-left: 18px;
     }
     .marketBottom__market2Mobile-filters--filter svg
     {
@@ -13424,29 +13529,13 @@ a.reg__but
             -ms-transform: rotate(180deg);
                 transform: rotate(180deg);
     }
-    .marketBottom__market2Mobile-filters--filter.rare
-    {
-        padding-left: 61px;
-
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-    }
-    .marketBottom__market2Mobile-filters--filter.huge
-    {
-        padding-left: 32px;
-    }
-    .marketBottom__market2Mobile-filters--filter.type
-    {
-        padding-left: 14px;
-    }
     .marketBottom__market2Mobile-filters > div
     {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
 
-        width: 33%;
+        width: auto;
     }
     .marketBottom__market2Mobile-item
     {
@@ -13464,24 +13553,38 @@ a.reg__but
     }
     .marketBottom__market2Mobile-item--top
     {
+        height: 62px;
+        padding: 7px 10px 8px;
+    }
+    .marketBottom__market2Mobile-item--top-wrapper
+    {
+        position: relative;
+
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        overflow: auto;
 
-        height: 62px;
         margin-bottom: 30px;
-        padding: 7px 10px 8px;
-
-        border-radius: 5px;
-        background: var(--market2-itemTop);
 
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
-        -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-        justify-content: space-between;
+    }
+    .marketBottom__market2Mobile-item--top-wrapper::before
+    {
+        position: absolute;
+
+        width: 100%;
+        height: 77px;
+
+        content: '';
+
+        border-radius: 5px;
+        background: var(--market2-itemTop);
+    }
+    .marketBottom__market2Mobile-item--top-wrapper hr
+    {
+        margin-left: 28px;
     }
     .marketBottom__market2Mobile-item--bottom
     {
@@ -13515,12 +13618,17 @@ a.reg__but
         display: -ms-flexbox;
         display: flex;
 
-        width: 33%;
-        padding-left: 17px;
+        width: auto;
+        min-width: 87px;
+        margin-right: 15px;
 
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
+    }
+    .marketBottom__market2Mobile-item--wrapper:first-of-type
+    {
+        margin-left: 15px;
     }
     .marketBottom__market2Mobile-item--wrapper.center
     {
@@ -13734,6 +13842,10 @@ a.reg__but
         position: absolute;
         top: 20px;
         right: 19px;
+    }
+    .marketBottom__mobileItem-delete *
+    {
+        fill: var(--footerMobile-icon);
     }
     .marketBottom__mobileItem-top
     {
@@ -14604,8 +14716,6 @@ a.reg__but
     {
         position: relative;
 
-        overflow: auto;
-
         height: 494px;
         padding: 18px 0 80px 0;
     }
@@ -14811,6 +14921,7 @@ a.reg__but
         height: 100%;
 
         content: '';
+        pointer-events: none;
 
         background: var(--bakset-notAnav);
     }
@@ -15110,6 +15221,15 @@ a.reg__but
     .marketBottom__market2Mobile-item--text.big
     {
         font-size: 10px;
+    }
+    .marketBottom__market2Mobile-item--text::after
+    {
+        font-size: 8px !important;
+    }
+    .marketBottom__mobileItem-delete
+    {
+        top: 9px;
+        right: 5px;
     }
 }
 
