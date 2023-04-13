@@ -129,53 +129,59 @@
             </div>
           </div>
           <div class="marketTop__settings-menu mobile">
-            <div class="marketTop__settings-menu--left"><a class="marketTop__settings-menu--selectPage" href="" data-page="price">Цена</a><a class="marketTop__settings-menu--selectPage" href="" data-page="rare">Редкость</a><a class="marketTop__settings-menu--selectPage" href="" data-page="price">Выдача</a><a class="marketTop__settings-menu--selectPage" href="" data-page="price">Очень длинное название фильтра</a><a class="marketTop__settings-menu--selectPage" href="" data-page="price">Сила</a><a class="marketTop__settings-reset button flex" href="">Очистить</a></div>
-            <div class="marketTop__settings-menu--right">
-              <div class="marketTop__settings-menu--right-page" data-page="price">
-                <p class="marketTop__settings-menu--title">Цена</p>
-                <hr class="marketTop__settings-menu--hr"/>
-                <label class="marketTop__settings-search" for="">
-                  <input class="marketTop__settings-search-input" type="text" placeholder="Поиск"/>
-                  <svg width="17" height="20" viewbox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="7.3773" cy="7.3773" r="6.8773" stroke="#C0C0C0"></circle>
-                    <path d="M11.9314 12L16.5945 18.3732C16.7827 18.6304 16.7267 18.9915 16.4695 19.1797C16.2123 19.3679 15.8512 19.3119 15.663 19.0547L10.9999 12.6815L11.9314 12Z" fill="#C0C0C0"></path>
-                  </svg>
-                </label>
-                <hr class="marketTop__settings-menu--hr notMt"/>
-                <div class="profile__box-content bigMt">
-                  <input id="from" type="hidden" name="from"/>
-                  <input id="to" type="hidden" name="to"/>
-                  <div class="marketBottom__box-sliderRange" data-min="3990" data-max="233990"></div>
-                  <div class="marketBottom__box-ranges">
-                    <p class="marketBottom__box-range min"></p>
-                    <p class="marketBottom__box-range max"></p>
+            <div class="marketTop__settings-menu--top">
+              <div class="marketTop__settings-menu--left"><a class="marketTop__settings-menu--selectPage" href="" data-page="price">Цена</a><a class="marketTop__settings-menu--selectPage" href="" data-page="rare">Редкость</a><a class="marketTop__settings-menu--selectPage" href="" data-page="price">Выдача</a><a class="marketTop__settings-menu--selectPage" href="" data-page="price">Очень длинное название фильтра</a><a class="marketTop__settings-menu--selectPage" href="" data-page="price">Сила</a></div>
+              <div class="marketTop__settings-menu--right">
+                <div class="marketTop__settings-menu--right-page" data-page="price">
+                  <p class="marketTop__settings-menu--title">Цена</p>
+                  <hr class="marketTop__settings-menu--hr"/>
+                  <label class="marketTop__settings-search" for="">
+                    <input class="marketTop__settings-search-input" type="text" placeholder="Поиск"/>
+                    <svg width="17" height="20" viewbox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="7.3773" cy="7.3773" r="6.8773" stroke="#C0C0C0"></circle>
+                      <path d="M11.9314 12L16.5945 18.3732C16.7827 18.6304 16.7267 18.9915 16.4695 19.1797C16.2123 19.3679 15.8512 19.3119 15.663 19.0547L10.9999 12.6815L11.9314 12Z" fill="#C0C0C0"></path>
+                    </svg>
+                  </label>
+                  <hr class="marketTop__settings-menu--hr notMt"/>
+                  <div class="profile__box-content bigMt">
+                    <input id="from" type="hidden" name="from"/>
+                    <input id="to" type="hidden" name="to"/>
+                    <div class="marketBottom__box-sliderRange" data-min="3990" data-max="233990"></div>
+                    <div class="marketBottom__box-ranges">
+                      <p class="marketBottom__box-range min"></p>
+                      <p class="marketBottom__box-range max"></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="marketTop__settings-menu--right-page" data-page="rare">
+                  <p class="marketTop__settings-menu--title">Редкость</p>
+                  <hr class="marketTop__settings-menu--hr"/>
+                  <div class="marketBottom__checkbox-wrapper">
+                    <input class="marketBottom__checkbox" id="oneSausend" type="checkbox"/>
+                    <label class="marketBottom__checkbox-custom" for="oneSausend"></label>
+                    <p class="marketBottom__checkbox-text">1 - 100</p>
+                  </div>
+                  <div class="marketBottom__checkbox-wrapper">
+                    <input class="marketBottom__checkbox" id="rare" type="checkbox"/>
+                    <label class="marketBottom__checkbox-custom" for="rare"></label>
+                    <p class="marketBottom__checkbox-text">Редкий</p>
+                  </div>
+                  <div class="marketBottom__checkbox-wrapper">
+                    <input class="marketBottom__checkbox" id="epic" type="checkbox"/>
+                    <label class="marketBottom__checkbox-custom" for="epic"></label>
+                    <p class="marketBottom__checkbox-text">Эпический</p>
+                  </div>
+                  <div class="marketBottom__checkbox-wrapper">
+                    <input class="marketBottom__checkbox" id="stand" type="checkbox"/>
+                    <label class="marketBottom__checkbox-custom" for="stand"></label>
+                    <p class="marketBottom__checkbox-text">Обычный</p>
                   </div>
                 </div>
               </div>
-              <div class="marketTop__settings-menu--right-page" data-page="rare">
-                <p class="marketTop__settings-menu--title">Редкость</p>
-                <hr class="marketTop__settings-menu--hr"/>
-                <div class="marketBottom__checkbox-wrapper">
-                  <input class="marketBottom__checkbox" id="oneSausend" type="checkbox"/>
-                  <label class="marketBottom__checkbox-custom" for="oneSausend"></label>
-                  <p class="marketBottom__checkbox-text">1 - 100</p>
-                </div>
-                <div class="marketBottom__checkbox-wrapper">
-                  <input class="marketBottom__checkbox" id="rare" type="checkbox"/>
-                  <label class="marketBottom__checkbox-custom" for="rare"></label>
-                  <p class="marketBottom__checkbox-text">Редкий</p>
-                </div>
-                <div class="marketBottom__checkbox-wrapper">
-                  <input class="marketBottom__checkbox" id="epic" type="checkbox"/>
-                  <label class="marketBottom__checkbox-custom" for="epic"></label>
-                  <p class="marketBottom__checkbox-text">Эпический</p>
-                </div>
-                <div class="marketBottom__checkbox-wrapper">
-                  <input class="marketBottom__checkbox" id="stand" type="checkbox"/>
-                  <label class="marketBottom__checkbox-custom" for="stand"></label>
-                  <p class="marketBottom__checkbox-text">Обычный</p>
-                </div>
-              </div>
+            </div>
+            <div class="marketTop__settings-menu--bottom">
+              <div class="marketTop__settings-button--wrapper"><a class="marketTop__settings-button" href="">Сбросить фильтр</a></div>
+              <div class="marketTop__settings-button--wrapper"><a class="marketTop__settings-button background" href="">Применить</a></div>
             </div>
           </div>
           <div class="marketTop__right noMobile"><a class="marketTop__basket" href="basket.html">
@@ -190,6 +196,19 @@
               <p class="marketTop__price-text">Руб.</p>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+    <section class="mobileBack mobile">
+      <div class="container">
+        <div class="mobileBack__inner">
+          <div class="mobileBack__back">
+            <svg width="8" height="14" viewbox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7 1L1 7L7 13" stroke="#FF5C00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+            <p class="mobileBack__back-text">Назад</p>
+          </div>
+          <p class="mobileBack__title">№09436906456</p>
         </div>
       </div>
     </section>

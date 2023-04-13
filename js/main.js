@@ -483,7 +483,7 @@ $(document).ready(function() {
             $('.marketTop__sorting-choose').removeClass('show');
         }
 
-        console.log(e.target);
+        // console.log(e.target);
     })
 
     // if (/iPhone/.test(navigator.userAgent) && !window.MSStream)
@@ -580,15 +580,27 @@ $(document).ready(function() {
         el.update();
     })
 
-    new Swiper('.marketBottom__market2Mobile-item--top-wrapper', {
-        loop: false,
-        slidesPerView: 'auto',
-        scrollbar: {
-            el: '.marketBottom__scrollbar',
-            draggable: true
-        }
+    let marketMobleSwiper = [];
+    document.querySelectorAll('.marketBottom__market2Mobile-item--top-wrapper').forEach(function(el){
+        marketMobleSwiper.push(new Swiper(el, {
+            loop: false,
+            slidesPerView: 'auto',
+            speed: 1500,
+            scrollbar: {
+                el: '.marketBottom__scrollbar',
+                draggable: true
+            }
+        }))
+    })
+
+    marketMobleSwiper.forEach((el) => {
+        el.update();
     })
 })
+if($('main').hasClass('mobileChat')){
+    window.scrollTo(0, document.body.scrollHeight);
+}
+document.querySelector('.marketBottom__chats-chat--wrapper').scrollTo(0, document.body.scrollHeight)
 
 //Модальные окна
 //Открытие

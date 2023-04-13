@@ -714,6 +714,7 @@ table
     --marketTop-filters-text: #2d2d2e;
     --marketTop-filter-hr: #d9d9d9;
     --marketTop-filter-search-background: #f8f8f8;
+    --filter-button: #3a3a3a;
 }
 
 @media (prefers-color-scheme: light)
@@ -856,6 +857,7 @@ table
         --marketTop-filters-text: #2d2d2e;
         --marketTop-filter-hr: #d9d9d9;
         --marketTop-filter-search-background: #f8f8f8;
+        --filter-button: #3a3a3a;
         --main: black;
     }
 }
@@ -999,6 +1001,7 @@ table
         --marketTop-filters-text: #e4e4e4;
         --marketTop-filter-hr: #404040;
         --marketTop-filter-search-background: #575757;
+        --filter-button: #e4e4e4;
         --main: rgb(180, 180, 180);
     }
 }
@@ -1140,6 +1143,7 @@ table
     --marketTop-filters-text: #e4e4e4;
     --marketTop-filter-hr: #404040;
     --marketTop-filter-search-background: #575757;
+    --filter-button: #e4e4e4;
 }
 
 /* Глобальное */
@@ -5748,8 +5752,12 @@ a.reg__but
 .marketBottom__center-reset
 {
     width: 100%;
-    margin-top: auto;
+    margin-top: 15px;
     padding: 10px 0;
+}
+.marketBottom__center-reset:first-of-type
+{
+    margin-top: auto;
 }
 .marketBottom__center > div:not(:last-of-type)
 {
@@ -11206,15 +11214,15 @@ a.reg__but
     }
     .marketBottom__inner
     {
-        height: 520px;
+        height: 440px;
     }
     .marketBottom__myLots .marketBottom__lots-bottom
     {
-        height: 85%;
+        height: 360px;
     }
     .marketBottom__lots-bottom
     {
-        height: 250px;
+        height: 170px;
     }
     .marketBottom__box.message::after
     {
@@ -11249,7 +11257,7 @@ a.reg__but
     }
     .marketBottom__history-bottom
     {
-        height: 446px;
+        height: 369px;
     }
     .marketBottom__notifications-settings
     {
@@ -11303,7 +11311,7 @@ a.reg__but
     .marketBottom__chats-left
     {
         width: 254px;
-        height: 484px;
+        height: 405px;
     }
     .marketBottom__chats-right
     {
@@ -11311,7 +11319,7 @@ a.reg__but
     }
     .marketBottom__chats-right--content
     {
-        height: 218px;
+        height: 144px;
         padding-right: 5px;
     }
     .marketBottom__chats-right--title
@@ -11403,11 +11411,11 @@ a.reg__but
     }
     .marketBottom__chats-chat
     {
-        height: 485px;
+        height: 409px;
     }
     .marketBottom__chats-chat--wrapper
     {
-        height: 403px;
+        height: 339px;
     }
     .marketBottom__left.bigMR
     {
@@ -11817,6 +11825,10 @@ a.reg__but
     {
         display: none;
     }
+    .header__lang
+    {
+        margin: auto 0;
+    }
     .header__menu
     {
         position: absolute;
@@ -11861,11 +11873,11 @@ a.reg__but
     {
         position: relative;
     }
-    .header__menu-box:not(:last-of-type)
+    .header__menu-box:not(:nth-of-type(5))
     {
         margin-bottom: 51px;
     }
-    .header__menu-box:not(:last-of-type)::after
+    .header__menu-box:not(:nth-of-type(5))::after
     {
         position: absolute;
         bottom: -20px;
@@ -11976,10 +11988,6 @@ a.reg__but
         -webkit-transform: translate(0px, -9px) rotate(-45deg);
             -ms-transform: translate(0px, -9px) rotate(-45deg);
                 transform: translate(0px, -9px) rotate(-45deg);
-    }
-    .header__menu-bottom
-    {
-        margin-top: auto;
     }
     .header__menu-bottom--button
     {
@@ -12920,9 +12928,44 @@ a.reg__but
         font-size: 12px;
 
         margin: 0 16px;
-        margin-top: auto;
-        margin-bottom: 10px;
+        margin-top: 20px;
         padding: 10px;
+    }
+    .marketTop__settings-reset:last-of-type
+    {
+        margin-top: 10px;
+    }
+    .marketTop__settings-button
+    {
+        font-family: 'Montserrat';
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 15px;
+
+        padding: 13px 50px;
+
+        color: var(--filter-button);
+    }
+    .marketTop__settings-button.background
+    {
+        color: #e4e4e4;
+        border-radius: 8px;
+        background: #ff5c00;
+    }
+    .marketTop__settings-button--wrapper
+    {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+
+        height: 100%;
+
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
     }
     .marketTop__settings-menu
     {
@@ -12934,9 +12977,10 @@ a.reg__but
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
+            flex-direction: column;
 
         width: 100vw;
-        height: 83vh;
+        height: 70.5vh;
 
         -webkit-transition: .3s ease all;
              -o-transition: .3s ease all;
@@ -12946,6 +12990,10 @@ a.reg__but
                 transform: translateX(-100%);
 
         background: var(--marketBack-mobile);
+
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
     }
     .marketTop__settings-menu .profile__box-content
     {
@@ -12960,6 +13008,31 @@ a.reg__but
         -webkit-transform: translateX(0);
             -ms-transform: translateX(0);
                 transform: translateX(0);
+    }
+    .marketTop__settings-menu--top
+    {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+
+        width: 100%;
+        height: 89%;
+    }
+    .marketTop__settings-menu--bottom
+    {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+
+        height: 11%;
+
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    .marketTop__settings-menu--bottom > *
+    {
+        width: 50%;
     }
     .marketTop__settings-menu--left
     {
@@ -13213,6 +13286,10 @@ a.reg__but
     {
         height: auto;
     }
+    .marketBottom__market2Mobile .marketBottom__market2Mobile-item--bottom
+    {
+        padding: 0 15px;
+    }
     .marketBottom__bigMarket
     {
         display: grid;
@@ -13330,6 +13407,15 @@ a.reg__but
     .marketBottom__market2-block--more
     {
         margin-left: auto;
+    }
+    .marketBottom__market2Mobile-change
+    {
+        font-family: 'Montserrat';
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 15px;
+
+        color: #ff812f;
     }
     .marketBottom__market2Mobile-changeNum
     {
@@ -13491,7 +13577,7 @@ a.reg__but
         display: flex;
 
         margin-bottom: 21px;
-        margin-left: 21px;
+        margin-left: 6px;
     }
     .marketBottom__market2Mobile-filters--wrapper
     {
@@ -13541,7 +13627,7 @@ a.reg__but
     {
         position: relative;
 
-        padding: 8px 15px 23px 15px;
+        padding: 8px 0 23px 0;
 
         border: 1px solid var(--market2-mobBor);
         border-radius: 12px;
@@ -13579,7 +13665,6 @@ a.reg__but
 
         content: '';
 
-        border-radius: 5px;
         background: var(--market2-itemTop);
     }
     .marketBottom__market2Mobile-item--top-wrapper hr
@@ -13641,13 +13726,24 @@ a.reg__but
     .marketBottom__market2Mobile-item--text
     {
         font-family: 'Montserrat';
-        font-size: 10px;
+        font-size: 20px;
         font-weight: 600;
         line-height: 13px;
 
         position: relative;
 
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+
         color: var(--footerMobile-icon);
+
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
     }
     .marketBottom__market2Mobile-item--text.center
     {
@@ -14716,7 +14812,6 @@ a.reg__but
     {
         position: relative;
 
-        height: 494px;
         padding: 18px 0 80px 0;
     }
     .chatMobile__chat-message
@@ -15193,6 +15288,69 @@ a.reg__but
     {
         color: white;
     }
+    .mobileBack
+    {
+        margin-bottom: 41px;
+    }
+    .mobileBack__inner
+    {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    .mobileBack__back
+    {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+
+        margin-right: 31px;
+
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    .mobileBack__back-text
+    {
+        font-family: 'Montserrat';
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 13px;
+
+        margin-left: 11px;
+
+        color: var(--footerMobile-icon);
+    }
+    .mobileBack__title
+    {
+        font-family: 'Montserrat';
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 16px;
+
+        color: var(--footerMobile-icon);
+    }
+    .mobileBack__clear
+    {
+        font-family: 'Montserrat';
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 16px;
+
+        margin-left: auto;
+
+        text-decoration: underline;
+
+        color: #ff812f;
+    }
+    .mobileBack__clear.noOrange
+    {
+        color: var(--footerMobile-icon);
+    }
     .dark .header__logo.white
     {
         display: none;
@@ -15214,18 +15372,6 @@ a.reg__but
 }
 @media (max-width: 380px)
 {
-    .marketBottom__market2Mobile-item--text.number
-    {
-        font-size: 8px;
-    }
-    .marketBottom__market2Mobile-item--text.big
-    {
-        font-size: 10px;
-    }
-    .marketBottom__market2Mobile-item--text::after
-    {
-        font-size: 8px !important;
-    }
     .marketBottom__mobileItem-delete
     {
         top: 9px;
