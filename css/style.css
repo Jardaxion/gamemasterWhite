@@ -13726,7 +13726,7 @@ a.reg__but
     .marketBottom__market2Mobile-item--text
     {
         font-family: 'Montserrat';
-        font-size: 20px;
+        font-size: 12px;
         font-weight: 600;
         line-height: 13px;
 
@@ -14906,6 +14906,10 @@ a.reg__but
     .chatMobile__chat-left *
     {
         fill: var(--mbolieChat-meessage-background);
+    }
+    .basket .marketBottom__market2Mobile-item--text
+    {
+        font-size: 20px;
     }
     .basket__inner
     {
